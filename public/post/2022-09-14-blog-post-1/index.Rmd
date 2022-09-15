@@ -1,0 +1,90 @@
+---
+title: Blog Post 1
+author: Jen Hughes
+date: '2022-09-14'
+slug: []
+categories: []
+tags: []
+---
+
+*This blog is being completed as part of GOV 1347: Election Analytics, a course at Harvard College taught by Professor [Ryan Enos](https://www.ryandenos.com). It will be updated weekly and culminate in a predictive model of the 2022 midterm elections.*
+
+In this first blog post, I aim to familiarize myself with tidyverse and github through an exploration of popular vote margins and seat share margins during the 2018 midterm election cycle.  I then explore what these visualizations reveal about Gerrymandering across the United States. 
+
+By modifying code used in our lab session, I created a map of the vote share margins in each state from the 2018 midterm election. The variable of interest is the two-party vote share margin which was calculated by finding the difference between the percentage of votes for Republican candidates and the percentage of votes for Democratic candidates in each state. Since this looks at state vote totals and not individual district wins, this does not reflect the actual wins in Congress by each party in a given seat. Calculating margins also allows me to easily assign color to each value where 1 (100% vote share for Republicans) is dark red and -1 (100% of vote share for Democrats) is dark blue.
+
+```{r}
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(usmap)
+library(readr)
+
+#Load in popular vote data
+house_party_vote_share_by_district_1948_2020 <- read_csv("house party vote share by district 1948-2020.csv")
+
+h <- house_party_vote_share_by_district_1948_2020
+
+#Calculate popular vote margins for each state
+voteshare2018 <- h %>%
+  filter(raceYear == 2018) %>%
+  select(raceYear, State, district_num, district_id, RepVotes, DemVotes) %>%
+  # summarize party vote share by state
+  group_by(State) %>%
+  # mutate Rep vote margin by state %>%
+  mutate(R_votemargin_st = (sum(RepVotes))/
+           sum(RepVotes + DemVotes),
+         D_votemargin_st = (sum(DemVotes))/
+           sum(RepVotes + DemVotes), 
+        votemargin_st = R_votemargin_st - D_votemargin_st) %>%
+  rename(state = State)
+
+# Plot US map
+plot_usmap(data = voteshare2018, regions = "state", labels = TRUE, values = "votemargin_st") + 
+  scale_fill_gradient2(low = "dodger blue", mid="white", high = "red", name = "2018 Voteshare Margin", limits = c(-1,1)) + theme_void() +
+  labs(title = "2018 Popular Vote Margin") 
+
+```
+
+
+2018 was a year characterized by many media outlets and analysts as a “blue wave.”  Voters turned out in large numbers to rebuke the election of Donald Trump in 2016.  The “2018 Popular Vote Share Map” provides a strong visual representation of this. On the map we can see that notable swing states such as Michigan, Pennsylvania, and Wisconsin all leaned slightly in favor of Democrats. We can also see that other states that lean Republican but are often inthe swing state conversation including Florida, Texas, and Georgia only slightly favor Republicans.  Also worth noting is the lack of extreme margins in favor of a party in any state.  Even in a state like Massachusetts, famous for not usually having any Republican districts, the popular vote margin still only reaches a vote margin of 0.59.
+
+
+```{r}
+
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(usmap)
+
+#load in seat share data
+seats2018 <- read_csv("seatsdata2018.csv")
+
+#Calculate seat share margins for each state
+seatshare2018 <- seats2018 %>%
+   select(State, R_seats, D_seats) %>%
+  # summarize party seat share by state
+  group_by(State) %>%
+  # mutate vote margin by state %>%
+  mutate(R_seatmargin_st = (sum(R_seats))/
+           sum(R_seats + D_seats),
+         D_seatmargin_st = (sum(D_seats))/
+           sum(R_seats + D_seats), 
+        seatmargin_st = R_seatmargin_st - D_seatmargin_st) %>%
+  rename(state = State)
+
+# Plot US map
+plot_usmap(data = seatshare2018, regions = "state", labels = TRUE, values = "seatmargin_st") + 
+  scale_fill_gradient2(low = "dodger blue", mid="white", high = "red", name = "2018 Seatshare Margin", limits = c(-1,1)) + theme_void() +
+   labs(title = "2018 Seat Share Margin") 
+
+```
+
+I then repeated the process from part one but substituted vote share with seat share using data from CQ Press Library. The most jarring observation when comparing these two maps is the extreme skew of the seat margins in comparison to the vote share margins. This is likely reflective of two key aspects of the US electoral system. First, the seat share margins reflect the US’s winner-take-all electoral system.  This means that in a state like Alaska, which only has one house seat, the seat share margin will always be 1 or -1 (depending on the party in power). So while Alaska shows only a slight lean in favor of Republicans based on vote share, the state’s seat share entirely favors Republicans. The second thing this reveals is the prevalence of Gerrymandering in the US. For example, Ohio is a notoriously gerrymandered state. By comparing the two maps we can see that the popular vote share leans only slightly in favor of Republicans. However, in the second map we can see that the state strongly favors Republicans in seat share ( a 12 - 4 split). 
+
+These analyses provide a small glimpse into the dynamics of midterm elections that will inform the more extensive modeling to come in future blog updates. 

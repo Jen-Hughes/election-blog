@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Blog Post 1 &middot; My New Hugo Site</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="My New Hugo Site" />
+
+		<script src="/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">My New Hugo Site</h2>
+					
+				</a>
+				<ul>
+    
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Jen Hughes
+        <br>
+        <span>on&nbsp;</span><time datetime="2022-09-14 00:00:00 &#43;0000 UTC">September 14, 2022</time>
+</div>
+
+		<h1 class="post-title">Blog Post 1</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+
+<p><em>This blog is being completed as part of GOV 1347: Election Analytics, a course at Harvard College taught by Professor <a href="https://www.ryandenos.com">Ryan Enos</a>. It will be updated weekly and culminate in a predictive model of the 2022 midterm elections.</em></p>
+<p>In this first blog post, I aim to familiarize myself with tidyverse and github through an exploration of popular vote margins and seat share margins during the 2018 midterm election cycle. I then explore what these visualizations reveal about Gerrymandering across the United States.</p>
+<p>By modifying code used in our lab session, I created a map of the vote share margins in each state from the 2018 midterm election. The variable of interest is the two-party vote share margin which was calculated by finding the difference between the percentage of votes for Republican candidates and the percentage of votes for Democratic candidates in each state. Since this looks at state vote totals and not individual district wins, this does not reflect the actual wins in Congress by each party in a given seat. Calculating margins also allows me to easily assign color to each value where 1 (100% vote share for Republicans) is dark red and -1 (100% of vote share for Democrats) is dark blue.</p>
+<pre class="r"><code>knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.6     ✓ purrr   0.3.4
+## ✓ tibble  3.1.6     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.4     ✓ stringr 1.4.0
+## ✓ readr   2.1.1     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(ggplot2)
+library(blogdown)
+library(usmap)
+library(readr)
+
+#Load in popular vote data
+house_party_vote_share_by_district_1948_2020 &lt;- read_csv(&quot;house party vote share by district 1948-2020.csv&quot;)</code></pre>
+<pre><code>## Rows: 16067 Columns: 31</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (16): Office, State, Area, RepCandidate, RepStatus, DemCandidate, DemSta...
+## dbl (14): raceYear, RepVotes, DemVotes, ThirdVotes, OtherVotes, PluralityVot...
+## lgl  (1): CensusPop</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>h &lt;- house_party_vote_share_by_district_1948_2020
+
+#Calculate popular vote margins for each state
+voteshare2018 &lt;- h %&gt;%
+  filter(raceYear == 2018) %&gt;%
+  select(raceYear, State, district_num, district_id, RepVotes, DemVotes) %&gt;%
+  # summarize party vote share by state
+  group_by(State) %&gt;%
+  # mutate Rep vote margin by state %&gt;%
+  mutate(R_votemargin_st = (sum(RepVotes))/
+           sum(RepVotes + DemVotes),
+         D_votemargin_st = (sum(DemVotes))/
+           sum(RepVotes + DemVotes), 
+        votemargin_st = R_votemargin_st - D_votemargin_st) %&gt;%
+  rename(state = State)
+
+# Plot US map
+plot_usmap(data = voteshare2018, regions = &quot;state&quot;, labels = TRUE, values = &quot;votemargin_st&quot;) + 
+  scale_fill_gradient2(low = &quot;dodger blue&quot;, mid=&quot;white&quot;, high = &quot;red&quot;, name = &quot;2018 Voteshare Margin&quot;, limits = c(-1,1)) + theme_void() +
+  labs(title = &quot;2018 Popular Vote Margin&quot;) </code></pre>
+<p><img src="http://example.org/post/2022-09-14-blog-post-1/index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>2018 was a year characterized by many media outlets and analysts as a “blue wave.” Voters turned out in large numbers to rebuke the election of Donald Trump in 2016. The “2018 Popular Vote Share Map” provides a strong visual representation of this. On the map we can see that notable swing states such as Michigan, Pennsylvania, and Wisconsin all leaned slightly in favor of Democrats. We can also see that other states that lean Republican but are often inthe swing state conversation including Florida, Texas, and Georgia only slightly favor Republicans. Also worth noting is the lack of extreme margins in favor of a party in any state. Even in a state like Massachusetts, famous for not usually having any Republican districts, the popular vote margin still only reaches a vote margin of 0.59.</p>
+<pre><code>## Rows: 50 Columns: 3</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (1): State
+## dbl (2): R_seats, D_seats</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<p><img src="http://example.org/post/2022-09-14-blog-post-1/index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>I then repeated the process from part one but substituted vote share with seat share using data from CQ Press Library. The most jarring observation when comparing these two maps is the extreme skew of the seat margins in comparison to the vote share margins. This is likely reflective of two key aspects of the US electoral system. First, the seat share margins reflect the US’s winner-take-all electoral system. This means that in a state like Alaska, which only has one house seat, the seat share margin will always be 1 or -1 (depending on the party in power). So while Alaska shows only a slight lean in favor of Republicans based on vote share, the state’s seat share entirely favors Republicans. The second thing this reveals is the prevalence of Gerrymandering in the US. For example, Ohio is a notoriously gerrymandered state. By comparing the two maps we can see that the popular vote share leans only slightly in favor of Republicans. However, in the second map we can see that the state strongly favors Republicans in seat share ( a 12 - 4 split).</p>
+<p>These analyses provide a small glimpse into the dynamics of midterm elections that will inform the more extensive modeling to come in future blog updates.</p>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/post/2022-09-11-practice-post-1/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2022-09-15 00:07:13.270981 -0400 EDT m=&#43;0.219319001">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
