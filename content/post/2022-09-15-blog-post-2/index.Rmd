@@ -46,15 +46,15 @@ ppopseatvote_df <- popseatvote_df %>%
 
 Electoral Predictions and forecasts often cite the “political environment” that a given election cycle is taking place in.  For example, pundits could cite a growing economy as cause for a good environment for incumbents while troubling foreign policy incidents might add to a bad environment for incumbents.  These “fundamentals” exist outside the campaign's control and set the stage for a given election cycle.  But, how accurately can we predict elections with these conditions alone?
 
-In the second update in my midterm elections forecast blog, I explore the economy as a predictor for election outcomes.
+In the second update in my midterm elections forecast blog, I explore the economy as a predictor for election outcomes. 
 
 ## Defining Variables and Measures 
 
-There are numerous ways to measure the economy. However, in this analysis I have chosen to do so using change in Real Disposable Income (RDI).  RDI is a useful metric for predicting voting because it describes how the economy is felt at the individual level.  While GDP is a favorite for many areas of economic study, RDI is a more accurate measure of how the economy feels to voters. It has also been used as a metric for predicting presidential election results providing a good point for theoretical and empirical comparison (Achen and Bartels, 2017).
+There are numerous ways to measure the economy. However, in this analysis I have chosen to do so using change in Real Disposable Income (RDI).  RDI is a useful metric for predicting voting because it describes how the economy is felt at the individual level.  While GDP is a favorite for many areas of economic study, RDI can more accurately measure how the economy feels to voters. It has also been used as a metric for predicting presidential election results providing a good point for theoretical and empirical comparison (Achen and Bartels, 2017).
 
 The analysis carried out below deals specifically with the change in real disposable income in the last quarter before an election (Q8-Q7).  I’ve chosen to look at this range of economic data based on findings suggesting that voters are only impacted by changes in the economy immediately preceding an election (Healy and Lenz, 2014). 
 
-All data used was provided courtesy of the Gov 1347 teaching team.
+All data used was provided courtesy of the Gov1347 teaching team.
 
 ## Popular Vote Share and Seat Share - All Elections
 
@@ -133,9 +133,11 @@ alllm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct,
 #summary(alllm_SS)$r.squared
 ```
 
-We can observe that across all elections, an increase in RDI is negatively correlated with both voteshare and seat share.  This goes against the comment sense instinct to assume that an increase in RDI should increase approval/popularity and therefore increase vote share,    
+I first fit a linear model to the data showing change in RDI from Q7 to Q8 as a predictor of both popular vote share and seat share.  Immediately upon graphing the data, we can see that the relationship appears to be negative. This means that as change in RDI increases, popular vote share and seat share decreases. Based on an initial gut check, this doesn’t make a ton of sense.  It seems much more likely that an increase in RDI should lead to an increase in vote share or seat share for the incumbent party. Instead we see a decrease in share of both models. This might suggest that there is some omitted variable that would allow us to better predict the outcome. We also see that the relationship between RDI change and vote/seat share is extremely weak when all elections are included in the model.  
 
-There does not appear to be a massive distinction between using vote share and seat share as the dependent variable.  We can see that the overall relationship remains the same in in both the general analysis and Midterm subset.  If there is any difference it appears that the relationship between RDI and share is steeper for when  considring seatshare, likely reflecting some degree of gerrymandering and winner-take-all electoral systems which make seatshare values more volatile.
+There does not appear to be a massive distinction between using vote share and seat share as the dependent variable.  We can see that the overall relationship remains the same in in both the general analysis and Midterm subset.  If there is any difference it appears that the relationship between RDI and share is steeper when  considering seat share, likely reflecting some degree of gerrymandering and winner-take-all electoral systems which make seat share values more volatile.
+
+In both models, the R–sq value is less than 0.1 which means the model tells us almost nothing about predicting election outcomes based on RDI change. For this reason, I chose to subset the data into groups containing midterm elections and presidential elections only to examine how the predictive power changes across time.
 
 ## RDI analysis Midterms Only
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
@@ -218,6 +220,7 @@ grid.arrange(p3, p4, ncol=2)
 #summary(lm_SS)$r.squared
 ```
 
+When we subset for midterm elections only, we see that a more clear relationship exists between RDI change and Incumbent vote/seat share.  In this subset, the R - sq for vote share and seat share models rises to 0.47 and 0.41 respectively.  This isn’t to say that this could be considered a “good” model. These values suggest that RDI alone can explain only less than half of the observed variation.  Furthemore, the relationship is still negative in both models which seems to go against theories of voter accountability (Achen and Bartels, 2017).  This leaves significant concern about omitted variables that should be explored in future Blog Posts. 
 
 ## Presidential Elections Only
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
@@ -288,11 +291,11 @@ plm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct,
 #summary(plm_SS)$r.squared
 ```
 
-When we instead attempt to model only presidential election years, we see that the model is near worthless.  In predicting both popular vote share and seat share, the R-sq values are less than 0.01.  These values along with extremely weak measures of correlation suggest that there is no clear relationship between RDI and House Incumbent vote share.  In breaking down the model further, this makes some sense. When a Presidential Election is involved, this race overpowers many of the dynamics seen in midterm years.  With such a strong spoiler effect, the incumbent party in the house means much less than the incumbent party of the president. In fact, if we look at findings from Achen and Bartels, we see that president incumbency appears to be a good predictor of presidential votes share. It may also be that presidential incumbency matters for Congressional races in Presidential Election Years. 
+When I instead attempt to model only presidential election years, we see that the model tells us almost nothing about the relationship between RDI and election outcomes.  In predicting both popular vote share and seat share, the R-sq values are less than 0.01.  These values along with extremely weak measures of correlation suggest that there is no clear relationship between RDI and House Incumbent vote share.  In breaking down the model further, this makes some sense. When a Presidential Election is involved, this race overpowers many of the dynamics seen in midterm years.  With such a strong spoiler effect, the incumbent party in the house means much less than the incumbent party of the president. In fact, if we look at findings from Achen and Bartels, we see that president incumbency appears to be a good predictor of presidential votes share. It may also be that prsidntial incumbency matters for Congressional races in presidential election years. 
 
 ## What do these models mean for 2022?
 
- As established in the above analysis, none of these models are particularly good fits and therefore they are not likely to produce accurate predictions. Nevertheless, we can plug in current RDI values to the best models (those including only midterm elections) to predict the outcome of the midterms.  The model predicts that Democrats, as teh incumbent party, will win a popular vote share of 62.9% and a seat share of 74.5%.  It goes without saying that these values seem astronomical to anyone who follows elections, again suggesting that the models are likely flawed. Another note of importance is that since we don’t yet have data for Q7 and Q8, I substituted with the Q6 - Q5 value.  If for instance we have reason to believe that there is something intrinsically distinct about Q8 and Q7 RDI this would invalidate the use of these values in the model. Furthermore, given that I do not use forecasted Q8 and Q7 RDI, the prediction more accurately models a “what if the election was held today?” scenario, than a strict prediction of the midterm elections in November. 
+  As established in the above analysis, none of these models are particularly good fits and therefore they are not likely to produce accurate predictions. Nevertheless, we can plug in current RDI values to the best models (those including only midterm elections) to predict the outcome of the midterms.  The model predicts that Democrats will win the popular vote share of 62.9% and a seatshare of 74.5%.  It goes without saying that these values seem astronomical to anyone who follows elections, again suggesting that the models are likely flawed. Another note of importance is that since we don’t yet have data for Q7 and Q8, I substituted with the Q6 - Q5 value.  If for instance we have reason to believe that there is something intrinsically distinct about Q8 and Q7 RDI this would invalidate the use of these values in the model. Furthermore, given that I do not use forecasted Q8 and Q7 RDI, the prediction more accurately models a “what if the election was held today?” scenario, rather than a strict prediction of the midterm elections in November. 
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
@@ -304,4 +307,4 @@ predict(lm_PV, mostrecent, interval="prediction")
 predict(lm_SS, mostrecent, interval="prediction")
 ```
 
-
+The above analysis has shown that short-term change in RDI alone cannot provide a good model for predicting midterm election outcomes.  This is true when predicting both vote share and seat share. The predictive power is significantly improved when considering only Midterm elections rather than all elections. However, there is still a significant degree of unexplained variation to be explored in future Blog Updates. 
