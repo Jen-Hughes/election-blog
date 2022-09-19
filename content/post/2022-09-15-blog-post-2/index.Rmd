@@ -139,7 +139,7 @@ There does not appear to be a massive distinction between using vote share and s
 
 In both models, the R–sq value is less than 0.1 which means the model tells us almost nothing about predicting election outcomes based on RDI change. For this reason, I chose to subset the data into groups containing midterm elections and presidential elections only to examine how the predictive power changes across time.
 
-## RDI analysis Midterms Only
+## Popular Vote Share and Seat Share - Midterm Elections
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 rdi_df <- read_csv('RDI_quarterly.csv')
 
@@ -222,7 +222,7 @@ grid.arrange(p3, p4, ncol=2)
 
 When we subset for midterm elections only, we see that a more clear relationship exists between RDI change and Incumbent vote/seat share.  In this subset, the R - sq for vote share and seat share models rises to 0.47 and 0.41 respectively.  This isn’t to say that this could be considered a “good” model. These values suggest that RDI alone can explain only less than half of the observed variation.  Furthemore, the relationship is still negative in both models which seems to go against theories of voter accountability (Achen and Bartels, 2017).  This leaves significant concern about omitted variables that should be explored in future Blog Posts. 
 
-## Presidential Elections Only
+##  Popular Vote Share and Seat Share - Presidential Elections
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 rdi_df <- read_csv('RDI_quarterly.csv')
 
