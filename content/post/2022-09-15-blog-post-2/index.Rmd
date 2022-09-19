@@ -54,13 +54,10 @@ There are numerous ways to measure the economy. However, in this analysis I have
 
 The analysis carried out below deals specifically with the change in real disposable income in the last quarter before an election (Q8-Q7).  I’ve chosen to look at this range of economic data based on findings suggesting that voters are only impacted by changes in the economy immediately preceding an election (Healy and Lenz, 2014). 
 
-All data used was provided courtesy of the Gov1347 teaching team.
+All data used was provided courtesy of the Gov 1347 teaching team.
 
-## Popular Vote Share and Seat Share - All elections
+## Popular Vote Share and Seat Share - All Elections
 
-
-
-## ALL Combined Election Years
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 rdi_df <- read_csv('RDI_quarterly.csv')
 
@@ -136,6 +133,9 @@ alllm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct,
 #summary(alllm_SS)$r.squared
 ```
 
+We can observe that across all elections, an increase in RDI is negatively correlated with both voteshare and seat share.  This goes against the comment sense instinct to assume that an increase in RDI should increase approval/popularity and therefore increase vote share,    
+
+There does not appear to be a massive distinction between using vote share and seat share as the dependent variable.  We can see that the overall relationship remains the same in in both the general analysis and Midterm subset.  If there is any difference it appears that the relationship between RDI and share is steeper for when  considring seatshare, likely reflecting some degree of gerrymandering and winner-take-all electoral systems which make seatshare values more volatile.
 
 ## RDI analysis Midterms Only
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
