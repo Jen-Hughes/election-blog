@@ -44,7 +44,7 @@ ppopseatvote_df <- popseatvote_df %>%
          
 ```
 
-# ALL Combined Years
+## ALL Combined Election Years
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 rdi_df <- read_csv('RDI_quarterly.csv')
 
@@ -63,10 +63,10 @@ allvotedata2 <- allvotedata %>%
 ```
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
-cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_party_majorvote_pct)
+#cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_party_majorvote_pct)
 
 ##RDI Correlation w/ seatshare
-cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_seatshare)
+#cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_seatshare)
 ```
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
@@ -116,8 +116,8 @@ alllm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct,
 alllm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
             data = allvotedata2)
 
-summary(alllm_PV)$r.squared
-summary(alllm_SS)$r.squared
+#summary(alllm_PV)$r.squared
+#summary(alllm_SS)$r.squared
 ```
 
 
@@ -142,10 +142,10 @@ votedata2 <- votedata %>%
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 ##RDI Correlation w/ pop vote 
-cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_party_majorvote_pct)
+#cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_party_majorvote_pct)
 
 ##RDI Correlation w/ seatshare
-cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_seatshare)
+#cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_seatshare)
 ```
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
@@ -198,12 +198,12 @@ grid.arrange(p3, p4, ncol=2)
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #evaluate r squeared 
-summary(lm_PV)$r.squared
-summary(lm_SS)$r.squared
+#summary(lm_PV)$r.squared
+#summary(lm_SS)$r.squared
 ```
 
 
-##Presidential elections
+## Presidential Elections Only
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 rdi_df <- read_csv('RDI_quarterly.csv')
 
@@ -268,9 +268,11 @@ plm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct,
 plm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
             data = pvotedata2)
 
-summary(plm_PV)$r.squared
-summary(plm_SS)$r.squared
+#summary(plm_PV)$r.squared
+#summary(plm_SS)$r.squared
 ```
+
+## 2022 Model Predictions 
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
