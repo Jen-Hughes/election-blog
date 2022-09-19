@@ -1,0 +1,310 @@
+---
+title: "Blog Post 2: Economic Indicators"
+author: "Jen Hughes"
+date: '2022-09-15'
+output:
+  pdf_document: default
+  word_document: default
+categories: []
+tags: []
+slug: []
+---
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+library(readr)
+require(tidyverse)
+require(ggplot2)
+require(dbplyr)
+library(gridExtra)
+library(ggpubr)
+
+
+## Load Data
+popvote_df <- read_csv('house_popvote_seats.csv') 
+                                                   
+#head(popvote_df)
+
+##clean and format data 
+popseatvote_df <- popvote_df %>% 
+  mutate(R_seatshare = (R_seats / (R_seats + D_seats + Other_seats) * 100)) %>% 
+  mutate(D_seatshare = (D_seats / (R_seats + D_seats + Other_seats) * 100)) %>% 
+  mutate(Other_seatshare = (Other_seats / (R_seats + D_seats + Other_seats) * 100)) %>% 
+  mutate(H_incumbent_seatshare = case_when(H_incumbent_party == "R" ~ R_seatshare,
+                                           H_incumbent_party == "D" ~ D_seatshare))  
+
+##subset for midterm years
+mtpopseatvote_df <- popseatvote_df %>% 
+  filter(year %in% c("1950", "1954", "1958", "1962", "1966", "1970", "1974", "1978", "1982", "1986", "1990", "1994", "1998", "2002", "2006", "2010" ,"2014", "2018" ) ) # as.character(seq(1950, 2018, 4))
+
+#Subset for presidential years 
+ppopseatvote_df <- popseatvote_df %>% 
+  filter( !(year %in% c("1950", "1954", "1958", "1962", "1966", "1970", "1974", "1978", "1982", "1986", "1990", "1994", "1998", "2002", "2006", "2010" ,"2014", "2018"))) 
+
+# as.character(seq(1950, 2018, 4))
+         
+```
+
+Electoral Predictions and forecasts often cite the “political environment” that a given election cycle is taking place in.  For example, pundits could cite a growing economy as cause for a good environment for incumbents while troubling foreign policy incidents might add to a bad environment for incumbents.  These “fundamentals” exist outside the campaign's control and set the stage for a given election cycle.  But, how accurately can we predict elections with these conditions alone?
+
+In the second update in my midterm elections forecast blog, I explore the economy as a predictor for election outcomes. 
+
+## Defining Variables and Measures 
+
+There are numerous ways to measure the economy. However, in this analysis I have chosen to do so using change in Real Disposable Income (RDI).  RDI is a useful metric for predicting voting because it describes how the economy is felt at the individual level.  While GDP is a favorite for many areas of economic study, RDI can more accurately measure how the economy feels to voters. It has also been used as a metric for predicting presidential election results providing a good point for theoretical and empirical comparison (Achen and Bartels, 2017).
+
+The analysis carried out below deals specifically with the change in real disposable income in the last quarter before an election (Q8-Q7).  I’ve chosen to look at this range of economic data based on findings suggesting that voters are only impacted by changes in the economy immediately preceding an election (Healy and Lenz, 2014). 
+
+All data used was provided courtesy of the Gov1347 teaching team.
+
+## Popular Vote Share and Seat Share - All Elections
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+rdi_df <- read_csv('RDI_quarterly.csv')
+
+# merge    
+allvotedata <- left_join(rdi_df, popseatvote_df, by = 'year')
+
+# drop NAs (only election years)
+allvotedata <- allvotedata %>%
+  drop_na()
+
+# new df
+allvotedata2 <- allvotedata %>% 
+    select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
+           'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
+    filter(quarter_cycle == 8) 
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_party_majorvote_pct)
+
+##RDI Correlation w/ seatshare
+#cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_seatshare)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+ #RDI plot PV
+
+p1 <-  allvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_party_majorvote_pct,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party PV (Y)") +
+     theme_bw() +
+     ggtitle("Popular Vote Share All Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+#ss plot
+p2 <- allvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_seatshare,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party Seat Share (Y)") +
+     theme_bw() +
+     ggtitle("Seat Share All Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+   stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+   stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+grid.arrange(p1, p2, ncol=2)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+alllm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct, 
+            data = allvotedata2)
+alllm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
+            data = allvotedata2)
+
+#summary(alllm_PV)$r.squared
+#summary(alllm_SS)$r.squared
+```
+
+I first fit a linear model to the data showing change in RDI from Q7 to Q8 as a predictor of both popular vote share and seat share.  Immediately upon graphing the data, we can see that the relationship appears to be negative. This means that as change in RDI increases, popular vote share and seat share decreases. Based on an initial gut check, this doesn’t make a ton of sense.  It seems much more likely that an increase in RDI should lead to an increase in vote share or seat share for the incumbent party. Instead we see a decrease in share of both models. This might suggest that there is some omitted variable that would allow us to better predict the outcome. We also see that the relationship between RDI change and vote/seat share is extremely weak when all elections are included in the model.  
+
+There does not appear to be a massive distinction between using vote share and seat share as the dependent variable.  We can see that the overall relationship remains the same in in both the general analysis and Midterm subset.  If there is any difference it appears that the relationship between RDI and share is steeper when  considering seat share, likely reflecting some degree of gerrymandering and winner-take-all electoral systems which make seat share values more volatile.
+
+In both models, the R–sq value is less than 0.1 which means the model tells us almost nothing about predicting election outcomes based on RDI change. For this reason, I chose to subset the data into groups containing midterm elections and presidential elections only to examine how the predictive power changes across time.
+
+## Popular Vote Share and Seat Share - Midterm Elections
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+rdi_df <- read_csv('RDI_quarterly.csv')
+
+# merge    
+votedata <- left_join(rdi_df, mtpopseatvote_df, by = 'year')
+
+# drop NAs (only election years)
+votedata <- votedata %>%
+  drop_na()
+
+# new df
+votedata2 <- votedata %>% 
+    select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
+           'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
+    filter(quarter_cycle == 8) 
+        
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+##RDI Correlation w/ pop vote 
+#cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_party_majorvote_pct)
+
+##RDI Correlation w/ seatshare
+#cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_seatshare)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+lm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct, 
+            data = votedata2)
+lm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
+            data = votedata2)
+
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+ #RDI plot PV
+ p3 <- votedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_party_majorvote_pct,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party PV (Y)") +
+     theme_bw() +
+     ggtitle("Popular Vote Share Midterm Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+#ss plot
+p4 <- votedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_seatshare,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party Seat Share (Y)") +
+     theme_bw() +
+     ggtitle("Seat Share Midterm Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+grid.arrange(p3, p4, ncol=2)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#evaluate r squeared 
+#summary(lm_PV)$r.squared
+#summary(lm_SS)$r.squared
+```
+
+When we subset for midterm elections only, we see that a more clear relationship exists between RDI change and Incumbent vote/seat share.  In this subset, the R - sq for vote share and seat share models rises to 0.47 and 0.41 respectively.  This isn’t to say that this could be considered a “good” model. These values suggest that RDI alone can explain only less than half of the observed variation.  Furthemore, the relationship is still negative in both models which seems to go against theories of voter accountability (Achen and Bartels, 2017).  This leaves significant concern about omitted variables that should be explored in future Blog Posts. 
+
+##  Popular Vote Share and Seat Share - Presidential Elections
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+rdi_df <- read_csv('RDI_quarterly.csv')
+
+# merge    
+pvotedata <- left_join(rdi_df, ppopseatvote_df, by = 'year')
+
+# drop NAs (only election years)
+pvotedata <- pvotedata %>%
+  drop_na()
+
+# new df
+pvotedata2 <- pvotedata %>% 
+    select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
+           'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
+    filter(quarter_cycle == 8) 
+
+ #RDI plot PV
+ p5 <- pvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_party_majorvote_pct,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party PV (Y)") +
+     theme_bw() +
+     ggtitle("Popular Vote Share Presidential Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+#ss plot
+p6 <- pvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_seatshare,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party Seat Share (Y)") +
+     theme_bw() +
+     ggtitle("Seat Share Presidential Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+    
+
+
+grid.arrange(p5, p6, ncol=2)
+
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+plm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct, 
+            data = pvotedata2)
+plm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
+            data = pvotedata2)
+
+#summary(plm_PV)$r.squared
+#summary(plm_SS)$r.squared
+```
+
+When I instead attempt to model only presidential election years, we see that the model tells us almost nothing about the relationship between RDI and election outcomes.  In predicting both popular vote share and seat share, the R-sq values are less than 0.01.  These values along with extremely weak measures of correlation suggest that there is no clear relationship between RDI and House Incumbent vote share.  In breaking down the model further, this makes some sense. When a Presidential Election is involved, this race overpowers many of the dynamics seen in midterm years.  With such a strong spoiler effect, the incumbent party in the house means much less than the incumbent party of the president. In fact, if we look at findings from Achen and Bartels, we see that president incumbency appears to be a good predictor of presidential votes share. It may also be that prsidntial incumbency matters for Congressional races in presidential election years. 
+
+## What do these models mean for 2022?
+
+  As established in the above analysis, none of these models are particularly good fits and therefore they are not likely to produce accurate predictions. Nevertheless, we can plug in current RDI values to the best models (those including only midterm elections) to predict the outcome of the midterms.  The model predicts that Democrats will win the popular vote share of 62.9% and a seatshare of 74.5%.  It goes without saying that these values seem astronomical to anyone who follows elections, again suggesting that the models are likely flawed. Another note of importance is that since we don’t yet have data for Q7 and Q8, I substituted with the Q6 - Q5 value.  If for instance we have reason to believe that there is something intrinsically distinct about Q8 and Q7 RDI this would invalidate the use of these values in the model. Furthermore, given that I do not use forecasted Q8 and Q7 RDI, the prediction more accurately models a “what if the election was held today?” scenario, rather than a strict prediction of the midterm elections in November. 
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+
+mostrecent<- rdi_df %>% 
+  subset(year == 2022 & quarter_cycle == 5) %>% 
+  select(DSPIC_change_pct)
+
+predict(lm_PV, mostrecent, interval="prediction")
+predict(lm_SS, mostrecent, interval="prediction")
+```
+
+The above analysis has shown that short-term change in RDI alone cannot provide a good model for predicting midterm election outcomes.  This is true when predicting both vote share and seat share. The predictive power is significantly improved when considering only Midterm elections rather than all elections. However, there is still a significant degree of unexplained variation to be explored in future Blog Updates. 

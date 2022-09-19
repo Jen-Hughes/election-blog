@@ -1,10 +1,11 @@
 ---
-title: Blog Post 1
-author: Jen Hughes
+title: "Blog Post 1"
+author: "Jen Hughes"
 date: '2022-09-14'
-slug: []
+output: pdf_document
 categories: []
 tags: []
+slug: []
 ---
 
 *This blog is being completed as part of GOV 1347: Election Analytics, a course at Harvard College taught by Professor [Ryan Enos](https://www.ryandenos.com). It will be updated weekly and culminate in a predictive model of the 2022 midterm elections.*
@@ -13,9 +14,7 @@ In this first blog post, I aim to familiarize myself with tidyverse and github t
 
 By modifying code used in our lab session, I created a map of the vote share margins in each state from the 2018 midterm election. The variable of interest is the two-party vote share margin which was calculated by finding the difference between the percentage of votes for Republican candidates and the percentage of votes for Democratic candidates in each state. Since this looks at state vote totals and not individual district wins, this does not reflect the actual wins in Congress by each party in a given seat. Calculating margins also allows me to easily assign color to each value where 1 (100% vote share for Republicans) is dark red and -1 (100% of vote share for Democrats) is dark blue.
 
-```{r}
-
-knitr::opts_chunk$set(echo = FALSE)
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
 library(tidyverse)
 library(ggplot2)
@@ -53,9 +52,7 @@ plot_usmap(data = voteshare2018, regions = "state", labels = TRUE, values = "vot
 2018 was a year characterized by many media outlets and analysts as a “blue wave.”  Voters turned out in large numbers to rebuke the election of Donald Trump in 2016.  The “2018 Popular Vote Share Map” provides a strong visual representation of this. On the map we can see that notable swing states such as Michigan, Pennsylvania, and Wisconsin all leaned slightly in favor of Democrats. We can also see that other states that lean Republican but are often inthe swing state conversation including Florida, Texas, and Georgia only slightly favor Republicans.  Also worth noting is the lack of extreme margins in favor of a party in any state.  Even in a state like Massachusetts, famous for not usually having any Republican districts, the popular vote margin still only reaches a vote margin of 0.59.
 
 
-```{r}
-
-knitr::opts_chunk$set(echo = FALSE)
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
 library(tidyverse)
 library(ggplot2)

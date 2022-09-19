@@ -1,15 +1,67 @@
----
-title: "Blog Post 2: Economic Indicators"
-author: "Jen Hughes"
-date: '2022-09-15'
-output:
-  pdf_document: default
-  word_document: default
-categories: []
-tags: []
-slug: []
----
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<title>Blog Post 2: Economic Indicators &middot; Gov 1347 - 2022 Midterm Elections Blog</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Gov 1347 - 2022 Midterm Elections Blog" />
+
+		<script src="/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Gov 1347 - 2022 Midterm Elections Blog</h2>
+					
+				</a>
+				<ul>
+    
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Jen Hughes
+        <br>
+        <span>on&nbsp;</span><time datetime="2022-09-15 00:00:00 &#43;0000 UTC">September 15, 2022</time>
+</div>
+
+		<h1 class="post-title">Blog Post 2: Economic Indicators</h1>
+<div class="post-line"></div>
+
+		
+
+		
 
 
 <p>Electoral Predictions and forecasts often cite the “political environment” that a given election cycle is taking place in. For example, pundits could cite a growing economy as cause for a good environment for incumbents while troubling foreign policy incidents might add to a bad environment for incumbents. These “fundamentals” exist outside the campaign’s control and set the stage for a given election cycle. But, how accurately can we predict elections with these conditions alone?</p>
@@ -22,19 +74,19 @@ slug: []
 </div>
 <div id="popular-vote-share-and-seat-share---all-elections" class="section level2">
 <h2>Popular Vote Share and Seat Share - All Elections</h2>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="http://example.org/post/2022-09-15-blog-post-2/index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>I first fit a linear model to the data showing change in RDI from Q7 to Q8 as a predictor of both popular vote share and seat share. Immediately upon graphing the data, we can see that the relationship appears to be negative. This means that as change in RDI increases, popular vote share and seat share decreases. Based on an initial gut check, this doesn’t make a ton of sense. It seems much more likely that an increase in RDI should lead to an increase in vote share or seat share for the incumbent party. Instead we see a decrease in share of both models. This might suggest that there is some omitted variable that would allow us to better predict the outcome. We also see that the relationship between RDI change and vote/seat share is extremely weak when all elections are included in the model.</p>
 <p>There does not appear to be a massive distinction between using vote share and seat share as the dependent variable. We can see that the overall relationship remains the same in in both the general analysis and Midterm subset. If there is any difference it appears that the relationship between RDI and share is steeper when considering seat share, likely reflecting some degree of gerrymandering and winner-take-all electoral systems which make seat share values more volatile.</p>
 <p>In both models, the R–sq value is less than 0.1 which means the model tells us almost nothing about predicting election outcomes based on RDI change. For this reason, I chose to subset the data into groups containing midterm elections and presidential elections only to examine how the predictive power changes across time.</p>
 </div>
 <div id="popular-vote-share-and-seat-share---midterm-elections" class="section level2">
 <h2>Popular Vote Share and Seat Share - Midterm Elections</h2>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="http://example.org/post/2022-09-15-blog-post-2/index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>When we subset for midterm elections only, we see that a more clear relationship exists between RDI change and Incumbent vote/seat share. In this subset, the R - sq for vote share and seat share models rises to 0.47 and 0.41 respectively. This isn’t to say that this could be considered a “good” model. These values suggest that RDI alone can explain only less than half of the observed variation. Furthemore, the relationship is still negative in both models which seems to go against theories of voter accountability (Achen and Bartels, 2017). This leaves significant concern about omitted variables that should be explored in future Blog Posts.</p>
 </div>
 <div id="popular-vote-share-and-seat-share---presidential-elections" class="section level2">
 <h2>Popular Vote Share and Seat Share - Presidential Elections</h2>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p><img src="http://example.org/post/2022-09-15-blog-post-2/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <p>When I instead attempt to model only presidential election years, we see that the model tells us almost nothing about the relationship between RDI and election outcomes. In predicting both popular vote share and seat share, the R-sq values are less than 0.01. These values along with extremely weak measures of correlation suggest that there is no clear relationship between RDI and House Incumbent vote share. In breaking down the model further, this makes some sense. When a Presidential Election is involved, this race overpowers many of the dynamics seen in midterm years. With such a strong spoiler effect, the incumbent party in the house means much less than the incumbent party of the president. In fact, if we look at findings from Achen and Bartels, we see that president incumbency appears to be a good predictor of presidential votes share. It may also be that prsidntial incumbency matters for Congressional races in presidential election years.</p>
 </div>
 <div id="what-do-these-models-mean-for-2022" class="section level2">
@@ -46,3 +98,25 @@ slug: []
 ## 1 74.52094 54.43296 94.60892</code></pre>
 <p>The above analysis has shown that short-term change in RDI alone cannot provide a good model for predicting midterm election outcomes. This is true when predicting both vote share and seat share. The predictive power is significantly improved when considering only Midterm elections rather than all elections. However, there is still a significant degree of unexplained variation to be explored in future Blog Updates.</p>
 </div>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/post/2022-09-14-blog-post-1/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2022-09-19 13:31:18.66355 -0400 EDT m=&#43;0.385910689">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

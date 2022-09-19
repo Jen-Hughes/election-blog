@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Gov 1347 - 2022 Midterm Elections Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 2: Economic Indicators</title>
+      <link>http://example.org/post/2022-09-15-blog-post-2/</link>
+      <pubDate>Thu, 15 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/2022-09-15-blog-post-2/</guid>
+      <description>Electoral Predictions and forecasts often cite the “political environment” that a given election cycle is taking place in. For example, pundits could cite a growing economy as cause for a good environment for incumbents while troubling foreign policy incidents might add to a bad environment for incumbents. These “fundamentals” exist outside the campaign’s control and set the stage for a given election cycle. But, how accurately can we predict elections with these conditions alone?</description>
+    </item>
+    
     <item>
       <title>Blog Post 1</title>
       <link>http://example.org/post/2022-09-14-blog-post-1/</link>
@@ -15,15 +24,6 @@
       <guid>http://example.org/post/2022-09-14-blog-post-1/</guid>
       <description>This blog is being completed as part of GOV 1347: Election Analytics, a course at Harvard College taught by Professor Ryan Enos. It will be updated weekly and culminate in a predictive model of the 2022 midterm elections.
 In this first blog post, I aim to familiarize myself with tidyverse and github through an exploration of popular vote margins and seat share margins during the 2018 midterm election cycle. I then explore what these visualizations reveal about Gerrymandering across the United States.</description>
-    </item>
-    
-    <item>
-      <title>Practice Post 1</title>
-      <link>http://example.org/post/2022-09-11-practice-post-1/</link>
-      <pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/post/2022-09-11-practice-post-1/</guid>
-      <description>Hello World</description>
     </item>
     
   </channel>
