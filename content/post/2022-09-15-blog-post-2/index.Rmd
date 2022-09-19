@@ -1,0 +1,285 @@
+---
+title: "Blog Post 2: Economic Indicators"
+author: "Jen Hughes"
+date: '2022-09-15'
+output:
+  pdf_document: default
+  word_document: default
+categories: []
+tags: []
+slug: []
+---
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+library(readr)
+require(tidyverse)
+require(ggplot2)
+require(dbplyr)
+library(gridExtra)
+library(ggpubr)
+
+
+## Load Data
+popvote_df <- read_csv('house_popvote_seats.csv') 
+                                                   
+#head(popvote_df)
+
+##clean and format data 
+popseatvote_df <- popvote_df %>% 
+  mutate(R_seatshare = (R_seats / (R_seats + D_seats + Other_seats) * 100)) %>% 
+  mutate(D_seatshare = (D_seats / (R_seats + D_seats + Other_seats) * 100)) %>% 
+  mutate(Other_seatshare = (Other_seats / (R_seats + D_seats + Other_seats) * 100)) %>% 
+  mutate(H_incumbent_seatshare = case_when(H_incumbent_party == "R" ~ R_seatshare,
+                                           H_incumbent_party == "D" ~ D_seatshare))  
+
+##subset for midterm years
+mtpopseatvote_df <- popseatvote_df %>% 
+  filter(year %in% c("1950", "1954", "1958", "1962", "1966", "1970", "1974", "1978", "1982", "1986", "1990", "1994", "1998", "2002", "2006", "2010" ,"2014", "2018" ) ) # as.character(seq(1950, 2018, 4))
+
+#Subset for presidential years 
+ppopseatvote_df <- popseatvote_df %>% 
+  filter( !(year %in% c("1950", "1954", "1958", "1962", "1966", "1970", "1974", "1978", "1982", "1986", "1990", "1994", "1998", "2002", "2006", "2010" ,"2014", "2018"))) 
+
+# as.character(seq(1950, 2018, 4))
+         
+```
+
+# ALL Combined Years
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+rdi_df <- read_csv('RDI_quarterly.csv')
+
+# merge    
+allvotedata <- left_join(rdi_df, popseatvote_df, by = 'year')
+
+# drop NAs (only election years)
+allvotedata <- allvotedata %>%
+  drop_na()
+
+# new df
+allvotedata2 <- allvotedata %>% 
+    select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
+           'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
+    filter(quarter_cycle == 8) 
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_party_majorvote_pct)
+
+##RDI Correlation w/ seatshare
+cor(allvotedata2$DSPIC_change_pct, allvotedata2$H_incumbent_seatshare)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+ #RDI plot PV
+
+p1 <-  allvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_party_majorvote_pct,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party PV (Y)") +
+     theme_bw() +
+     ggtitle("Popular Vote Share All Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+#ss plot
+p2 <- allvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_seatshare,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party Seat Share (Y)") +
+     theme_bw() +
+     ggtitle("Seat Share All Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+   stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+   stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+grid.arrange(p1, p2, ncol=2)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+alllm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct, 
+            data = allvotedata2)
+alllm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
+            data = allvotedata2)
+
+summary(alllm_PV)$r.squared
+summary(alllm_SS)$r.squared
+```
+
+
+## RDI analysis Midterms Only
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+rdi_df <- read_csv('RDI_quarterly.csv')
+
+# merge    
+votedata <- left_join(rdi_df, mtpopseatvote_df, by = 'year')
+
+# drop NAs (only election years)
+votedata <- votedata %>%
+  drop_na()
+
+# new df
+votedata2 <- votedata %>% 
+    select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
+           'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
+    filter(quarter_cycle == 8) 
+        
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+##RDI Correlation w/ pop vote 
+cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_party_majorvote_pct)
+
+##RDI Correlation w/ seatshare
+cor(votedata2$DSPIC_change_pct, votedata2$H_incumbent_seatshare)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+lm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct, 
+            data = votedata2)
+lm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
+            data = votedata2)
+
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+ #RDI plot PV
+ p3 <- votedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_party_majorvote_pct,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party PV (Y)") +
+     theme_bw() +
+     ggtitle("Popular Vote Share Midterm Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+#ss plot
+p4 <- votedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_seatshare,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party Seat Share (Y)") +
+     theme_bw() +
+     ggtitle("Seat Share Midterm Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+grid.arrange(p3, p4, ncol=2)
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#evaluate r squeared 
+summary(lm_PV)$r.squared
+summary(lm_SS)$r.squared
+```
+
+
+##Presidential elections
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+rdi_df <- read_csv('RDI_quarterly.csv')
+
+# merge    
+pvotedata <- left_join(rdi_df, ppopseatvote_df, by = 'year')
+
+# drop NAs (only election years)
+pvotedata <- pvotedata %>%
+  drop_na()
+
+# new df
+pvotedata2 <- pvotedata %>% 
+    select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
+           'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
+    filter(quarter_cycle == 8) 
+
+ #RDI plot PV
+ p5 <- pvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_party_majorvote_pct,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party PV (Y)") +
+     theme_bw() +
+     ggtitle("Popular Vote Share Presidential Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+
+#ss plot
+p6 <- pvotedata2 %>%
+   ggplot(aes(x=DSPIC_change_pct, y=H_incumbent_seatshare,
+             label=year)) + 
+     geom_text(size = 4) +
+     geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+     geom_vline(xintercept=0.01, lty=2) + # median
+     xlab("Q8-Q7 pct change RDI (X)") +
+    ylab("Incumbent party Seat Share (Y)") +
+     theme_bw() +
+     ggtitle("Seat Share Presidential Elections") + 
+     theme(axis.text = element_text(size = 12),
+           axis.title = element_text(size = 12),
+           plot.title = element_text(size = 12)) +
+    stat_regline_equation(label.y = 45, aes(label = ..eq.label..)) +
+    stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
+    
+
+
+grid.arrange(p5, p6, ncol=2)
+
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+plm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct, 
+            data = pvotedata2)
+plm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
+            data = pvotedata2)
+
+summary(plm_PV)$r.squared
+summary(plm_SS)$r.squared
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+
+mostrecent<- rdi_df %>% 
+  subset(year == 2022 & quarter_cycle == 5) %>% 
+  select(DSPIC_change_pct)
+
+predict(lm_PV, mostrecent, interval="prediction")
+predict(lm_SS, mostrecent, interval="prediction")
+```
+
+
