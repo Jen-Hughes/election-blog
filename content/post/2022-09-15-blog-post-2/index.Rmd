@@ -44,6 +44,22 @@ ppopseatvote_df <- popseatvote_df %>%
          
 ```
 
+Electoral Predictions and forecasts often cite the “political environment” that a given election cycle is taking place in.  For example, pundits could cite a growing economy as cause for a good environment for incumbents while troubling foreign policy incidents might add to a bad environment for incumbents.  These “fundamentals” exist outside the campaign's control and set the stage for a given election cycle.  But, how accurately can we predict elections with these conditions alone?
+
+In the second update in my midterm elections forecast blog, I explore the economy as a predictor for election outcomes.
+
+## Defining Variables and Measures 
+
+There are numerous ways to measure the economy. However, in this analysis I have chosen to do so using change in Real Disposable Income (RDI).  RDI is a useful metric for predicting voting because it describes how the economy is felt at the individual level.  While GDP is a favorite for many areas of economic study, RDI is a more accurate measure of how the economy feels to voters. It has also been used as a metric for predicting presidential election results providing a good point for theoretical and empirical comparison (Achen and Bartels, 2017).
+
+The analysis carried out below deals specifically with the change in real disposable income in the last quarter before an election (Q8-Q7).  I’ve chosen to look at this range of economic data based on findings suggesting that voters are only impacted by changes in the economy immediately preceding an election (Healy and Lenz, 2014). 
+
+All data used was provided courtesy of the Gov1347 teaching team.
+
+## Popular Vote Share and Seat Share - All elections
+
+
+
 ## ALL Combined Election Years
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 rdi_df <- read_csv('RDI_quarterly.csv')
@@ -272,7 +288,10 @@ plm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct,
 #summary(plm_SS)$r.squared
 ```
 
-## 2022 Model Predictions 
+
+## What do these models mean for 2022?
+
+ As established in the above analysis, none of these models are particularly good fits and therefore they are not likely to produce accurate predictions. Nevertheless, we can plug in current RDI values to the best models (those including only midterm elections to predict the outcome of the midterms).  The model predicts that Democrats will win the popular vote share of 62.9% and a seatshare of 74.5%.  It goes without saying that these values seem astronomical to anyone who follows elections, again suggesting that the models are likely flawed. Another note of importance is that since we don’t yet have data for Q7 and Q8, I substituted with the Q6 - Q5 value.  If for instance we have reason to believe that there is something intrinsically distinct about Q8 and Q7 RDI this would invalidate the use of these values in the model. Furthermore, given that I do not use forecasted Q8 and Q7 RDI, the prediction more accurate;y models a “what if the election was held today?” scenario that a strict prediction of the midterm elections in November. 
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
