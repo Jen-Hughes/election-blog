@@ -54,41 +54,45 @@ pollsRDI <- pollsRDI %>%
 
 ```
 
+Below is a model based on only percent change in RDI from Q7 to Q8.  As seen last week, the model paradoxically suggests that an increase in RDI leads to a decrease in Democratic support.  This is slightly different than the model buikt last week which looked at the incumbent party. This model instead looks at Democrats only. Modeling in this way makes sense if we believe that Democrats and Republicans are impacted by different variables differently regardless of who is in power. For all models below, I have chosen to look exclusively at midterm election years as the dynamics aty play in an election year are funsamentally differnt than during presidential election years. 
 
 ```{r,eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 ##fundamentals model
-dat_D <- pollsRDI[pollsRDI$party == 'D',]
-dat_R <- pollsRDI[pollsRDI$party == 'R',]
-mod_RDI_D <- lm(D_majorvote_pct ~ DSPIC_change_pct, data = dat_D)
-mod_RDI_R <- lm(R_majorvote_pct ~ DSPIC_change_pct, data = dat_R)
+demdata <- pollsRDI[pollsRDI$party == 'D',]
+#dat_R <- pollsRDI[pollsRDI$party == 'R',]
+mod_RDI_D <- lm(D_majorvote_pct ~ DSPIC_change_pct, data = demdata)
+#mod_RDI_R <- lm(R_majorvote_pct ~ DSPIC_change_pct, data = dat_R)
 stargazer(mod_RDI_D, type = 'text')
-stargazer(mod_RDI_R, type = 'text')
+#stargazer(mod_RDI_R, type = 'text')
 ```
 
+I next build a model based on polling only.  This shows us that a 1.1 point increase in generic ballot polling translates to a 1 percent increase in actual voteshare. It's interesting that this relationship isn't 1-1 given that in an ideal scenario polling would align perfectly with results. Also unlike the RDI model, here we see that polling is considered significant.
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 ##adjusted polls-only model
-mod_polling_D <- lm(D_majorvote_pct ~ avg_support, data = dat_D)
-mod_polling_R <- lm(R_majorvote_pct ~ avg_support, data = dat_R)
+mod_polling_D <- lm(D_majorvote_pct ~ avg_support, data = demdata)
+#mod_polling_R <- lm(R_majorvote_pct ~ avg_support, data = dat_R)
 stargazer(mod_polling_D, type = 'text')
-stargazer(mod_polling_R, type = 'text')
+#stargazer(mod_polling_R, type = 'text')
 ```
+
+The final model combines polling and change in RDI to predict Democratic voteshare.  With an R-sq of 0.88, this is a notable improvement on any of the other models produced so far. Furthermore, both polling and RDI appear to be significant in the model. 
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 ## adjusted polls + fundamentals model
-mod_pollRDI_D <- lm(D_majorvote_pct ~ avg_support + DSPIC_change_pct, data = dat_D)
-mod_pollRDI_R <- lm(R_majorvote_pct ~ avg_support + DSPIC_change_pct, data = dat_R)
+mod_pollRDI_D <- lm(D_majorvote_pct ~ avg_support + DSPIC_change_pct, data = demdata)
+#mod_pollRDI_R <- lm(R_majorvote_pct ~ avg_support + DSPIC_change_pct, data = dat_R)
 stargazer(mod_pollRDI_D, type = 'text')
-stargazer(mod_pollRDI_R, type = 'text')
+#stargazer(mod_pollRDI_R, type = 'text')
 ```
 
 
 ```{r,eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 D2022 <- data.frame(DSPIC_change_pct = c(-2.00319494), avg_support = 45.1)
-R2022 <- data.frame(DSPIC_change_pct = c(-2.00319494), avg_support = 43.8)
+#R2022 <- data.frame(DSPIC_change_pct = c(-2.00319494), avg_support = 43.8)
 
 predict(mod_pollRDI_D, newdata = D2022)
-predict(mod_pollRDI_R, newdata = R2022)
+#predict(mod_pollRDI_R, newdata = R2022)
 ```
 
-
+The combined model now predicts that Democrats will win 55.6% of the two party vote share in the upcoming midterm elections. I believe this is an improvement on the "economy-only" model done last week. 

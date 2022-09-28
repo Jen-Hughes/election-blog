@@ -71,6 +71,7 @@
 <p>538 produces three different models for each prediction — Lite, Classic, and Deluxe. However, each of these models uses polls in slightly different ways. The Lite model is a “polls-only” assessment of the election. In practice, the data is of course a bit more complicated than that with the addition of the CANTOR system to fill in polling gaps, but in essence lite models the relationship between polling and outcome. The Classic version again uses polling but also adds in terms for “the fundamentals” many of which we have already discussed in this blog, like Incumbency and the economy. Silvers doesn’t go into detail about each and every term but notes that “incumbency, past voting history in the state or district, fundraising and the generic ballot” are the most important factors and as such they are weighted to a greater degree than other variables (Silvers 2022). Finally, the deluxe model adds in ratings from elections experts who take a more subjective and qualitative look at predicting individual races.</p>
 <p>The Economist Similarly uses a combination of Polling data and Fundamentals to generate their predictions. The Economist cites the generic-ballot as “the single best indicator” of election outcomes in Congressional races. This is reflected in their model which really centers on the generic ballot and builds out from there to incorporate different variables considered in “the fundamentals.” With the generic ballot base, The Economist then uses individual polls to refine and “nudge” their model to be more accurate (Morris 2020). The Economists model also seems to weight polls conducted closer to the election day more heavily.</p>
 <p>I generally find The Economist’s methodology to be more compelling than 538’s. The Economist seemingly places less value on individual polls and extrapolating (like 538’s CANTOR system). I’m somewhat skeptical about the assertion that what’s true in one district’s individual polls can easily be transferred to similar districts. This is both because the districts where data is readily available are inherently confounded by the fact that they likely either house large universities (who conduct polls) or are particularly competitive.</p>
+<p>Below is a model based on only percent change in RDI from Q7 to Q8. As seen last week, the model paradoxically suggests that an increase in RDI leads to a decrease in Democratic support. This is slightly different than the model buikt last week which looked at the incumbent party. This model instead looks at Democrats only. Modeling in this way makes sense if we believe that Democrats and Republicans are impacted by different variables differently regardless of who is in power. For all models below, I have chosen to look exclusively at midterm election years as the dynamics aty play in an election year are funsamentally differnt than during presidential election years.</p>
 <pre><code>## 
 ## ===============================================
 ##                         Dependent variable:    
@@ -91,26 +92,7 @@
 ## F Statistic              2.556 (df = 1; 8)     
 ## ===============================================
 ## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
-<pre><code>## 
-## ===============================================
-##                         Dependent variable:    
-##                     ---------------------------
-##                           R_majorvote_pct      
-## -----------------------------------------------
-## DSPIC_change_pct               2.910           
-##                               (1.820)          
-##                                                
-## Constant                     47.089***         
-##                               (1.644)          
-##                                                
-## -----------------------------------------------
-## Observations                    10             
-## R2                             0.242           
-## Adjusted R2                    0.147           
-## Residual Std. Error       3.717 (df = 8)       
-## F Statistic              2.556 (df = 1; 8)     
-## ===============================================
-## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<p>I next build a model based on polling only. This shows us that a 1.1 point increase in generic ballot polling translates to a 1 percent increase in actual voteshare. It’s interesting that this relationship isn’t 1-1 given that in an ideal scenario polling would align perfectly with results. Also unlike the RDI model, here we see that polling is considered significant.</p>
 <pre><code>## 
 ## ===============================================
 ##                         Dependent variable:    
@@ -131,26 +113,7 @@
 ## F Statistic            22.969*** (df = 1; 8)   
 ## ===============================================
 ## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
-<pre><code>## 
-## ===============================================
-##                         Dependent variable:    
-##                     ---------------------------
-##                           R_majorvote_pct      
-## -----------------------------------------------
-## avg_support                  1.273***          
-##                               (0.232)          
-##                                                
-## Constant                      -4.482           
-##                               (9.768)          
-##                                                
-## -----------------------------------------------
-## Observations                    10             
-## R2                             0.790           
-## Adjusted R2                    0.763           
-## Residual Std. Error       1.959 (df = 8)       
-## F Statistic            30.017*** (df = 1; 8)   
-## ===============================================
-## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<p>The final model combines polling and change in RDI to predict Democratic voteshare. With an R-sq of 0.88, this is a notable improvement on any of the other models produced so far. Furthermore, both polling and RDI appear to be significant in the model.</p>
 <pre><code>## 
 ## ===============================================
 ##                         Dependent variable:    
@@ -174,33 +137,9 @@
 ## F Statistic            25.191*** (df = 2; 7)   
 ## ===============================================
 ## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
-<pre><code>## 
-## ===============================================
-##                         Dependent variable:    
-##                     ---------------------------
-##                           R_majorvote_pct      
-## -----------------------------------------------
-## avg_support                  1.168***          
-##                               (0.237)          
-##                                                
-## DSPIC_change_pct               1.277           
-##                               (0.977)          
-##                                                
-## Constant                      -0.892           
-##                               (9.755)          
-##                                                
-## -----------------------------------------------
-## Observations                    10             
-## R2                             0.831           
-## Adjusted R2                    0.783           
-## Residual Std. Error       1.877 (df = 7)       
-## F Statistic            17.195*** (df = 2; 7)   
-## ===============================================
-## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
 <pre><code>##        1 
 ## 55.64904</code></pre>
-<pre><code>##        1 
-## 47.72673</code></pre>
+<p>The combined model now predicts that Democrats will win 55.6% of the two party vote share in the upcoming midterm elections. I believe this is an improvement on the “economy-only” model done last week.</p>
 
 
 		
@@ -217,7 +156,7 @@
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2022-09-28 01:11:50.067683 -0400 EDT m=&#43;0.272040236">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2022-09-28 17:19:27.082163 -0400 EDT m=&#43;0.378684778">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
