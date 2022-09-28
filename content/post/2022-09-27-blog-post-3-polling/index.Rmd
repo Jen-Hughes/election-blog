@@ -9,13 +9,13 @@ tags: []
 
 Using Polling to Inform Election Forecasts
 
-Last week, I built a model for the 2022 midterm elections based on the historical relationship between change in Real Disposable Income and election outcome (either Popular Vote Share or Seat Share). While that model was far from perfect and exhibited a great degree of uncertainty, by limiting the data to midterm years only, I was able to raise the r-squared value to 0.47 indicating that change in RDI from Q8-Q7 in an election year has considerable predictive power. But of course, that model left much to be desired suggesting that other predictive variables should be considered to garner more accurate predictions. One of the potential added variables is polling data. 
+Last week, I built a model for the 2022 midterm elections based on the historical relationship between change in Real Disposable Income and election outcome (either Popular Vote Share or Seat Share). While that model was far from perfect and exhibited a great degree of uncertainty, by limiting the data to midterm yebuiars only, I was able to raise the r-squared value to 0.47 indicating that change in RDI from Q8-Q7 in an election year has considerable predictive power. But of course, that model left much to be desired suggesting that other predictive variables should be considered to garner more accurate predictions. One of the potential added variables is polling data. 
 
 Incorporating Polls - 538 vs. The Economist
 
 Similar to the wide array of variables and subsets considered last week when narrowing down an economic variable to model based off of, there is no single way to incorporate polling data into our prediction models. For example, both 538 and The Economist base their models on polling data but the exact methods for how they incorporate polls vary. 
 
-538 produces three different models for each prediction — Lite, Classic, and Deluxe. However, each of these models uses polls in slightly different ways. The Lite model is a “polls-only” assessment of the election.  In practice, the data is of course a bit more complicated than that with the addition of the CANTOR system to fill in polling gaps, but in essence lite models the relationship between polling and outcome.  The Classic version again uses polling but also adds in terms for “the fundamentals” many of which we have already discussed in this blog, like Incumbency and the economy. Silvers doesn’t go into detail about each and every term but notes that “incumbency, past voting history in the state or district, fundraising and the generic ballot” are the most important factors and as such they are weighted to a greater degree than other variables (Silvers 2022). Finally, the deluxe model adds in ratings from elections experts who take a more subjective and qualitative look at predicticting individual races.
+538 produces three different models for each prediction — Lite, Classic, and Deluxe. However, each of these models uses polls in slightly different ways. The Lite model is a “polls-only” assessment of the election.  In practice, the data is of course a bit more complicated than that with the addition of the CANTOR system to fill in polling gaps, but in essence lite models the relationship between polling and outcome.  The Classic version again uses polling but also adds in terms for “the fundamentals” many of which we have already discussed in this blog, like Incumbency and the economy. Silvers doesn’t go into detail about each and every term but notes that “incumbency, past voting history in the state or district, fundraising and the generic ballot” are the most important factors and as such they are weighted to a greater degree than other variables (Silvers 2022). Finally, the deluxe model adds in ratings from elections experts who take a more subjective and qualitative look at predicting individual races.
 
 The Economist Similarly uses a combination of Polling data and Fundamentals to generate their predictions. The Economist cites the generic-ballot as “the single best indicator” of election outcomes in Congressional races. This is reflected in their model which really centers on the generic ballot and builds out from there to incorporate different variables considered in “the fundamentals.” With the generic ballot base, The Economist then uses individual polls to refine and “nudge” their model to be more accurate (Morris 2020). The Economists model also seems to weight polls conducted closer to the election day more heavily.  
 
@@ -27,6 +27,7 @@ library(tidyverse)
 library(ggplot2)
 library(readr)
 library(stargazer)
+library(blogdown)
 ```
 
 ```{r, , eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}

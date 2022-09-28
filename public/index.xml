@@ -6,7 +6,17 @@
     <description>Recent content on Gov 1347 - 2022 Midterm Elections Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog Post 3 - Polling</title>
+      <link>http://example.org/post/2022-09-27-blog-post-3-polling/</link>
+      <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/2022-09-27-blog-post-3-polling/</guid>
+      <description>Using Polling to Inform Election Forecasts
+Last week, I built a model for the 2022 midterm elections based on the historical relationship between change in Real Disposable Income and election outcome (either Popular Vote Share or Seat Share). While that model was far from perfect and exhibited a great degree of uncertainty, by limiting the data to midterm yebuiars only, I was able to raise the r-squared value to 0.</description>
+    </item>
+    
     <item>
       <title>Blog Post 2: Economic Indicators</title>
       <link>http://example.org/post/2022-09-15-blog-post-2/</link>

@@ -309,6 +309,8 @@ mostrecent<- rdi_df %>%
   subset(year == 2022 & quarter_cycle == 5) %>% 
   select(DSPIC_change_pct)
 
+mostrecent
+
 predict(lm_PV, mostrecent, interval="prediction")
 predict(lm_SS, mostrecent, interval="prediction")
 ```
