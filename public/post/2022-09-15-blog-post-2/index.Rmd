@@ -172,6 +172,10 @@ lm_PV <- lm(H_incumbent_party_majorvote_pct ~ DSPIC_change_pct,
 lm_SS <- lm(H_incumbent_seatshare ~ DSPIC_change_pct, 
             data = votedata2)
 
+
+save(votedata2, lm_PV, lm_SS,
+     file = "midtermRDImodel.Rdata")
+
 ```
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
@@ -212,6 +216,8 @@ p4 <- votedata2 %>%
     stat_regline_equation(label.y = 44, aes(label = ..rr.label..))
 
 grid.arrange(p3, p4, ncol=2)
+
+
 ```
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
