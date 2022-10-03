@@ -89,7 +89,7 @@ stargazer(mod_pollRDI_D, type = 'text')
 
 ```{r,eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 D2022 <- data.frame(DSPIC_change_pct = c(-2.00319494), avg_support = 45.1)
-#R2022 <- data.frame(DSPIC_change_pct = c(-2.00319494), avg_support = 43.8)
+#R2022 <- data.frame(DSPIC_change_pct = c(-2.0031bui9494), avg_support = 43.8)
 
 predict(mod_pollRDI_D, newdata = D2022)
 #predict(mod_pollRDI_R, newdata = R2022)

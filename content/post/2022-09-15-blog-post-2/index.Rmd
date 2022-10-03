@@ -73,6 +73,8 @@ allvotedata2 <- allvotedata %>%
     select('year', 'winner_party', 'H_incumbent_party', 'H_incumbent_party_majorvote_pct', 
            'quarter_cycle', 'DSPIC_change_pct', 'H_incumbent_seatshare') %>%
     filter(quarter_cycle == 8) 
+
+write.csv(allvotedata, "~/Documents/allvotedata.csv")
 ```
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
