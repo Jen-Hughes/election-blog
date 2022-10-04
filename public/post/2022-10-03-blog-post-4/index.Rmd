@@ -1,0 +1,316 @@
+---
+title: Blog Post 4
+author: 'Jen Hughes '
+date: '2022-10-03'
+slug: []
+categories: []
+tags: []
+---
+```{r}
+library(knitr)
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(lubridate)
+library(ggrepel)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+library(stringr)
+```
+
+This week's blog aims to look at the accuracy of expert ratings and how they can be incorporated into our model.  I also begin modeling at the district level as opposed to the national models I have worked on over the last three weeks. 
+I began by mapping the Democratic vote share in the 2018 midterm election cycle at the district level.
+```{r}
+historical <- read_csv("house party vote share by district 1948-2020 copy.csv") %>%
+   clean_names()
+
+#subset for district level democratic vote share in 2018
+dem_2018 <- historical %>% 
+  select(race_year, state, area, dem_votes_major_percent, rep_votes_major_percent, rep_votes, dem_votes, rep_status, dem_status, winner_party) %>% 
+  rename("year" = "race_year") %>% 
+  filter(year == 2018) %>%
+  separate(area, into = c("area", "district"), sep = " ") %>% 
+  select(-area) %>% 
+  mutate(district = case_when(
+    district == "Large" ~ "AL",
+    TRUE ~ district
+  ))
+
+#reformat single district states 
+dem_2018$district[is.na(dem_2018$district)] = 1
+
+
+dem_2018 <- dem_2018 %>%
+   mutate(district = case_when(
+    district == "AL" ~ "1",
+    TRUE ~ district
+  ))
+
+#change class
+dem_2018$district <- as.numeric(dem_2018$district)
+```
+
+```{r}
+cd116 <- congressional_districts(
+  state = NULL,
+  cb = FALSE,
+  resolution = "500k",
+  year = 2018)
+
+cd116 <- cd116 %>%
+  rename("state" = "STATEFP")
+  
+state <- read_csv("us-state.csv")
+
+state <- state %>%
+  rename("state" = "st")
+
+district <- cd116 %>%
+  left_join(state, by = "state")
+  
+district2 <- district %>%
+  select(-c("state")) %>%
+  rename("state" = "stname", "district" = "CD116FP", "st" = "stusps")
+
+district2$district <- as.numeric(district2$district)
+
+district2 <- district2 %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  ))
+
+#merge data 
+alldata <- district2 %>%
+  left_join(dem_2018, by = c("state", "district"))
+
+#simplifiy for plot
+simpdata <- alldata %>%
+  filter(state != "Alaska", state != "Hawaii") %>%
+  #rename("st" = "stusps") %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  )) %>%
+  ms_simplify()
+
+simpdata$district <- as.numeric(simpdata$district)
+
+#Plot Dem voteshare by district in 2018
+ggplot() + 
+  geom_sf(data=simpdata,aes(fill=dem_votes_major_percent),
+          inherit.aes=FALSE,alpha=0.9) + 
+  scale_fill_gradient(low = "white", high = "dodger blue", limits=c(0,100), name = "Vote Share Percentage") +
+  theme_void() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  labs(title = "Democratic Vote Share in 2018 Midterms")
+```
+
+I then mapped expert prediction at the district level where the range of ratings (Safe R, Likely R, Lean R, Toss Up, Lean D, Likely D, Safe D) corresponds to a value 1-7 with 1 being a safe Democratic seat and 7 being a safe Republican seat. 
+```{r}
+#load in expert prediction data 
+allexpert <- read_csv("2018_ratings_share.csv")
+
+#reformat + remove HI and AL for mapping
+allexpert <- allexpert %>%
+  separate(District, into = c("state", "district"), sep = "-") %>%
+  filter(state != "Alaska", state != "Hawaii") %>%
+  rename("st" = "state") %>%
+  select(st, district, avg)
+
+#change class
+allexpert$district <- as.numeric(allexpert$district)
+
+comp <- allexpert %>%
+  left_join(simpdata, by = c("st", "district")) %>% 
+  st_as_sf()
+
+
+# Plot based on  expert prediction
+#1 = Safe Dem, 7 = Safe Rep
+ggplot() + 
+  geom_sf(data=comp, aes(fill=avg),
+          inherit.aes=FALSE,alpha=0.9) + 
+  scale_fill_gradient2(low = "dodger blue", mid = "white",  high = "red", limits=c(1, 7), midpoint = 4, name = "Expert Prediction\n1 = Safe D\n7 = Safe Rep") +
+  labs(title = "Predicted Democratic Vote Share in 2018 Midterms") +
+  theme_void() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+```
+
+In order to evaluate the 2018 expert predictions, I compared the predicted outcome with the actual 2018 outcomes.  I isolated the districts where the predicted winning party based on the average expert rating combining predictions from Cook, Inside Elections, and Crystal Ball, differed from the actual winner.  I found 13 districts that were predicted incorrectly. 4 districts were predicted to go to Democrats but were actually won by Republicans while 9 districts predicted to go to Republicans went to Democrats.  This makes initial sense given that 2018 was widely regarded as a "Blue Wave" year so we should expect to see more upsets in favor of Democrats than Republicans.  Additionally, all 13 cases that were predicted incorrectly involved Democratic challengers. This may imply that there was something systematically off in expert predictions involving Democratic challengers that caused experts to overestimate the performance of some challengers while underestimating the performance of other Democratic challengers. 
+
+```{r}
+comp <- comp %>%
+  mutate(pred = case_when(avg <= 4 ~ "D", TRUE ~ "R"))
+
+comp <- comp %>%
+  mutate(correct = case_when(pred == winner_party ~ 1, TRUE ~ 0))  
+
+ggplot() + 
+  geom_sf(data=comp, aes(fill=correct)) + 
+  scale_fill_steps(breaks = waiver(), low = "red", high = "white", name = "Correct = White\nIncorrect = Red") +
+  labs(title = "Where Were Experts Wrong?") +
+  theme_void() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+wrongpred <- comp %>% 
+  filter(correct == 0) %>% 
+  select(st, district, pred, winner_party, dem_status) %>% 
+  drop_na()
+```
+
+```{r}
+mod_expert_D <- lm(dem_votes_major_percent ~ avg, data = comp)
+stargazer(mod_expert_D, type = 'text')
+```
+
+
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+# Reading in the data
+# expert_ratings <- read_csv("expert_rating.csv")
+# historical_results <- read_csv("house party vote share by district 1948-2020 copy.csv") %>% 
+#   clean_names()
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+# Selecting columns
+# avg_ratings <- expert_ratings %>% 
+#  select(year, state, district, avg_rating)
+
+#dem_results <- historical_results %>% 
+#  select(race_year, state, area, dem_votes_major_percent) %>% 
+#  rename("year" = "race_year") %>% 
+#  separate(area, into = c("area", "district"), sep = " ") %>% 
+#  select(-area) %>% 
+ # mutate(district = case_when(
+ #   district == "Large" ~ "AL",
+ #   TRUE ~ district
+#  ))
+
+# Joining the data and nesting by state and district
+#train_data <- avg_ratings %>% 
+#  filter(year != 2022) %>% 
+  # left join as there aren't ratings for every district
+#  left_join(dem_results, by = c("year", "state", "district")) %>% 
+#  group_by(state, district) %>% 
+#  filter(n() > 1) %>% # Filtering out single data rows
+#  group_nest() %>% 
+#  mutate(data = map(data, ~unnest(., cols = c())))
+
+#test_data <- avg_ratings %>% 
+#  filter(year == 2022) %>% 
+#  group_by(state, district) %>% 
+#  group_nest() %>% 
+#  mutate(data = map(data, ~unnest(., cols = c())))
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+# Building TERRIBLE models
+# models <- train_data %>% 
+##  mutate(model = map(data, ~lm(dem_votes_major_percent ~ avg_rating, 
+ #                                 data = .x))) %>% 
+ # select(-data)
+
+# Extracting TERRIBLE model results
+ # model_results <- models %>% 
+#  mutate(r_squared = map_dbl(model, ~summary(.x)$r.squared))
+
+# Predicting 2022 with a TERRIBLE model
+# pred_2022 <- test_data %>%
+  # inner join as there may not be historical models for some districts
+ # inner_join(models, by = c("state", "district")) %>% 
+ # mutate(pred = map_dbl(.x = model, .y = data, ~predict(object = .x, newdata = as.data.frame(.y)))) %>%
+ # select(state, district, pred)
+```
+
+ 
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#LOAD IN REQUISITE DATA SETS
+#dist_polls_2018_2022 <- read_csv("dist_polls_2018-2022.csv")
+
+# expert_ratings <- read_csv("expert_rating.csv")
+
+# historical_results <- read_csv("house party vote share by district 1948-2020 copy.csv") %>% 
+# clean_names()
+
+# incumb_dist_1948_2022_2_ <- read_csv("incumb_dist_1948-2020 (3).csv")
+
+# roper_cong_polls_1979_2022 <- read_csv("roper_cong_polls_1979-2022.csv")
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+# Selecting columns
+# avg_ratings <- expert_ratings %>% 
+# select(year, state, district, avg_rating)
+
+
+# historical_results_clean <- historical_results %>%
+#  mutate(dem_status = case_when(dem_status == "Incumbent" ~ 1,TRUE ~ 0))
+
+# dem_results <- historical_results_clean %>% 
+#  select(race_year, state, area, dem_votes_major_percent, dem_status) %>% 
+ #  rename("year" = "race_year") %>% 
+ #  separate(area, into = c("area", "district"), sep = " ") %>% 
+#   select(-area) %>% 
+#  mutate(district = case_when(
+ # district == "Large" ~ "AL",
+#  TRUE ~ district))
+
+# Joining the data and nesting by state and district
+# train_data <- avg_ratings %>% 
+ # filter(year != 2022) %>% 
+
+  # left join as there aren't ratings for every district
+ # left_join(dem_results, by = c("year", "state", "district")) %>% 
+ # group_by(state, district) %>% 
+ # filter(n() > 1) %>% # Filtering out single data rows
+ # group_nest() %>% 
+ # mutate(data = map(data, ~unnest(., cols = c())))
+
+
+# test_data <- avg_ratings %>% 
+#   filter(year == 2022) %>% 
+#   group_by(state, district) %>% 
+#   group_nest() %>% 
+ # mutate(data = map(data, ~unnest(., cols = c())))
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#models <- train_data %>% 
+# mutate(model = map(data, ~lm(dem_votes_major_percent ~ avg_rating + dem_status,data = .x))) %>%
+ # select(-data)
+
+# model_results <- models %>% 
+  # mutate(r_squared = map_dbl(model, ~summary(.x)$r.squared))
+
+
+# pred_2022 <- test_data %>%
+
+# inner join as there may not be historical models for some districts
+ # inner_join(models, by = c("state", "district")) %>% 
+ # mutate(pred = map_dbl(.x = model, .y = data, ~predict(object = .x, newdata = as.data.frame(.y)))) %>%
+ # select(state, district, pred)
+```
+
