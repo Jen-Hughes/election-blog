@@ -6,7 +6,7 @@ slug: []
 categories: []
 tags: []
 ---
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 library(knitr)
 library(tidyverse)
 library(ggplot2)
@@ -26,7 +26,7 @@ library(stringr)
 
 This week's blog aims to look at the accuracy of expert ratings and how they can be incorporated into our model.  I also begin modeling at the district level as opposed to the national models I have worked on over the last three weeks. 
 I began by mapping the Democratic vote share in the 2018 midterm election cycle at the district level.
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 historical <- read_csv("house party vote share by district 1948-2020 copy.csv") %>%
    clean_names()
 
@@ -56,7 +56,7 @@ dem_2018 <- dem_2018 %>%
 dem_2018$district <- as.numeric(dem_2018$district)
 ```
 
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 cd116 <- congressional_districts(
   state = NULL,
   cb = FALSE,
@@ -118,7 +118,7 @@ ggplot() +
 ```
 
 I then mapped expert prediction at the district level where the range of ratings (Safe R, Likely R, Lean R, Toss Up, Lean D, Likely D, Safe D) corresponds to a value 1-7 with 1 being a safe Democratic seat and 7 being a safe Republican seat. 
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #load in expert prediction data 
 allexpert <- read_csv("2018_ratings_share.csv")
 
@@ -155,7 +155,7 @@ ggplot() +
 
 In order to evaluate the 2018 expert predictions, I compared the predicted outcome with the actual 2018 outcomes.  I isolated the districts where the predicted winning party based on the average expert rating combining predictions from Cook, Inside Elections, and Crystal Ball, differed from the actual winner.  I found 13 districts that were predicted incorrectly. 4 districts were predicted to go to Democrats but were actually won by Republicans while 9 districts predicted to go to Republicans went to Democrats.  This makes initial sense given that 2018 was widely regarded as a "Blue Wave" year so we should expect to see more upsets in favor of Democrats than Republicans.  Additionally, all 13 cases that were predicted incorrectly involved Democratic challengers. This may imply that there was something systematically off in expert predictions involving Democratic challengers that caused experts to overestimate the performance of some challengers while underestimating the performance of other Democratic challengers. 
 
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 comp <- comp %>%
   mutate(pred = case_when(avg <= 4 ~ "D", TRUE ~ "R"))
 
@@ -180,7 +180,7 @@ wrongpred <- comp %>%
   drop_na()
 ```
 
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 mod_expert_D <- lm(dem_votes_major_percent ~ avg, data = comp)
 stargazer(mod_expert_D, type = 'text')
 ```
