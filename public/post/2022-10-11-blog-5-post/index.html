@@ -64,196 +64,11 @@
 		
 
 
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──</code></pre>
-<pre><code>## ✓ ggplot2 3.3.6     ✓ purrr   0.3.4
-## ✓ tibble  3.1.6     ✓ dplyr   1.0.7
-## ✓ tidyr   1.1.4     ✓ stringr 1.4.0
-## ✓ readr   2.1.1     ✓ forcats 0.5.1</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(stargazer)</code></pre>
-<pre><code>## 
-## Please cite as:</code></pre>
-<pre><code>##  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
-<pre><code>##  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer</code></pre>
-<pre class="r"><code>library(janitor)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;janitor&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     chisq.test, fisher.test</code></pre>
-<pre class="r"><code>library(readxl)
-library(tidyverse)
-library(ggplot2)
-library(blogdown)
-library(stargazer)
-library(readr)
-library(usmap)
-library(rmapshaper)</code></pre>
-<pre><code>## Registered S3 method overwritten by &#39;geojsonlint&#39;:
-##   method         from 
-##   print.location dplyr</code></pre>
-<pre class="r"><code>library(sf)</code></pre>
-<pre><code>## Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.1.1; sf_use_s2() is TRUE</code></pre>
-<pre class="r"><code>library(janitor)
-library(tigris)</code></pre>
-<pre><code>## To enable caching of data, set `options(tigris_use_cache = TRUE)`
-## in your R script or .Rprofile.</code></pre>
-<pre class="r"><code>library(leaflet)</code></pre>
 <p>Introduction:
 This week we transitioned away from studying “The Fundamentals” of elections and turned to focus more precisely on studying campaigns themselves. We began our exploration of campaign outreach by examining the impact of ads in shaping election outcomes.</p>
 <p>Blog Extension:</p>
 <p>Model Update:</p>
 <p>In this week’s model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a seperate model for safe congressional seats.</p>
-<pre class="r"><code>#creating testdata
-test2022attempt &lt;- avg_ratings %&gt;%
-  mutate(dem_status = 1)
-test_data &lt;- test2022attempt %&gt;% 
-  filter(year == 2022) %&gt;% 
-  group_by(state, district) %&gt;% 
-  group_nest() %&gt;% 
-  mutate(datad = map(data, ~unnest(., cols = c())))
-#predictions 2022 of demvotes with all dem_status = 1 for incumbent
-pred_2022 &lt;- test_data %&gt;%
-  # inner join as there may not be historical models for some districts
-  inner_join(modelsdem, by = c(&quot;state&quot;, &quot;district&quot;)) %&gt;% 
-  mutate(pred = map_dbl(.x = modeldem, .y = datad, ~predict(object = .x, newdata = as.data.frame(.y)))) %&gt;%
-  select(state, district, pred)</code></pre>
-<pre><code>## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading
-
-## Warning in predict.lm(object = .x, newdata = as.data.frame(.y)): prediction from
-## a rank-deficient fit may be misleading</code></pre>
-<pre class="r"><code>#print(pred_2022)</code></pre>
 <pre><code>## 
   |                                                                            
   |                                                                      |   0%
@@ -267,6 +82,8 @@ pred_2022 &lt;- test_data %&gt;%
   |==                                                                    |   2%
   |                                                                            
   |==                                                                    |   3%
+  |                                                                            
+  |==                                                                    |   4%
   |                                                                            
   |===                                                                   |   4%
   |                                                                            
@@ -318,8 +135,6 @@ pred_2022 &lt;- test_data %&gt;%
   |                                                                            
   |=============                                                         |  18%
   |                                                                            
-  |=============                                                         |  19%
-  |                                                                            
   |==============                                                        |  19%
   |                                                                            
   |==============                                                        |  20%
@@ -366,8 +181,6 @@ pred_2022 &lt;- test_data %&gt;%
   |                                                                            
   |=======================                                               |  33%
   |                                                                            
-  |=======================                                               |  34%
-  |                                                                            
   |========================                                              |  34%
   |                                                                            
   |========================                                              |  35%
@@ -409,8 +222,6 @@ pred_2022 &lt;- test_data %&gt;%
   |================================                                      |  45%
   |                                                                            
   |================================                                      |  46%
-  |                                                                            
-  |=================================                                     |  46%
   |                                                                            
   |=================================                                     |  47%
   |                                                                            
@@ -468,6 +279,8 @@ pred_2022 &lt;- test_data %&gt;%
   |                                                                            
   |============================================                          |  63%
   |                                                                            
+  |============================================                          |  64%
+  |                                                                            
   |=============================================                         |  64%
   |                                                                            
   |=============================================                         |  65%
@@ -490,8 +303,6 @@ pred_2022 &lt;- test_data %&gt;%
   |                                                                            
   |=================================================                     |  70%
   |                                                                            
-  |=================================================                     |  71%
-  |                                                                            
   |==================================================                    |  71%
   |                                                                            
   |==================================================                    |  72%
@@ -510,8 +321,6 @@ pred_2022 &lt;- test_data %&gt;%
   |                                                                            
   |=====================================================                 |  76%
   |                                                                            
-  |======================================================                |  76%
-  |                                                                            
   |======================================================                |  77%
   |                                                                            
   |======================================================                |  78%
@@ -519,8 +328,6 @@ pred_2022 &lt;- test_data %&gt;%
   |=======================================================               |  78%
   |                                                                            
   |=======================================================               |  79%
-  |                                                                            
-  |========================================================              |  79%
   |                                                                            
   |========================================================              |  80%
   |                                                                            
@@ -543,8 +350,6 @@ pred_2022 &lt;- test_data %&gt;%
   |============================================================          |  85%
   |                                                                            
   |============================================================          |  86%
-  |                                                                            
-  |=============================================================         |  86%
   |                                                                            
   |=============================================================         |  87%
   |                                                                            
@@ -593,10 +398,6 @@ pred_2022 &lt;- test_data %&gt;%
   |======================================================================| 100%</code></pre>
 <p><img src="http://example.org/post/2022-10-11-blog-5-post/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 <p>To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 us a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share. Based on the two previous election cycles in this district, this vote share would be sufficient to win teh seat, topping the Republic in vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas’ wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%).</p>
-<pre class="r"><code>NH1 &lt;- pred_2022 %&gt;% 
-  filter(state == &quot;New Hampshire&quot; &amp; district == &quot;1&quot;)
-
-NH1</code></pre>
 <pre><code>## # A tibble: 1 × 3
 ##   state         district  pred
 ##   &lt;chr&gt;            &lt;dbl&gt; &lt;dbl&gt;
@@ -619,7 +420,7 @@ All data used for these predictions was provided curtosy of the Election 1347 te
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2022-10-11 11:28:48.078618 -0400 EDT m=&#43;0.323513447">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2022-10-11 12:13:02.034992 -0400 EDT m=&#43;0.265354346">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

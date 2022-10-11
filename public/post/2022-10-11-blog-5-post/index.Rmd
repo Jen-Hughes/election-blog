@@ -8,7 +8,7 @@ tags: []
 ---
 
 
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 library(tidyverse)
 library(ggplot2)
 library(stargazer)
@@ -118,7 +118,7 @@ modelsnoincumbent_results <- modelsnoincumbent %>%
  ## mutate(r_squared = map_dbl(modelrep, ~summary(.x)$r.squared))
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #creating testdata
 test2022attempt <- avg_ratings %>%
   mutate(dem_status = 1)
@@ -219,7 +219,7 @@ ggplot() +
 
 To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 us a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share.  Based on the two previous election cycles in this district, this vote share would be sufficient to win teh seat, topping the Republic in vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas' wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%). 
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 NH1 <- pred_2022 %>% 
   filter(state == "New Hampshire" & district == "1")
 
