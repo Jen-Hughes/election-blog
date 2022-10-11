@@ -9,91 +9,8 @@ tags: []
 
 
 
-<pre class="r"><code>library(knitr)
-library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──</code></pre>
-<pre><code>## ✓ ggplot2 3.3.6     ✓ purrr   0.3.4
-## ✓ tibble  3.1.6     ✓ dplyr   1.0.7
-## ✓ tidyr   1.1.4     ✓ stringr 1.4.0
-## ✓ readr   2.1.1     ✓ forcats 0.5.1</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(ggplot2)
-library(blogdown)
-library(stargazer)</code></pre>
-<pre><code>## 
-## Please cite as:</code></pre>
-<pre><code>##  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
-<pre><code>##  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer</code></pre>
-<pre class="r"><code>library(readr)
-library(lubridate)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;lubridate&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     date, intersect, setdiff, union</code></pre>
-<pre class="r"><code>library(ggrepel)
-library(usmap)
-library(rmapshaper)</code></pre>
-<pre><code>## Registered S3 method overwritten by &#39;geojsonlint&#39;:
-##   method         from 
-##   print.location dplyr</code></pre>
-<pre class="r"><code>library(sf)</code></pre>
-<pre><code>## Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.1.1; sf_use_s2() is TRUE</code></pre>
-<pre class="r"><code>library(janitor)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;janitor&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     chisq.test, fisher.test</code></pre>
-<pre class="r"><code>library(tigris)</code></pre>
-<pre><code>## To enable caching of data, set `options(tigris_use_cache = TRUE)`
-## in your R script or .Rprofile.</code></pre>
-<pre class="r"><code>library(leaflet)
-library(stringr)</code></pre>
 <p>This week’s blog aims to look at the accuracy of expert ratings and how they can be incorporated into our model. I also begin modeling at the district level as opposed to the national models I have worked on over the last three weeks.
 I began by mapping the Democratic vote share in the 2018 midterm election cycle at the district level.</p>
-<pre class="r"><code>historical &lt;- read_csv(&quot;house party vote share by district 1948-2020 copy.csv&quot;) %&gt;%
-   clean_names()</code></pre>
-<pre><code>## Rows: 16067 Columns: 31</code></pre>
-<pre><code>## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr (16): Office, State, Area, RepCandidate, RepStatus, DemCandidate, DemSta...
-## dbl (14): raceYear, RepVotes, DemVotes, ThirdVotes, OtherVotes, PluralityVot...
-## lgl  (1): CensusPop</code></pre>
-<pre><code>## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<pre class="r"><code>#subset for district level democratic vote share in 2018
-dem_2018 &lt;- historical %&gt;% 
-  select(race_year, state, area, dem_votes_major_percent, rep_votes_major_percent, rep_votes, dem_votes, rep_status, dem_status, winner_party) %&gt;% 
-  rename(&quot;year&quot; = &quot;race_year&quot;) %&gt;% 
-  filter(year == 2018) %&gt;%
-  separate(area, into = c(&quot;area&quot;, &quot;district&quot;), sep = &quot; &quot;) %&gt;% 
-  select(-area) %&gt;% 
-  mutate(district = case_when(
-    district == &quot;Large&quot; ~ &quot;AL&quot;,
-    TRUE ~ district
-  ))
-
-#reformat single district states 
-dem_2018$district[is.na(dem_2018$district)] = 1
-
-
-dem_2018 &lt;- dem_2018 %&gt;%
-   mutate(district = case_when(
-    district == &quot;AL&quot; ~ &quot;1&quot;,
-    TRUE ~ district
-  ))
-
-#change class
-dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
-<pre class="r"><code>cd116 &lt;- congressional_districts(
-  state = NULL,
-  cb = FALSE,
-  resolution = &quot;500k&quot;,
-  year = 2018)</code></pre>
 <pre><code>## 
   |                                                                            
   |                                                                      |   0%
@@ -107,6 +24,8 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |==                                                                    |   2%
   |                                                                            
   |==                                                                    |   3%
+  |                                                                            
+  |==                                                                    |   4%
   |                                                                            
   |===                                                                   |   4%
   |                                                                            
@@ -140,8 +59,6 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |                                                                            
   |=========                                                             |  13%
   |                                                                            
-  |=========                                                             |  14%
-  |                                                                            
   |==========                                                            |  14%
   |                                                                            
   |==========                                                            |  15%
@@ -163,8 +80,6 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |==============                                                        |  19%
   |                                                                            
   |==============                                                        |  20%
-  |                                                                            
-  |==============                                                        |  21%
   |                                                                            
   |===============                                                       |  21%
   |                                                                            
@@ -198,17 +113,11 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |                                                                            
   |=====================                                                 |  30%
   |                                                                            
-  |=====================                                                 |  31%
-  |                                                                            
   |======================                                                |  31%
   |                                                                            
   |======================                                                |  32%
   |                                                                            
-  |=======================                                               |  32%
-  |                                                                            
   |=======================                                               |  33%
-  |                                                                            
-  |=======================                                               |  34%
   |                                                                            
   |========================                                              |  34%
   |                                                                            
@@ -238,11 +147,7 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |                                                                            
   |=============================                                         |  42%
   |                                                                            
-  |==============================                                        |  42%
-  |                                                                            
   |==============================                                        |  43%
-  |                                                                            
-  |==============================                                        |  44%
   |                                                                            
   |===============================                                       |  44%
   |                                                                            
@@ -286,8 +191,6 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |                                                                            
   |=======================================                               |  56%
   |                                                                            
-  |========================================                              |  56%
-  |                                                                            
   |========================================                              |  57%
   |                                                                            
   |========================================                              |  58%
@@ -310,8 +213,6 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |                                                                            
   |============================================                          |  63%
   |                                                                            
-  |============================================                          |  64%
-  |                                                                            
   |=============================================                         |  64%
   |                                                                            
   |=============================================                         |  65%
@@ -319,8 +220,6 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |==============================================                        |  65%
   |                                                                            
   |==============================================                        |  66%
-  |                                                                            
-  |===============================================                       |  66%
   |                                                                            
   |===============================================                       |  67%
   |                                                                            
@@ -422,8 +321,6 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |                                                                            
   |===================================================================   |  96%
   |                                                                            
-  |====================================================================  |  96%
-  |                                                                            
   |====================================================================  |  97%
   |                                                                            
   |====================================================================  |  98%
@@ -435,133 +332,11 @@ dem_2018$district &lt;- as.numeric(dem_2018$district)</code></pre>
   |======================================================================|  99%
   |                                                                            
   |======================================================================| 100%</code></pre>
-<pre class="r"><code>cd116 &lt;- cd116 %&gt;%
-  rename(&quot;state&quot; = &quot;STATEFP&quot;)
-  
-state &lt;- read_csv(&quot;us-state.csv&quot;)</code></pre>
-<pre><code>## Rows: 51 Columns: 3</code></pre>
-<pre><code>## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr (3): stname, st, stusps</code></pre>
-<pre><code>## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<pre class="r"><code>state &lt;- state %&gt;%
-  rename(&quot;state&quot; = &quot;st&quot;)
-
-district &lt;- cd116 %&gt;%
-  left_join(state, by = &quot;state&quot;)
-  
-district2 &lt;- district %&gt;%
-  select(-c(&quot;state&quot;)) %&gt;%
-  rename(&quot;state&quot; = &quot;stname&quot;, &quot;district&quot; = &quot;CD116FP&quot;, &quot;st&quot; = &quot;stusps&quot;)
-
-district2$district &lt;- as.numeric(district2$district)</code></pre>
-<pre><code>## Warning: NAs introduced by coercion</code></pre>
-<pre class="r"><code>district2 &lt;- district2 %&gt;%
-  mutate(district = case_when(
-    district == 0 ~ 1,
-    TRUE ~ district
-  ))
-
-#merge data 
-alldata &lt;- district2 %&gt;%
-  left_join(dem_2018, by = c(&quot;state&quot;, &quot;district&quot;))
-
-#simplifiy for plot
-simpdata &lt;- alldata %&gt;%
-  filter(state != &quot;Alaska&quot;, state != &quot;Hawaii&quot;) %&gt;%
-  #rename(&quot;st&quot; = &quot;stusps&quot;) %&gt;%
-  mutate(district = case_when(
-    district == 0 ~ 1,
-    TRUE ~ district
-  )) %&gt;%
-  ms_simplify()
-
-simpdata$district &lt;- as.numeric(simpdata$district)
-
-#Plot Dem voteshare by district in 2018
-ggplot() + 
-  geom_sf(data=simpdata,aes(fill=dem_votes_major_percent),
-          inherit.aes=FALSE,alpha=0.9) + 
-  scale_fill_gradient(low = &quot;white&quot;, high = &quot;dodger blue&quot;, limits=c(0,100), name = &quot;Vote Share Percentage&quot;) +
-  theme_void() +
-  theme(axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        axis.title.y=element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank()) +
-  labs(title = &quot;Democratic Vote Share in 2018 Midterms&quot;)</code></pre>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
-<p>I then mapped expert prediction at the district level where the range of ratings (Safe R, Likely R, Lean R, Toss Up, Lean D, Likely D, Safe D) corresponds to a value 1-7 with 1 being a safe Democratic seat and 7 being a safe Republican seat.</p>
-<pre class="r"><code>#load in expert prediction data 
-allexpert &lt;- read_csv(&quot;2018_ratings_share.csv&quot;)</code></pre>
-<pre><code>## New names:
-## * `` -&gt; ...1</code></pre>
-<pre><code>## Rows: 435 Columns: 9</code></pre>
-<pre><code>## ── Column specification ────────────────────────────────────────────────────────
-## Delimiter: &quot;,&quot;
-## chr (4): District, cpr, inside_elections, crystal_ball
-## dbl (5): ...1, cpr_num, inside_elections_num, crystal_ball_num, avg</code></pre>
-<pre><code>## 
-## ℹ Use `spec()` to retrieve the full column specification for this data.
-## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-<pre class="r"><code>#reformat + remove HI and AL for mapping
-allexpert &lt;- allexpert %&gt;%
-  separate(District, into = c(&quot;state&quot;, &quot;district&quot;), sep = &quot;-&quot;) %&gt;%
-  filter(state != &quot;Alaska&quot;, state != &quot;Hawaii&quot;) %&gt;%
-  rename(&quot;st&quot; = &quot;state&quot;) %&gt;%
-  select(st, district, avg)
-
-#change class
-allexpert$district &lt;- as.numeric(allexpert$district)
-
-comp &lt;- allexpert %&gt;%
-  left_join(simpdata, by = c(&quot;st&quot;, &quot;district&quot;)) %&gt;% 
-  st_as_sf()
-
-
-# Plot based on  expert prediction
-#1 = Safe Dem, 7 = Safe Rep
-ggplot() + 
-  geom_sf(data=comp, aes(fill=avg),
-          inherit.aes=FALSE,alpha=0.9) + 
-  scale_fill_gradient2(low = &quot;dodger blue&quot;, mid = &quot;white&quot;,  high = &quot;red&quot;, limits=c(1, 7), midpoint = 4, name = &quot;Expert Prediction\n1 = Safe D\n7 = Safe Rep&quot;) +
-  labs(title = &quot;Predicted Democratic Vote Share in 2018 Midterms&quot;) +
-  theme_void() +
-  theme(axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        axis.title.y=element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank())</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>I then mapped expert prediction at the district level where the range of ratings (Safe R, Likely R, Lean R, Toss Up, Lean D, Likely D, Safe D) corresponds to a value 1-7 with 1 being a safe Democratic seat and 7 being a safe Republican seat.
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p>In order to evaluate the 2018 expert predictions, I compared the predicted outcome with the actual 2018 outcomes. I isolated the districts where the predicted winning party based on the average expert rating combining predictions from Cook, Inside Elections, and Crystal Ball, differed from the actual winner. I found 13 districts that were predicted incorrectly. 4 districts were predicted to go to Democrats but were actually won by Republicans while 9 districts predicted to go to Republicans went to Democrats. This makes initial sense given that 2018 was widely regarded as a “Blue Wave” year so we should expect to see more upsets in favor of Democrats than Republicans. Additionally, all 13 cases that were predicted incorrectly involved Democratic challengers. This may imply that there was something systematically off in expert predictions involving Democratic challengers that caused experts to overestimate the performance of some challengers while underestimating the performance of other Democratic challengers.</p>
-<pre class="r"><code>comp &lt;- comp %&gt;%
-  mutate(pred = case_when(avg &lt;= 4 ~ &quot;D&quot;, TRUE ~ &quot;R&quot;))
-
-comp &lt;- comp %&gt;%
-  mutate(correct = case_when(pred == winner_party ~ 1, TRUE ~ 0))  
-
-ggplot() + 
-  geom_sf(data=comp, aes(fill=correct)) + 
-  scale_fill_steps(breaks = waiver(), low = &quot;red&quot;, high = &quot;white&quot;, name = &quot;Correct = White\nIncorrect = Red&quot;) +
-  labs(title = &quot;Where Were Experts Wrong?&quot;) +
-  theme_void() +
-  theme(axis.title.x=element_blank(),
-        axis.text.x=element_blank(),
-        axis.ticks.x=element_blank(),
-        axis.title.y=element_blank(),
-        axis.text.y=element_blank(),
-        axis.ticks.y=element_blank())</code></pre>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<pre class="r"><code>wrongpred &lt;- comp %&gt;% 
-  filter(correct == 0) %&gt;% 
-  select(st, district, pred, winner_party, dem_status) %&gt;% 
-  drop_na()</code></pre>
-<pre class="r"><code>mod_expert_D &lt;- lm(dem_votes_major_percent ~ avg, data = comp)
-stargazer(mod_expert_D, type = &#39;text&#39;)</code></pre>
 <pre><code>## 
 ## ===============================================
 ##                         Dependent variable:    

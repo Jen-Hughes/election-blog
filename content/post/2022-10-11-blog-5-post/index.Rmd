@@ -1,0 +1,230 @@
+---
+title: Blog 5 Post
+author: Jen Hughes
+date: '2022-10-11'
+slug: []
+categories: []
+tags: []
+---
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(stargazer)
+library(janitor)
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+```
+
+Introduction:
+This week we transitioned away from studying "The Fundamentals" of elections and turned to focus more precisely on studying campaigns themselves. We began our exploration of campaign outreach by examining the impact of ads in shaping election outcomes.  
+
+Blog Extension:
+
+
+Model Update: 
+
+In this week's model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a seperate model for safe congressional seats.  
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#LOAD IN REQUISITE DATA SETS
+expert_ratings <- read_csv("expert_rating.csv")
+historical_results <- read_csv("house party vote share by district 1948-2020.csv") %>%
+  clean_names()
+incumb_dist_1948_2022_2_ <- read_csv("incumb_dist_1948-2020 (2).csv")
+roper_cong_polls_1979_2022 <- read_csv("roper_cong_polls_1979-2022.csv")
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+
+# Selecting columns
+avg_ratings <- expert_ratings %>% 
+  select(year, state, district, avg_rating)
+historical_results_clean <- historical_results %>%
+  mutate(dem_status = case_when(dem_status == "Incumbent" ~ 1, TRUE ~ 0),
+    rep_status = case_when(rep_status == "Incumbent" ~ 1, TRUE ~ 0))
+
+dem_results <- historical_results_clean %>% 
+  select(race_year, state, area, dem_votes_major_percent, dem_status) %>% 
+  rename("year" = "race_year") %>% 
+  separate(area, into = c("area", "district"), sep = " ") %>% 
+  select(-area) %>% 
+  mutate(district = case_when(
+    district == "Large" ~ "AL",
+    TRUE ~ district))
+
+#rep_results <- historical_results_clean %>% 
+ # select(race_year, state, area, rep_votes_major_percent, rep_status) %>% 
+ # rename("year" = "race_year") %>% 
+  #separate(area, into = c("area", "district"), sep = " ") %>% 
+  #select(-area) %>% 
+ # mutate(district = case_when(
+  #  district == "Large" ~ "AL",
+ #   TRUE ~ district
+  #))
+```
+
+```{r,eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+
+# Joining the data and nesting by state and district
+train_data_dem <- avg_ratings %>% 
+  filter(year != 2022) %>% 
+  # left join as there aren't ratings for every district
+  left_join(dem_results, by = c("year", "state", "district")) %>% 
+  group_by(state, district) %>% 
+  filter(n() > 1) %>% # Filtering out single data rows
+  group_nest() %>% 
+  mutate(data = map(data, ~unnest(., cols = c())))
+#train_data_rep <- avg_ratings %>% 
+  #filter(year != 2022) %>% 
+  # left join as there aren't ratings for every district
+ # left_join(rep_results, by = c("year", "state", "district")) %>% 
+  #group_by(state, district) %>% 
+ # filter(n() > 1) %>% # Filtering out single data rows
+ # group_nest() %>% 
+  #mutate(data = map(data, ~unnest(., cols = c())))
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#run democrat and republican model on respective training dataset
+modelsdem <- train_data_dem %>% 
+  mutate(modeldem = map(data, ~lm(dem_votes_major_percent ~ avg_rating + dem_status, 
+        data = .x))) %>%
+  select(-data)
+modelsnoincumbent <- train_data_dem %>% 
+  mutate(modelnoincumb = map(data, ~lm(dem_votes_major_percent ~ avg_rating, 
+        data = .x))) %>%
+  select(-data)
+##modelsrep <- train_data_rep %>% 
+  ##mutate(modelrep = map(data, ~lm(rep_votes_major_percent ~ avg_rating + rep_status, 
+          ## data = .x))) %>%
+  ##select(-data)
+model_results_dem <- modelsdem %>% 
+  mutate(r_squared = map_dbl(modeldem, ~summary(.x)$r.squared))
+modelsnoincumbent_results <- modelsnoincumbent %>% 
+  mutate(r_squared = map_dbl(modelnoincumb, ~summary(.x)$r.squared))
+##model_results_rep <- modelsrep %>% 
+ ## mutate(r_squared = map_dbl(modelrep, ~summary(.x)$r.squared))
+```
+
+```{r}
+#creating testdata
+test2022attempt <- avg_ratings %>%
+  mutate(dem_status = 1)
+test_data <- test2022attempt %>% 
+  filter(year == 2022) %>% 
+  group_by(state, district) %>% 
+  group_nest() %>% 
+  mutate(datad = map(data, ~unnest(., cols = c())))
+#predictions 2022 of demvotes with all dem_status = 1 for incumbent
+pred_2022 <- test_data %>%
+  # inner join as there may not be historical models for some districts
+  inner_join(modelsdem, by = c("state", "district")) %>% 
+  mutate(pred = map_dbl(.x = modeldem, .y = datad, ~predict(object = .x, newdata = as.data.frame(.y)))) %>%
+  select(state, district, pred)
+#print(pred_2022)
+
+```
+
+
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#reformat single district states 
+pred_2022$district[is.na(pred_2022$district)] = 1
+
+
+pred_2022 <- pred_2022 %>%
+   mutate(district = case_when(
+    district == "AL" ~ "1",
+    TRUE ~ district
+  ))
+
+#change class
+pred_2022$district <- as.numeric(pred_2022$district)
+```
+
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+cd116 <- congressional_districts(
+  state = NULL,
+  cb = FALSE,
+  resolution = "500k",
+  year = 2018)
+
+cd116 <- cd116 %>%
+  rename("state" = "STATEFP")
+  
+state <- read_csv("us-state.csv")
+
+state <- state %>%
+  rename("state" = "st")
+
+district <- cd116 %>%
+  left_join(state, by = "state")
+  
+district2 <- district %>%
+  select(-c("state")) %>%
+  rename("state" = "stname", "district" = "CD116FP", "st" = "stusps")
+
+district2$district <- as.numeric(district2$district)
+
+district2 <- district2 %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  ))
+
+#merge data 
+alldata <- district2 %>%
+  left_join(pred_2022, by = c("state", "district"))
+
+#simplifiy for plot
+simpdata <- alldata %>%
+  filter(state != "Alaska", state != "Hawaii") %>%
+  #rename("st" = "stusps") %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  )) %>%
+  ms_simplify()
+
+simpdata$district <- as.numeric(simpdata$district)
+
+#Plot Dem voteshare by district in 2018
+ggplot() + 
+  geom_sf(data=simpdata,aes(fill=pred),
+          inherit.aes=FALSE,alpha=0.9) + 
+  scale_fill_gradient(low = "white", high = "dodger blue", limits=c(35,60), name = "Vote Share Percentage") +
+  theme_void() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  labs(title = "2022 Competitive District Dem Vote Share Predictions")
+```
+
+
+To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 us a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share.  Based on the two previous election cycles in this district, this vote share would be sufficient to win teh seat, topping the Republic in vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas' wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%). 
+
+```{r}
+NH1 <- pred_2022 %>% 
+  filter(state == "New Hampshire" & district == "1")
+
+NH1
+
+```
+```
+All data used for these predictions was provided curtosy of the Election 1347 teaching staff.
