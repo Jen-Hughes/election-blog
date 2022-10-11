@@ -35,6 +35,8 @@ Blog Extension:
 
 Model Update: 
 
+While there is evidence that campaign ads can be persuasive, studies show that these effects may only matter in the short term (Hill and Vareck). Furthermore, as evidenced by the above analysis, data on ad spending and number at the district level is often unreliable or unavailable. For these reasons, I have chosen not to factor ad spending into my district level predictions. 
+
 In this week's model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a seperate model for safe congressional seats.  
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
@@ -86,6 +88,7 @@ train_data_dem <- avg_ratings %>%
   filter(n() > 1) %>% # Filtering out single data rows
   group_nest() %>% 
   mutate(data = map(data, ~unnest(., cols = c())))
+
 #train_data_rep <- avg_ratings %>% 
   #filter(year != 2022) %>% 
   # left join as there aren't ratings for every district
@@ -106,10 +109,12 @@ modelsnoincumbent <- train_data_dem %>%
   mutate(modelnoincumb = map(data, ~lm(dem_votes_major_percent ~ avg_rating, 
         data = .x))) %>%
   select(-data)
+
 ##modelsrep <- train_data_rep %>% 
   ##mutate(modelrep = map(data, ~lm(rep_votes_major_percent ~ avg_rating + rep_status, 
           ## data = .x))) %>%
   ##select(-data)
+
 model_results_dem <- modelsdem %>% 
   mutate(r_squared = map_dbl(modeldem, ~summary(.x)$r.squared))
 modelsnoincumbent_results <- modelsnoincumbent %>% 
@@ -127,6 +132,7 @@ test_data <- test2022attempt %>%
   group_by(state, district) %>% 
   group_nest() %>% 
   mutate(datad = map(data, ~unnest(., cols = c())))
+
 #predictions 2022 of demvotes with all dem_status = 1 for incumbent
 pred_2022 <- test_data %>%
   # inner join as there may not be historical models for some districts
@@ -217,7 +223,7 @@ ggplot() +
 ```
 
 
-To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 us a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share.  Based on the two previous election cycles in this district, this vote share would be sufficient to win teh seat, topping the Republic in vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas' wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%). 
+To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 is a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share.  Based on the two previous election cycles in this district, this vote share would be sufficient to win the seat, topping the Republican vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas' wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%). This may reflect the poor election environment for Democrats in the 2022 midterms where Joe Biden's approval is low, the economy is poor, and a Democrat is in power.  While these aren't reflected directly in the model they are all incorporated through the inclusion expert predictions. 
 
 ```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 NH1 <- pred_2022 %>% 
@@ -227,4 +233,4 @@ NH1
 
 ```
 ```
-All data used for these predictions was provided curtosy of the Election 1347 teaching staff.
+All data used for these predictions was provided courtesy of the Election 1347 teaching staff.

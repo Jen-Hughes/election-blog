@@ -68,6 +68,7 @@
 This week we transitioned away from studying “The Fundamentals” of elections and turned to focus more precisely on studying campaigns themselves. We began our exploration of campaign outreach by examining the impact of ads in shaping election outcomes.</p>
 <p>Blog Extension:</p>
 <p>Model Update:</p>
+<p>While there is evidence that campaign ads can be persuasive, studies show that these effects may only matter in the short term (Hill and Vareck). Furthermore, as evidenced by the above analysis, data on ad spending and number at the district level is often unreliable or unavailable. For these reasons, I have chosen not to factor ad spending into my district level predictions.</p>
 <p>In this week’s model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a seperate model for safe congressional seats.</p>
 <pre><code>## 
   |                                                                            
@@ -135,6 +136,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |=============                                                         |  18%
   |                                                                            
+  |=============                                                         |  19%
+  |                                                                            
   |==============                                                        |  19%
   |                                                                            
   |==============                                                        |  20%
@@ -148,6 +151,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |================                                                      |  22%
   |                                                                            
   |================                                                      |  23%
+  |                                                                            
+  |================                                                      |  24%
   |                                                                            
   |=================                                                     |  24%
   |                                                                            
@@ -180,6 +185,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |=======================                                               |  32%
   |                                                                            
   |=======================                                               |  33%
+  |                                                                            
+  |=======================                                               |  34%
   |                                                                            
   |========================                                              |  34%
   |                                                                            
@@ -223,6 +230,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |================================                                      |  46%
   |                                                                            
+  |=================================                                     |  46%
+  |                                                                            
   |=================================                                     |  47%
   |                                                                            
   |=================================                                     |  48%
@@ -254,8 +263,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |=======================================                               |  55%
   |                                                                            
   |=======================================                               |  56%
-  |                                                                            
-  |========================================                              |  56%
   |                                                                            
   |========================================                              |  57%
   |                                                                            
@@ -303,6 +310,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |=================================================                     |  70%
   |                                                                            
+  |=================================================                     |  71%
+  |                                                                            
   |==================================================                    |  71%
   |                                                                            
   |==================================================                    |  72%
@@ -321,6 +330,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |=====================================================                 |  76%
   |                                                                            
+  |======================================================                |  76%
+  |                                                                            
   |======================================================                |  77%
   |                                                                            
   |======================================================                |  78%
@@ -328,6 +339,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |=======================================================               |  78%
   |                                                                            
   |=======================================================               |  79%
+  |                                                                            
+  |========================================================              |  79%
   |                                                                            
   |========================================================              |  80%
   |                                                                            
@@ -350,6 +363,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |============================================================          |  85%
   |                                                                            
   |============================================================          |  86%
+  |                                                                            
+  |=============================================================         |  86%
   |                                                                            
   |=============================================================         |  87%
   |                                                                            
@@ -397,13 +412,13 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |======================================================================| 100%</code></pre>
 <p><img src="http://example.org/post/2022-10-11-blog-5-post/index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<p>To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 us a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share. Based on the two previous election cycles in this district, this vote share would be sufficient to win teh seat, topping the Republic in vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas’ wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%).</p>
+<p>To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 is a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share. Based on the two previous election cycles in this district, this vote share would be sufficient to win the seat, topping the Republican vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas’ wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%). This may reflect the poor election environment for Democrats in the 2022 midterms where Joe Biden’s approval is low, the economy is poor, and a Democrat is in power. While these aren’t reflected directly in the model they are all incorporated through the inclusion expert predictions.</p>
 <pre><code>## # A tibble: 1 × 3
 ##   state         district  pred
 ##   &lt;chr&gt;            &lt;dbl&gt; &lt;dbl&gt;
 ## 1 New Hampshire        1  48.4</code></pre>
 <p>```
-All data used for these predictions was provided curtosy of the Election 1347 teaching staff.</p>
+All data used for these predictions was provided courtesy of the Election 1347 teaching staff.</p>
 
 
 		
@@ -420,7 +435,7 @@ All data used for these predictions was provided curtosy of the Election 1347 te
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2022-10-11 12:13:02.034992 -0400 EDT m=&#43;0.265354346">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2022-10-11 12:40:56.546376 -0400 EDT m=&#43;0.313537855">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
