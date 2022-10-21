@@ -1,14 +1,14 @@
 ---
-title: Blog 5 Post
-author: Jen Hughes
+title: "Blog 5 Post"
+author: "Jen Hughes"
 date: '2022-10-11'
-slug: []
+output: pdf_document
 categories: []
 tags: []
+slug: []
 ---
-
-
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#load packages
 library(tidyverse)
 library(ggplot2)
 library(stargazer)
@@ -17,36 +17,135 @@ library(readxl)
 library(tidyverse)
 library(ggplot2)
 library(blogdown)
-library(stargazer)
 library(readr)
 library(usmap)
 library(rmapshaper)
 library(sf)
-library(janitor)
 library(tigris)
 library(leaflet)
+library(dplyr)
+library(scales)
 ```
 
 Introduction:
 This week we transitioned away from studying "The Fundamentals" of elections and turned to focus more precisely on studying campaigns themselves. We began our exploration of campaign outreach by examining the impact of ads in shaping election outcomes.  
 
-Blog Extension:
-
-
-Model Update: 
-
-While there is evidence that campaign ads can be persuasive, studies show that these effects may only matter in the short term (Hill and Vareck). Furthermore, as evidenced by the above analysis, data on ad spending and number at the district level is often unreliable or unavailable. For these reasons, I have chosen not to factor ad spending into my district level predictions. 
-
-In this week's model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a seperate model for safe congressional seats.  
+Blog Extension: Ad Spending in 2018
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
-#LOAD IN REQUISITE DATA SETS
+#Load data 
 expert_ratings <- read_csv("expert_rating.csv")
 historical_results <- read_csv("house party vote share by district 1948-2020.csv") %>%
   clean_names()
 incumb_dist_1948_2022_2_ <- read_csv("incumb_dist_1948-2020 (2).csv")
 roper_cong_polls_1979_2022 <- read_csv("roper_cong_polls_1979-2022.csv")
+votes <- read_csv("house party vote share by district 1948-2020.csv") %>%
+  clean_names()
+ad_issues <- read_csv("ads_issues_2012-2018 (1).csv")
 ```
+
+
+```{r, show_col_types = FALSE,  warning = FALSE, include=FALSE, echo = FALSE, message=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+#load and format ad data 
+ad_issues$district <- as.numeric(ad_issues$district)
+ad_issues$st_fips <- as.numeric(ad_issues$st_fips)
+ad_issues <- ad_issues %>%
+  mutate(party = case_when(party == 'Democrat' ~ 'DEM',
+                           party == 'Republican' ~ 'REP')) %>%
+  drop_na(party)
+ad_issues <- ad_issues %>%
+  mutate(year = as.numeric(substr(airdate, 1, 4))) %>%
+  mutate(month = as.numeric(substr(airdate, 6, 7))) %>%
+  group_by(cycle, party, state, district) %>%
+  mutate(total_cost = sum(est_cost)/100000)
+```
+
+
+```{r, show_col_types = FALSE,  warning = FALSE, echo = FALSE}
+ad_issues %>%
+  filter(month > 7) %>%
+  group_by(cycle, airdate, party) %>%
+  summarise(total_cost = sum(est_cost)) %>%
+  ggplot(aes(x=airdate, y=total_cost, color=party)) +
+  scale_x_date(date_labels = "%b, %Y") +
+  scale_y_continuous(labels = dollar_format()) +
+  scale_color_manual(values = c("blue","red"), name = "") +
+  geom_line() + geom_point(size=0.5) +
+  facet_wrap(cycle ~ ., scales="free") +
+  xlab("") + ylab("ad spend") +
+  theme_bw() +
+  theme(axis.title = element_text(size=15),
+        axis.text = element_text(size=11),
+        strip.text.x = element_text(size = 15))
+```
+
+I first visualized the ad data in order to look at when campaigns spend on ads. From the 2012, 2014, 2016 and 2018 data it becomes clear that ads spending really begins to pick up in October and continues to increase through election day.  This seems like a wise decision on the part of campaigns given the research conducted by Hill and Vareck which suggests that ads have very short term persuasive effect so spending would be most impactful just before the election. With the exception of 2018 spending seems to be relatively similar between Democrats and Republicans. 2018 stands out as Democrat spending on ads was way higher than spending by Republicans. It is also interesting that the total spending across years seems to have a fair amount of variation. 
+
+```{r,  warning = FALSE, include=FALSE, echo = FALSE, message=FALSE}
+ad_issues2 <- ad_issues %>%
+  select("state", "district", "st_fips", "party", "total_cost", "cycle") %>%
+  rename("year" = "cycle")
+ad_issues2 <- ad_issues2 %>%
+  group_by(year, state, district, party) %>%
+  distinct()
+
+votes <- votes %>%
+  select(race_year, state, st_fips, district_num, dem_votes_major_percent, rep_votes_major_percent, winner_party) %>% 
+  rename("year" = "race_year", "district" = "district_num","state" = "state") %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  ))
+votes$district <- as.numeric(votes$district)
+
+combo <- ad_issues2 %>%
+  left_join(votes, by = c("year", "state", "district"))
+combo_D <- combo %>%
+  filter(winner_party == "D")
+combo_R <- combo %>%
+  filter(winner_party == "R")
+```
+
+To look at the cumulative effect of advertising on campaigns, I ran a regression of the total amount spent on ads against the vote share for that party. In this model each one observation is a distrct within a state in a given year. I found that for both Democrats and Republicans there was a negative correlation between ad spending and vote share. While this may initially seem off, it could make sense if we assume that campaigns only spend in places they don't already think they are going to win. This assumption could help explain the negative correlation. An increase in spending was associated with a -0.190 change in vote share for Democrats and for Republicans an increase in ad spending was associated with a -0.231. While both models appear highly significant, the r-squared value for each was 0.157  and  0.140 respectively suggesting a relatively low predictive power for the model. 
+
+```{r, show_col_types = FALSE,  warning = FALSE, echo = FALSE}
+combo_D %>%
+  ggplot(aes(x=total_cost, y=dem_votes_major_percent)) +
+    geom_smooth(method="lm", formula = y ~ x) +
+   geom_hline(yintercept=50, lty=2) +
+    geom_vline(xintercept=0.01, lty=2) +
+    xlim(0, 120) +
+    xlab("Total Amount Spent on Ads") +
+    ylab("Democratic Party Popular Vote (divided by 100,000)") +
+    theme_bw() +
+    labs(title = "Total Ad Spending and Democratic Vote Share")
+combo_R %>%
+  ggplot(aes(x=total_cost, y=rep_votes_major_percent)) +
+    geom_smooth(method="lm", formula = y ~ x) +
+    geom_hline(yintercept=50, lty=2) +
+    geom_vline(xintercept=0.01, lty=2) +
+    xlim(0, 120) +
+    xlab("Total Amount Spent on Ads (divided by 100,000)") +
+    ylab("Republican Party Popular Vote") +
+    theme_bw() +
+    labs(title = "Total Ad Spending and Republican Vote Share")
+```
+
+```{r, warning = FALSE, echo = FALSE}
+Dlm <- lm(dem_votes_major_percent ~ total_cost, data = combo_D)
+stargazer(Dlm, type = 'text')
+Rlm <- lm(rep_votes_major_percent ~ total_cost, data = combo_R)
+stargazer(Rlm, type = 'text')
+```
+
+Model Update: 
+
+While there is evidence that campaign ads can be persuasive, studies show that these effects may only matter in the short term (Hill and Vareck). Furthermore, as evidenced by the above analysis, data on ad spending and number at the district level is often unreliable or unavailable. For these reasons, I have chosen not to factor ad spending into my district level predictions. 
+
+In this week's model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a separate model for safe congressional seats.
 
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 

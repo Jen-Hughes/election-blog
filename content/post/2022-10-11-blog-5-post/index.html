@@ -1,20 +1,65 @@
 ---
-title: Blog 5 Post
-author: Jen Hughes
+title: "Blog 5 Post"
+author: "Jen Hughes"
 date: '2022-10-11'
-slug: []
+output: pdf_document
 categories: []
 tags: []
+slug: []
 ---
 
 
 
 <p>Introduction:
 This week we transitioned away from studying “The Fundamentals” of elections and turned to focus more precisely on studying campaigns themselves. We began our exploration of campaign outreach by examining the impact of ads in shaping election outcomes.</p>
-<p>Blog Extension:</p>
+<p>Blog Extension: Ad Spending in 2018</p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>I first visualized the ad data in order to look at when campaigns spend on ads. From the 2012, 2014, 2016 and 2018 data it becomes clear that ads spending really begins to pick up in October and continues to increase through election day. This seems like a wise decision on the part of campaigns given the research conducted by Hill and Vareck which suggests that ads have very short term persuasive effect so spending would be most impactful just before the election. With the exception of 2018 spending seems to be relatively similar between Democrats and Republicans. 2018 stands out as Democrat spending on ads was way higher than spending by Republicans. It is also interesting that the total spending across years seems to have a fair amount of variation.</p>
+<p>To look at the cumulative effect of advertising on campaigns, I ran a regression of the total amount spent on ads against the vote share for that party. In this model each one observation is a distrct within a state in a given year. I found that for both Democrats and Republicans there was a negative correlation between ad spending and vote share. While this may initially seem off, it could make sense if we assume that campaigns only spend in places they don’t already think they are going to win. This assumption could help explain the negative correlation. An increase in spending was associated with a -0.190 change in vote share for Democrats and for Republicans an increase in ad spending was associated with a -0.231. While both models appear highly significant, the r-squared value for each was 0.157 and 0.140 respectively suggesting a relatively low predictive power for the model.</p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" /><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       dem_votes_major_percent  
+## -----------------------------------------------
+## total_cost                   -0.190***         
+##                               (0.021)          
+##                                                
+## Constant                     62.989***         
+##                               (0.577)          
+##                                                
+## -----------------------------------------------
+## Observations                    460            
+## R2                             0.157           
+## Adjusted R2                    0.155           
+## Residual Std. Error      9.826 (df = 458)      
+## F Statistic           84.983*** (df = 1; 458)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       rep_votes_major_percent  
+## -----------------------------------------------
+## total_cost                   -0.231***         
+##                               (0.021)          
+##                                                
+## Constant                     62.519***         
+##                               (0.360)          
+##                                                
+## -----------------------------------------------
+## Observations                    737            
+## R2                             0.140           
+## Adjusted R2                    0.139           
+## Residual Std. Error      8.032 (df = 735)      
+## F Statistic          119.826*** (df = 1; 735)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
 <p>Model Update:</p>
 <p>While there is evidence that campaign ads can be persuasive, studies show that these effects may only matter in the short term (Hill and Vareck). Furthermore, as evidenced by the above analysis, data on ad spending and number at the district level is often unreliable or unavailable. For these reasons, I have chosen not to factor ad spending into my district level predictions.</p>
-<p>In this week’s model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a seperate model for safe congressional seats.</p>
+<p>In this week’s model update, I was able to sort out the largest updates to establish a baseline model for district level predictions. This model incorporates polling, incumbency, and expert ratings to predict Democratic vote share in each competitive district. In a future week I plan to supplement this model with a separate model for safe congressional seats.</p>
 <pre><code>## 
   |                                                                            
   |                                                                      |   0%
@@ -39,8 +84,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |====                                                                  |   6%
   |                                                                            
-  |=====                                                                 |   6%
-  |                                                                            
   |=====                                                                 |   7%
   |                                                                            
   |=====                                                                 |   8%
@@ -63,8 +106,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |=========                                                             |  13%
   |                                                                            
-  |=========                                                             |  14%
-  |                                                                            
   |==========                                                            |  14%
   |                                                                            
   |==========                                                            |  15%
@@ -72,8 +113,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |===========                                                           |  15%
   |                                                                            
   |===========                                                           |  16%
-  |                                                                            
-  |============                                                          |  16%
   |                                                                            
   |============                                                          |  17%
   |                                                                            
@@ -175,8 +214,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |================================                                      |  46%
   |                                                                            
-  |=================================                                     |  46%
-  |                                                                            
   |=================================                                     |  47%
   |                                                                            
   |=================================                                     |  48%
@@ -199,8 +236,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |=====================================                                 |  53%
   |                                                                            
-  |=====================================                                 |  54%
-  |                                                                            
   |======================================                                |  54%
   |                                                                            
   |======================================                                |  55%
@@ -208,6 +243,8 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |=======================================                               |  55%
   |                                                                            
   |=======================================                               |  56%
+  |                                                                            
+  |========================================                              |  56%
   |                                                                            
   |========================================                              |  57%
   |                                                                            
@@ -309,8 +346,6 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |                                                                            
   |============================================================          |  86%
   |                                                                            
-  |=============================================================         |  86%
-  |                                                                            
   |=============================================================         |  87%
   |                                                                            
   |=============================================================         |  88%
@@ -356,7 +391,7 @@ This week we transitioned away from studying “The Fundamentals” of elections
   |======================================================================|  99%
   |                                                                            
   |======================================================================| 100%</code></pre>
-<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>To single out one of my district level predictions, I have pulled the prediction for NH-01. NH-01 is a competitive swing district that I am choosing to track for our individual district projects in this class. This model based on polling, expert predictions, and incumbency predicts that the Democrat in this race, Chris Pappas, will win 48.4 % of the overall vote share. Based on the two previous election cycles in this district, this vote share would be sufficient to win the seat, topping the Republican vote share which was under 45% in both 2018 and 2020 (Ballotopedia). However, the predicted vote share is lower than Pappas’ wins of the Democratic vote share in both 2018 (53.6%) and 2020 (51.3%). This may reflect the poor election environment for Democrats in the 2022 midterms where Joe Biden’s approval is low, the economy is poor, and a Democrat is in power. While these aren’t reflected directly in the model they are all incorporated through the inclusion expert predictions.</p>
 <pre><code>## # A tibble: 1 × 3
 ##   state         district  pred

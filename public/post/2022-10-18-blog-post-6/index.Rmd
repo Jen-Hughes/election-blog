@@ -1,0 +1,39 @@
+---
+title: Blog Post 6, Turnout
+author: 'Jen Hughes '
+date: '2022-10-18'
+slug: []
+categories: []
+tags: []
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(stargazer)
+library(janitor)
+library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(tigris)
+library(leaflet)
+library(dplyr)
+library(scales)
+```
+
+```{r}
+cvap <- read_csv("cvap_district_2012-2020_clean.csv")
+house_polls <- read_csv("house_polls_long.csv")
+incumbent <- read_csv("incumb_dist_1948-2020 (3).csv")
+polls_cvap_vp_df.csv <- read_csv("polls_cvap_vp_df.csv")
+```
+
+```{r}
+
+```
+

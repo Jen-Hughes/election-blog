@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Blog Post 6, Turnout &middot; Gov 1347 - 2022 Midterm Elections Blog</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Gov 1347 - 2022 Midterm Elections Blog" />
+
+		<script src="/js/darkmode.js"></script>
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Gov 1347 - 2022 Midterm Elections Blog</h2>
+					
+				</a>
+				<ul>
+    
+    
+</ul>
+			</div>
+		</nav>
+
+        <div id="darkModeToggle" onclick="toggleDarkMode()">
+  &#9680; 
+</div>
+
+        
+
+<main>
+	
+
+
+        <div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Jen Hughes 
+        <br>
+        <span>on&nbsp;</span><time datetime="2022-10-18 00:00:00 &#43;0000 UTC">October 18, 2022</time>
+</div>
+
+		<h1 class="post-title">Blog Post 6, Turnout</h1>
+<div class="post-line"></div>
+
+		
+
+		
+
+
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.6     ✓ purrr   0.3.4
+## ✓ tibble  3.1.6     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.4     ✓ stringr 1.4.0
+## ✓ readr   2.1.1     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>library(ggplot2)
+library(stargazer)</code></pre>
+<pre><code>## 
+## Please cite as:</code></pre>
+<pre><code>##  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
+<pre><code>##  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer</code></pre>
+<pre class="r"><code>library(janitor)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;janitor&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     chisq.test, fisher.test</code></pre>
+<pre class="r"><code>library(readxl)
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(readr)
+library(usmap)
+library(rmapshaper)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;geojsonlint&#39;:
+##   method         from 
+##   print.location dplyr</code></pre>
+<pre class="r"><code>library(sf)</code></pre>
+<pre><code>## Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.1.1; sf_use_s2() is TRUE</code></pre>
+<pre class="r"><code>library(tigris)</code></pre>
+<pre><code>## To enable caching of data, set `options(tigris_use_cache = TRUE)`
+## in your R script or .Rprofile.</code></pre>
+<pre class="r"><code>library(leaflet)
+library(dplyr)
+library(scales)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;scales&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     discard</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     col_factor</code></pre>
+<pre class="r"><code>cvap &lt;- read_csv(&quot;cvap_district_2012-2020_clean.csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1
+## * ...1 -&gt; ...2</code></pre>
+<pre><code>## Rows: 2616 Columns: 8</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (3): geoid, cd, state
+## dbl (5): ...1, ...2, cvap, moe, year</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>house_polls &lt;- read_csv(&quot;house_polls_long.csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1</code></pre>
+<pre><code>## Rows: 1293 Columns: 20</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (17): pollster, sponsors, display_name, fte_grade, start_date, end_date,...
+## dbl  (3): ...1, sample_size, year</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>incumbent &lt;- read_csv(&quot;incumb_dist_1948-2020 (3).csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1
+## * ...1 -&gt; ...2</code></pre>
+<pre><code>## Rows: 16067 Columns: 21</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (14): office, state, st_fips, district_num, district_id, winner_party, R...
+## dbl  (7): ...1, ...2, year, RepVotes, DemVotes, RepVotesMajorPercent, DemVot...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>polls_cvap_vp_df.csv &lt;- read_csv(&quot;polls_cvap_vp_df.csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1
+## * ...1.x -&gt; ...4
+## * ...1.y -&gt; ...22
+## * ...2.x -&gt; ...23
+## * ...1 -&gt; ...28
+## * ...</code></pre>
+<pre><code>## Rows: 1080 Columns: 46</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (31): st_cd_fips, pollster, sponsors, display_name, fte_grade, start_dat...
+## dbl (15): ...1, year, ...4, sample_size, ...22, ...23, cd, cvap, moe, ...28,...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/post/2022-10-11-blog-5-post/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2022-10-21 14:31:52.105008 -0400 EDT m=&#43;0.356413704">2022</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
