@@ -10,7 +10,7 @@ slug: []
 
 This week in election analytics we examined the impact of voter turnout on election outcomes.  Historically, increases in voter turnout have been thought to benefit Democrats. However, in the post-Trump Republican party, this relationship has been called into question. In the Post-Trump era, Republicans have tapped into a new base, largely non-college educated white males, who are non-reliable voters (unlike their traditional base of wealthy whites and the elderly, who vote reliably). Because of this shift, the use of turnout as a predictor has been called into question as the relationship between turnout and outcome changes. This week, I'm looking at how incorporating turnout as a variable in my model impacts my predicted results.  
 
-```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
 #load in necessary packages 
 
 library(tidyverse)

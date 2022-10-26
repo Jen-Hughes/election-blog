@@ -25,7 +25,9 @@ library(stringr)
 ```
 
 This week's blog aims to look at the accuracy of expert ratings and how they can be incorporated into our model.  I also begin modeling at the district level as opposed to the national models I have worked on over the last three weeks. 
+
 I began by mapping the Democratic vote share in the 2018 midterm election cycle at the district level.
+
 ```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 historical <- read_csv("house party vote share by district 1948-2020 copy.csv") %>%
    clean_names()
