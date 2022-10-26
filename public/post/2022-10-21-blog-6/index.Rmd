@@ -1,0 +1,326 @@
+---
+title: 'Blog 6 : The Ground Game'
+author: 'Jen Hughes '
+date: '2022-10-21'
+output: pdf_document
+categories: []
+tags: []
+slug: []
+---
+
+This week in election analytics we examined the impact of voter turnout on election outcomes.  Historically, increases in voter turnout have been thought to benefit Democrats. However, in the post-Trump Republican party, this relationship has been called into question. In the Post-Trump era, Republicans have tapped into a new base, largely non-college educated white males, who are non-reliable voters (unlike their traditional base of wealthy whites and the elderly, who vote reliably). Because of this shift, the use of turnout as a predictor has been called into question as the relationship between turnout and outcome changes. This week, I'm looking at how incorporating turnout as a variable in my model impacts my predicted results.  
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#load in necessary packages 
+
+library(tidyverse)
+library(ggplot2)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+library(dplyr)
+library(scales)
+
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+#load in neccesary data 
+cvap <- read.csv("polls_cvap_vp_df.csv")
+cvap_district <- read_csv("cvap_district_2012-2020_clean.csv")
+polls_df <- read_csv("house_polls_long.csv")
+historical <- read_csv("historical.csv") %>%
+  clean_names()
+experts <- read_csv("expert_rating.csv")
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+
+#change variable class for variables we care about to merge 
+cvap <- cvap %>%
+  mutate(DEM = as.numeric(DEM), REP = as.numeric(REP))
+
+polls_df <- polls_df %>%
+  mutate(DEM = as.numeric(DEM), REP = as.numeric(REP))
+
+#rename variables to join datasets
+cvap_district <- cvap_district %>%
+  select(-c(...1, ...2, moe)) %>%
+  rename(st_cd_fips = geoid) %>%
+  rename(district = cd)
+  
+cvap_district <- cvap_district %>%
+   mutate(district = case_when(
+    district == "AL" ~ "1",
+    TRUE ~ district
+  ))
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "SouthCarolina", 
+                replacement = "South Carolina")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "NewHampshire", 
+                replacement = "New Hampshire")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "NewJersey", 
+                replacement = "New Jersey")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "NewYork", 
+                replacement = "New York")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "NewMexico", 
+                replacement = "New Mexico")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "NorthCarolina", 
+                replacement = "North Carolina")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "NorthDakota", 
+                replacement = "North Dakota")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "RhodeIsland", 
+                replacement = "Rhode Island")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "SouthDakota", 
+                replacement = "South Dakota")
+
+cvap_district <- mutate_if(cvap_district, is.character, 
+                str_replace_all, 
+                pattern = "WestVirginia", 
+                replacement = "West Virginia")
+
+cvap_district$district <- as.numeric(cvap_district$district)
+
+#create turnout variable
+cvap <- cvap %>%
+  mutate(turnout = ((DemVotes + RepVotes)/cvap)*100)
+
+#create incumbent dummy variable 
+cvap <- cvap %>%
+  mutate(incumbency = case_when(DemStatus == "Incumbent" ~ 1,
+                                RepStatus == "Incumbent" ~ 1,
+                                DemStatus == 'Challenger' ~ 0,
+                                RepStatus == 'Challenger' ~ 0))
+
+cvap$cd <- as.numeric(cvap$cd)
+
+
+cvap_clean <- cvap %>%
+  select(year, state.x, cd, DEM, REP, cvap, winner_party, DemVotes, RepVotes, RepStatus, DemStatus, RepVotesMajorPercent, DemVotesMajorPercent, president_party, turnout, incumbency) %>%
+  rename(state = state.x) %>%
+  rename(district = cd)
+
+experts <- experts %>%
+  select(year, state, district, avg_rating)
+experts <- experts %>%
+   mutate(district = case_when(
+    district == "AL" ~ "1",
+    TRUE ~ district
+  ))
+
+experts$district <- as.numeric(experts$district)
+```
+
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+
+##Join necessary data sets 
+combined <- cvap_district %>%
+  left_join(historical, by = c("year", "state", "district")) %>%
+  drop_na()
+
+#create turnout variable
+combined <- combined %>%
+  mutate(turnout = ((dem_votes + rep_votes)/cvap)*100)
+
+combined1 <- combined %>%
+  left_join(experts, by = c("year", "state", "district")) %>%
+  drop_na()
+
+combined2 <- merge(cvap_district, cvap_clean, by = c("year", "state", "district"))
+```
+
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+combined1 <- combined1 %>%
+  mutate(turnout = ((dem_votes + rep_votes)/cvap)*100)
+
+combined1 <- combined1 %>%
+  mutate(incumbency = case_when(dem_status == "Incumbent" ~ 1,
+                                rep_status == "Incumbent" ~ 1,
+                                dem_status == 'Challenger' ~ 0,
+                                rep_status == 'Challenger' ~ 0))
+
+combined_midterm <- combined1 %>%
+  filter(year == 2014 | year == 2018)
+```
+
+Turnout Map
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+cd116 <- congressional_districts(
+  state = NULL,
+  cb = FALSE,
+  resolution = "500k",
+  year = 2018)
+
+cd116 <- cd116 %>%
+  rename("state" = "STATEFP")
+  
+state <- read_csv("us-state.csv")
+
+state <- state %>%
+  rename("state" = "st")
+
+district <- cd116 %>%
+  left_join(state, by = "state")
+  
+district2 <- district %>%
+  select(-c("state")) %>%
+  rename("state" = "stname", "district" = "CD116FP", "st" = "stusps")
+
+district2$district <- as.numeric(district2$district)
+
+district2 <- district2 %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  ))
+
+combined2018 <- combined %>% 
+  filter(year == "2018")
+
+#merge data 
+combined2018 <- district2 %>%
+  left_join(combined2018, by = c("state", "district"))
+
+#simplifiy for plot
+simpdata <- combined2018 %>%
+  filter(state != "Alaska", state != "Hawaii") %>%
+  #rename("st" = "stusps") %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  )) %>%
+  ms_simplify()
+
+simpdata$district <- as.numeric(simpdata$district)
+
+#Plot Dem voteshare by district in 2018
+ggplot() + 
+  geom_sf(data=simpdata,aes(fill=turnout),
+          inherit.aes=FALSE,alpha=0.9) + 
+  scale_fill_gradient(low = "white", high = "green", limits=c(35,70), name = "Vote Share Percentage") +
+  theme_void() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  labs(title = "2018 Turnout by District")
+```
+I first created a new variable for turnout by dividing the combined votes for Democrats and Republicans by the citizen voting age population (CVAP) at the district level. Above I have mapped turnout by district. While there isn't a particularly strong pattern, we do see that turnout seems to be lower in the central south and is generally higher on the west coast. The map also reveals missing data for several districts. 
+
+To gauge how turnout might serve as a predictor of vote share, I first just ran a simple linear regression between turnout and vote share for each party. This model includes turnout based on CVAP data available to us from 2012-2020.When looking at the full set of data, I found a minimal relationship between the two variables. For Democratic vote share, the correlation is 0.033, indicating that turnout has an very weak positive effect on vote share. The adjusted R^2 is 0.002, demonstrating the model has almost no predictive power. For Republican vote share, the correlation was -0.033. The adjusted R^2 was also 0.002 again showing almost no predictive power. 
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+#all years turnout 
+Dcvap_lm <- lm(dem_votes_major_percent ~ turnout, data = combined1)
+
+stargazer(Dcvap_lm, type='text')
+
+Rcvap_lm <- lm(rep_votes_major_percent ~ turnout, data = combined1)
+
+stargazer(Rcvap_lm, type='text')
+```
+
+
+I then chose to subset the data to only include midterm years - 2014 and 2018 - since we have seen in past weeks that midterm years function extremely differently than presidential election years. In this subset, the relationship between vote share and turnout becomes much stronger but remains somewhat weak. The correlation for Democratic vote share is 0.140, so for Democrats, an increase in turnout by about 1% is associated with an increase in vote share by about 0.14 percentage points. This relationship also appears to be significant in this model and the R- sq increased to 0.062. The correlation for Republican vote share is -0.140, showing an interesting inverse relationship with the democratic vote share. These relationships should be viewed with extreme skepticism given that we only have two cycles worth of data to predict off of which makes any observed relationship somewhat unreliable 
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+#Midterms turnout 
+
+Dcvap_midterm_lm <- lm(dem_votes_major_percent ~ turnout, data = combined_midterm)
+
+stargazer(Dcvap_midterm_lm, type='text')
+
+Rcvap_midterm_lm <- lm(rep_votes_major_percent ~ turnout, data = combined_midterm)
+
+stargazer(Rcvap_midterm_lm, type='text')
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+combined_midterm %>%
+  ggplot() +
+  geom_point(aes(x = turnout, y = dem_votes_major_percent)) +
+  geom_smooth(aes(x = turnout, y = dem_votes_major_percent, color = "Democrats"), method = "lm") + 
+  geom_point(aes(x = turnout, y = rep_votes_major_percent)) + 
+  geom_smooth(aes(x = turnout, y = rep_votes_major_percent, color = "Republicans"), method = "lm") +
+  xlab("Turnout %") +
+  ylab("Party Vote Share") +
+  labs(title = "Midterm Party Vote Share vs. Turnout") +
+  scale_color_manual(name = "Regression",             # legend name
+                     values = c("Democrats" = "blue",  # map regression line colors
+                                "Republicans" = "red"))
+```
+
+Based on the work we did this week, I updated my national level model to predict party vote share based on Presidential incumbency, average rating, and turnout. In the model, both expert rating and turnout appear to be significant while incumbency does not. The negative correlation between presidential incumbency and vote share in the Republican model might show that the president's party is often punished during midterm elections. However, it's interesting that this trend doesn't hold across the two models. The R-sq for both models is 0.778 which is not terrible but could be improved.  It's especially concerning given the limited data that the model is based on. 
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+D_lm <- lm(dem_votes_major_percent ~ incumbency + avg_rating + turnout, data = combined_midterm)
+stargazer(D_lm, type='text')
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+#mean(combined_midterm$turnout, na.rm =TRUE)
+```
+
+Finally, I used these models to make an updated national vote share prediction for the upcoming midterms. To simulate 2022 data for turnout I used the average turnout of the midterm years we have data for (2014 and 2018).  This is a big assumption that I hope to revisit before turning in my final model. I also based avg_rating on the overall prediction that the house will be likely Republican (5). In my ultimate prediction, I would prefer to scrape the final predictions for each race from the different polling centers and average all of those to more accurately mimic the data the model is trained on. 
+
+My updated prediction shows that Democrats will win 47.32% of the two party voteshare with a confidence interval from 42.16% - 52.49%.  My model predicts that Republicans will win 52.76% of the two party voteshare with a confidence inteval of 47.56% - 57.96%. 
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+prob_D_lm <- predict(D_lm, newdata = 
+                           data.frame(avg_rating = 5, turnout = 47.6, incumbency = 1), type="response", interval = "prediction")
+
+# [[1]]
+
+prob_D_lm
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+R_lm <- lm(rep_votes_major_percent ~ incumbency + avg_rating + turnout, data = combined_midterm)
+stargazer(R_lm, type = 'text')
+```
+
+```{r, echo = FALSE, warning = FALSE}
+prob_R_lm <- predict(R_lm, newdata = 
+                           data.frame(avg_rating = 5, turnout = 47.6, incumbency = 0), type="response", interval = "prediction")
+
+#[[1]]
+
+prob_R_lm
+
+```
+
