@@ -147,7 +147,7 @@ with over a 10 seat swing in either direction predicted as possible.
 
 #The Final Model
 
-My final model incorporates percent change in real disposable income from Q7 - Q8, avg expert rating, and generic ballot averages after August. While creating the model, I attempted to account for many other variables including, district level polls, party of the president, and house incumbency. However, I found that all of these variables either lowed the R-sq value of my model or introduced glaring data gaps that made modeling with any level of certainty impossible. 
+My final model incorporates percent change in real disposable income from Q7 - Q8, avg expert rating, and generic ballot averages after August. While creating the model, I attempted to account for many other variables including, district level polls, party of the president, and house incumbency. However, I found that all of these variables either lowed the R-sq value of my model or introduced glaring data gaps that made modeling with any level of certainty impossible. I was also compelled by several readings across the course, particularly the collection of articles from Campbell 2018, that simpler models can still be powerful predictors.    
 
 #Formula
 
@@ -602,3 +602,5 @@ Andrew Healy and Gabriel S Lenz. Substituting the end for the whole: Why voters 
 primarily to the election-year economy. American journal of political science, 58(1):31–47,
 2014. ISSN 0092-5853. URL.
 
+James Campbell. Forecasting the 2018 us midterm elections. PS: Political Science & Politics,
+51(S1), 2018. URL.

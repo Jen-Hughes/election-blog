@@ -3,9 +3,9 @@ title: "Final Election Forecast"
 author: "Jen Hughes"
 date: '2022-11-05'
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 categories: []
 tags: []
 slug: []
@@ -17,7 +17,7 @@ slug: []
 <p>Hi All! After several weeks of experimenting reworking and shifting the election is upon us meaning this is my final prediction. In the end, I have focused on a national vote share model and a resulting seat share model based on this prediction. My final prediction outlined in more detail below, predicts that Republicans will win 226 seats while Democrats will win 209. While I feel confident that the predicted seat distribution is in the right range, I was unable to fully solve issues of data limitations that we have been facing all semester which means that the confidence interval on this prediction is very large,
 with over a 10 seat swing in either direction predicted as possible.</p>
 <p>#The Final Model</p>
-<p>My final model incorporates percent change in real disposable income from Q7 - Q8, avg expert rating, and generic ballot averages after August. While creating the model, I attempted to account for many other variables including, district level polls, party of the president, and house incumbency. However, I found that all of these variables either lowed the R-sq value of my model or introduced glaring data gaps that made modeling with any level of certainty impossible.</p>
+<p>My final model incorporates percent change in real disposable income from Q7 - Q8, avg expert rating, and generic ballot averages after August. While creating the model, I attempted to account for many other variables including, district level polls, party of the president, and house incumbency. However, I found that all of these variables either lowed the R-sq value of my model or introduced glaring data gaps that made modeling with any level of certainty impossible. I was also compelled by several readings across the course, particularly the collection of articles from Campbell 2018, that simpler models can still be powerful predictors.</p>
 <p>#Formula</p>
 <p>The final model formula I utilized is:</p>
 <p>Y = 33.910 -0.554* X1 + 0.604* X2 -2.874* X3</p>
@@ -107,7 +107,7 @@ As we can see, the year aggregates are good fits for the model which validates t
 <pre><code>## [1] -2.99101</code></pre>
 <p>When looking at out-of-sample validation, the model does not hold up particularly well to the removal of data from a given year resulting in a mean out of sample residual of -2.99. This is to be expected given that the model only incorporates three years worth of data. his means that an out of sample test removing one year removes about 1/3 of the observations. Therefore, I expect that this test is over inflating residuals as a lack of limited data. Since the unit of observation for the model is district-year, I have chose to also test the models robustness when removing certain states.</p>
 <p><img src="/post/2022-11-05-final-election-forecast/Test_pdf_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
-<pre><code>## [1] 0.3335054</code></pre>
+<pre><code>## [1] 0.3413878</code></pre>
 <p>This out-of-sample test shows low residuals with a mean out of sample error of 0.3484196. This indicates that the model holds up much better across states than across years. This makes a sense given that this test is not pulling 1/3 of the data the way the previous one was.</p>
 <div id="nh-01-model" class="section level2">
 <h2>NH-01 Model</h2>
@@ -141,4 +141,6 @@ As we can see, the year aggregates are good fits for the model which validates t
 <p>Andrew Healy and Gabriel S Lenz. Substituting the end for the whole: Why voters respond
 primarily to the election-year economy. American journal of political science, 58(1):31–47,
 2014. ISSN 0092-5853. URL.</p>
+<p>James Campbell. Forecasting the 2018 us midterm elections. PS: Political Science &amp; Politics,
+51(S1), 2018. URL.</p>
 </div>
