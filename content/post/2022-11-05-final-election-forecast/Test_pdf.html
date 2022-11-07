@@ -106,11 +106,8 @@ As we can see, the year aggregates are good fits for the model which validates t
 <p>Out-of-sample validation</p>
 <pre><code>## [1] -2.99101</code></pre>
 <p>When looking at out-of-sample validation, the model does not hold up particularly well to the removal of data from a given year resulting in a mean out of sample residual of -2.99. This is to be expected given that the model only incorporates three years worth of data. his means that an out of sample test removing one year removes about 1/3 of the observations. Therefore, I expect that this test is over inflating residuals as a lack of limited data. Since the unit of observation for the model is district-year, I have chose to also test the models robustness when removing certain states.</p>
-<pre><code>## [1] 0.3443073</code></pre>
-<pre class="r"><code>outsamphist &lt;- hist(outsamp_errors,
-     xlab = &quot;&quot;,
-     main = &quot;mean out-of-sample residual\n(1000 runs of cross-validation)&quot;)</code></pre>
-<p><img src="/post/2022-11-05-final-election-forecast/Test_pdf_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<p><img src="/post/2022-11-05-final-election-forecast/Test_pdf_files/figure-html/unnamed-chunk-23-1.png" width="672" /></p>
+<pre><code>## [1] 0.3495151</code></pre>
 <p>This out-of-sample test shows low residuals with a mean out of sample error of 0.3484196. This indicates that the model holds up much better across states than across years. This makes a sense given that this test is not pulling 1/3 of the data the way the previous one was.</p>
 <div id="nh-01-model" class="section level2">
 <h2>NH-01 Model</h2>

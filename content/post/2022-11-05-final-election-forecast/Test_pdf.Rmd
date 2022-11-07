@@ -378,16 +378,12 @@ outsamp_true <- demdatamid$DemVotesMajorPercent[demdatamid$state
 mean(outsamp_pred - outsamp_true)
 })
 
-mean(abs(outsamp_errors))
-```
-
-```{r, eval=TRUE, echo=TRUE}
 outsamphist <- hist(outsamp_errors,
      xlab = "",
      main = "mean out-of-sample residual\n(1000 runs of cross-validation)")
+
+mean(abs(outsamp_errors))
 ```
-
-
 
 This out-of-sample test shows low residuals with a mean out of sample error of 0.3484196. This indicates that the model holds up much better across states than across years. This makes a sense given that this test is not pulling 1/3 of the data the way the previous one was. 
 
