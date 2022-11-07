@@ -1,0 +1,328 @@
+---
+title: "Trying things"
+author: "Jen Hughes"
+date: "11/6/2022"
+output: html_document
+---
+
+```{r}
+library(dotenv)
+library(jsonlite)
+library(lubridate)
+library(gridExtra)
+library(tidyverse)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+library(scales)
+library(dplyr)
+```
+
+```{r}
+#load in necessary data 
+polls_df <- read_csv("polls_df.csv")
+experts <- read_csv("combined_exp.csv")
+incumb_dist_1948_2020 <- read_csv("incumb_dist_1948_2020.csv") 
+RDI <- read_csv("RDI_quarterly.csv")
+```
+
+```{r}
+#clean outcome data
+incumb_dist_1948_2020 <- incumb_dist_1948_2020 %>% 
+  select(-...1, -...2, -office, -RepCandidate, -DemCandidate) %>% 
+  rename(district = district_num)
+
+#create avg support
+polls_df <- polls_df %>% 
+                  filter(bmonth >= 9) %>% 
+                  group_by(year, party) %>% 
+                  summarise(avg_support = mean(support))
+
+polls_df_modified <- data.frame(matrix(ncol = 3, nrow = 0))
+new_cols <- c("year", "D_avg_support", "R_avg_support")
+colnames(polls_df_modified) <- new_cols
+
+index <- 1
+while (index <= nrow(polls_df)) {
+  new_row <-data.frame(polls_df$year[index], polls_df$avg_support[index], polls_df$avg_support[index + 1])
+  names(new_row) <- c("year", "D_avg_support", "R_avg_support")
+  polls_df_modified <- rbind(polls_df_modified, new_row)
+  index = index + 2
+}
+
+#Clean RDI data
+RDI <- read_csv('RDI_quarterly.csv')
+  
+RDI <- RDI %>%
+  select('year', 'quarter_cycle', 'DSPIC_change_pct') %>% 
+  #filter(year == 1982 | year == 1986 | year == 1982 | year == 1986 | year == 1990 | year == 1994 | year == 1994 | year == 1998 | year == 2002 | year == 2006 | year == 2010 | year == 2014 | year == 2018 | year == 2022) %>%  
+  filter(quarter_cycle == 8) 
+
+#format experts 
+
+library(usdata)
+
+experts$district <- as.numeric(experts$district)
+experts <- experts %>% 
+  mutate(state = abbr2state(state))
+
+experts$district <- as.numeric(experts$district)
+
+experts$district <- sprintf("%02d", as.numeric(experts$district))
+
+#clean expert ratings 
+experts <- experts %>%
+  select(year, state, district, avg_rating)
+experts <- experts %>%
+   mutate(district = case_when(
+    district == "AL" ~ "1",
+    TRUE ~ district
+  ))
+
+
+
+```
+
+```{r}
+#join all data frames
+combined <- incumb_dist_1948_2020 %>% 
+    left_join(experts, by = c("year", "state", "district"))
+
+combined1 <- combined %>% 
+    left_join(RDI)
+
+combined2 <- combined1 %>% 
+  left_join(polls_df_modified)
+
+combined2 <- combined2 %>% 
+  mutate(presparty = ifelse(combined2$president_party == "R", 1, 0))
+
+seats <- read_csv("year_seats.csv")
+
+combined3 <- combined2 %>% 
+  left_join(seats)
+```
+
+
+```{r}
+demdata <- combined3 %>% 
+  select(year, state, district, DemVotesMajorPercent, DemStatus,  president_party, avg_rating, DSPIC_change_pct, D_avg_support, d_seats)
+
+allyear_mod_D <- lm(DemVotesMajorPercent ~ DSPIC_change_pct + D_avg_support + avg_rating 
+                    +  president_party
+                    , data = demdata)
+allyear_mod_D
+
+#stargazer(allyear_mod_D, type = 'text')
+
+```
+
+```{r}
+D2022 <- data.frame( DSPIC_change_pct = c(-0.683215), D_avg_support = 45.4, avg_rating = 4.24,  president_party = "D")
+
+predict(allyear_mod_D, newdata = D2022, interval = "prediction")
+```
+
+```{r}
+repdata <- combined3 %>% 
+  select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats)
+
+allyear_mod_R <- lm(RepVotesMajorPercent ~ DSPIC_change_pct + R_avg_support + avg_rating +  president_party, data = repdata)
+allyear_mod_R
+
+stargazer(allyear_mod_R, type = 'text')
+```
+
+```{r}
+R2022 <- data.frame(DSPIC_change_pct = c(-0.683215), R_avg_support = 47.9, avg_rating = 4.24,  president_party = "D")
+
+predict(allyear_mod_R, newdata = R2022, interval = "prediction")
+```
+
+In-sample Validation
+```{r}
+hist(allyear_mod_D$model$DemVotesMajorPercent - allyear_mod_D$fitted.values,
+main="histogram of true Y - predicted Y")
+
+mse_g <- mean((allyear_mod_D$model$DemVotesMajorPercent
+               - allyear_mod_D$fitted.value)^2)
+sqrt(mse_g)
+```
+
+
+```{r}
+repdatamid <- combinedmid %>% 
+  select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats)
+
+mid_mod_R <- lm(RepVotesMajorPercent ~ DSPIC_change_pct + 
+                  R_avg_support + avg_rating, data = repdatamid)
+mid_mod_R
+
+stargazer(mid_mod_R, type = 'text')
+```
+
+```{r}
+predict(mid_mod_R, newdata = R2022, interval = "prediction")
+```
+
+```{r}
+hist(mid_mod_R$model$RepVotesMajorPercent -
+mid_mod_R$fitted.values,
+main="histogram of true Y - predicted Y")
+
+mse_g <- mean((mid_mod_R$model$RepVotesMajorPercent
+               - mid_mod_R$fitted.value)^2)
+sqrt(mse_g)
+```
+
+Out-of-sample validation
+*** ask kiara about this 
+```{r}
+outsamp_mod1 <- lm(DemVotesMajorPercent ~ DSPIC_change_pct +
+                  D_avg_support + avg_rating,
+                   
+demdatamid[demdatamid$state != "Idaho",])
+outsamp_pred <- predict(outsamp_mod1,
+
+demdatamid[demdatamid$state == "Idaho",])
+
+outsamp_true <- demdatamid$DemVotesMajorPercent[demdatamid$state == "Idaho"]
+
+diff<- outsamp_pred - outsamp_true
+mean(diff)
+```
+
+
+
+
+
+
+
+Midterm years only model
+
+```{r}
+combinedmid <- combined3 %>%
+  filter(year == 1982 | year == 1986 | year == 1982 | year == 1986 | year == 1990 | year == 1994 | year == 1994 | year == 1998 | year == 2002 | year == 2006 | year == 2010 | year == 2014 | year == 2018 | year == 2022) 
+```
+
+
+```{r}
+demdatamid <- combinedmid %>% 
+  select(year, state, district, DemVotesMajorPercent, DemStatus,  president_party, avg_rating, DSPIC_change_pct, D_avg_support, d_seats)
+
+mid_mod_D <- lm(DemVotesMajorPercent ~ DSPIC_change_pct +
+                  D_avg_support + avg_rating, data = demdatamid)
+mid_mod_D
+
+stargazer(mid_mod_D, type = 'text')
+```
+
+```{r}
+D2022 <- data.frame( DSPIC_change_pct = c(-0.683215), D_avg_support = 45.4, avg_rating = 4.24,  president_party = "D")
+
+predict(mid_mod_D, newdata = D2022, interval = "prediction")
+```
+
+In-sample Validation
+```{r}
+hist(mid_mod_D$model$DemVotesMajorPercent -
+mid_mod_D$fitted.values,
+main="histogram of true Y - predicted Y")
+
+mse_g <- mean((mid_mod_D$model$DemVotesMajorPercent
+               - mid_mod_D$fitted.value)^2)
+sqrt(mse_g)
+```
+
+
+```{r}
+repdatamid <- combinedmid %>% 
+  select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats)
+
+mid_mod_R <- lm(RepVotesMajorPercent ~ DSPIC_change_pct + 
+                  R_avg_support + avg_rating, data = repdatamid)
+mid_mod_R
+
+stargazer(mid_mod_R, type = 'text')
+```
+
+```{r}
+predict(mid_mod_R, newdata = R2022, interval = "prediction")
+```
+
+```{r}
+hist(mid_mod_R$model$RepVotesMajorPercent -
+mid_mod_R$fitted.values,
+main="histogram of true Y - predicted Y")
+
+mse_g <- mean((mid_mod_R$model$RepVotesMajorPercent
+               - mid_mod_R$fitted.value)^2)
+sqrt(mse_g)
+```
+
+Out-of-sample validation
+*** ask kiara about this 
+```{r}
+outsamp_mod1 <- lm(DemVotesMajorPercent ~ DSPIC_change_pct +
+                  D_avg_support + avg_rating,
+                   
+demdatamid[demdatamid$state != "Idaho",])
+outsamp_pred <- predict(outsamp_mod1,
+
+demdatamid[demdatamid$state == "Idaho",])
+
+outsamp_true <- demdatamid$DemVotesMajorPercent[demdatamid$state == "Idaho"]
+
+diff<- outsamp_pred - outsamp_true
+mean(diff)
+```
+
+
+#Number of Seats Model
+```{r}
+repdatamid <- combinedmid %>% 
+  select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats)
+
+seats_mid_mod_R <- lm(r_seats ~ DSPIC_change_pct + R_avg_support, 
+                      #+ avg_rating,
+                      data = repdatamid)
+
+stargazer(seats_mid_mod_R, type = 'text')
+
+predict(seats_mid_mod_R, newdata = R2022, interval = "prediction")
+```
+
+
+Seats model
+```{r}
+outcome <- read_csv("house_popvote_seats.csv") %>% 
+  select(year, R_majorvote_pct, D_majorvote_pct)
+
+outcome <- outcome %>% 
+  left_join(seats)
+
+seats_R <- lm(r_seats ~ R_majorvote_pct, data = outcome)
+
+rprediction <- data.frame(R_majorvote_pct = 52.84)
+
+stargazer(seats_R, type = 'text')
+
+predict(seats_R, newdata = rprediction , interval = "prediction")
+```
+
+```{r}
+seats_d <- lm(d_seats ~ D_majorvote_pct, data = outcome)
+
+stargazer(seats_D, type = 'text')
+
+dprediction <- data.frame(D_majorvote_pct = 48.73)
+
+stargazer(seats_d, type = 'text')
+
+predict(seats_d, newdata = dprediction , interval = "prediction")

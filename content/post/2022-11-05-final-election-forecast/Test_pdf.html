@@ -1,0 +1,250 @@
+---
+title: "Final Election Forecast"
+author: "Jen Hughes"
+date: '2022-11-05'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+categories: []
+tags: []
+slug: []
+---
+
+
+
+<p>#Overview</p>
+<p>Hi All! After several weeks of experimenting reworking and shifting the election is upon us meaning this is my final prediction. In the end, I have focused on a national vote share model and a resulting seat share model based on this prediction. My final prediction outlined in more detail below, predicts that Republicans will win 229 seats while Democrats will win 206. While I feel confident that the predicted seat distribution is in the right range, I was unable to fully solve issues of data limitations that we have been facing all semester which means that he confidence interval on this prediction is very large
+with over a 10 seat swing in either direction predicted as possible.</p>
+<p>#The Final Model</p>
+<p>My final model incorporates percent change in Real Disposable income from Q7 - Q8, avg expert rating, and generic ballot averages after August. While creating the model, I attempted to account for many other variables including, district level polls, party of the president, and house incumbency. However, I found that all of these variable either lowed the R-sq value of my model or introduced glaring data gaps that made modeling with any level of certainty impossible.</p>
+<p>#Formula</p>
+<p>The final model formula I utilized is:</p>
+<hr />
+<p>#Justification</p>
+<p>I chose to include change in RDI from Q7 to Q8 because we’ve seen that at least in presidential elections, this metric has proven to be a good predictor of vote share (Healy and Lenz, 2014). While the impact of this metric in Congressional elections is less conclusive, it is nevertheless of the few metrics where we have comprehensive, reliable data (Enos, Gov1347). Furthermore, voters continually cite the economy as the single most important issue from election cycle to election cycle, particularly in 2022 (Pew 2022). Therefore I felt that it was important to include an explicit measure of the economy beyond just what is baked into expert predictions.</p>
+<p>The next variable I included was generic ballot polling data. Using the list of generic ballot polls provided to the class, I created an average support variable for each party which took the average of every poll after August. As we’ve seen in the 2022 election cycle, themics of generic ballot polls often change after the summer months as average voters begin to pay attention to politics (FiveThirtyEight). This often takes the form of tightening polls in the fall. For this reason I decided to include polls from Sep-Nov because they more accurately represent the true stances of the electorate.</p>
+<p>Finally, I included average expert rating in the model. The model treats one year-state-district as the unit if observation so our data is limited by the availability of expert ratings since the data set available to us includes only competitive races. However, looking at only competitive races make actually improve our model since there’s some reason to believe that competitive races differ in how they relate to there variables than races for safe seats.</p>
+<p>While trying out different models I initially built a model using data from all election years in an attempt to preserve as much data as possible given the limited data available about house races. This gave me a prediction with an okay r-squared (0.75) but a very large prediction interval. To see if I could reduce that interval, I subset the data for just midterm years. As seen below, this model kept a similar r-squared value (0.75) but reduce the prediction interval to ~10 pts. This is still a large window but it is a much better prediction than the model where all years were included.</p>
+<ol style="list-style-type: decimal">
+<li>Model formula (or procedure for obtaining prediction)-</li>
+<li>Model description and justification, -</li>
+</ol>
+<ul>
+<li><ol start="3" style="list-style-type: decimal">
+<li>coefficients (if using regression) and/or weights (if using ensemble),-</li>
+</ol></li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>interpretation of coefficients and/or justification of weights,</li>
+</ol>
+<ul>
+<li><ol start="5" style="list-style-type: decimal">
+<li>model validation (recommended to include both in-sample and out-of-sample performance unless it is impossible due to the characteristics of model and related data availability), -</li>
+</ol></li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>uncertainty around prediction (e.g. predictive interval) -</li>
+<li>graphic(s) showing your prediction</li>
+</ol>
+<p>Midterm years only model</p>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                        DemVotesMajorPercent    
+## -----------------------------------------------
+## DSPIC_change_pct              -0.554           
+##                               (0.522)          
+##                                                
+## D_avg_support                0.604***          
+##                               (0.066)          
+##                                                
+## avg_rating                   -2.874***         
+##                               (0.093)          
+##                                                
+## Constant                     33.910***         
+##                               (3.129)          
+##                                                
+## -----------------------------------------------
+## Observations                    329            
+## R2                             0.757           
+## Adjusted R2                    0.755           
+## Residual Std. Error      2.707 (df = 325)      
+## F Statistic          337.804*** (df = 3; 325)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>##       fit      lwr      upr
+## 1 49.5433 44.00125 55.08535</code></pre>
+<p>#Assesing The Model</p>
+<pre class="r"><code>preddata &lt;- demdatamid %&gt;% 
+  group_by(year) %&gt;% 
+  summarise(DSPIC_change_pct = mean(DSPIC_change_pct),  D_avg_support = mean(D_avg_support), 
+                       avg_rating = mean(avg_rating),  DemVotesMajorPercent = mean(DemVotesMajorPercent))
+  
+  
+
+regressionprediction &lt;-preddata %&gt;%
+  ggplot(aes(x = predict(mid_mod_D, preddata), y = DemVotesMajorPercent, label = year)) +
+  geom_abline(intercept = 0, slope = 1, color = &quot;red&quot;) +
+  geom_text() +
+  xlab(&quot;Predicted Democratic Vote Share&quot;) +
+  ylab(&quot;Actual Democratic Vote Share&quot;) +
+  labs(title = &quot;Model Prediction&quot;)
+
+regressionprediction</code></pre>
+<p><img src="/post/2022-11-05-final-election-forecast/Test_pdf_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<p>In-sample Validation
+<img src="/post/2022-11-05-final-election-forecast/Test_pdf_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<pre><code>## [1] 2.690822</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = RepVotesMajorPercent ~ DSPIC_change_pct + R_avg_support + 
+##     avg_rating, data = repdatamid)
+## 
+## Coefficients:
+##      (Intercept)  DSPIC_change_pct     R_avg_support        avg_rating  
+##          10.7541            0.3095            0.6391            2.8743</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                        RepVotesMajorPercent    
+## -----------------------------------------------
+## DSPIC_change_pct               0.310           
+##                               (0.530)          
+##                                                
+## R_avg_support                0.639***          
+##                               (0.070)          
+##                                                
+## avg_rating                   2.874***          
+##                               (0.093)          
+##                                                
+## Constant                     10.754***         
+##                               (3.039)          
+##                                                
+## -----------------------------------------------
+## Observations                    329            
+## R2                             0.757           
+## Adjusted R2                    0.755           
+## Residual Std. Error      2.707 (df = 325)      
+## F Statistic          337.804*** (df = 3; 325)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>##        fit      lwr      upr
+## 1 53.34396 47.72369 58.96422</code></pre>
+<p>Out-of-sample validation
+*** ask kiara about this</p>
+<pre><code>## [1] -2.99101</code></pre>
+<p>only three years, overinflating residuals, makes sense to also look at state</p>
+<p><img src="/post/2022-11-05-final-election-forecast/Test_pdf_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<pre><code>## [1] 0.349778</code></pre>
+<p>#Number of Seats Model</p>
+<pre><code>## 
+## ================================================
+##                         Dependent variable:     
+##                     ----------------------------
+##                               r_seats           
+## ------------------------------------------------
+## DSPIC_change_pct             19.746***          
+##                               (0.170)           
+##                                                 
+## R_avg_support                 7.899***          
+##                               (0.041)           
+##                                                 
+## Constant                    -135.623***         
+##                               (1.699)           
+##                                                 
+## ------------------------------------------------
+## Observations                   4,340            
+## R2                             0.945            
+## Adjusted R2                    0.945            
+## Residual Std. Error      6.800 (df = 4337)      
+## F Statistic         36,957.050*** (df = 2; 4337)
+## ================================================
+## Note:                *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>##       fit      lwr      upr
+## 1 229.261 215.9071 242.6148</code></pre>
+<pre class="r"><code>#repdatamid &lt;- combinedmid %&gt;% 
+#  select(year, state, district, DemVotesMajorPercent, DemStatus, president_party, avg_rating, #DSPIC_change_pct, D_avg_support, d_seats) %&gt;% 
+ # drop_na()
+
+#seats_mid_mod_D &lt;- lm(d_seats ~ DSPIC_change_pct + D_avg_support, 
+           #           + avg_rating,
+           #           data = repdatamid)
+
+#stargazer(seats_mid_mod_D, type = &#39;text&#39;)
+
+#predict(seats_mid_mod_D, newdata = D2022, interval = &quot;prediction&quot;)</code></pre>
+<p>Seats model</p>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                               d_seats          
+## -----------------------------------------------
+## D_majorvote_pct              8.790***          
+##                               (0.766)          
+##                                                
+## Constant                    -219.768***        
+##                              (40.047)          
+##                                                
+## -----------------------------------------------
+## Observations                    30             
+## R2                             0.825           
+## Adjusted R2                    0.819           
+## Residual Std. Error      13.516 (df = 28)      
+## F Statistic           131.831*** (df = 1; 28)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                               d_seats          
+## -----------------------------------------------
+## D_majorvote_pct              8.790***          
+##                               (0.766)          
+##                                                
+## Constant                    -219.768***        
+##                              (40.047)          
+##                                                
+## -----------------------------------------------
+## Observations                    30             
+## R2                             0.825           
+## Adjusted R2                    0.819           
+## Residual Std. Error      13.516 (df = 28)      
+## F Statistic           131.831*** (df = 1; 28)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>##        fit      lwr      upr
+## 1 208.5605 179.8909 237.2301</code></pre>
+<p>District Level Model</p>
+<div id="nh-01-model" class="section level2">
+<h2>NH-01 Model</h2>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       dem_votes_major_percent  
+## -----------------------------------------------
+## avg_rating                    -1.277           
+##                               (1.322)          
+##                                                
+## dem_status                    -1.506           
+##                               (1.933)          
+##                                                
+## Constant                     56.618***         
+##                               (4.603)          
+##                                                
+## -----------------------------------------------
+## Observations                     6             
+## R2                             0.296           
+## Adjusted R2                   -0.173           
+## Residual Std. Error       2.306 (df = 3)       
+## F Statistic              0.631 (df = 2; 3)     
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>##        fit      lwr      upr
+## 1 50.24223 41.10589 59.37856</code></pre>
+</div>
