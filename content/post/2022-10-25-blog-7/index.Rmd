@@ -9,7 +9,7 @@ tags: []
 
 This week we looked at shocks and unexpected events in elections. Shocks are inherently difficult to operationalize and incorporate into models because their nature is that they produce one off events with no clear data to train a model on.  The literature looking at shocks has produced an inconclusive lack of consensus.  Some studies show even large shocks don't produce lasting impacts on voter opinion. Others show that even shocks unrelated to politics such as Shark attacks or natural disasters can impact voter behavior (Achen and Bartels). Because shocks are inherently unpredictable, they are difficult to account for in models.
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 library(dotenv)
 library(jsonlite)
 library(lubridate)
@@ -32,7 +32,7 @@ library(plyr)
 
 Perhaps the biggest shock in this election cycle was the overturning of Roe v. Wade. The leaked decision and subsequent ruling shook the nation and dominated the election cycle coverage throughout the summer. The Dobbs decision has been a major focus of Democratic campaigns throughout this midterm cycle and Democrats have spent millions of dollars on ads centering this issue. However, the actual impact of abortion on voter behavior remains unclear. To examine shocks during the 2022 election cycle, I performed a Newspaper scrape of the New York Times over the last year to look more closely at the overturning of Roe  v. Wade.
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #NYT Newspaper scrape for "Dobbs"
 
 #article_api <- "ZRlworx8tSbV72G0iJqakFDeR9TgBNTm"
@@ -84,7 +84,7 @@ dobbsdata <- readRDS("dobbs.RDS")
 ```
 
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #NYT Newspaper scrape for "abortion"
 
 #article_api <- "ZRlworx8tSbV72G0iJqakFDeR9TgBNTm"
@@ -133,7 +133,7 @@ abortiondata <- readRDS("abortion.RDS")
 
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 # how about visualization by week
 # extract raw date
 abortiondata <- abortiondata %>% 
@@ -194,7 +194,7 @@ Stemming from our discussion, I was curious about whether or not the large spike
 
 This analysis is also very interesting because it highlights some of the issues with this methodology. Theoretically, searching for abortion vs Dobbs should elicit similar results. I'm attempting to measure the same shock with both terms. But as we see, the results and trends show significant variation based on which term you search for.  This comparasion shows that we should be sceptical about how well this scrape can measure the salience of a given shock. 
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 # now compare this to generic ballot
 X538_generic_ballot_averages_2018_2022 <- read_csv("538_generic_ballot_averages_2018-2022 .csv")
 gb <- X538_generic_ballot_averages_2018_2022
@@ -263,7 +263,7 @@ I then mapped the generic ballot support for each party with markers for the lea
 
 Model Update: 
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #load in necessary data 
 cvap <- read.csv("polls_cvap_vp_df.csv")
 cvap_district <- read_csv("cvap_district_2012-2020_clean.csv")
@@ -275,7 +275,7 @@ incumb_dist_1948_2020_3_ <- read_csv("incumb_dist_1948-2020 (3).csv")
 
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #avg_ratings <- experts %>% 
 #  select(year, state, district, avg_rating)
 #
@@ -334,7 +334,7 @@ incumb_dist_1948_2020_3_ <- read_csv("incumb_dist_1948-2020 (3).csv")
 #  mutate(data = map(data, ~unnest(., cols = c()))) 
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #cvap_vp_df <- merge(dem_results_new, cvap_district, by = c('st_cd_fips', 'year'))
 #cvap_vp_rate_df <- cvap_vp_df %>%
 #  mutate(totalvotes = RepVotes + DemVotes,
@@ -361,7 +361,7 @@ incumb_dist_1948_2020_3_ <- read_csv("incumb_dist_1948-2020 (3).csv")
 ```
 
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #District level model 
 #cvap_extension_train <-  cvap_vp_rate_df %>%
  # filter(year != 2022) %>% 
@@ -411,14 +411,14 @@ incumb_dist_1948_2020_3_ <- read_csv("incumb_dist_1948-2020 (3).csv")
 ```
 
 National Model
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 combined_midterm <- read_csv("combined_midterm.csv")
 
 D_lm <- lm(dem_votes_major_percent ~ incumbency + avg_rating + turnout, data = combined_midterm)
 stargazer(D_lm, type='text')
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 prob_D_lm <- predict(D_lm, newdata = 
                            data.frame(avg_rating = 5, turnout = 47.6, incumbency = 1), type="response", interval = "prediction")
 
