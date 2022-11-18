@@ -1,0 +1,606 @@
+---
+title: "Final Election Forecast"
+author: "Jen Hughes"
+date: '2022-11-05'
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+categories: []
+tags: []
+slug: []
+---
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+library(dotenv)
+library(jsonlite)
+library(lubridate)
+library(gridExtra)
+library(tidyverse)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+library(scales)
+library(dplyr)
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#load in necessary data 
+polls_df <- read_csv("polls_df.csv")
+experts <- read_csv("expert_rating.csv")
+incumb_dist_1948_2020 <- read_csv("incumb_dist_1948_2020.csv") 
+RDI <- read_csv("RDI_quarterly.csv")
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#clean outcome data
+incumb_dist_1948_2020 <- incumb_dist_1948_2020 %>% 
+  select(-...1, -...2, -office, -RepCandidate, -DemCandidate) %>% 
+  rename(district = district_num)
+
+#create avg support
+polls_df <- polls_df %>% 
+                  filter(bmonth >= 9) %>% 
+                  group_by(year, party) %>% 
+                  summarise(avg_support = mean(support))
+
+polls_df_modified <- data.frame(matrix(ncol = 3, nrow = 0))
+new_cols <- c("year", "D_avg_support", "R_avg_support")
+colnames(polls_df_modified) <- new_cols
+
+index <- 1
+while (index <= nrow(polls_df)) {
+  new_row <-data.frame(polls_df$year[index], polls_df$avg_support[index], polls_df$avg_support[index + 1])
+  names(new_row) <- c("year", "D_avg_support", "R_avg_support")
+  polls_df_modified <- rbind(polls_df_modified, new_row)
+  index = index + 2
+}
+
+#Clean RDI data
+RDI <- read_csv('RDI_quarterly.csv')
+  
+RDI <- RDI %>%
+  select('year', 'quarter_cycle', 'DSPIC_change_pct') %>% 
+  #filter(year == 1982 | year == 1986 | year == 1982 | year == 1986 | year == 1990 | year == 1994 | year == 1994 | year == 1998 | year == 2002 | year == 2006 | year == 2010 | year == 2014 | year == 2018 | year == 2022) %>%  
+  filter(quarter_cycle == 8) 
+
+#clean expert ratings 
+experts <- experts %>%
+  select(year, state, district, avg_rating)
+experts <- experts %>%
+   mutate(district = case_when(
+    district == "AL" ~ "1",
+    TRUE ~ district
+  ))
+
+experts$district <- as.numeric(experts$district)
+
+experts$district <- sprintf("%02d", as.numeric(experts$district))
+
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#join all data frames
+combined <- incumb_dist_1948_2020 %>% 
+    left_join(experts, by = c("year", "state", "district"))
+
+combined1 <- combined %>% 
+    left_join(RDI)
+
+combined2 <- combined1 %>% 
+  left_join(polls_df_modified)
+
+combined2 <- combined2 %>% 
+  mutate(presparty = ifelse(combined2$president_party == "R", 1, 0))
+
+seats <- read_csv("year_seats.csv")
+
+combined3 <- combined2 %>% 
+  left_join(seats)
+```
+
+
+```{r,  eval = FALSE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#demdata <- combined3 %>% 
+#  select(year, state, district, DemVotesMajorPercent, DemStatus,  president_party, avg_rating, DSPIC_change_pct, D_avg_support, d_seats)
+
+#allyear_mod_D <- lm(DemVotesMajorPercent ~ DSPIC_change_pct + D_avg_support + avg_rating 
+                    #+  president_party
+            #        , data = demdata)
+#allyear_mod_D
+
+#stargazer(allyear_mod_D, type = 'text')
+
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+D2022 <- data.frame( DSPIC_change_pct = c(-0.683215), D_avg_support = 45.4, avg_rating = 4.24,  president_party = "D")
+
+#predict(allyear_mod_D, newdata = D2022, interval = "prediction")
+```
+
+```{r,  eval = FALSE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#repdata <- combined3 %>% 
+ # select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats)
+
+#allyear_mod_R <- lm(RepVotesMajorPercent ~ DSPIC_change_pct + R_avg_support + avg_rating +  president_party, data = repdata)
+#allyear_mod_R
+
+#stargazer(allyear_mod_R, type = 'text')
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+R2022 <- data.frame(DSPIC_change_pct = c(-0.683215), R_avg_support = 47.9, avg_rating = 4.24,  president_party = "D")
+
+#predict(allyear_mod_R, newdata = R2022, interval = "prediction")
+```
+
+#Overview
+
+Hi All!  After several weeks of experimenting reworking and shifting the election is upon us meaning this is my final prediction.  In the end, I have focused on a national vote share model and a resulting seat share model based on this prediction.  My final prediction outlined in more detail below, predicts that Republicans will win 226 seats while Democrats will win 209.  While I feel confident that the predicted seat distribution is in the right range, I was unable to fully solve issues of data limitations that we have been facing all semester which means that the confidence interval on this prediction is very large, 
+with over a 10 seat swing in either direction predicted as possible.  
+
+#The Final Model
+
+My final model incorporates percent change in real disposable income from Q7 - Q8, avg expert rating, and generic ballot averages after August. While creating the model, I attempted to account for many other variables including, district level polls, party of the president, and house incumbency. However, I found that all of these variables either lowed the R-sq value of my model or introduced glaring data gaps that made modeling with any level of certainty impossible. I was also compelled by several readings across the course, particularly the collection of articles from Campbell 2018, that simpler models can still be powerful predictors.    
+
+#Formula
+
+The final model formula I utilized is:
+
+Y =  33.910 -0.554* X1 + 0.604* X2 -2.874* X3   
+                                               
+whereas,
+
+- Y = Democratic party popular vote share of two major parties (%)
+
+- X1 = The percent change in real disposable income between quarters 7 and 8 of a given election year
+
+- X2 = Support for Democrats based on an average of generic ballot polling (%)
+
+- X3 = The average expert rating for a given district in a given year (1-7)
+
+**see below for more information on the expert rating calculation 
+ 
+#Justification
+
+I chose to include change in RDI from Q7 to Q8 because we've seen that at least in presidential elections, this metric has proven to be a good predictor of vote share (Healy and Lenz, 2014). While the impact of this metric in Congressional elections is less conclusive, it is nevertheless of the few metrics where we have comprehensive, reliable data (Enos, Gov1347).  Furthermore, voters continually cite the economy as the single most important issue from election cycle to election cycle, particularly in 2022 (Pew 2022).  Therefore I felt that it was important to include an explicit measure of the economy beyond just what is baked into expert predictions. 
+
+The next variable I included was generic ballot polling data. Using the list of generic ballot polls provided to the class, I created an average support variable for each party which took the average of every poll after August. As we've seen in the 2022 election cycle, themics of generic ballot polls often change after the summer months as average voters begin to pay attention to politics (FiveThirtyEight). This often takes the form of tightening polls in the fall.  For this reason I decided to include polls from Sep-Nov because they more accurately represent the true stances of the electorate. 
+
+Finally, I included average expert rating in the model. I converted expert ratings from Cook, Rothenberg, Sabato's Crystal Ball, and Real Clear Politics onto a 1-7 scale where 1 is a safe D seat and 7 is a safe R seat. The model treats one year-state-district as the unit of observation so our data is limited by the availability of expert ratings since the data set available to us includes only competitive races. However, looking at only competitive races may actually improve our model since there's some reason to believe that competitive races differ from safe seats. Given the partisan makeup of the nation, a national prediction should more closely model a competitve election that a safe election. 
+
+While trying out different models I initially built a model using data from all election years in an attempt to preserve as much data as possible given the limited data available about house races. This gave me a prediction with an similar r-squared (0.75) but a very large prediction interval. To see if I could reduce that interval, I subset the data for just midterm years. As seen below, this model kept a similar r-squared value (0.75) but reduced the prediction interval to ~10 pts.  This is still a large window but it is a much better prediction than the model where all years were included. 
+
+#Midterm years only model
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+combinedmid <- combined3 %>%
+  filter(year == 1982 | year == 1986 | year == 1982 | year == 1986 | year == 1990 | year == 1994 | year == 1994 | year == 1998 | year == 2002 | year == 2006 | year == 2010 | year == 2014 | year == 2018 | year == 2022) 
+```
+
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+demdatamid <- combinedmid %>% 
+  select(year, state, district, DemVotesMajorPercent, DemStatus,  president_party, avg_rating, DSPIC_change_pct, D_avg_support, d_seats) %>% 
+  drop_na()
+
+mid_mod_D <- lm(DemVotesMajorPercent ~ DSPIC_change_pct +
+                  D_avg_support + avg_rating, data = demdatamid)
+#mid_mod_D
+
+stargazer(mid_mod_D, type = 'text')
+```
+
+The coefficient for the change in RDI variable is -0.554.  This means that a one point increase in RDI change from Q7 to Q8 is associated with a 0.554 decrease in vote share. This seems counter intuitive because we would expect that a larger increase in RDI should be positively correlated with vote share. However, this is also the only variable that is not showing as significant so it may just be that change in RDI is not a great predictor of midterm outcomes.
+
+The coefficient for generic ballot supper is 0.604. This means that a one point increase in generic ballot support for Democrats translates into a 0.6 point increase in Democratic vote share. This relationship does fit what we would expect but it's interesting that it is not a 1-to-1 relationship. The coefficient is another reminder that generic ballot polling alone does not perfectly translate into votes, demonstrating the persistent issues and uncertainty of polling. 
+
+The final coefficient for average expert rating shows that a 1 unit change in expert rating (from likely Dem to leans Dem for instance) is associated with a 2.9 point drop in democratic vote share. This makes sense because as a race becomes more favorable to Republicans we would expect the Democratic vote share to decrease. This is also the largest coefficient, demonstrating the reliance of the model on expert ratings which are significant.
+
+Prediction:
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+D2022 <- data.frame( DSPIC_change_pct = c(-0.683215), D_avg_support = 45.4, avg_rating = 4.24,  president_party = "D")
+
+predict(mid_mod_D, newdata = D2022, interval = "prediction")
+```
+
+To make a prediction for the 2022 midterm elections based on this model, I plugged in the current data on RDI change over the last quarter, current democratic generic ballot averages, and average expert rating across all districts. This value was calculated using the expert predictions 2022 scrape provided to the course. This aggregates district ratings for all districts from predictions by Cook, Rothenberg, Sabatos Crystal Ball and Real Clear Politics.
+
+With this data, the model predicts that Democrats will win 49.5% of the two party vote share and Republicans will win 50.5% of the two party vote share. Unfortunately, the prediction interval remains very large with the prediction falling between 44-55 points for Democrats. 
+
+I then used these predictions to predict seats won by each party based on a simple bivartiate model converting vote share to seat share. 
+
+#Seat Share Model
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#repdatamid <- combinedmid %>% 
+ # select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats)
+
+#seats_mid_mod_R <- lm(r_seats ~ DSPIC_change_pct + R_avg_support, 
+                      #+ avg_rating,
+    #                  data = repdatamid)
+
+#stargazer(seats_mid_mod_R, type = 'text')
+
+#predict(seats_mid_mod_R, newdata = R2022, interval = "prediction")
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#repdatamid <- combinedmid %>% 
+#  select(year, state, district, DemVotesMajorPercent, DemStatus, president_party, avg_rating, #DSPIC_change_pct, D_avg_support, d_seats) %>% 
+ # drop_na()
+
+#seats_mid_mod_D <- lm(d_seats ~ DSPIC_change_pct + D_avg_support, 
+           #           + avg_rating,
+           #           data = repdatamid)
+
+#stargazer(seats_mid_mod_D, type = 'text')
+
+#predict(seats_mid_mod_D, newdata = D2022, interval = "prediction")
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+outcome <- read_csv("house_popvote_seats.csv") %>% 
+  select(year, R_majorvote_pct, D_majorvote_pct)
+
+outcome <- outcome %>% 
+  left_join(seats)
+
+#seats_R <- lm(r_seats ~ R_majorvote_pct, data = outcome)
+
+#rprediction <- data.frame(R_majorvote_pct = 52.84)
+
+#stargazer(seats_R, type = 'text')
+
+#predict(seats_R, newdata = rprediction , interval = "prediction")
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+seats_d <- lm(d_seats ~ D_majorvote_pct, data = outcome)
+
+stargazer(seats_d, type = 'text')
+```
+
+Ideally, I would predict seat share directly as the dependent variable however, since we are limited to only three years of seat share data, it was impossible to build a robust model in this way.  However, to work around this I ran a simple bivariate regression on Democratic two party vote share and Democratic seats share since 1948.  The r2 on this model was .825 suggesting a very strong relationship. While this does introduce added uncertainty since I am predicting based on a prediction, it was the most reasonable way to use the model to get a seat share prediction. 
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+dprediction <- data.frame(D_majorvote_pct = 48.73)
+
+predict(seats_d, newdata = dprediction , interval = "prediction")
+```
+
+Based on the predicted vote share, I predict that Democrats will win 209 House seats and Republicans will win 226. This prediction has a large uncertainty interval with a low of 179 seats and a high of 237 seats.
+
+#Assesing The Model
+
+While the model is based on observations at the district-year level, the data I input for the prediction is based on an aggregate of the current national environment and expert predictions.  To check how this holds up to the model, I aggregated all data points for each of the 3 years included in the data set and graphed them against the model. 
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+preddata <- demdatamid %>% 
+  group_by(year) %>% 
+  summarise(DSPIC_change_pct = mean(DSPIC_change_pct),  D_avg_support = mean(D_avg_support), 
+                       avg_rating = mean(avg_rating),  DemVotesMajorPercent = mean(DemVotesMajorPercent))
+  
+  
+
+regressionprediction <-preddata %>%
+  ggplot(aes(x = predict(mid_mod_D, preddata), y = DemVotesMajorPercent, label = year)) +
+  geom_abline(intercept = 0, slope = 1, color = "red") +
+  geom_text() +
+  xlab("Predicted Democratic Vote Share") +
+  ylab("Actual Democratic Vote Share") +
+  labs(title = "Model Prediction")
+
+regressionprediction
+```
+As we can see, the year aggregates are good fits for the model which validates the approach used to make the prediction. 
+
+In-sample validation
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+hist(mid_mod_D$model$DemVotesMajorPercent -
+mid_mod_D$fitted.values,
+main="histogram of true Y - predicted Y",
+  xlab = "Residuals")
+
+mse_g <- mean((mid_mod_D$model$DemVotesMajorPercent
+               - mid_mod_D$fitted.value)^2)
+sqrt(mse_g)
+```
+
+If we look at the the distribution of residuals we see that there appears to be a slight leftward skew but they are for the most part normal.  This further supports the validity of the model as we expect a normal distribution of residuals with linear models. Furthermore, the mean squared error is 2.69 which is much lower than the MSE in the alternative model which included all election years (~12). This validates the choice of the midterm years model over the model including all election years. 
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#repdatamid <- combinedmid %>% 
+ # select(year, state, district, RepVotesMajorPercent, RepStatus, president_party, avg_rating, DSPIC_change_pct, R_avg_support, r_seats) %>% 
+ # drop_na()
+
+#mid_mod_R <- lm(RepVotesMajorPercent ~ DSPIC_change_pct + 
+            #      R_avg_support + avg_rating , data = repdatamid)
+#mid_mod_R
+
+#stargazer(mid_mod_R, type = 'text')
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#predict(mid_mod_R, newdata = R2022, interval = "prediction")
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#hist(mid_mod_R$model$RepVotesMajorPercent -
+#mid_mod_R$fitted.values,
+#main="histogram of true Y - predicted Y")
+
+#mse_g <- mean((mid_mod_R$model$RepVotesMajorPercent
+            #   - mid_mod_R$fitted.value)^2)
+#sqrt(mse_g)
+```
+
+Out-of-sample validation
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+outsamp_mod1 <- lm(DemVotesMajorPercent ~ DSPIC_change_pct +
+                  D_avg_support + avg_rating,
+                   
+demdatamid[demdatamid$year != "2018",])
+outsamp_pred <- predict(outsamp_mod1,
+
+demdatamid[demdatamid$year == "2018",])
+
+outsamp_true <- demdatamid$DemVotesMajorPercent[demdatamid$year == "2018"]
+
+diff<- outsamp_pred - outsamp_true
+mean(diff)
+```
+
+When looking at out-of-sample validation, the model does not hold up particularly well to the removal of data from a given year resulting in a mean out of sample residual of -2.99. This is to be expected given that the model only incorporates three years worth of data. his means that an out of sample test removing one year removes about 1/3 of the observations. Therefore, I expect that this test is over inflating residuals as a lack of limited data. Since the unit of observation for the model is district-year, I have chose to also test the models robustness when removing certain states. 
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+outsamp_errors <- sapply(1:1000, function(i){
+state_outsamp <- sample(demdatamid$state, 10)
+outsamp_mod <- lm(DemVotesMajorPercent ~ DSPIC_change_pct +
+                  D_avg_support + avg_rating,
+demdatamid[!(demdatamid$state %in% state_outsamp),])
+
+outsamp_pred <- predict(outsamp_mod,
+
+newdata = demdatamid[demdatamid$state %in% state_outsamp,])
+outsamp_true <- demdatamid$DemVotesMajorPercent[demdatamid$state
+
+%in% state_outsamp]
+
+mean(outsamp_pred - outsamp_true)
+})
+
+outsamphist <- hist(outsamp_errors,
+     xlab = "",
+     main = "mean out-of-sample residual\n(1000 runs of cross-validation)")
+
+mean(abs(outsamp_errors))
+```
+
+This out-of-sample test shows low residuals with a mean out of sample error of 0.3484196. This indicates that the model holds up much better across states than across years. This makes a sense given that this test is not pulling 1/3 of the data the way the previous one was. 
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#District Level Model
+#expert_ratings <- read_csv("combined_exp.csv")
+#historical_results <- read_csv("house party vote share by district 1948-2020.csv") %>%
+#  clean_names()
+#incumb_dist_1948_2022_2_ <- read_csv("incumb_dist_1948_2020.csv")
+#roper_cong_polls_1979_2022 <- read_csv("roper_cong_polls_1979-2022.csv")
+#votes <- read_csv("house party vote share by district 1948-2020.csv") %>%
+#  clean_names()
+```
+
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#library(usdata)
+
+#expert_ratings$district <- as.numeric(expert_ratings$district)
+#expert_ratings <- expert_ratings %>% 
+#  mutate(state = abbr2state(state))
+
+#Selecting columns
+#avg_ratings <- expert_ratings %>% 
+#  select(year, state, district, avg_rating)
+#historical_results_clean <- historical_results %>%
+ # mutate(dem_status = case_when(dem_status == "Incumbent" ~ 1, TRUE ~ 0),
+ #   rep_status = case_when(rep_status == "Incumbent" ~ 1, TRUE ~ 0))
+
+#dem_results <- historical_results_clean %>% 
+ # select(race_year, state, area, dem_votes_major_percent, dem_status) %>% 
+#  rename("year" = "race_year") %>% 
+ # separate(area, into = c("area", "district"), sep = " ") %>% 
+ # select(-area) %>% 
+ # mutate(district = case_when(
+ #   district == "Large" ~ "AL",
+ #   TRUE ~ district))
+
+#rep_results <- historical_results_clean %>% 
+#  select(race_year, state, area, rep_votes_major_percent, rep_status) %>% 
+#  rename("year" = "race_year") %>% 
+#  separate(area, into = c("area", "district"), sep = " ") %>% 
+# select(-area) %>% 
+ # mutate(district = case_when(
+ #   district == "Large" ~ "AL",
+ #  TRUE ~ district
+ # ))
+```
+
+```{r,eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+
+#dem_results$district <- as.numeric(dem_results$district)
+
+# Joining the data and nesting by state and district
+#train_data_dem <- avg_ratings %>%
+ #filter(year != 2022) %>%
+#left join as there aren't ratings for every district
+#left_join(dem_results, by = c("year", "state", "district")) %>%
+#group_by(state, district) %>%
+#filter(n() > 1) %>% # Filtering out single data rows
+#group_nest() %>%
+#mutate(data = map(data, ~unnest(., cols = c())))
+
+# train_data_rep <- avg_ratings %>%
+# filter(year != 2022) %>%
+# #left join as there aren't ratings for every district
+# left_join(rep_results, by = c("year", "state", "district")) %>%
+# group_by(state, district) %>%
+# filter(n() > 1) %>% # Filtering out single data rows
+# group_nest() %>%
+# mutate(data = map(data, ~unnest(., cols = c())))
+```
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#run democrat and republican model on respective training dataset
+#modelsdem <- train_data_dem %>%
+# mutate(modeldem = map(data, ~lm(dem_votes_major_percent ~ avg_rating + dem_status,
+#       data = .x))) %>%
+# select(-data)
+
+#modelsnoincumbent <- train_data_dem %>%
+# mutate(modelnoincumb = map(data, ~lm(dem_votes_major_percent ~ avg_rating,
+#      data = .x))) %>%
+# select(-data)
+
+##modelsrep <- train_data_rep %>% 
+  ##mutate(modelrep = map(data, ~lm(rep_votes_major_percent ~ avg_rating + rep_status, 
+          ## data = .x))) %>%
+  ##select(-data)
+
+#model_results_dem <- modelsdem %>% 
+#modelsnoincumbent_results <- modelsnoincumbent %>% 
+#  mutate(r_squared = map_dbl(modelnoincumb, ~summary(.x)$r.squared))
+##model_results_rep <- modelsrep %>% 
+ ## mutate(r_squared = map_dbl(modelrep, ~summary(.x)$r.squared))
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#creating testdata
+#test2022attempt <- avg_ratings %>%
+#  mutate(dem_status = 1)
+#test_data <- test2022attempt %>% 
+ # filter(year == 2022) %>% 
+ # group_by(state, district) %>% 
+ # group_nest() %>% 
+ # mutate(datad = map(data, ~unnest(., cols = c())))
+
+#predictions 2022 of demvotes with all dem_status = 1 for incumbent
+#pred_2022 <- test_data %>%
+  # inner join as there may not be historical models for some districts
+#  inner_join(modelsdem, by = c("state", "district")) %>% 
+#  mutate(pred = map_dbl(.x = modeldem, .y = datad, ~predict(object = .x, newdata = as.data.frame(.y)))) #%>%
+#  select(state, district, pred)
+#print(pred_2022)
+
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#reformat single district states 
+#pred_2022$district[is.na(pred_2022$district)] = 1
+
+
+#pred_2022 <- pred_2022 %>%
+ #  mutate(district = case_when(
+ #   district == "AL" ~ "1",
+#    TRUE ~ district
+#  ))
+
+#change class
+# pred_2022$district <- as.numeric(pred_2022$district)
+```
+
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+#cd116 <- congressional_districts(
+ # state = NULL,
+#  cb = FALSE,
+  # resolution = "500k",
+ # year = 2018)
+
+#cd116 <- cd116 %>%
+#  rename("state" = "STATEFP")
+  
+#state <- read_csv("us-state.csv")
+
+#state <- state %>%
+ # rename("state" = "st")
+
+#district <- cd116 %>%
+#  left_join(state, by = "state")
+  
+#district2 <- district %>%
+#  select(-c("state")) %>%
+ # rename("state" = "stname", "district" = "CD116FP", "st" = "stusps")
+
+#district2$district <- as.numeric(district2$district)
+
+#district2 <- district2 %>%
+#  mutate(district = case_when(
+#    district == 0 ~ 1,
+ #   TRUE ~ district
+#  ))
+
+#merge data 
+#alldata <- district2 %>%
+#  left_join(pred_2022, by = c("state", "district"))
+
+#simplifiy for plot
+#simpdata <- alldata %>%
+#  filter(state != "Alaska", state != "Hawaii") %>%
+  #rename("st" = "stusps") %>%
+#  mutate(district = case_when(
+ #   district == 0 ~ 1,
+ #   TRUE ~ district
+#  )) %>%
+#  ms_simplify()
+
+#simpdata$district <- as.numeric(simpdata$district)
+
+#Plot Dem voteshare by district in 2018
+#ggplot() + 
+#  geom_sf(data=simpdata,aes(fill=pred),
+  #        inherit.aes=FALSE,alpha=0.9) + 
+#  scale_fill_gradient(low = "white", high = "dodger blue", limits=c(35,60), name = "Vote Share #Percentage") +
+ #  theme_void() +
+ # theme(axis.title.x=element_blank(),
+ #       axis.text.x=element_blank(),
+  #      axis.ticks.x=element_blank(),
+ #       axis.title.y=element_blank(),
+   #     axis.text.y=element_blank(),
+   #     axis.ticks.y=element_blank()) +
+  #labs(title = "2022 Competitive District Dem Vote Share Predictions")
+```
+
+## NH-01 Model
+
+While I did not model every district at the district level, I did want to include a forecast for the district I have been following for the class throughout the semester.  As with all of the district level predictions, the ability to predict NH-01 is limited by the availability of data.  This rough model includes average expert rating and incumbency.  With such limited data, the r-squared is extremely low (0.296) and the prediction interval is 9 points in either direction.  While teh predictive power of this model is quite low, I nevertheless predict with a great deal of uncertainty that Chris Pappas will narrowly take NH-01, over challenger Karoline Leavitt winning a two party vote share of 50.24%. 
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+NH_01 <- read_csv("NH-01_data.csv")
+
+NH_model <- lm(dem_votes_major_percent ~ avg_rating + dem_status, data = NH_01)
+
+stargazer(NH_model, type = 'text')
+```
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+NH2022 <- data.frame(avg_rating = 3.8125, dem_status = 1)
+
+predict(NH_model, newdata = NH2022, interval = "prediction")
+```
+
+Expert ratings data sets were provided courtesy of Jackson Delgado. All other data incorporated in this model was provided courtesy of the Gov_1347 teaching staff.  
+
+Andrew Healy and Gabriel S Lenz. Substituting the end for the whole: Why voters respond
+primarily to the election-year economy. American journal of political science, 58(1):31–47,
+2014. ISSN 0092-5853. URL.
+
+James Campbell. Forecasting the 2018 us midterm elections. PS: Political Science & Politics,
+51(S1), 2018. URL.

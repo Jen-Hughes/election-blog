@@ -1,0 +1,522 @@
+---
+title: Blog 7
+author: Jen Hughes
+date: '2022-10-25'
+slug: []
+categories: []
+tags: []
+---
+
+
+
+<p>This week we looked at shocks and unexpected events in elections. Shocks are inherently difficult to operationalize and incorporate into models because their nature is that they produce one off events with no clear data to train a model on. The literature looking at shocks has produced an inconclusive lack of consensus. Some studies show even large shocks don’t produce lasting impacts on voter opinion. Others show that even shocks unrelated to politics such as Shark attacks or natural disasters can impact voter behavior (Achen and Bartels). Because shocks are inherently unpredictable, they are difficult to account for in models.</p>
+<pre class="r"><code>library(dotenv)
+library(jsonlite)
+library(lubridate)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     date, intersect, setdiff, union</code></pre>
+<pre class="r"><code>library(gridExtra)
+library(tidyverse)</code></pre>
+<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──</code></pre>
+<pre><code>## ✓ ggplot2 3.3.6     ✓ purrr   0.3.4
+## ✓ tibble  3.1.6     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.4     ✓ stringr 1.4.0
+## ✓ readr   2.1.1     ✓ forcats 0.5.1</code></pre>
+<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x lubridate::as.difftime() masks base::as.difftime()
+## x dplyr::combine()         masks gridExtra::combine()
+## x lubridate::date()        masks base::date()
+## x dplyr::filter()          masks stats::filter()
+## x purrr::flatten()         masks jsonlite::flatten()
+## x lubridate::intersect()   masks base::intersect()
+## x dplyr::lag()             masks stats::lag()
+## x lubridate::setdiff()     masks base::setdiff()
+## x lubridate::union()       masks base::union()</code></pre>
+<pre class="r"><code>library(ggplot2)
+library(blogdown)
+library(stargazer)</code></pre>
+<pre><code>## 
+## Please cite as:</code></pre>
+<pre><code>##  Hlavac, Marek (2022). stargazer: Well-Formatted Regression and Summary Statistics Tables.</code></pre>
+<pre><code>##  R package version 5.2.3. https://CRAN.R-project.org/package=stargazer</code></pre>
+<pre class="r"><code>library(readr)
+library(usmap)
+library(rmapshaper)</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;geojsonlint&#39;:
+##   method         from 
+##   print.location dplyr</code></pre>
+<pre class="r"><code>library(sf)</code></pre>
+<pre><code>## Linking to GEOS 3.9.1, GDAL 3.4.0, PROJ 8.1.1; sf_use_s2() is TRUE</code></pre>
+<pre class="r"><code>library(janitor)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;janitor&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     chisq.test, fisher.test</code></pre>
+<pre class="r"><code>library(tigris)</code></pre>
+<pre><code>## To enable caching of data, set `options(tigris_use_cache = TRUE)`
+## in your R script or .Rprofile.</code></pre>
+<pre class="r"><code>library(leaflet)
+library(dplyr)
+library(scales)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;scales&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     discard</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     col_factor</code></pre>
+<pre class="r"><code>library(plyr)</code></pre>
+<pre><code>## ------------------------------------------------------------------------------</code></pre>
+<pre><code>## You have loaded plyr after dplyr - this is likely to cause problems.
+## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+## library(plyr); library(dplyr)</code></pre>
+<pre><code>## ------------------------------------------------------------------------------</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     arrange, count, desc, failwith, id, mutate, rename, summarise,
+##     summarize</code></pre>
+<pre><code>## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     compact</code></pre>
+<p>Perhaps the biggest shock in this election cycle was the overturning of Roe v. Wade. The leaked decision and subsequent ruling shook the nation and dominated the election cycle coverage throughout the summer. The Dobbs decision has been a major focus of Democratic campaigns throughout this midterm cycle and Democrats have spent millions of dollars on ads centering this issue. However, the actual impact of abortion on voter behavior remains unclear. To examine shocks during the 2022 election cycle, I performed a Newspaper scrape of the New York Times over the last year to look more closely at the overturning of Roe v. Wade.</p>
+<pre class="r"><code>#NYT Newspaper scrape for &quot;Dobbs&quot;
+
+#article_api &lt;- &quot;ZRlworx8tSbV72G0iJqakFDeR9TgBNTm&quot;
+
+#complete_url &lt;- &quot;https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=Dobbs&amp;facet_field=day_of_week&amp;facet=true&amp;begin_date=20220101&amp;end_date=20221021&amp;api-key=ZRlworx8tSbV72G0iJqakFDeR9TgBNTm&quot;
+
+#sus &lt;- fromJSON(complete_url)
+
+
+#sus$response$meta$hits
+
+#hits &lt;- sus$response$meta$hits
+
+#max_pages &lt;- round((hits / 10) - 1)
+
+
+#sus0 &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=0&quot;), flatten = TRUE)
+#nrow(sus0$response$docs)
+#sus1 &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=1&quot;), flatten = TRUE)
+#nrow(sus1$response$docs)
+#sus2 &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=2&quot;), flatten = TRUE)
+#nrow(sus2$response$docs)
+
+# organizations &lt;- rbind_pages(
+#   list(sus0$response$docs, sus1$response$docs, sus2$response$docs)
+# )
+
+
+#pages &lt;- list()
+#Sys.sleep(1)
+ 
+#for(i in 0:24){
+#   mydata &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=&quot;, i))
+#   message(&quot;Retrieving page &quot;, i)
+#   pages[[i+1]] &lt;- mydata$response$docs
+ #  Sys.sleep(6) 
+# }
+
+# #combine all into one
+#organizations &lt;- rbind_pages(pages)
+
+ 
+# # save df
+#saveRDS(organizations, file = &quot;dobbs.RDS&quot;)
+
+# reload
+dobbsdata &lt;- readRDS(&quot;dobbs.RDS&quot;)</code></pre>
+<pre class="r"><code>#NYT Newspaper scrape for &quot;abortion&quot;
+
+#article_api &lt;- &quot;ZRlworx8tSbV72G0iJqakFDeR9TgBNTm&quot;
+
+#complete_url &lt;- &quot;https://api.nytimes.com/svc/search/v2/articlesearch.json?fq=abortion&amp;facet_field=day_of_week&amp;facet=true&amp;begin_date=20220101&amp;end_date=20221021&amp;api-key=ZRlworx8tSbV72G0iJqakFDeR9TgBNTm&quot;
+
+#sus &lt;- fromJSON(complete_url)
+
+
+#sus$response$meta$hits
+
+#hits &lt;- sus$response$meta$hits
+
+#max_pages &lt;- round((hits / 10) - 1)
+
+
+#sus0 &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=0&quot;), flatten = TRUE)
+#nrow(sus0$response$docs)
+##sus1 &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=1&quot;), flatten = TRUE)
+#sus2 &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=2&quot;), flatten = TRUE)
+#nrow(sus2$response$docs)
+
+ #organizations &lt;- rbind_pages(
+ #  list(sus0$response$docs, sus1$response$docs, sus2$response$docs)
+ #)
+
+
+#pages &lt;- list()
+#Sys.sleep(1)
+ 
+#for(i in 0:24){
+ #  mydata &lt;- fromJSON(paste0(complete_url, &quot;&amp;page=&quot;, i))
+  #  pages[[i+1]] &lt;- mydata$response$docs
+ #  Sys.sleep(6) 
+# }
+
+# #combine all into one
+#organizations &lt;- rbind_pages(pages)
+
+ 
+# # save df
+#saveRDS(organizations, file = &quot;abortion.RDS&quot;)
+
+# reload
+abortiondata &lt;- readRDS(&quot;abortion.RDS&quot;)</code></pre>
+<pre class="r"><code># how about visualization by week
+# extract raw date
+abortiondata &lt;- abortiondata %&gt;% 
+  mutate(publ_date = substr(pub_date, 1, 10))
+#head(mydata$publ_date)
+
+# mutate week variable
+abortiondata &lt;- abortiondata %&gt;% 
+  mutate(week = strftime(publ_date, format = &quot;%V&quot;))
+#head(mydata$week)
+
+# plot
+p2 &lt;- abortiondata  %&gt;% 
+  group_by(week) %&gt;% 
+  dplyr::summarize(count = n()) %&gt;% 
+  ggplot(aes(week, count, group = 1, color = count)) +
+    geom_line() +
+    labs(y = &quot;Article Count&quot;, x = &quot;Week&quot;,
+         title = &quot;NYT Articles mentioning &#39;Abortion&#39; in 2022&quot;,
+         color = &quot;&quot;) + # now add line for when decision was leaked
+      geom_segment(x=(&quot;18&quot;), xend=(&quot;18&quot;),y=0,yend=37, lty=2, color=&quot;purple&quot;, alpha=0.4) +
+      annotate(&quot;text&quot;, x=(&quot;18&quot;), y=35, label=&quot;Decision leaked&quot;, size=3) +
+  geom_segment(x=(&quot;25&quot;), xend=(&quot;25&quot;),y=0,yend=37, lty=2, color=&quot;red&quot;, alpha=0.4) +
+      annotate(&quot;text&quot;, x=(&quot;25&quot;), y=35, label=&quot;Decision released&quot;, size=3) # now add line for when decision was actually made
+
+# how about visualization by week
+# extract raw date
+dobbsdata &lt;- dobbsdata %&gt;% 
+  mutate(publ_date = substr(pub_date, 1, 10))
+#head(mydata$publ_date)
+
+# mutate week variable
+dobbsdata &lt;- dobbsdata %&gt;% 
+  mutate(week = strftime(publ_date, format = &quot;%V&quot;))
+#head(mydata$week)
+
+# plot
+p1 &lt;- dobbsdata  %&gt;% 
+  group_by(week) %&gt;% 
+  dplyr::summarize(count = n()) %&gt;% 
+  ggplot(aes(week, count, group = 1, color = count)) +
+    geom_line() +
+    labs(y = &quot;Article Count&quot;, x = &quot;Week&quot;,
+         title = &quot;NYT Articles mentioning &#39;Dobbs&#39; in 2022&quot;,
+         color = &quot;&quot;) + # now add line for when decision was leaked
+      geom_segment(x=(&quot;18&quot;), xend=(&quot;18&quot;),y=0,yend=37, lty=2, color=&quot;purple&quot;, alpha=0.4) +
+      annotate(&quot;text&quot;, x=(&quot;18&quot;), y=35, label=&quot;Decision leaked&quot;, size=3) +
+  geom_segment(x=(&quot;25&quot;), xend=(&quot;25&quot;),y=0,yend=37, lty=2, color=&quot;red&quot;, alpha=0.4) +
+      annotate(&quot;text&quot;, x=(&quot;25&quot;), y=35, label=&quot;Decision released&quot;, size=3) # now add line for when decision was actually made
+
+
+grid.arrange(p1, p2, ncol=2)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+I first recreated the NYT scrape from our class discussion section which searched for the keyword “Dobbs”. Initially I was surprised to see that the spike from the actual decision was so much larger than the leaked decision. However, upon further reflection, I reasoned that teh leak gave outlets a month to pre write stories about the eventual overturn which helps explain the drastic difference.</p>
+<p>Stemming from our discussion, I was curious about whether or not the large spike in Dobbs articles spurred a broader and more durable conversation about abortion more generally. I ran a newspaper scrape for the key term “abortion” over the last year. If we compare the hits for Dobbs against the hits for abortion, we do see that abortion remained in the conversation for a longer time and at a greater quantity than the term “Dobbs”. However, we still see a significant drop off in mentioned suggesting the lack of durability in a shock like the overturning of Roe v. Wade.</p>
+<p>This analysis is also very interesting because it highlights some of the issues with this methodology. Theoretically, searching for abortion vs Dobbs should elicit similar results. I’m attempting to measure the same shock with both terms. But as we see, the results and trends show significant variation based on which term you search for. This comparasion shows that we should be sceptical about how well this scrape can measure the salience of a given shock.</p>
+<pre class="r"><code># now compare this to generic ballot
+X538_generic_ballot_averages_2018_2022 &lt;- read_csv(&quot;538_generic_ballot_averages_2018-2022 .csv&quot;)</code></pre>
+<pre><code>## Rows: 3384 Columns: 7</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (3): candidate, date, election
+## dbl (4): pct_estimate, lo, hi, cycle</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>gb &lt;- X538_generic_ballot_averages_2018_2022
+
+gb &lt;- gb %&gt;%
+  mutate(date_ = mdy(date)) %&gt;%
+  mutate(year = substr(date_, 1, 4)) %&gt;%
+  filter(year == 2022) %&gt;%
+  mutate(week = strftime(date_, format = &quot;%V&quot;)) %&gt;%
+  mutate(month = strftime(date_, format = &quot;%m&quot;))
+
+dem &lt;- gb %&gt;%
+   filter(candidate == &#39;Democrats&#39;)
+x &lt;- plyr::ddply(dem, .(week), function(z) mean(z$pct_estimate))
+x$candidate &lt;- c(&#39;Democrats&#39;)
+x$avg_dem &lt;- x$V1
+x &lt;- x %&gt;%
+  select(-V1)
+x$avg_dem &lt;-  round(x$avg_dem , digits = 1)
+
+rep &lt;- gb %&gt;%
+   filter(candidate == &#39;Republicans&#39;)
+y &lt;- plyr::ddply(rep, .(week), function(z) mean(z$pct_estimate))
+ y$candidate &lt;- c(&#39;Republicans&#39;)
+ y$avg_rep &lt;- y$V1
+ 
+ y &lt;- y %&gt;%
+   select(-V1)
+y$avg_rep &lt;-  round(y$avg_rep, digits = 1)
+#
+df_list &lt;- list(gb, x, y)
+#
+polls_df &lt;- df_list %&gt;% reduce(full_join, by=c(&quot;candidate&quot;, &quot;week&quot;))
+#
+# # remove NAs
+polls_df[] &lt;-  t(apply(polls_df, 1, function(x) c(x[!is.na(x)], x[is.na(x)])))
+#
+polls_df &lt;- polls_df %&gt;%
+   select(-avg_rep)
+polls_df$avg_support &lt;- polls_df$avg_dem
+polls_df &lt;- polls_df %&gt;%
+  select(-avg_dem)
+#
+polls_df &lt;- polls_df %&gt;%
+  distinct(cycle, week, date_, avg_support, candidate) %&gt;%
+  filter(week != 52)
+polls_df$date_ &lt;- as.Date.character(polls_df$date_)</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>I then mapped the generic ballot support for each party with markers for the leak and release of the Dobbs Decision. We see that support for both parties increased following the leak of the decision then promptly decreased for both. We see the parties diverge with the release of the final decision where Democrats see an increase in support and Republicans see a decrease. However, the scale of this graph is very small and the changes are difficult to differentiate from general noise.</p>
+<p>Model Update:</p>
+<pre class="r"><code>#load in necessary data 
+cvap &lt;- read.csv(&quot;polls_cvap_vp_df.csv&quot;)
+cvap_district &lt;- read_csv(&quot;cvap_district_2012-2020_clean.csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1
+## * ...1 -&gt; ...2</code></pre>
+<pre><code>## Rows: 2616 Columns: 8</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (3): geoid, cd, state
+## dbl (5): ...1, ...2, cvap, moe, year</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>polls_df &lt;- read_csv(&quot;house_polls_long.csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1</code></pre>
+<pre><code>## Rows: 1293 Columns: 20</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (17): pollster, sponsors, display_name, fte_grade, start_date, end_date,...
+## dbl  (3): ...1, sample_size, year</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>historical &lt;- read_csv(&quot;historical.csv&quot;) %&gt;%
+  clean_names()</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1</code></pre>
+<pre><code>## Rows: 16067 Columns: 11</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (4): state, rep_status, dem_status, winner_party
+## dbl (7): ...1, year, district, dem_votes_major_percent, rep_votes_major_perc...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>experts &lt;- read_csv(&quot;expert_rating.csv&quot;)</code></pre>
+<pre><code>## Rows: 766 Columns: 19</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr  (2): state, district
+## dbl (17): year, cook, rothenberg, cq_politics, sabatos_crystal_ball, real_cl...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>incumb_dist_1948_2020_3_ &lt;- read_csv(&quot;incumb_dist_1948-2020 (3).csv&quot;)</code></pre>
+<pre><code>## New names:
+## * `` -&gt; ...1
+## * ...1 -&gt; ...2</code></pre>
+<pre><code>## Rows: 16067 Columns: 21</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr (14): office, state, st_fips, district_num, district_id, winner_party, R...
+## dbl  (7): ...1, ...2, year, RepVotes, DemVotes, RepVotesMajorPercent, DemVot...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>#avg_ratings &lt;- experts %&gt;% 
+#  select(year, state, district, avg_rating)
+#
+# rename geoid
+#cvap_district &lt;- cvap_district %&gt;%
+ ## rename_(&quot;st_cd_fips&quot; = &quot;geoid&quot;) 
+  
+#dem_results_new &lt;- incumb_dist_1948_2020_3_ %&gt;%
+ #   mutate(dem_status = case_when(DemStatus == &quot;Incumbent&quot; ~ 1,
+  #                             TRUE ~ 0),
+ # #       rep_status = case_when(RepStatus == &quot;Incumbent&quot; ~ 1,
+     #                          TRUE ~ 0))
+
+#polls_cvap_df &lt;- merge(polls_df, cvap_district, by = c(&#39;st_cd_fips&#39;, &#39;year&#39;))
+
+#polls_cvap_vp_df &lt;- merge(polls_cvap_df, dem_results_new, by = c(&#39;st_cd_fips&#39;, &#39;year&#39;))
+
+#polls_cvap_vp_df &lt;- polls_cvap_vp_df %&gt;%
+ #   rename_(&quot;state_name&quot; = &quot;state.x&quot;) %&gt;%
+ #   mutate(totalvotes = RepVotes + DemVotes,
+ #        turnout = (totalvotes/cvap)*100) %&gt;%
+ #   mutate(DemVotesMajorPct = DemVotesMajorPercent/100,
+  #       RepVotesMajorPct = RepVotesMajorPercent/100) %&gt;%
+  #remove uncontested states 
+ # filter(!is.na(DemCandidate), !is.na(RepCandidate)) %&gt;%
+ # mutate(DemVotesMajorPct = DemVotesMajorPercent/100,
+ #        RepVotesMajorPct = RepVotesMajorPercent/100)
+#s &lt;- which(avg_ratings$district &lt; 10)
+#avg_ratings_clean &lt;- avg_ratings %&gt;%
+#  mutate(cd_fips = case_when(as.numeric(district) &lt; 10 ~ paste0(&quot;0&quot;, district),
+   #                            TRUE ~ district)) %&gt;%
+ # rename_(&quot;state_name&quot; = &quot;state&quot;) %&gt;%
+ # mutate(district = case_when(
+ #   district == &quot;AL&quot; ~ &quot;1&quot;,
+ #   TRUE ~ district
+ # ))  %&gt;%
+ # drop_na()
+  
+#final_data &lt;- polls_cvap_vp_df %&gt;%
+#  left_join(avg_ratings_clean, by = c(&quot;state_name&quot;, &quot;cd_fips&quot;, &quot;year&quot;))
+#final_data$DEM &lt;- as.numeric(final_data$DEM)
+#final_data$REP &lt;- as.numeric(final_data$REP)
+#train_data_dem &lt;- final_data %&gt;%
+ # filter(year != 2022) %&gt;% 
+ # group_by(st_cd_fips) %&gt;%
+ # filter(n() &gt; 1) %&gt;% # Filtering out single data rows
+ # drop_na() %&gt;%
+ # group_nest() %&gt;% 
+ # mutate(data = map(data, ~unnest(., cols = c())))
+  
+#train_data_rep &lt;- final_data %&gt;%
+#  filter(year != 2022) %&gt;% 
+#  group_by(st_cd_fips) %&gt;%
+ # filter(n() &gt; 1) %&gt;% # Filtering out single data rows
+ #group_nest() %&gt;% 
+#  mutate(data = map(data, ~unnest(., cols = c()))) </code></pre>
+<pre class="r"><code>#cvap_vp_df &lt;- merge(dem_results_new, cvap_district, by = c(&#39;st_cd_fips&#39;, &#39;year&#39;))
+#cvap_vp_rate_df &lt;- cvap_vp_df %&gt;%
+#  mutate(totalvotes = RepVotes + DemVotes,
+#         turnout = (totalvotes/cvap)*100) %&gt;%
+#  rename_(&quot;state_name&quot; = &quot;state.x&quot;, 
+ #        &quot;district&quot; = &quot;cd&quot;) %&gt;%
+ # left_join(avg_ratings_clean, by = c(&quot;state_name&quot;, &quot;district&quot;, &quot;year&quot;)) %&gt;%
+ # filter(year != 2022) %&gt;%
+ # drop_na()
+#cvap_midterm &lt;- cvap_vp_rate_df %&gt;%
+ # filter(year %in% c(2010, 2014, 2018))</code></pre>
+<pre class="r"><code>#final_data_aggregate &lt;- final_data %&gt;%
+#  filter(year != 2022) %&gt;%
+#  group_by(year, st_cd_fips) %&gt;%
+ # mutate(DEM = as.numeric(DEM), 
+   #      REP = as.numeric(REP)) %&gt;%
+#  mutate(avg_support_dem = mean(DEM), 
+ #        avg_support_rep = mean(REP)) %&gt;%
+ # rename_(&quot;DemVotesMajorPercentorig&quot; = &quot;DemVotesMajorPercent&quot;) %&gt;%
+ # rename_(&quot;DemVotesMajorPercent&quot; = &quot;DemVotesMajorPct&quot;)</code></pre>
+<pre class="r"><code>#District level model 
+#cvap_extension_train &lt;-  cvap_vp_rate_df %&gt;%
+ # filter(year != 2022) %&gt;% 
+ # group_by(st_cd_fips, state_name, cd_fips) %&gt;%
+ # filter(n() &gt; 1) %&gt;% # Filtering out single data rows
+ # drop_na() %&gt;%
+ # group_nest() %&gt;% 
+ # mutate(data = map(data, ~unnest(., cols = c())))
+
+#modelsdem &lt;- cvap_extension_train %&gt;% 
+ # mutate(modeldem = map(data, ~lm(DemVotesMajorPercent ~ turnout + avg_rating + dem_status, 
+               #                   data = .x))) %&gt;%
+#  select(-data)
+#model_results_dem &lt;- modelsdem %&gt;% 
+#  mutate(r_squared = map_dbl(modeldem, ~summary(.x)$r.squared))
+#total_rsquared &lt;- mean(model_results_dem$r_squared)
+
+#test_data &lt;- avg_rate_test %&gt;% 
+ #  mutate(cd_fips = case_when(as.numeric(district) &lt; 10 ~ paste0(&quot;0&quot;, district),
+               #                 TRUE ~ district)) %&gt;%
+ # mutate(district = case_when(
+ #   district == &quot;AL&quot; ~ &quot;1&quot;,
+ #   TRUE ~ district
+#  ))  %&gt;%
+  #drop_na() %&gt;%
+  #mutate(turnout = 47.57791, 
+       #  avg_support_dem = 45.3,
+       #  mavg_support_rep = 44.9, 
+   #      dem_status = 1, 
+  #       rep_status = 0) %&gt;%
+ # group_by(state_name, cd_fips) %&gt;% 
+ # group_nest() %&gt;% 
+#  mutate(data = map(data, ~unnest(., cols = c())))
+# Predict w/ district level linear model
+#pred_2022 &lt;- test_data %&gt;%
+  # inner join as there may not be historical models for some districts
+  #inner_join(modelsdem, by = c(&quot;state_name&quot;, &quot;cd_fips&quot;)) %&gt;% 
+  #mutate(pred = map_dbl(.x = modeldem, .y = data, ~predict(object = .x, newdata = as.data.frame(.y)))) %&gt;%
+  #select(state_name, cd_fips, pred)
+#paste(&quot;The average are squared for all districts using a model that accounts for turnout, expert prediction, and democratic incumbency is&quot;, total_rsquared)
+##AVERAGE prediction for dem vote share
+#averagepred &lt;- pred_2022 %&gt;%
+#  summarize(mean(pred)) %&gt;% pull
+##AVERAGE R2 for w/ incumbency
+#r2average &lt;- model_results_dem %&gt;%
+#  summarize(mean(r_squared))</code></pre>
+<p>National Model</p>
+<pre class="r"><code>combined_midterm &lt;- read_csv(&quot;combined_midterm.csv&quot;)</code></pre>
+<pre><code>## Rows: 214 Columns: 16</code></pre>
+<pre><code>## ── Column specification ────────────────────────────────────────────────────────
+## Delimiter: &quot;,&quot;
+## chr  (5): st_cd_fips, state, rep_status, dem_status, winner_party
+## dbl (11): district, cvap, year, x1, dem_votes_major_percent, rep_votes_major...</code></pre>
+<pre><code>## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>D_lm &lt;- lm(dem_votes_major_percent ~ incumbency + avg_rating + turnout, data = combined_midterm)
+stargazer(D_lm, type=&#39;text&#39;)</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       dem_votes_major_percent  
+## -----------------------------------------------
+## incumbency                     0.082           
+##                               (0.414)          
+##                                                
+## avg_rating                   -2.649***         
+##                               (0.102)          
+##                                                
+## turnout                      0.125***          
+##                               (0.018)          
+##                                                
+## Constant                     54.561***         
+##                               (1.018)          
+##                                                
+## -----------------------------------------------
+## Observations                    214            
+## R2                             0.778           
+## Adjusted R2                    0.775           
+## Residual Std. Error      2.611 (df = 210)      
+## F Statistic          245.590*** (df = 3; 210)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre class="r"><code>prob_D_lm &lt;- predict(D_lm, newdata = 
+                           data.frame(avg_rating = 5, turnout = 47.6, incumbency = 1), type=&quot;response&quot;, interval = &quot;prediction&quot;)
+
+# [[1]]
+
+prob_D_lm</code></pre>
+<pre><code>##        fit      lwr      upr
+## 1 47.32147 42.15702 52.48591</code></pre>
+<p>I altered my national model to included turnout as a redictive variable. My updated national model now predicts that Democrats will win 42.15% of two party vote share with a confidence interval of 47.3 % - 52.5%.</p>
+<p>As I look toward finalizing my prediction model ahead of our final prediction, my biggest concern is making sure that the data I’m putting into my model is accurate, robust, and rational. I don’t doubt that over the course of the last 8 weeks working with this data I inevitably cleaned or joined something wrong and either eliminated good data or introduced data in an illogical way. As I construct my final model I plan to take a meticulous look through each step of the code I have to make sure things are being incorporated correctly. I also need to pull updated data for things like generic ballot polling to make sure that I am using the most up to date data possible in my final prediction because right now many of the data sets stop in December or are missing expert preidcts for certain districts etc. Now that I’ve finalized variables to include, I also want to make sure I’m modeling on the largest dataset available.</p>

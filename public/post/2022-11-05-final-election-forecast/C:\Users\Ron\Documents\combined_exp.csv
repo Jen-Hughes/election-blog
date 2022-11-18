@@ -1,0 +1,3006 @@
+year,state,state,district,inc_party.x,Cook,Cook_num,description,ie_num,avg_rating
+2022,Alaska,AK,0,dem,Lean D,3,Lean Democrat,3,3
+2016,Alaska,AK,0,rep,Lean R,5,Currently Safe Republican,7,6
+2018,Alaska,AK,0,rep,Lean R,5,Republican Favored,6,5.5
+2020,Alaska,AK,0,rep,Lean R,5,Republican Favored,6,5.5
+2012,Alaska,AK,0,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alaska,AK,0,rep,Solid R,7,Currently Safe Republican,7,7
+2008,Alaska,AK,0,rep,Tossup R,4.5,NA,NA,4.5
+2008,Alabama,AL,3,rep,Likely R,5,NA,NA,5
+2008,Alabama,AL,7,dem,Solid D,1,NA,NA,1
+2012,Alabama,AL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,Alabama,AL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,Alabama,AL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,Alabama,AL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,Alabama,AL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,Alabama,AL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,Alabama,AL,1,rep,Solid R,7,NA,NA,7
+2008,Alabama,AL,4,rep,Solid R,7,NA,NA,7
+2008,Alabama,AL,6,rep,Solid R,7,NA,NA,7
+2012,Alabama,AL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Alabama,AL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Alabama,AL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Alabama,AL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Alabama,AL,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Alabama,AL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alabama,AL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alabama,AL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alabama,AL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alabama,AL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alabama,AL,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Alabama,AL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Alabama,AL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Alabama,AL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Alabama,AL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Alabama,AL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Alabama,AL,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Alabama,AL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Alabama,AL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Alabama,AL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Alabama,AL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Alabama,AL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Alabama,AL,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Alabama,AL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Alabama,AL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Alabama,AL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Alabama,AL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Alabama,AL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Alabama,AL,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Alabama,AL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Alabama,AL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Alabama,AL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Alabama,AL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Alabama,AL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Alabama,AL,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Alabama,AL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2008,Alabama,AL,5,dem,Tossup D,3.5,NA,NA,3.5
+2008,Alabama,AL,2,rep,Tossup R,4.5,NA,NA,4.5
+2014,Arkansas,AR,4,rep,Lean R,5,Republican Favored,6,5.5
+2012,Arkansas,AR,4,dem,Likely R,5,Currently Safe Republican,7,6
+2018,Arkansas,AR,2,rep,Likely R,5,Republican Favored,6,5.5
+2008,Arkansas,AR,1,dem,Solid D,1,NA,NA,1
+2008,Arkansas,AR,2,dem,Solid D,1,NA,NA,1
+2008,Arkansas,AR,4,dem,Solid D,1,NA,NA,1
+2008,Arkansas,AR,3,rep,Solid R,7,NA,NA,7
+2012,Arkansas,AR,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Arkansas,AR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Arkansas,AR,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arkansas,AR,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arkansas,AR,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arkansas,AR,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arkansas,AR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arkansas,AR,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arkansas,AR,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Arkansas,AR,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Arkansas,AR,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Arkansas,AR,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Arkansas,AR,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Arkansas,AR,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Arkansas,AR,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arkansas,AR,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arkansas,AR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arkansas,AR,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arkansas,AR,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arkansas,AR,2,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2020,Arkansas,AR,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,Arizona,AZ,2,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,Arizona,AZ,9,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2014,Arizona,AZ,9,dem,Lean D,3,Democrat Favored,2,2.5
+2016,Arizona,AZ,1,dem,Lean D,3,Lean Democrat,3,3
+2018,Arizona,AZ,1,dem,Lean D,3,Lean Democrat,3,3
+2018,Arizona,AZ,2,rep,Lean D,3,Lean Democrat,3,3
+2020,Arizona,AZ,1,dem,Lean D,3,Democrat Favored,2,2.5
+2008,Arizona,AZ,3,rep,Lean R,5,NA,NA,5
+2022,Arizona,AZ,2,dem,Lean R,5,Lean Republican,5,5
+2022,Arizona,AZ,6,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2008,Arizona,AZ,1,rep,Likely D,2,NA,NA,2
+2008,Arizona,AZ,5,dem,Likely D,2,NA,NA,2
+2008,Arizona,AZ,8,dem,Likely D,2,NA,NA,2
+2022,Arizona,AZ,4,dem,Likely D,2,Democrat Favored,2,2
+2016,Arizona,AZ,2,rep,Likely R,5,Currently Safe Republican,7,6
+2018,Arizona,AZ,6,rep,Likely R,5,Currently Safe Republican,7,6
+2018,Arizona,AZ,8,rep,Likely R,5,Republican Favored,6,5.5
+2008,Arizona,AZ,4,dem,Solid D,1,NA,NA,1
+2008,Arizona,AZ,7,dem,Solid D,1,NA,NA,1
+2012,Arizona,AZ,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,Arizona,AZ,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,Arizona,AZ,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,Arizona,AZ,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,Arizona,AZ,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,Arizona,AZ,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,Arizona,AZ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,Arizona,AZ,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,Arizona,AZ,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,Arizona,AZ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,Arizona,AZ,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,Arizona,AZ,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,Arizona,AZ,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,Arizona,AZ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,Arizona,AZ,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,Arizona,AZ,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,Arizona,AZ,2,rep,Solid R,7,NA,NA,7
+2008,Arizona,AZ,6,rep,Solid R,7,NA,NA,7
+2012,Arizona,AZ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Arizona,AZ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Arizona,AZ,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,Arizona,AZ,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arizona,AZ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arizona,AZ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arizona,AZ,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arizona,AZ,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arizona,AZ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arizona,AZ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arizona,AZ,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,Arizona,AZ,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Arizona,AZ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,Arizona,AZ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Arizona,AZ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Arizona,AZ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,Arizona,AZ,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arizona,AZ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arizona,AZ,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,Arizona,AZ,9,rep,Solid R,7,Currently Safe Republican,7,7
+2014,Arizona,AZ,1,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2014,Arizona,AZ,2,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2012,Arizona,AZ,1,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,Arizona,AZ,6,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2022,Arizona,AZ,1,rep,Tossup R,4.5,Lean Republican,5,4.75
+2008,California,CA,11,dem,Lean D,3,NA,NA,3
+2012,California,CA,24,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,California,CA,41,dem,Lean D,3,Lean Democrat,3,3
+2014,California,CA,31,rep,Lean D,3,Lean Democrat,3,3
+2014,California,CA,36,dem,Lean D,3,Currently Safe Democrat,1,2
+2016,California,CA,7,dem,Lean D,3,Lean Democrat,3,3
+2016,California,CA,24,dem,Lean D,3,Democrat Favored,2,2.5
+2020,California,CA,48,dem,Lean D,3,Lean Democrat,3,3
+2022,California,CA,9,dem,Lean D,3,Democrat Favored,2,2.5
+2022,California,CA,26,dem,Lean D,3,Democrat Favored,2,2.5
+2008,California,CA,50,rep,Lean R,5,NA,NA,5
+2014,California,CA,21,rep,Lean R,5,Republican Favored,6,5.5
+2016,California,CA,21,rep,Lean R,5,Republican Favored,6,5.5
+2018,California,CA,50,rep,Lean R,5,Lean Republican,5,5
+2020,California,CA,50,rep,Lean R,5,Republican Favored,6,5.5
+2022,California,CA,41,rep,Lean R,5,Currently Safe Republican,7,6
+2022,California,CA,45,rep,Lean R,5,Lean Republican,5,5
+2012,California,CA,3,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2012,California,CA,47,dem,Likely D,2,Democrat Favored,2,2
+2014,California,CA,3,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2014,California,CA,24,dem,Likely D,2,Democrat Favored,2,2
+2018,California,CA,7,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2018,California,CA,16,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2018,California,CA,49,rep,Likely D,2,Lean Democrat,3,2.5
+2020,California,CA,10,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,California,CA,39,dem,Likely D,2,Democrat Favored,2,2
+2008,California,CA,3,rep,Likely R,5,NA,NA,5
+2008,California,CA,26,rep,Likely R,5,NA,NA,5
+2008,California,CA,45,rep,Likely R,5,NA,NA,5
+2008,California,CA,46,rep,Likely R,5,NA,NA,5
+2012,California,CA,21,rep,Likely R,5,Currently Safe Republican,7,6
+2018,California,CA,1,rep,Likely R,5,Currently Safe Republican,7,6
+2018,California,CA,4,rep,Likely R,5,Republican Favored,6,5.5
+2018,California,CA,21,rep,Likely R,5,Republican Favored,6,5.5
+2018,California,CA,22,rep,Likely R,5,Currently Safe Republican,7,6
+2020,California,CA,4,rep,Likely R,5,Currently Safe Republican,7,6
+2020,California,CA,22,rep,Likely R,5,Currently Safe Republican,7,6
+2022,California,CA,3,rep,Likely R,5,Republican Favored,6,5.5
+2022,California,CA,40,rep,Likely R,5,Republican Favored,6,5.5
+2008,California,CA,1,dem,Solid D,1,NA,NA,1
+2008,California,CA,5,dem,Solid D,1,NA,NA,1
+2008,California,CA,6,dem,Solid D,1,NA,NA,1
+2008,California,CA,7,dem,Solid D,1,NA,NA,1
+2008,California,CA,8,dem,Solid D,1,NA,NA,1
+2008,California,CA,9,dem,Solid D,1,NA,NA,1
+2008,California,CA,10,dem,Solid D,1,NA,NA,1
+2008,California,CA,12,dem,Solid D,1,NA,NA,1
+2008,California,CA,13,dem,Solid D,1,NA,NA,1
+2008,California,CA,14,dem,Solid D,1,NA,NA,1
+2008,California,CA,15,dem,Solid D,1,NA,NA,1
+2008,California,CA,16,dem,Solid D,1,NA,NA,1
+2008,California,CA,17,dem,Solid D,1,NA,NA,1
+2008,California,CA,18,dem,Solid D,1,NA,NA,1
+2008,California,CA,20,dem,Solid D,1,NA,NA,1
+2008,California,CA,23,dem,Solid D,1,NA,NA,1
+2008,California,CA,27,dem,Solid D,1,NA,NA,1
+2008,California,CA,28,dem,Solid D,1,NA,NA,1
+2008,California,CA,29,dem,Solid D,1,NA,NA,1
+2008,California,CA,30,dem,Solid D,1,NA,NA,1
+2008,California,CA,31,dem,Solid D,1,NA,NA,1
+2008,California,CA,33,dem,Solid D,1,NA,NA,1
+2008,California,CA,34,dem,Solid D,1,NA,NA,1
+2008,California,CA,35,dem,Solid D,1,NA,NA,1
+2008,California,CA,36,dem,Solid D,1,NA,NA,1
+2008,California,CA,38,dem,Solid D,1,NA,NA,1
+2008,California,CA,39,dem,Solid D,1,NA,NA,1
+2008,California,CA,43,dem,Solid D,1,NA,NA,1
+2008,California,CA,47,dem,Solid D,1,NA,NA,1
+2008,California,CA,51,dem,Solid D,1,NA,NA,1
+2008,California,CA,53,dem,Solid D,1,NA,NA,1
+2012,California,CA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,19,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,27,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,38,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,40,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,43,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,44,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,46,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,51,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,California,CA,53,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,19,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,27,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,38,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,40,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,41,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,43,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,44,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,46,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,47,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,51,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,California,CA,53,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,19,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,27,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,31,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,36,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,38,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,40,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,41,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,43,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,44,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,46,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,47,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,51,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,52,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,California,CA,53,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,19,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,27,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,31,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,36,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,38,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,40,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,41,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,43,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,44,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,46,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,47,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,51,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,52,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,California,CA,53,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,19,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,27,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,31,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,36,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,38,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,40,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,41,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,43,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,44,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,45,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,46,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,47,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,49,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,51,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,52,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,California,CA,53,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,19,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,21,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,25,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,31,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,36,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,38,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,39,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,42,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,43,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,44,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,46,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,50,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,51,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,California,CA,52,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,California,CA,2,rep,Solid R,7,NA,NA,7
+2008,California,CA,19,rep,Solid R,7,NA,NA,7
+2008,California,CA,21,rep,Solid R,7,NA,NA,7
+2008,California,CA,22,rep,Solid R,7,NA,NA,7
+2008,California,CA,24,rep,Solid R,7,NA,NA,7
+2008,California,CA,25,rep,Solid R,7,NA,NA,7
+2008,California,CA,40,rep,Solid R,7,NA,NA,7
+2008,California,CA,41,rep,Solid R,7,NA,NA,7
+2008,California,CA,42,rep,Solid R,7,NA,NA,7
+2008,California,CA,44,rep,Solid R,7,NA,NA,7
+2008,California,CA,48,rep,Solid R,7,NA,NA,7
+2008,California,CA,49,rep,Solid R,7,NA,NA,7
+2008,California,CA,52,rep,Solid R,7,NA,NA,7
+2012,California,CA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,22,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,23,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,25,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,31,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,39,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,42,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,45,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,48,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,49,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,50,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,22,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,23,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,25,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,39,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,42,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,45,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,48,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,49,rep,Solid R,7,Currently Safe Republican,7,7
+2014,California,CA,50,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,22,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,23,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,39,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,42,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,45,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,48,rep,Solid R,7,Currently Safe Republican,7,7
+2016,California,CA,50,rep,Solid R,7,Currently Safe Republican,7,7
+2018,California,CA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,California,CA,23,rep,Solid R,7,Currently Safe Republican,7,7
+2018,California,CA,42,rep,Solid R,7,Currently Safe Republican,7,7
+2020,California,CA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,California,CA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,California,CA,23,rep,Solid R,7,Currently Safe Republican,7,7
+2020,California,CA,42,rep,Solid R,7,Currently Safe Republican,7,7
+2022,California,CA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,California,CA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,California,CA,20,rep,Solid R,7,Currently Safe Republican,7,7
+2022,California,CA,23,rep,Solid R,7,Currently Safe Republican,7,7
+2022,California,CA,48,rep,Solid R,7,Currently Safe Republican,7,7
+2012,California,CA,9,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2014,California,CA,7,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2014,California,CA,26,dem,Tossup D,3.5,Lean Democrat,3,3.25
+2014,California,CA,52,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2020,California,CA,21,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,California,CA,13,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,California,CA,47,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,California,CA,49,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2008,California,CA,4,rep,Tossup R,4.5,NA,NA,4.5
+2012,California,CA,7,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,California,CA,10,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2012,California,CA,26,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,California,CA,36,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2012,California,CA,52,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2016,California,CA,10,rep,Tossup R,4.5,Lean Republican,5,4.75
+2016,California,CA,25,rep,Tossup R,4.5,Republican Favored,6,5.25
+2016,California,CA,49,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2018,California,CA,10,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,California,CA,25,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,California,CA,39,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,California,CA,45,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,California,CA,48,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2020,California,CA,25,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2022,California,CA,22,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2022,California,CA,27,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2012,Colorado,CO,7,dem,Lean D,3,Lean Democrat,3,3
+2018,,CO,6,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,,CO,3,rep,Lean R,5,Republican Favored,6,5.5
+2014,,CO,6,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2020,,CO,3,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2022,,CO,7,dem,Likely D,2,Democrat Favored,2,2
+2016,,CO,3,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,CO,3,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,CO,1,dem,Solid D,1,NA,NA,1
+2008,,CO,2,dem,Solid D,1,NA,NA,1
+2008,,CO,3,dem,Solid D,1,NA,NA,1
+2008,,CO,7,dem,Solid D,1,NA,NA,1
+2012,,CO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,CO,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CO,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CO,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CO,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CO,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CO,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CO,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CO,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CO,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CO,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,CO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,CO,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,CO,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,CO,5,rep,Solid R,7,NA,NA,7
+2008,,CO,6,rep,Solid R,7,NA,NA,7
+2012,,CO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,CO,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,CO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,CO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,CO,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,CO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,CO,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,CO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,CO,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,CO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,CO,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,CO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,CO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,CO,5,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,CO,4,rep,Tossup R,4.5,NA,NA,4.5
+2012,,CO,6,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2016,,CO,6,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2022,,CO,8,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2014,,CT,5,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,CT,2,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,CT,1,dem,Solid D,1,NA,NA,1
+2008,,CT,2,dem,Solid D,1,NA,NA,1
+2008,,CT,3,dem,Solid D,1,NA,NA,1
+2008,,CT,5,dem,Solid D,1,NA,NA,1
+2012,,CT,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,CT,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,CT,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,CT,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CT,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CT,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CT,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,CT,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CT,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CT,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CT,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CT,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,CT,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CT,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CT,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CT,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CT,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,CT,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CT,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CT,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CT,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CT,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,CT,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,CT,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,CT,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,CT,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,CT,5,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,CT,5,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,CT,4,rep,Tossup R,4.5,NA,NA,4.5
+2012,,DE,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,DE,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,DE,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,DE,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,DE,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,DE,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,DE,0,rep,Solid R,7,NA,NA,7
+2008,,FL,24,rep,Lean D,3,NA,NA,3
+2012,,FL,26,rep,Lean D,3,Lean Democrat,3,3
+2016,,FL,13,rep,Lean D,3,Lean Democrat,3,3
+2018,,FL,27,rep,Lean D,3,Lean Democrat,3,3
+2020,,FL,26,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,,FL,2,rep,Lean R,5,Republican Favored,6,5.5
+2012,,FL,10,rep,Lean R,5,Lean Republican,5,5
+2016,,FL,18,dem,Lean R,5,Pure Toss-up,4,4.5
+2018,,FL,6,rep,Lean R,5,Lean Republican,5,5
+2018,,FL,16,rep,Lean R,5,Republican Favored,6,5.5
+2018,,FL,18,rep,Lean R,5,Republican Favored,6,5.5
+2018,,FL,25,rep,Lean R,5,Currently Safe Republican,7,6
+2020,,FL,15,rep,Lean R,5,Lean Republican,5,5
+2022,,FL,27,rep,Lean R,5,Republican Favored,6,5.5
+2012,,FL,9,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2012,,FL,22,dem,Likely D,2,Democrat Favored,2,2
+2014,,FL,18,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2016,,FL,10,rep,Likely D,2,Currently Safe Democrat,1,1.5
+2018,,FL,7,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,FL,27,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,FL,16,dem,Likely R,5,NA,NA,5
+2008,,FL,18,rep,Likely R,5,NA,NA,5
+2012,,FL,16,rep,Likely R,5,Republican Favored,6,5.5
+2016,,FL,2,dem,Likely R,5,Currently Safe Republican,7,6
+2016,,FL,27,rep,Likely R,5,Currently Safe Republican,7,6
+2020,,FL,16,rep,Likely R,5,Republican Favored,6,5.5
+2020,,FL,18,rep,Likely R,5,Republican Favored,6,5.5
+2022,,FL,13,dem,Likely R,5,Lean Republican,5,5
+2022,,FL,15,rep,Likely R,5,Republican Favored,6,5.5
+2008,,FL,2,dem,Solid D,1,NA,NA,1
+2008,,FL,3,dem,Solid D,1,NA,NA,1
+2008,,FL,11,dem,Solid D,1,NA,NA,1
+2008,,FL,17,dem,Solid D,1,NA,NA,1
+2008,,FL,19,dem,Solid D,1,NA,NA,1
+2008,,FL,20,dem,Solid D,1,NA,NA,1
+2008,,FL,22,dem,Solid D,1,NA,NA,1
+2008,,FL,23,dem,Solid D,1,NA,NA,1
+2012,,FL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,FL,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,FL,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,FL,21,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,FL,23,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,FL,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,21,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,22,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,23,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,FL,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,21,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,22,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,23,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,FL,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,21,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,22,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,23,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,FL,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,21,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,22,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,23,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,FL,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,22,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,23,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,24,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,FL,25,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,FL,1,rep,Solid R,7,NA,NA,7
+2008,,FL,4,rep,Solid R,7,NA,NA,7
+2008,,FL,5,rep,Solid R,7,NA,NA,7
+2008,,FL,6,rep,Solid R,7,NA,NA,7
+2008,,FL,7,rep,Solid R,7,NA,NA,7
+2008,,FL,9,rep,Solid R,7,NA,NA,7
+2008,,FL,10,rep,Solid R,7,NA,NA,7
+2008,,FL,12,rep,Solid R,7,NA,NA,7
+2008,,FL,14,rep,Solid R,7,NA,NA,7
+2008,,FL,15,rep,Solid R,7,NA,NA,7
+2012,,FL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,11,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,13,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,17,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,19,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,25,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,FL,27,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,11,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,13,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,17,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,19,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,25,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,27,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,17,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,19,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,FL,25,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,11,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,17,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,FL,19,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,11,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,17,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,19,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,FL,25,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,5,rep,Solid R,7,Republican Favored,6,6.5
+2022,,FL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,7,dem,Solid R,7,Republican Favored,6,6.5
+2022,,FL,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,11,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,17,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,18,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,19,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,21,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,26,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,FL,28,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,FL,26,dem,Tossup D,3.5,Toss-up/Tilt Republican,4.5,4
+2008,,FL,8,rep,Tossup R,4.5,NA,NA,4.5
+2008,,FL,21,rep,Tossup R,4.5,NA,NA,4.5
+2008,,FL,25,rep,Tossup R,4.5,NA,NA,4.5
+2012,,FL,18,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2014,,FL,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2016,,FL,7,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2016,,FL,26,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,FL,15,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2018,,FL,26,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,GA,8,dem,Lean D,3,NA,NA,3
+2020,,GA,7,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2018,,GA,7,rep,Lean R,5,Lean Republican,5,5
+2020,,GA,6,dem,Likely D,2,Democrat Favored,2,2
+2022,,GA,2,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,GA,2,dem,Solid D,1,NA,NA,1
+2008,,GA,4,dem,Solid D,1,NA,NA,1
+2008,,GA,5,dem,Solid D,1,NA,NA,1
+2008,,GA,12,dem,Solid D,1,NA,NA,1
+2008,,GA,13,dem,Solid D,1,NA,NA,1
+2012,,GA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,GA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,GA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,GA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,GA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,GA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,GA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,GA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,GA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,GA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,GA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,GA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,GA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,GA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,GA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,GA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,GA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,GA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,GA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,GA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,GA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,GA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,GA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,GA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,GA,1,rep,Solid R,7,NA,NA,7
+2008,,GA,3,rep,Solid R,7,NA,NA,7
+2008,,GA,6,rep,Solid R,7,NA,NA,7
+2008,,GA,7,rep,Solid R,7,NA,NA,7
+2008,,GA,9,rep,Solid R,7,NA,NA,7
+2008,,GA,10,rep,Solid R,7,NA,NA,7
+2008,,GA,11,rep,Solid R,7,NA,NA,7
+2012,,GA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,GA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,GA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,GA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,GA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,6,dem,Solid R,7,Republican Favored,6,6.5
+2022,,GA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,GA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,GA,12,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2014,,GA,12,dem,Tossup D,3.5,Lean Democrat,3,3.25
+2018,,GA,6,rep,Tossup R,4.5,Lean Republican,5,4.75
+2014,,HI,1,dem,Lean D,3,Lean Democrat,3,3
+2008,,HI,1,dem,Solid D,1,NA,NA,1
+2008,,HI,2,dem,Solid D,1,NA,NA,1
+2012,,HI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,HI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,HI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,HI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,HI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,HI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,HI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,HI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,HI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,HI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,HI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IA,2,dem,Lean D,3,Lean Democrat,3,3
+2018,,IA,1,rep,Lean D,3,Lean Democrat,3,3
+2020,,IA,3,dem,Lean D,3,Lean Democrat,3,3
+2012,,IA,3,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2012,,IA,4,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2016,,IA,3,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2018,,IA,4,rep,Lean R,5,Republican Favored,6,5.5
+2022,,IA,1,rep,Lean R,5,Lean Republican,5,5
+2022,,IA,2,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2022,,IA,3,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2012,,IA,1,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2012,,IA,2,dem,Likely D,2,Democrat Favored,2,2
+2008,,IA,4,rep,Likely R,5,NA,NA,5
+2008,,IA,1,dem,Solid D,1,NA,NA,1
+2008,,IA,2,dem,Solid D,1,NA,NA,1
+2008,,IA,3,dem,Solid D,1,NA,NA,1
+2016,,IA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,IA,5,rep,Solid R,7,NA,NA,7
+2014,,IA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IA,1,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2020,,IA,1,dem,Tossup D,3.5,Lean Democrat,3,3.25
+2020,,IA,2,dem,Tossup D,3.5,Lean Democrat,3,3.25
+2014,,IA,3,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2016,,IA,1,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,IA,3,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,ID,2,rep,Solid R,7,NA,NA,7
+2012,,ID,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,ID,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,ID,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,ID,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,ID,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,ID,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,ID,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,ID,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,ID,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,ID,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,ID,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,ID,2,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,ID,1,rep,Tossup R,4.5,NA,NA,4.5
+2008,,IL,11,rep,Lean D,3,NA,NA,3
+2014,,IL,17,dem,Lean D,3,Democrat Favored,2,2.5
+2018,,IL,6,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2020,,IL,17,dem,Lean D,3,Currently Safe Democrat,1,2
+2022,,IL,6,dem,Lean D,3,Democrat Favored,2,2.5
+2022,,IL,13,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2022,,IL,14,dem,Lean D,3,Democrat Favored,2,2.5
+2018,,IL,12,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2018,,IL,13,rep,Lean R,5,Lean Republican,5,5
+2008,,IL,14,dem,Likely D,2,NA,NA,2
+2012,,IL,8,rep,Likely D,2,Democrat Favored,2,2
+2014,,IL,8,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2014,,IL,11,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,IL,14,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,IL,11,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,IL,6,rep,Likely R,5,NA,NA,5
+2008,,IL,13,rep,Likely R,5,NA,NA,5
+2014,,IL,13,rep,Likely R,5,Currently Safe Republican,7,6
+2016,,IL,12,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,IL,1,dem,Solid D,1,NA,NA,1
+2008,,IL,2,dem,Solid D,1,NA,NA,1
+2008,,IL,3,dem,Solid D,1,NA,NA,1
+2008,,IL,4,dem,Solid D,1,NA,NA,1
+2008,,IL,5,dem,Solid D,1,NA,NA,1
+2008,,IL,7,dem,Solid D,1,NA,NA,1
+2008,,IL,8,dem,Solid D,1,NA,NA,1
+2008,,IL,9,dem,Solid D,1,NA,NA,1
+2008,,IL,12,dem,Solid D,1,NA,NA,1
+2008,,IL,17,dem,Solid D,1,NA,NA,1
+2012,,IL,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IL,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IL,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IL,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IL,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IL,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IL,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IL,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,IL,15,rep,Solid R,7,NA,NA,7
+2008,,IL,16,rep,Solid R,7,NA,NA,7
+2008,,IL,18,rep,Solid R,7,NA,NA,7
+2008,,IL,19,rep,Solid R,7,NA,NA,7
+2012,,IL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IL,14,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IL,18,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IL,14,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IL,18,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IL,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IL,13,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IL,14,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IL,18,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IL,18,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IL,18,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IL,12,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IL,15,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IL,16,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IL,12,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2014,,IL,10,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2014,,IL,12,dem,Tossup D,3.5,Toss-up/Tilt Republican,4.5,4
+2022,,IL,17,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,IL,10,rep,Tossup R,4.5,NA,NA,4.5
+2012,,IL,10,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,,IL,11,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,,IL,13,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,,IL,17,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2016,,IL,10,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,IL,14,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,IL,13,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,IN,3,rep,Lean R,5,NA,NA,5
+2012,,IN,8,rep,Lean R,5,Republican Favored,6,5.5
+2016,,IN,9,rep,Lean R,5,Republican Favored,6,5.5
+2008,,IN,9,dem,Likely D,2,NA,NA,2
+2012,,IN,2,dem,Likely R,5,Currently Safe Republican,7,6
+2016,,IN,2,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,IN,2,rep,Likely R,5,Republican Favored,6,5.5
+2008,,IN,1,dem,Solid D,1,NA,NA,1
+2008,,IN,2,dem,Solid D,1,NA,NA,1
+2008,,IN,7,dem,Solid D,1,NA,NA,1
+2008,,IN,8,dem,Solid D,1,NA,NA,1
+2012,,IN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,IN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,IN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,IN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,IN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,IN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,IN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,IN,4,rep,Solid R,7,NA,NA,7
+2008,,IN,5,rep,Solid R,7,NA,NA,7
+2008,,IN,6,rep,Solid R,7,NA,NA,7
+2012,,IN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IN,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,IN,9,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,IN,9,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IN,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,IN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IN,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,IN,9,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,IN,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,IN,1,dem,Tossup D,3.5,Lean Democrat,3,3.25
+2020,,IN,5,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2008,,KS,2,dem,Lean D,3,NA,NA,3
+2018,,KS,3,rep,Lean D,3,Lean Democrat,3,3
+2022,,KS,3,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2016,,KS,3,rep,Lean R,5,Lean Republican,5,5
+2008,,KS,3,dem,Likely D,2,NA,NA,2
+2014,,KS,2,rep,Likely R,5,Currently Safe Republican,7,6
+2014,,KS,3,rep,Likely R,5,Currently Safe Republican,7,6
+2020,,KS,2,rep,Likely R,5,Currently Safe Republican,7,6
+2020,,KS,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,KS,1,rep,Solid R,7,NA,NA,7
+2008,,KS,4,rep,Solid R,7,NA,NA,7
+2012,,KS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KS,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KS,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KS,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,KS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,KS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KS,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KS,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,KY,3,dem,Likely D,2,NA,NA,2
+2020,,KY,6,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,KY,6,dem,Solid D,1,NA,NA,1
+2012,,KY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,KY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,KY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,KY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,KY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,KY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,KY,1,rep,Solid R,7,NA,NA,7
+2008,,KY,4,rep,Solid R,7,NA,NA,7
+2008,,KY,5,rep,Solid R,7,NA,NA,7
+2012,,KY,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KY,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KY,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KY,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KY,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KY,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,KY,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KY,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KY,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KY,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,KY,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KY,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KY,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,KY,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,KY,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,KY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,KY,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,KY,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KY,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KY,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KY,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,KY,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,KY,6,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,KY,2,rep,Tossup R,4.5,NA,NA,4.5
+2018,,KY,6,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,LA,7,rep,Likely R,5,NA,NA,5
+2008,,LA,2,dem,Solid D,1,NA,NA,1
+2008,,LA,3,dem,Solid D,1,NA,NA,1
+2012,,LA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,LA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,LA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,LA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,LA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,LA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,LA,1,rep,Solid R,7,NA,NA,7
+2008,,LA,5,rep,Solid R,7,NA,NA,7
+2012,,LA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,LA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,LA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,LA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,LA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,LA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,LA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,LA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,LA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,LA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,LA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,LA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,LA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,LA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,LA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,LA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,LA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,LA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,LA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,LA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,LA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,LA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,LA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,LA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,LA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,LA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,LA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,LA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,LA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,LA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,LA,6,dem,Tossup D,3.5,NA,NA,3.5
+2008,,LA,4,rep,Tossup R,4.5,NA,NA,4.5
+2014,,MA,6,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,,MA,6,dem,Lean R,5,Lean Republican,5,5
+2014,,MA,9,dem,Likely D,2,Democrat Favored,2,2
+2008,,MA,1,dem,Solid D,1,NA,NA,1
+2008,,MA,2,dem,Solid D,1,NA,NA,1
+2008,,MA,3,dem,Solid D,1,NA,NA,1
+2008,,MA,4,dem,Solid D,1,NA,NA,1
+2008,,MA,5,dem,Solid D,1,NA,NA,1
+2008,,MA,6,dem,Solid D,1,NA,NA,1
+2008,,MA,7,dem,Solid D,1,NA,NA,1
+2008,,MA,8,dem,Solid D,1,NA,NA,1
+2008,,MA,9,dem,Solid D,1,NA,NA,1
+2008,,MA,10,dem,Solid D,1,NA,NA,1
+2012,,MA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MD,6,rep,Likely D,2,Democrat Favored,2,2
+2014,,MD,6,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2016,,MD,6,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,MD,6,dem,Likely D,2,Democrat Favored,2,2
+2008,,MD,2,dem,Solid D,1,NA,NA,1
+2008,,MD,3,dem,Solid D,1,NA,NA,1
+2008,,MD,4,dem,Solid D,1,NA,NA,1
+2008,,MD,5,dem,Solid D,1,NA,NA,1
+2008,,MD,7,dem,Solid D,1,NA,NA,1
+2008,,MD,8,dem,Solid D,1,NA,NA,1
+2012,,MD,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MD,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MD,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MD,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MD,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MD,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MD,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MD,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MD,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MD,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MD,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MD,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MD,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MD,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MD,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MD,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MD,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MD,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MD,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MD,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MD,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MD,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MD,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MD,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MD,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MD,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,MD,6,rep,Solid R,7,NA,NA,7
+2012,,MD,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MD,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MD,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MD,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MD,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MD,1,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,MD,1,rep,Tossup R,4.5,NA,NA,4.5
+2014,,ME,2,dem,Lean D,3,Lean Democrat,3,3
+2020,,ME,2,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,ME,1,dem,Solid D,1,NA,NA,1
+2012,,ME,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,ME,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,ME,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,ME,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,ME,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,ME,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,ME,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,ME,2,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2016,,ME,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,ME,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,MI,11,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2020,,MI,8,dem,Lean D,3,Currently Safe Democrat,1,2
+2020,,MI,11,dem,Lean D,3,Currently Safe Democrat,1,2
+2022,,MI,3,rep,Lean D,3,Lean Democrat,3,3
+2022,,MI,8,dem,Lean D,3,Lean Democrat,3,3
+2012,,MI,11,rep,Lean R,5,Lean Republican,5,5
+2016,,MI,1,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2016,,MI,8,rep,Lean R,5,Currently Safe Republican,7,6
+2018,,MI,6,rep,Lean R,5,Republican Favored,6,5.5
+2020,,MI,6,rep,Lean R,5,Republican Favored,6,5.5
+2008,,MI,8,rep,Likely R,5,NA,NA,5
+2008,,MI,11,rep,Likely R,5,NA,NA,5
+2012,,MI,3,rep,Likely R,5,Currently Safe Republican,7,6
+2014,,MI,1,rep,Likely R,5,Republican Favored,6,5.5
+2014,,MI,6,rep,Likely R,5,Currently Safe Republican,7,6
+2014,,MI,11,rep,Likely R,5,Currently Safe Republican,7,6
+2016,,MI,7,rep,Likely R,5,Republican Favored,6,5.5
+2018,,MI,1,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,MI,3,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,MI,7,rep,Likely R,5,Republican Favored,6,5.5
+2022,,MI,10,dem,Likely R,5,Lean Republican,5,5
+2008,,MI,1,dem,Solid D,1,NA,NA,1
+2008,,MI,5,dem,Solid D,1,NA,NA,1
+2008,,MI,12,dem,Solid D,1,NA,NA,1
+2008,,MI,13,dem,Solid D,1,NA,NA,1
+2008,,MI,14,dem,Solid D,1,NA,NA,1
+2012,,MI,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MI,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MI,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MI,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MI,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MI,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MI,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MI,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MI,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MI,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MI,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MI,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MI,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MI,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MI,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MI,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MI,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MI,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MI,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MI,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MI,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MI,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MI,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MI,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MI,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MI,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MI,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MI,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MI,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,MI,2,rep,Solid R,7,NA,NA,7
+2008,,MI,3,rep,Solid R,7,NA,NA,7
+2008,,MI,4,rep,Solid R,7,NA,NA,7
+2008,,MI,6,rep,Solid R,7,NA,NA,7
+2008,,MI,10,rep,Solid R,7,NA,NA,7
+2012,,MI,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,MI,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,MI,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,MI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,MI,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,MI,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MI,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MI,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MI,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MI,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MI,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MI,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MI,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MI,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MI,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MI,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MI,11,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MI,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MI,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MI,10,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MI,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MI,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MI,10,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MI,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MI,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MI,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MI,7,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2008,,MI,7,rep,Tossup R,4.5,NA,NA,4.5
+2008,,MI,9,rep,Tossup R,4.5,NA,NA,4.5
+2012,,MI,1,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,MI,8,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2020,,MI,3,ind,Tossup R,4.5,Pure Toss-up,4,4.25
+2014,,MN,7,dem,Lean D,3,Lean Democrat,3,3
+2018,,MN,2,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2018,,MN,3,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2016,,MN,3,rep,Lean R,5,Republican Favored,6,5.5
+2018,,MN,8,dem,Lean R,5,Lean Republican,5,5
+2008,,MN,1,dem,Likely D,2,NA,NA,2
+2014,,MN,1,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2018,,MN,7,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,MN,2,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,MN,2,rep,Likely R,5,NA,NA,5
+2022,,MN,1,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,MN,4,dem,Solid D,1,NA,NA,1
+2008,,MN,5,dem,Solid D,1,NA,NA,1
+2008,,MN,7,dem,Solid D,1,NA,NA,1
+2008,,MN,8,dem,Solid D,1,NA,NA,1
+2012,,MN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MN,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MN,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MN,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MN,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MN,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MN,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MN,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MN,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MN,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,MN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,MN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MN,8,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2016,,MN,8,dem,Tossup D,3.5,Lean Democrat,3,3.25
+2018,,MN,1,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2020,,MN,7,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,MN,2,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,MN,3,rep,Tossup R,4.5,NA,NA,4.5
+2008,,MN,6,rep,Tossup R,4.5,NA,NA,4.5
+2016,,MN,2,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2020,,MN,1,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2008,,MO,6,rep,Lean R,5,NA,NA,5
+2018,,MO,2,rep,Lean R,5,Currently Safe Republican,7,6
+2008,,MO,1,dem,Solid D,1,NA,NA,1
+2008,,MO,3,dem,Solid D,1,NA,NA,1
+2008,,MO,4,dem,Solid D,1,NA,NA,1
+2008,,MO,5,dem,Solid D,1,NA,NA,1
+2014,,MO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,MO,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MO,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MO,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MO,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MO,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MO,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,MO,2,rep,Solid R,7,NA,NA,7
+2008,,MO,7,rep,Solid R,7,NA,NA,7
+2008,,MO,8,rep,Solid R,7,NA,NA,7
+2014,,MO,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MO,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MO,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MO,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MO,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MO,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MO,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MO,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MO,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MO,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MO,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MO,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MO,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MO,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MO,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MO,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MO,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MO,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MO,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MO,8,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,MO,9,rep,Tossup R,4.5,NA,NA,4.5
+2020,,MO,2,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2008,,MS,1,dem,Likely D,2,NA,NA,2
+2008,,MS,2,dem,Solid D,1,NA,NA,1
+2008,,MS,4,dem,Solid D,1,NA,NA,1
+2014,,MS,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,MS,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,MS,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,MS,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,MS,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,MS,3,rep,Solid R,7,NA,NA,7
+2014,,MS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MS,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,MS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MS,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,MS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MS,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MS,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,MS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MS,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MS,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,MS,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,MT,0,rep,Lean R,5,Republican Favored,6,5.5
+2020,,MT,0,rep,Lean R,5,Lean Republican,5,5
+2022,,MT,1,rep,Lean R,5,NA,NA,5
+2014,,MT,0,rep,Likely R,5,Currently Safe Republican,7,6
+2016,,MT,0,rep,Likely R,5,Republican Favored,6,5.5
+2008,,MT,0,rep,Solid R,7,NA,NA,7
+2022,,MT,2,rep,Solid R,7,NA,NA,7
+2018,,NC,2,rep,Lean R,5,Lean Republican,5,5
+2020,,NC,8,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2020,,NC,9,rep,Lean R,5,Currently Safe Republican,7,6
+2020,,NC,11,rep,Lean R,5,Lean Republican,5,5
+2020,,NC,2,rep,Likely D,2,Democrat Favored,2,2
+2020,,NC,6,rep,Likely D,2,Democrat Favored,2,2
+2022,,NC,1,dem,Likely D,2,Democrat Favored,2,2
+2022,,NC,6,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,NC,5,rep,Likely R,5,NA,NA,5
+2014,,NC,7,dem,Likely R,5,Currently Safe Republican,7,6
+2018,,NC,8,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,NC,1,dem,Solid D,1,NA,NA,1
+2008,,NC,2,dem,Solid D,1,NA,NA,1
+2008,,NC,4,dem,Solid D,1,NA,NA,1
+2008,,NC,7,dem,Solid D,1,NA,NA,1
+2008,,NC,11,dem,Solid D,1,NA,NA,1
+2008,,NC,12,dem,Solid D,1,NA,NA,1
+2008,,NC,13,dem,Solid D,1,NA,NA,1
+2014,,NC,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NC,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NC,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NC,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NC,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NC,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NC,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NC,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NC,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NC,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NC,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NC,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NC,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NC,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NC,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NC,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,NC,3,rep,Solid R,7,NA,NA,7
+2008,,NC,6,rep,Solid R,7,NA,NA,7
+2008,,NC,9,rep,Solid R,7,NA,NA,7
+2008,,NC,10,rep,Solid R,7,NA,NA,7
+2014,,NC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,9,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,11,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NC,13,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,9,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NC,13,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NC,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NC,10,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NC,11,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NC,10,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NC,13,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,10,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NC,11,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,NC,8,rep,Tossup R,4.5,NA,NA,4.5
+2018,,NC,9,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,NC,13,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2022,,NC,13,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2014,,ND,0,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,ND,0,dem,Solid D,1,NA,NA,1
+2016,,ND,0,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,ND,0,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,ND,0,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,ND,0,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NE,2,rep,Lean R,5,Lean Republican,5,5
+2012,,NE,2,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,NE,1,rep,Solid R,7,NA,NA,7
+2008,,NE,3,rep,Solid R,7,NA,NA,7
+2012,,NE,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NE,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NE,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NE,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NE,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NE,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NE,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NE,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NE,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NE,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NE,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NE,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NE,2,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2008,,NE,2,rep,Tossup R,4.5,NA,NA,4.5
+2014,,NE,2,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2020,,NE,2,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2022,,NE,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,,NH,2,rep,Lean D,3,Pure Toss-up,4,3.5
+2014,,NH,2,dem,Lean D,3,Lean Democrat,3,3
+2016,,NH,1,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2022,,NH,2,dem,Lean D,3,Democrat Favored,2,2.5
+2018,,NH,1,dem,Likely D,2,Lean Democrat,3,2.5
+2020,,NH,1,dem,Likely D,2,Democrat Favored,2,2
+2008,,NH,2,dem,Solid D,1,NA,NA,1
+2016,,NH,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NH,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NH,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,NH,1,dem,Tossup D,3.5,NA,NA,3.5
+2014,,NH,1,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,,NH,1,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2012,,NH,1,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,NJ,11,rep,Lean D,3,Lean Democrat,3,3
+2020,,NJ,7,dem,Lean D,3,Democrat Favored,2,2.5
+2022,,NJ,3,dem,Lean D,3,Democrat Favored,2,2.5
+2012,,NJ,3,rep,Lean R,5,Republican Favored,6,5.5
+2014,,NJ,3,rep,Lean R,5,Lean Republican,5,5
+2022,,NJ,7,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2018,,NJ,2,rep,Likely D,2,Democrat Favored,2,2
+2018,,NJ,5,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,NJ,3,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,NJ,5,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,NJ,5,rep,Likely R,5,NA,NA,5
+2014,,NJ,5,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,NJ,1,dem,Solid D,1,NA,NA,1
+2008,,NJ,6,dem,Solid D,1,NA,NA,1
+2008,,NJ,8,dem,Solid D,1,NA,NA,1
+2008,,NJ,9,dem,Solid D,1,NA,NA,1
+2008,,NJ,10,dem,Solid D,1,NA,NA,1
+2008,,NJ,12,dem,Solid D,1,NA,NA,1
+2012,,NJ,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NJ,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NJ,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NJ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NJ,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NJ,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NJ,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NJ,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NJ,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NJ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NJ,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NJ,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NJ,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NJ,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NJ,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NJ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NJ,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NJ,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NJ,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NJ,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NJ,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NJ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NJ,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NJ,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NJ,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NJ,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,NJ,2,rep,Solid R,7,NA,NA,7
+2008,,NJ,4,rep,Solid R,7,NA,NA,7
+2008,,NJ,11,rep,Solid R,7,NA,NA,7
+2012,,NJ,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NJ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NJ,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NJ,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NJ,11,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NJ,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NJ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NJ,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NJ,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NJ,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NJ,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NJ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NJ,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NJ,11,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NJ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NJ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NJ,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NJ,4,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,NJ,3,rep,Tossup R,4.5,NA,NA,4.5
+2008,,NJ,7,rep,Tossup R,4.5,NA,NA,4.5
+2016,,NJ,5,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2018,,NJ,3,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2018,,NJ,7,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,NJ,2,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2008,,NM,1,rep,Lean D,3,NA,NA,3
+2022,,NM,3,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,NM,3,dem,Solid D,1,NA,NA,1
+2012,,NM,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NM,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NM,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NM,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NM,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NM,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NM,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NM,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NM,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NM,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NM,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NM,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NM,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NM,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NM,2,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,NM,2,rep,Tossup R,4.5,NA,NA,4.5
+2018,,NM,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2022,,NM,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2014,,NV,4,dem,Lean D,3,Democrat Favored,2,2.5
+2016,,NV,4,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2018,,NV,3,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2018,,NV,4,dem,Lean D,3,Lean Democrat,3,3
+2020,,NV,3,dem,Lean D,3,Democrat Favored,2,2.5
+2022,,NV,4,dem,Lean D,3,Lean Democrat,3,3
+2008,,NV,2,rep,Lean R,5,NA,NA,5
+2012,,NV,3,rep,Lean R,5,Lean Republican,5,5
+2020,,NV,4,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2014,,NV,3,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,NV,1,dem,Solid D,1,NA,NA,1
+2012,,NV,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NV,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NV,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NV,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NV,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,NV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NV,4,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,NV,1,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,,NV,3,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2008,,NV,3,rep,Tossup R,4.5,NA,NA,4.5
+2016,,NV,3,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,,NY,1,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,,NY,21,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,,NY,24,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2016,,NY,3,dem,Lean D,3,Lean Democrat,3,3
+2022,,NY,18,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2012,,NY,27,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2014,,NY,11,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2016,,NY,22,rep,Lean R,5,Pure Toss-up,4,4.5
+2018,,NY,11,rep,Lean R,5,Lean Republican,5,5
+2018,,NY,24,rep,Lean R,5,Lean Republican,5,5
+2018,,NY,27,rep,Lean R,5,Lean Republican,5,5
+2020,,NY,1,rep,Lean R,5,Lean Republican,5,5
+2022,,NY,1,rep,Lean R,5,Lean Republican,5,5
+2008,,NY,13,rep,Likely D,2,NA,NA,2
+2008,,NY,20,dem,Likely D,2,NA,NA,2
+2008,,NY,24,dem,Likely D,2,NA,NA,2
+2008,,NY,25,rep,Likely D,2,NA,NA,2
+2012,,NY,25,dem,Likely D,2,Democrat Favored,2,2
+2014,,NY,4,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2016,,NY,25,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,NY,19,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,NY,25,dem,Likely D,2,Democrat Favored,2,2
+2012,,NY,11,rep,Likely R,5,Lean Republican,5,5
+2014,,NY,19,rep,Likely R,5,Currently Safe Republican,7,6
+2014,,NY,21,dem,Likely R,5,Currently Safe Republican,7,6
+2016,,NY,1,rep,Likely R,5,Lean Republican,5,5
+2016,,NY,21,rep,Likely R,5,Currently Safe Republican,7,6
+2016,,NY,23,rep,Likely R,5,Currently Safe Republican,7,6
+2016,,NY,24,rep,Likely R,5,Republican Favored,6,5.5
+2018,,NY,1,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,NY,2,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,NY,21,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,NY,23,rep,Likely R,5,Currently Safe Republican,7,6
+2022,,NY,2,rep,Likely R,5,Lean Republican,5,5
+2022,,NY,11,rep,Likely R,5,Republican Favored,6,5.5
+2008,,NY,1,dem,Solid D,1,NA,NA,1
+2008,,NY,2,dem,Solid D,1,NA,NA,1
+2008,,NY,4,dem,Solid D,1,NA,NA,1
+2008,,NY,5,dem,Solid D,1,NA,NA,1
+2008,,NY,6,dem,Solid D,1,NA,NA,1
+2008,,NY,7,dem,Solid D,1,NA,NA,1
+2008,,NY,8,dem,Solid D,1,NA,NA,1
+2008,,NY,9,dem,Solid D,1,NA,NA,1
+2008,,NY,10,dem,Solid D,1,NA,NA,1
+2008,,NY,11,dem,Solid D,1,NA,NA,1
+2008,,NY,12,dem,Solid D,1,NA,NA,1
+2008,,NY,14,dem,Solid D,1,NA,NA,1
+2008,,NY,15,dem,Solid D,1,NA,NA,1
+2008,,NY,16,dem,Solid D,1,NA,NA,1
+2008,,NY,17,dem,Solid D,1,NA,NA,1
+2008,,NY,18,dem,Solid D,1,NA,NA,1
+2008,,NY,19,dem,Solid D,1,NA,NA,1
+2008,,NY,21,dem,Solid D,1,NA,NA,1
+2008,,NY,22,dem,Solid D,1,NA,NA,1
+2008,,NY,27,dem,Solid D,1,NA,NA,1
+2008,,NY,28,dem,Solid D,1,NA,NA,1
+2012,,NY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,NY,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,25,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,NY,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,NY,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,25,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,NY,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,25,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,NY,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,12,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,NY,26,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,NY,3,rep,Solid R,7,NA,NA,7
+2012,,NY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NY,22,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,NY,23,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NY,22,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NY,23,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NY,27,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NY,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NY,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,NY,27,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NY,21,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NY,23,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,NY,27,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NY,21,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NY,23,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,NY,24,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,NY,1,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2014,,NY,18,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2014,,NY,24,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2020,,NY,11,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2020,,NY,22,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,,NY,3,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,,NY,4,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,,NY,17,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,NY,19,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,NY,26,rep,Tossup R,4.5,NA,NA,4.5
+2008,,NY,29,rep,Tossup R,4.5,NA,NA,4.5
+2012,,NY,18,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2016,,NY,19,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,NY,19,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2018,,NY,22,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2020,,NY,2,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,NY,24,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2022,,NY,22,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,OH,15,rep,Lean D,3,NA,NA,3
+2008,,OH,16,rep,Lean D,3,NA,NA,3
+2022,,OH,9,dem,Lean D,3,Lean Democrat,3,3
+2008,,OH,2,rep,Lean R,5,NA,NA,5
+2012,,OH,16,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2018,,OH,1,rep,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2008,,OH,18,dem,Likely D,2,NA,NA,2
+2008,,OH,7,rep,Likely R,5,NA,NA,5
+2008,,OH,12,rep,Likely R,5,NA,NA,5
+2008,,OH,14,rep,Likely R,5,NA,NA,5
+2012,,OH,7,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,OH,10,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,OH,14,rep,Likely R,5,Republican Favored,6,5.5
+2020,,OH,10,rep,Likely R,5,Republican Favored,6,5.5
+2020,,OH,12,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,OH,6,dem,Solid D,1,NA,NA,1
+2008,,OH,9,dem,Solid D,1,NA,NA,1
+2008,,OH,10,dem,Solid D,1,NA,NA,1
+2008,,OH,11,dem,Solid D,1,NA,NA,1
+2008,,OH,13,dem,Solid D,1,NA,NA,1
+2008,,OH,17,dem,Solid D,1,NA,NA,1
+2012,,OH,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,OH,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,OH,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,OH,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OH,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OH,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OH,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OH,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OH,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OH,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OH,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OH,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OH,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OH,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OH,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OH,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OH,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OH,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OH,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OH,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,OH,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,OH,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,OH,3,rep,Solid R,7,NA,NA,7
+2008,,OH,4,rep,Solid R,7,NA,NA,7
+2008,,OH,5,rep,Solid R,7,NA,NA,7
+2008,,OH,8,rep,Solid R,7,NA,NA,7
+2012,,OH,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,10,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,12,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,14,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OH,15,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,12,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,14,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,15,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OH,16,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,12,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,14,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,15,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OH,16,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,15,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OH,16,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,14,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,15,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OH,16,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,10,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,12,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,14,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,15,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OH,13,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,OH,1,rep,Tossup R,4.5,NA,NA,4.5
+2012,,OH,6,rep,Tossup R,4.5,Lean Republican,5,4.75
+2018,,OH,12,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,OH,1,rep,Tossup R,4.5,Toss-up/Tilt Democrat,3.5,4
+2022,,OH,1,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,OK,1,rep,Likely R,5,NA,NA,5
+2008,,OK,4,rep,Likely R,5,NA,NA,5
+2012,,OK,2,dem,Likely R,5,Currently Safe Republican,7,6
+2018,,OK,5,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,OK,2,dem,Solid D,1,NA,NA,1
+2008,,OK,3,rep,Solid R,7,NA,NA,7
+2008,,OK,5,rep,Solid R,7,NA,NA,7
+2012,,OK,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OK,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OK,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,OK,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OK,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OK,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OK,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OK,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OK,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OK,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OK,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OK,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OK,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OK,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OK,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OK,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OK,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OK,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OK,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OK,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OK,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OK,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OK,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OK,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OK,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OK,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OK,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OK,5,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2020,,OR,4,dem,Lean D,3,Democrat Favored,2,2.5
+2022,,OR,4,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2022,,OR,5,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2008,,OR,5,dem,Likely D,2,NA,NA,2
+2008,,OR,1,dem,Solid D,1,NA,NA,1
+2008,,OR,3,dem,Solid D,1,NA,NA,1
+2008,,OR,4,dem,Solid D,1,NA,NA,1
+2012,,OR,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,OR,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,OR,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,OR,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OR,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OR,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OR,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,OR,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OR,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OR,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OR,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,OR,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OR,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OR,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OR,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,OR,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OR,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OR,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,OR,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,OR,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,OR,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,OR,2,rep,Solid R,7,NA,NA,7
+2012,,OR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,OR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,OR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,OR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,OR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OR,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,OR,6,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,PA,10,dem,Lean D,3,NA,NA,3
+2008,,PA,12,dem,Lean D,3,NA,NA,3
+2018,,PA,7,rep,Lean D,3,Lean Democrat,3,3
+2020,,PA,8,dem,Lean D,3,Currently Safe Democrat,1,2
+2012,,PA,8,rep,Lean R,5,Republican Favored,6,5.5
+2016,,PA,16,rep,Lean R,5,Currently Safe Republican,7,6
+2018,,PA,16,rep,Lean R,5,Republican Favored,6,5.5
+2020,,PA,1,rep,Lean R,5,Lean Republican,5,5
+2008,,PA,4,dem,Likely D,2,NA,NA,2
+2018,,PA,5,rep,Likely D,2,Democrat Favored,2,2
+2018,,PA,6,rep,Likely D,2,Democrat Favored,2,2
+2018,,PA,8,dem,Likely D,2,Lean Democrat,3,2.5
+2018,,PA,17,rep,Likely D,2,Lean Democrat,3,2.5
+2020,,PA,7,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,PA,17,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,PA,12,dem,Likely D,2,Democrat Favored,2,2
+2008,,PA,5,rep,Likely R,5,NA,NA,5
+2008,,PA,6,rep,Likely R,5,NA,NA,5
+2008,,PA,15,rep,Likely R,5,NA,NA,5
+2008,,PA,18,rep,Likely R,5,NA,NA,5
+2012,,PA,6,rep,Likely R,5,Currently Safe Republican,7,6
+2014,,PA,6,rep,Likely R,5,Republican Favored,6,5.5
+2016,,PA,6,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,PA,14,dem,Likely R,5,Republican Favored,6,5.5
+2020,,PA,16,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,PA,1,dem,Solid D,1,NA,NA,1
+2008,,PA,2,dem,Solid D,1,NA,NA,1
+2008,,PA,7,dem,Solid D,1,NA,NA,1
+2008,,PA,8,dem,Solid D,1,NA,NA,1
+2008,,PA,13,dem,Solid D,1,NA,NA,1
+2008,,PA,14,dem,Solid D,1,NA,NA,1
+2008,,PA,17,dem,Solid D,1,NA,NA,1
+2012,,PA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,PA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,PA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,PA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,PA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,PA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,PA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,PA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,PA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,PA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,PA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,PA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,PA,13,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,PA,14,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,PA,17,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,PA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,PA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,PA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,PA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,PA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,PA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,PA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,PA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,PA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,PA,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,PA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,PA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,PA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,PA,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,PA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,PA,9,rep,Solid R,7,NA,NA,7
+2008,,PA,16,rep,Solid R,7,NA,NA,7
+2008,,PA,19,rep,Solid R,7,NA,NA,7
+2012,,PA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,15,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,16,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,PA,18,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,15,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,16,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,PA,18,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,15,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,PA,18,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,PA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,PA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,PA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,PA,13,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,PA,15,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,PA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,PA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,PA,12,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,PA,13,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,PA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,PA,15,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,11,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,13,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,14,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,15,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,PA,16,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,PA,11,dem,Tossup D,3.5,NA,NA,3.5
+2012,,PA,12,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,PA,7,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,PA,8,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2022,,PA,17,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,PA,3,rep,Tossup R,4.5,NA,NA,4.5
+2016,,PA,8,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,PA,1,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,PA,10,rep,Tossup R,4.5,Lean Republican,5,4.75
+2020,,PA,10,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,RI,1,dem,Solid D,1,NA,NA,1
+2008,,RI,2,dem,Solid D,1,NA,NA,1
+2012,,RI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,RI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,RI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,RI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,RI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,RI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,RI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,RI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,RI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,RI,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,RI,1,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2022,,RI,2,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2020,,SC,1,dem,Lean D,3,Lean Democrat,3,3
+2008,,SC,1,rep,Lean R,5,NA,NA,5
+2018,,SC,1,rep,Lean R,5,Republican Favored,6,5.5
+2008,,SC,2,rep,Likely R,5,NA,NA,5
+2008,,SC,5,dem,Solid D,1,NA,NA,1
+2008,,SC,6,dem,Solid D,1,NA,NA,1
+2012,,SC,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,SC,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,SC,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,SC,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,SC,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,SC,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,SC,3,rep,Solid R,7,NA,NA,7
+2008,,SC,4,rep,Solid R,7,NA,NA,7
+2012,,SC,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,SC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,SC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,SC,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,SC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,SC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,SC,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,SC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,SC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,SC,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,SC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,SC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SC,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SC,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,SC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,SC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,SC,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,SC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,SC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,SC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,SC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,SC,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,SC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,SC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SC,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SC,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SC,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SC,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SC,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SC,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,SD,0,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,SD,0,dem,Solid D,1,NA,NA,1
+2014,,SD,0,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,SD,0,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,SD,0,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,SD,0,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,SD,0,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,5,dem,Likely R,5,Republican Favored,6,5.5
+2008,,TN,4,dem,Solid D,1,NA,NA,1
+2008,,TN,5,dem,Solid D,1,NA,NA,1
+2008,,TN,6,dem,Solid D,1,NA,NA,1
+2008,,TN,8,dem,Solid D,1,NA,NA,1
+2008,,TN,9,dem,Solid D,1,NA,NA,1
+2012,,TN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TN,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TN,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TN,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TN,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TN,5,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TN,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TN,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,TN,1,rep,Solid R,7,NA,NA,7
+2008,,TN,2,rep,Solid R,7,NA,NA,7
+2008,,TN,3,rep,Solid R,7,NA,NA,7
+2008,,TN,7,rep,Solid R,7,NA,NA,7
+2012,,TN,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TN,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TN,4,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2014,,TX,23,dem,Lean D,3,Lean Democrat,3,3
+2020,,TX,23,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2020,,TX,24,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2022,,TX,28,dem,Lean D,3,Lean Democrat,3,3
+2008,,TX,7,rep,Lean R,5,NA,NA,5
+2008,,TX,10,rep,Lean R,5,NA,NA,5
+2012,,TX,14,rep,Lean R,5,Lean Republican,5,5
+2018,,TX,22,rep,Lean R,5,Currently Safe Republican,7,6
+2018,,TX,23,rep,Lean R,5,Lean Republican,5,5
+2020,,TX,3,rep,Lean R,5,Lean Republican,5,5
+2020,,TX,31,rep,Lean R,5,Currently Safe Republican,7,6
+2008,,TX,23,dem,Likely D,2,NA,NA,2
+2020,,TX,7,dem,Likely D,2,Democrat Favored,2,2
+2020,,TX,32,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2018,,TX,2,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,TX,6,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,TX,10,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,TX,21,rep,Likely R,5,Republican Favored,6,5.5
+2018,,TX,24,rep,Likely R,5,Currently Safe Republican,7,6
+2018,,TX,31,rep,Likely R,5,Republican Favored,6,5.5
+2020,,TX,2,rep,Likely R,5,Currently Safe Republican,7,6
+2020,,TX,6,rep,Likely R,5,Republican Favored,6,5.5
+2020,,TX,25,rep,Likely R,5,Republican Favored,6,5.5
+2022,,TX,15,dem,Likely R,5,Lean Republican,5,5
+2008,,TX,9,dem,Solid D,1,NA,NA,1
+2008,,TX,15,dem,Solid D,1,NA,NA,1
+2008,,TX,16,dem,Solid D,1,NA,NA,1
+2008,,TX,17,dem,Solid D,1,NA,NA,1
+2008,,TX,18,dem,Solid D,1,NA,NA,1
+2008,,TX,20,dem,Solid D,1,NA,NA,1
+2008,,TX,25,dem,Solid D,1,NA,NA,1
+2008,,TX,27,dem,Solid D,1,NA,NA,1
+2008,,TX,28,dem,Solid D,1,NA,NA,1
+2008,,TX,29,dem,Solid D,1,NA,NA,1
+2008,,TX,30,dem,Solid D,1,NA,NA,1
+2012,,TX,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,TX,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,TX,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,TX,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,TX,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,15,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,28,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,34,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,TX,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,16,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,18,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,20,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,29,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,30,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,32,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,33,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,35,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,TX,37,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,TX,1,rep,Solid R,7,NA,NA,7
+2008,,TX,2,rep,Solid R,7,NA,NA,7
+2008,,TX,3,rep,Solid R,7,NA,NA,7
+2008,,TX,4,rep,Solid R,7,NA,NA,7
+2008,,TX,5,rep,Solid R,7,NA,NA,7
+2008,,TX,6,rep,Solid R,7,NA,NA,7
+2008,,TX,8,rep,Solid R,7,NA,NA,7
+2008,,TX,11,rep,Solid R,7,NA,NA,7
+2008,,TX,12,rep,Solid R,7,NA,NA,7
+2008,,TX,13,rep,Solid R,7,NA,NA,7
+2008,,TX,14,rep,Solid R,7,NA,NA,7
+2008,,TX,19,rep,Solid R,7,NA,NA,7
+2008,,TX,21,rep,Solid R,7,NA,NA,7
+2008,,TX,24,rep,Solid R,7,NA,NA,7
+2008,,TX,26,rep,Solid R,7,NA,NA,7
+2008,,TX,31,rep,Solid R,7,NA,NA,7
+2008,,TX,32,rep,Solid R,7,NA,NA,7
+2012,,TX,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,8,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,10,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,11,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,12,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,13,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,17,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,19,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,21,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,22,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,24,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,25,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,26,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,27,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,31,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,32,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,TX,36,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,11,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,12,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,13,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,14,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,17,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,19,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,21,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,22,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,24,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,25,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,26,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,27,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,31,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,32,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,TX,36,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,10,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,11,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,12,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,13,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,14,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,17,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,19,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,21,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,22,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,24,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,25,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,26,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,27,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,31,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,32,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,TX,36,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,4,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,11,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,12,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,13,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,14,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,17,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,19,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,25,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,26,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,27,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,TX,36,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,11,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,12,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,13,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,14,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,17,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,19,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,26,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,27,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,TX,36,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,10,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,11,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,12,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,13,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,14,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,17,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,19,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,21,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,22,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,23,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,24,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,25,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,26,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,27,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,31,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,36,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,TX,38,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,TX,22,dem,Tossup D,3.5,NA,NA,3.5
+2012,,TX,23,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2016,,TX,23,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,TX,7,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2018,,TX,32,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,TX,10,rep,Tossup R,4.5,Lean Republican,5,4.75
+2020,,TX,21,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,TX,22,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2022,,TX,34,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2012,,UT,4,dem,Lean R,5,Toss-up/Tilt Republican,4.5,4.75
+2016,,UT,4,rep,Lean R,5,Republican Favored,6,5.5
+2014,,UT,4,dem,Likely R,5,Currently Safe Republican,7,6
+2008,,UT,2,dem,Solid D,1,NA,NA,1
+2008,,UT,1,rep,Solid R,7,NA,NA,7
+2008,,UT,3,rep,Solid R,7,NA,NA,7
+2012,,UT,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,UT,2,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,UT,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,UT,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,UT,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,UT,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,UT,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,UT,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,UT,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,UT,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,UT,2,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,UT,3,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,UT,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,UT,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,UT,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,UT,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,UT,2,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,UT,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,UT,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,UT,4,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2018,,UT,4,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2018,,VA,10,rep,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2020,,VA,2,dem,Lean D,3,Democrat Favored,2,2.5
+2020,,VA,7,dem,Lean D,3,Toss-up/Tilt Democrat,3.5,3.25
+2008,,VA,5,rep,Lean R,5,NA,NA,5
+2014,,VA,10,rep,Lean R,5,Lean Republican,5,5
+2018,,VA,5,rep,Lean R,5,Republican Favored,6,5.5
+2008,,VA,11,rep,Likely D,2,NA,NA,2
+2016,,VA,4,rep,Likely D,2,Currently Safe Democrat,1,1.5
+2022,,VA,10,dem,Likely D,2,Democrat Favored,2,2
+2008,,VA,10,rep,Likely R,5,NA,NA,5
+2012,,VA,2,rep,Likely R,5,Republican Favored,6,5.5
+2016,,VA,5,rep,Likely R,5,Republican Favored,6,5.5
+2008,,VA,3,dem,Solid D,1,NA,NA,1
+2008,,VA,8,dem,Solid D,1,NA,NA,1
+2008,,VA,9,dem,Solid D,1,NA,NA,1
+2012,,VA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,VA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,VA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,VA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,VA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,VA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,VA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,VA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,VA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,VA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,VA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,VA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,VA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,VA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,VA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,VA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,VA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,VA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,VA,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,VA,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,VA,8,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,VA,11,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,VA,1,rep,Solid R,7,NA,NA,7
+2008,,VA,4,rep,Solid R,7,NA,NA,7
+2008,,VA,6,rep,Solid R,7,NA,NA,7
+2008,,VA,7,rep,Solid R,7,NA,NA,7
+2012,,VA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,VA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,VA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,VA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,VA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,VA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,VA,10,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,VA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,VA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,VA,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,VA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,VA,7,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,VA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,VA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,VA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,VA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,VA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,VA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,VA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,VA,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,VA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,VA,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,VA,9,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,VA,2,dem,Tossup D,3.5,Toss-up/Tilt Republican,4.5,4
+2022,,VA,7,dem,Tossup D,3.5,Toss-up/Tilt Democrat,3.5,3.5
+2008,,VA,2,rep,Tossup R,4.5,NA,NA,4.5
+2016,,VA,10,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2018,,VA,2,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2018,,VA,7,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2020,,VA,5,rep,Tossup R,4.5,Pure Toss-up,4,4.25
+2008,,VT,0,dem,Solid D,1,NA,NA,1
+2012,,VT,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,VT,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,VT,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,VT,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,VT,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,VT,0,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WA,1,dem,Lean D,3,Lean Democrat,3,3
+2018,,WA,8,rep,Lean D,3,Pure Toss-up,4,3.5
+2018,,WA,3,rep,Lean R,5,Republican Favored,6,5.5
+2018,,WA,5,rep,Lean R,5,Republican Favored,6,5.5
+2020,,WA,3,rep,Lean R,5,Lean Republican,5,5
+2022,,WA,3,rep,Lean R,5,Lean Republican,5,5
+2014,,WA,1,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2020,,WA,8,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2008,,WA,1,dem,Solid D,1,NA,NA,1
+2008,,WA,2,dem,Solid D,1,NA,NA,1
+2008,,WA,3,dem,Solid D,1,NA,NA,1
+2008,,WA,6,dem,Solid D,1,NA,NA,1
+2008,,WA,7,dem,Solid D,1,NA,NA,1
+2008,,WA,9,dem,Solid D,1,NA,NA,1
+2012,,WA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WA,1,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WA,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WA,6,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WA,7,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WA,9,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WA,10,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,WA,4,rep,Solid R,7,NA,NA,7
+2008,,WA,5,rep,Solid R,7,NA,NA,7
+2012,,WA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,WA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,WA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,WA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WA,3,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WA,8,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,WA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WA,4,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WA,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WA,8,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2008,,WA,8,rep,Tossup R,4.5,NA,NA,4.5
+2008,,WI,8,dem,Lean D,3,NA,NA,3
+2020,,WI,3,dem,Lean D,3,Currently Safe Democrat,1,2
+2012,,WI,7,rep,Lean R,5,Lean Republican,5,5
+2018,,WI,1,rep,Lean R,5,Lean Republican,5,5
+2012,,WI,8,rep,Likely R,5,Currently Safe Republican,7,6
+2014,,WI,6,rep,Likely R,5,Currently Safe Republican,7,6
+2016,,WI,8,rep,Likely R,5,Republican Favored,6,5.5
+2018,,WI,6,rep,Likely R,5,Currently Safe Republican,7,6
+2022,,WI,3,dem,Likely R,5,Lean Republican,5,5
+2008,,WI,2,dem,Solid D,1,NA,NA,1
+2008,,WI,3,dem,Solid D,1,NA,NA,1
+2008,,WI,4,dem,Solid D,1,NA,NA,1
+2008,,WI,7,dem,Solid D,1,NA,NA,1
+2012,,WI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WI,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2012,,WI,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WI,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2014,,WI,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WI,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2016,,WI,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WI,3,dem,Solid D,1,Currently Safe Democrat,1,1
+2018,,WI,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2020,,WI,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WI,2,dem,Solid D,1,Currently Safe Democrat,1,1
+2022,,WI,4,dem,Solid D,1,Currently Safe Democrat,1,1
+2008,,WI,1,rep,Solid R,7,NA,NA,7
+2008,,WI,5,rep,Solid R,7,NA,NA,7
+2008,,WI,6,rep,Solid R,7,NA,NA,7
+2012,,WI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,WI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,WI,6,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WI,8,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WI,6,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,WI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,WI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,WI,8,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WI,6,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WI,8,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WI,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WI,5,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WI,6,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WI,7,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WI,8,rep,Solid R,7,Currently Safe Republican,7,7
+2008,,WV,2,rep,Lean R,5,NA,NA,5
+2018,,WV,3,rep,Lean R,5,Lean Republican,5,5
+2012,,WV,3,dem,Likely D,2,Currently Safe Democrat,1,1.5
+2018,,WV,2,rep,Likely R,5,Currently Safe Republican,7,6
+2008,,WV,1,dem,Solid D,1,NA,NA,1
+2008,,WV,3,dem,Solid D,1,NA,NA,1
+2012,,WV,1,rep,Solid R,7,Currently Safe Republican,7,7
+2012,,WV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WV,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WV,1,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WV,3,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,WV,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WV,1,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WV,3,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WV,1,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WV,2,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WV,3,dem,Tossup D,3.5,Pure Toss-up,4,3.75
+2014,,WV,2,rep,Tossup R,4.5,Toss-up/Tilt Republican,4.5,4.5
+2008,,WY,0,rep,Lean R,5,NA,NA,5
+2012,,WY,0,rep,Solid R,7,Currently Safe Republican,7,7
+2014,,WY,0,rep,Solid R,7,Currently Safe Republican,7,7
+2016,,WY,0,rep,Solid R,7,Currently Safe Republican,7,7
+2018,,WY,0,rep,Solid R,7,Currently Safe Republican,7,7
+2020,,WY,0,rep,Solid R,7,Currently Safe Republican,7,7
+2022,,WY,0,rep,Solid R,7,Currently Safe Republican,7,7

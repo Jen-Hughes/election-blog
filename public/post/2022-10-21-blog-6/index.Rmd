@@ -1,8 +1,11 @@
 ---
-title: 'Blog 6 : The Ground Game'
+title: 'Blog 6'
 author: 'Jen Hughes '
 date: '2022-10-21'
-output: pdf_document
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
 categories: []
 tags: []
 slug: []
@@ -10,7 +13,7 @@ slug: []
 
 This week in election analytics we examined the impact of voter turnout on election outcomes.  Historically, increases in voter turnout have been thought to benefit Democrats. However, in the post-Trump Republican party, this relationship has been called into question. In the Post-Trump era, Republicans have tapped into a new base, largely non-college educated white males, who are non-reliable voters (unlike their traditional base of wealthy whites and the elderly, who vote reliably). Because of this shift, the use of turnout as a predictor has been called into question as the relationship between turnout and outcome changes. This week, I'm looking at how incorporating turnout as a variable in my model impacts my predicted results.  
 
-```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+```{r}
 #load in necessary packages 
 
 library(tidyverse)
@@ -29,8 +32,8 @@ library(scales)
 
 ```
 
-```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
-#load in neccesary data 
+```{r}
+#load in necessary data 
 cvap <- read.csv("polls_cvap_vp_df.csv")
 cvap_district <- read_csv("cvap_district_2012-2020_clean.csv")
 polls_df <- read_csv("house_polls_long.csv")
@@ -39,7 +42,7 @@ historical <- read_csv("historical.csv") %>%
 experts <- read_csv("expert_rating.csv")
 ```
 
-```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+```{r}
 
 #change variable class for variables we care about to merge 
 cvap <- cvap %>%
@@ -143,7 +146,7 @@ experts$district <- as.numeric(experts$district)
 ```
 
 
-```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+```{r}
 
 ##Join necessary data sets 
 combined <- cvap_district %>%
@@ -174,10 +177,12 @@ combined1 <- combined1 %>%
 
 combined_midterm <- combined1 %>%
   filter(year == 2014 | year == 2018)
+
+# # write_csv(combined_midterm, file = "~/Documents/combined_midterm.csv")
 ```
 
 Turnout Map
-```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE}
+```{r}
 cd116 <- congressional_districts(
   state = NULL,
   cb = FALSE,
