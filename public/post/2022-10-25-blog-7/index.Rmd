@@ -348,7 +348,7 @@ incumb_dist_1948_2020_3_ <- read_csv("incumb_dist_1948-2020 (3).csv")
  # filter(year %in% c(2010, 2014, 2018))
 ```
 
-```{r, warning = FALSE, message = FALSE}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #final_data_aggregate <- final_data %>%
 #  filter(year != 2022) %>%
 #  group_by(year, st_cd_fips) %>%

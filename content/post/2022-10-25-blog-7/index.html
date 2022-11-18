@@ -18,15 +18,6 @@ I first recreated the NYT scrape from our class discussion section which searche
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>I then mapped the generic ballot support for each party with markers for the leak and release of the Dobbs Decision. We see that support for both parties increased following the leak of the decision then promptly decreased for both. We see the parties diverge with the release of the final decision where Democrats see an increase in support and Republicans see a decrease. However, the scale of this graph is very small and the changes are difficult to differentiate from general noise.</p>
 <p>Model Update:</p>
-<pre class="r"><code>#final_data_aggregate &lt;- final_data %&gt;%
-#  filter(year != 2022) %&gt;%
-#  group_by(year, st_cd_fips) %&gt;%
- # mutate(DEM = as.numeric(DEM), 
-   #      REP = as.numeric(REP)) %&gt;%
-#  mutate(avg_support_dem = mean(DEM), 
- #        avg_support_rep = mean(REP)) %&gt;%
- # rename_(&quot;DemVotesMajorPercentorig&quot; = &quot;DemVotesMajorPercent&quot;) %&gt;%
- # rename_(&quot;DemVotesMajorPercent&quot; = &quot;DemVotesMajorPct&quot;)</code></pre>
 <p>National Model</p>
 <pre><code>## 
 ## ===============================================
