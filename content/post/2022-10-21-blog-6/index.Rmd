@@ -13,7 +13,7 @@ slug: []
 
 This week in election analytics we examined the impact of voter turnout on election outcomes.  Historically, increases in voter turnout have been thought to benefit Democrats. However, in the post-Trump Republican party, this relationship has been called into question. In the Post-Trump era, Republicans have tapped into a new base, largely non-college educated white males, who are non-reliable voters (unlike their traditional base of wealthy whites and the elderly, who vote reliably). Because of this shift, the use of turnout as a predictor has been called into question as the relationship between turnout and outcome changes. This week, I'm looking at how incorporating turnout as a variable in my model impacts my predicted results.  
 
-```{r}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #load in necessary packages 
 
 library(tidyverse)
@@ -32,7 +32,7 @@ library(scales)
 
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 #load in necessary data 
 cvap <- read.csv("polls_cvap_vp_df.csv")
 cvap_district <- read_csv("cvap_district_2012-2020_clean.csv")
@@ -42,7 +42,7 @@ historical <- read_csv("historical.csv") %>%
 experts <- read_csv("expert_rating.csv")
 ```
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
 #change variable class for variables we care about to merge 
 cvap <- cvap %>%
@@ -54,8 +54,8 @@ polls_df <- polls_df %>%
 #rename variables to join datasets
 cvap_district <- cvap_district %>%
   select(-c(...1, ...2, moe)) %>%
-  rename(st_cd_fips = geoid) %>%
-  rename(district = cd)
+  rename_("st_cd_fips" = "geoid") %>%
+  rename_("district" = "cd")
   
 cvap_district <- cvap_district %>%
    mutate(district = case_when(
@@ -131,8 +131,8 @@ cvap$cd <- as.numeric(cvap$cd)
 
 cvap_clean <- cvap %>%
   select(year, state.x, cd, DEM, REP, cvap, winner_party, DemVotes, RepVotes, RepStatus, DemStatus, RepVotesMajorPercent, DemVotesMajorPercent, president_party, turnout, incumbency) %>%
-  rename(state = state.x) %>%
-  rename(district = cd)
+  rename_("state" = "state.x") %>%
+  rename_("district" = "cd")
 
 experts <- experts %>%
   select(year, state, district, avg_rating)
@@ -146,7 +146,7 @@ experts$district <- as.numeric(experts$district)
 ```
 
 
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
 ##Join necessary data sets 
 combined <- cvap_district %>%
@@ -182,7 +182,7 @@ combined_midterm <- combined1 %>%
 ```
 
 Turnout Map
-```{r}
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 cd116 <- congressional_districts(
   state = NULL,
   cb = FALSE,
@@ -190,19 +190,19 @@ cd116 <- congressional_districts(
   year = 2018)
 
 cd116 <- cd116 %>%
-  rename("state" = "STATEFP")
+  rename_("state" = "STATEFP")
   
 state <- read_csv("us-state.csv")
 
 state <- state %>%
-  rename("state" = "st")
+  rename_("state" = "st")
 
 district <- cd116 %>%
   left_join(state, by = "state")
   
 district2 <- district %>%
   select(-c("state")) %>%
-  rename("state" = "stname", "district" = "CD116FP", "st" = "stusps")
+  rename_("state" = "stname", "district" = "CD116FP", "st" = "stusps")
 
 district2$district <- as.numeric(district2$district)
 
