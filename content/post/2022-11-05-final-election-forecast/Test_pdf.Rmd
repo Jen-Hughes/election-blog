@@ -41,7 +41,9 @@ RDI <- read_csv("RDI_quarterly.csv")
 #clean outcome data
 incumb_dist_1948_2020 <- incumb_dist_1948_2020 %>% 
   select(-...1, -...2, -office, -RepCandidate, -DemCandidate) %>% 
-  rename(district = district_num)
+  rename_("district" = "district_num")
+
+
 
 #create avg support
 polls_df <- polls_df %>% 

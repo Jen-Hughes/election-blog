@@ -1,5 +1,5 @@
 ---
-title: "Scratch work lol"
+title: "Blog 6"
 author: "Jen Hughes"
 date: "10/24/2022"
 output: html_document
@@ -146,8 +146,6 @@ linearmodelnat_pollrate <- lm(DemVotesMajorPercent ~ avg_rating + dem_status + a
 linearmodelnat <- lm(DemVotesMajorPercent ~ avg_rating + dem_status + avg_support_dem + turnout, data = final_data_aggregate)
 #stargazer(linearmodelnat, linearmodelnat_pollrate,  type = "text")
 ```
-
-
 
 
 At the top of the model making process, I needed to decide what data to include in my train set. This week I tested out whether to train the data on all elections or just midterms but concluded due to literature's remarks on the unique nature of midterm elections compared to one's influenced by national votes as well. As such, I decided to subset the data to only train my models on midterm election years this week. 
