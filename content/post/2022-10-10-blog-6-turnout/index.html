@@ -1,0 +1,466 @@
+---
+title: 'Blog 6: Turnout'
+author: Jen Hughes
+date: '2022-10-10'
+slug: []
+categories: []
+tags: []
+---
+
+
+
+<p>This week in election analytics we examined the impact of voter turnout on election outcomes. Historically, increases in voter turnout have been thought to benefit Democrats. However, in the post-Trump Republican party, this relationship has been called into question. In the Post-Trump era, Republicans have tapped into a new base, largely non-college educated white males, who are non-reliable voters (unlike their traditional base of wealthy whites and the elderly, who vote reliably). Because of this shift, the use of turnout as a predictor has been called into question as the relationship between turnout and outcome changes. This week, I’m looking at how incorporating turnout as a variable in my model impacts my predicted results.</p>
+<p>Turnout Map</p>
+<pre><code>## 
+  |                                                                            
+  |                                                                      |   0%
+  |                                                                            
+  |=                                                                     |   1%
+  |                                                                            
+  |=                                                                     |   2%
+  |                                                                            
+  |==                                                                    |   2%
+  |                                                                            
+  |==                                                                    |   3%
+  |                                                                            
+  |===                                                                   |   4%
+  |                                                                            
+  |===                                                                   |   5%
+  |                                                                            
+  |====                                                                  |   5%
+  |                                                                            
+  |====                                                                  |   6%
+  |                                                                            
+  |=====                                                                 |   6%
+  |                                                                            
+  |=====                                                                 |   7%
+  |                                                                            
+  |=====                                                                 |   8%
+  |                                                                            
+  |======                                                                |   8%
+  |                                                                            
+  |=======                                                               |  10%
+  |                                                                            
+  |=======                                                               |  11%
+  |                                                                            
+  |========                                                              |  11%
+  |                                                                            
+  |========                                                              |  12%
+  |                                                                            
+  |=========                                                             |  12%
+  |                                                                            
+  |=========                                                             |  13%
+  |                                                                            
+  |=========                                                             |  14%
+  |                                                                            
+  |==========                                                            |  14%
+  |                                                                            
+  |==========                                                            |  15%
+  |                                                                            
+  |===========                                                           |  15%
+  |                                                                            
+  |===========                                                           |  16%
+  |                                                                            
+  |============                                                          |  17%
+  |                                                                            
+  |============                                                          |  18%
+  |                                                                            
+  |=============                                                         |  18%
+  |                                                                            
+  |=============                                                         |  19%
+  |                                                                            
+  |==============                                                        |  19%
+  |                                                                            
+  |==============                                                        |  20%
+  |                                                                            
+  |==============                                                        |  21%
+  |                                                                            
+  |===============                                                       |  21%
+  |                                                                            
+  |===============                                                       |  22%
+  |                                                                            
+  |================                                                      |  22%
+  |                                                                            
+  |================                                                      |  23%
+  |                                                                            
+  |================                                                      |  24%
+  |                                                                            
+  |=================                                                     |  24%
+  |                                                                            
+  |=================                                                     |  25%
+  |                                                                            
+  |==================                                                    |  25%
+  |                                                                            
+  |==================                                                    |  26%
+  |                                                                            
+  |===================                                                   |  27%
+  |                                                                            
+  |===================                                                   |  28%
+  |                                                                            
+  |====================                                                  |  28%
+  |                                                                            
+  |====================                                                  |  29%
+  |                                                                            
+  |=====================                                                 |  29%
+  |                                                                            
+  |=====================                                                 |  30%
+  |                                                                            
+  |=====================                                                 |  31%
+  |                                                                            
+  |======================                                                |  31%
+  |                                                                            
+  |======================                                                |  32%
+  |                                                                            
+  |=======================                                               |  32%
+  |                                                                            
+  |=======================                                               |  33%
+  |                                                                            
+  |========================                                              |  34%
+  |                                                                            
+  |========================                                              |  35%
+  |                                                                            
+  |=========================                                             |  35%
+  |                                                                            
+  |=========================                                             |  36%
+  |                                                                            
+  |==========================                                            |  36%
+  |                                                                            
+  |==========================                                            |  37%
+  |                                                                            
+  |==========================                                            |  38%
+  |                                                                            
+  |===========================                                           |  38%
+  |                                                                            
+  |===========================                                           |  39%
+  |                                                                            
+  |============================                                          |  39%
+  |                                                                            
+  |============================                                          |  40%
+  |                                                                            
+  |============================                                          |  41%
+  |                                                                            
+  |=============================                                         |  41%
+  |                                                                            
+  |=============================                                         |  42%
+  |                                                                            
+  |==============================                                        |  43%
+  |                                                                            
+  |===============================                                       |  44%
+  |                                                                            
+  |===============================                                       |  45%
+  |                                                                            
+  |================================                                      |  45%
+  |                                                                            
+  |================================                                      |  46%
+  |                                                                            
+  |=================================                                     |  47%
+  |                                                                            
+  |=================================                                     |  48%
+  |                                                                            
+  |==================================                                    |  48%
+  |                                                                            
+  |==================================                                    |  49%
+  |                                                                            
+  |===================================                                   |  49%
+  |                                                                            
+  |===================================                                   |  50%
+  |                                                                            
+  |===================================                                   |  51%
+  |                                                                            
+  |====================================                                  |  51%
+  |                                                                            
+  |====================================                                  |  52%
+  |                                                                            
+  |=====================================                                 |  52%
+  |                                                                            
+  |=====================================                                 |  53%
+  |                                                                            
+  |======================================                                |  54%
+  |                                                                            
+  |======================================                                |  55%
+  |                                                                            
+  |=======================================                               |  55%
+  |                                                                            
+  |=======================================                               |  56%
+  |                                                                            
+  |========================================                              |  57%
+  |                                                                            
+  |========================================                              |  58%
+  |                                                                            
+  |=========================================                             |  58%
+  |                                                                            
+  |=========================================                             |  59%
+  |                                                                            
+  |==========================================                            |  59%
+  |                                                                            
+  |==========================================                            |  60%
+  |                                                                            
+  |==========================================                            |  61%
+  |                                                                            
+  |===========================================                           |  61%
+  |                                                                            
+  |===========================================                           |  62%
+  |                                                                            
+  |============================================                          |  62%
+  |                                                                            
+  |============================================                          |  63%
+  |                                                                            
+  |=============================================                         |  64%
+  |                                                                            
+  |=============================================                         |  65%
+  |                                                                            
+  |==============================================                        |  65%
+  |                                                                            
+  |==============================================                        |  66%
+  |                                                                            
+  |===============================================                       |  67%
+  |                                                                            
+  |===============================================                       |  68%
+  |                                                                            
+  |================================================                      |  68%
+  |                                                                            
+  |=================================================                     |  70%
+  |                                                                            
+  |=================================================                     |  71%
+  |                                                                            
+  |==================================================                    |  71%
+  |                                                                            
+  |==================================================                    |  72%
+  |                                                                            
+  |===================================================                   |  72%
+  |                                                                            
+  |===================================================                   |  73%
+  |                                                                            
+  |====================================================                  |  74%
+  |                                                                            
+  |====================================================                  |  75%
+  |                                                                            
+  |=====================================================                 |  75%
+  |                                                                            
+  |=====================================================                 |  76%
+  |                                                                            
+  |======================================================                |  76%
+  |                                                                            
+  |======================================================                |  77%
+  |                                                                            
+  |======================================================                |  78%
+  |                                                                            
+  |=======================================================               |  78%
+  |                                                                            
+  |=======================================================               |  79%
+  |                                                                            
+  |========================================================              |  79%
+  |                                                                            
+  |========================================================              |  80%
+  |                                                                            
+  |========================================================              |  81%
+  |                                                                            
+  |=========================================================             |  81%
+  |                                                                            
+  |=========================================================             |  82%
+  |                                                                            
+  |==========================================================            |  82%
+  |                                                                            
+  |==========================================================            |  83%
+  |                                                                            
+  |==========================================================            |  84%
+  |                                                                            
+  |===========================================================           |  84%
+  |                                                                            
+  |===========================================================           |  85%
+  |                                                                            
+  |============================================================          |  85%
+  |                                                                            
+  |============================================================          |  86%
+  |                                                                            
+  |=============================================================         |  86%
+  |                                                                            
+  |=============================================================         |  87%
+  |                                                                            
+  |=============================================================         |  88%
+  |                                                                            
+  |==============================================================        |  88%
+  |                                                                            
+  |==============================================================        |  89%
+  |                                                                            
+  |===============================================================       |  89%
+  |                                                                            
+  |===============================================================       |  90%
+  |                                                                            
+  |===============================================================       |  91%
+  |                                                                            
+  |================================================================      |  91%
+  |                                                                            
+  |================================================================      |  92%
+  |                                                                            
+  |=================================================================     |  92%
+  |                                                                            
+  |=================================================================     |  93%
+  |                                                                            
+  |=================================================================     |  94%
+  |                                                                            
+  |==================================================================    |  94%
+  |                                                                            
+  |==================================================================    |  95%
+  |                                                                            
+  |===================================================================   |  95%
+  |                                                                            
+  |===================================================================   |  96%
+  |                                                                            
+  |====================================================================  |  96%
+  |                                                                            
+  |====================================================================  |  97%
+  |                                                                            
+  |====================================================================  |  98%
+  |                                                                            
+  |===================================================================== |  98%
+  |                                                                            
+  |===================================================================== |  99%
+  |                                                                            
+  |======================================================================|  99%
+  |                                                                            
+  |======================================================================| 100%</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="672" />
+I first created a new variable for turnout by dividing the combined votes for Democrats and Republicans by the citizen voting age population (CVAP) at the district level. Above I have mapped turnout by district. While there isn’t a particularly strong pattern, we do see that turnout seems to be lower in the central south and is generally higher on the west coast. The map also reveals missing data for several districts.</p>
+<p>To gauge how turnout might serve as a predictor of vote share, I first just ran a simple linear regression between turnout and vote share for each party. This model includes turnout based on CVAP data available to us from 2012-2020.When looking at the full set of data, I found a minimal relationship between the two variables. For Democratic vote share, the correlation is 0.033, indicating that turnout has an very weak positive effect on vote share. The adjusted R^2 is 0.002, demonstrating the model has almost no predictive power. For Republican vote share, the correlation was -0.033. The adjusted R^2 was also 0.002 again showing almost no predictive power.</p>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       dem_votes_major_percent  
+## -----------------------------------------------
+## turnout                        0.033           
+##                               (0.022)          
+##                                                
+## Constant                     46.906***         
+##                               (1.272)          
+##                                                
+## -----------------------------------------------
+## Observations                    501            
+## R2                             0.004           
+## Adjusted R2                    0.002           
+## Residual Std. Error      6.081 (df = 499)      
+## F Statistic             2.168 (df = 1; 499)    
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       rep_votes_major_percent  
+## -----------------------------------------------
+## turnout                       -0.033           
+##                               (0.022)          
+##                                                
+## Constant                     53.094***         
+##                               (1.272)          
+##                                                
+## -----------------------------------------------
+## Observations                    501            
+## R2                             0.004           
+## Adjusted R2                    0.002           
+## Residual Std. Error      6.081 (df = 499)      
+## F Statistic             2.168 (df = 1; 499)    
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<p>I then chose to subset the data to only include midterm years - 2014 and 2018 - since we have seen in past weeks that midterm years function extremely differently than presidential election years. In this subset, the relationship between vote share and turnout becomes much stronger but remains somewhat weak. The correlation for Democratic vote share is 0.140, so for Democrats, an increase in turnout by about 1% is associated with an increase in vote share by about 0.14 percentage points. This relationship also appears to be significant in this model and the R- sq increased to 0.062. The correlation for Republican vote share is -0.140, showing an interesting inverse relationship with the democratic vote share. These relationships should be viewed with extreme skepticism given that we only have two cycles worth of data to predict off of which makes any observed relationship somewhat unreliable</p>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       dem_votes_major_percent  
+## -----------------------------------------------
+## turnout                      0.140***          
+##                               (0.036)          
+##                                                
+## Constant                     42.229***         
+##                               (1.756)          
+##                                                
+## -----------------------------------------------
+## Observations                    214            
+## R2                             0.066           
+## Adjusted R2                    0.062           
+## Residual Std. Error      5.333 (df = 212)      
+## F Statistic           14.981*** (df = 1; 212)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       rep_votes_major_percent  
+## -----------------------------------------------
+## turnout                      -0.140***         
+##                               (0.036)          
+##                                                
+## Constant                     57.771***         
+##                               (1.756)          
+##                                                
+## -----------------------------------------------
+## Observations                    214            
+## R2                             0.066           
+## Adjusted R2                    0.062           
+## Residual Std. Error      5.333 (df = 212)      
+## F Statistic           14.981*** (df = 1; 212)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Based on the work we did this week, I updated my national level model to predict party vote share based on Presidential incumbency, average rating, and turnout. In the model, both expert rating and turnout appear to be significant while incumbency does not. The negative correlation between presidential incumbency and vote share in the Republican model might show that the president’s party is often punished during midterm elections. However, it’s interesting that this trend doesn’t hold across the two models. The R-sq for both models is 0.778 which is not terrible but could be improved. It’s especially concerning given the limited data that the model is based on.</p>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       dem_votes_major_percent  
+## -----------------------------------------------
+## incumbency                     0.082           
+##                               (0.414)          
+##                                                
+## avg_rating                   -2.649***         
+##                               (0.102)          
+##                                                
+## turnout                      0.125***          
+##                               (0.018)          
+##                                                
+## Constant                     54.561***         
+##                               (1.018)          
+##                                                
+## -----------------------------------------------
+## Observations                    214            
+## R2                             0.778           
+## Adjusted R2                    0.775           
+## Residual Std. Error      2.611 (df = 210)      
+## F Statistic          245.590*** (df = 3; 210)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<p>Finally, I used these models to make an updated national vote share prediction for the upcoming midterms. To simulate 2022 data for turnout I used the average turnout of the midterm years we have data for (2014 and 2018). This is a big assumption that I hope to revisit before turning in my final model. I also based avg_rating on the overall prediction that the house will be likely Republican (5). In my ultimate prediction, I would prefer to scrape the final predictions for each race from the different polling centers and average all of those to more accurately mimic the data the model is trained on.</p>
+<p>My updated prediction shows that Democrats will win 47.32% of the two party voteshare with a confidence interval from 42.16% - 52.49%. My model predicts that Republicans will win 52.76% of the two party voteshare with a confidence inteval of 47.56% - 57.96%.</p>
+<pre><code>##        fit      lwr      upr
+## 1 47.32147 42.15702 52.48591</code></pre>
+<pre><code>## 
+## ===============================================
+##                         Dependent variable:    
+##                     ---------------------------
+##                       rep_votes_major_percent  
+## -----------------------------------------------
+## incumbency                    -0.082           
+##                               (0.414)          
+##                                                
+## avg_rating                   2.649***          
+##                               (0.102)          
+##                                                
+## turnout                      -0.125***         
+##                               (0.018)          
+##                                                
+## Constant                     45.439***         
+##                               (1.018)          
+##                                                
+## -----------------------------------------------
+## Observations                    214            
+## R2                             0.778           
+## Adjusted R2                    0.775           
+## Residual Std. Error      2.611 (df = 210)      
+## F Statistic          245.590*** (df = 3; 210)  
+## ===============================================
+## Note:               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+<pre><code>##        fit      lwr      upr
+## 1 52.76005 47.56222 57.95789</code></pre>
