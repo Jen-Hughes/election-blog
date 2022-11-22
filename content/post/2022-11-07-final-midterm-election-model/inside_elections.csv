@@ -1,0 +1,3046 @@
+,year,state,district,inc_party,is_open,description,,ie_num
+6,2010,AL,7,Democrat,1,Currently Safe Democrat,,1
+11,2010,AZ,4,Democrat,0,Currently Safe Democrat,,1
+19,2010,AR,4,Democrat,0,Currently Safe Democrat,,1
+20,2010,CA,1,Democrat,0,Currently Safe Democrat,,1
+24,2010,CA,5,Democrat,0,Currently Safe Democrat,,1
+25,2010,CA,6,Democrat,0,Currently Safe Democrat,,1
+26,2010,CA,7,Democrat,0,Currently Safe Democrat,,1
+27,2010,CA,8,Democrat,0,Currently Safe Democrat,,1
+28,2010,CA,9,Democrat,0,Currently Safe Democrat,,1
+29,2010,CA,10,Democrat,0,Currently Safe Democrat,,1
+31,2010,CA,12,Democrat,0,Currently Safe Democrat,,1
+32,2010,CA,13,Democrat,0,Currently Safe Democrat,,1
+33,2010,CA,14,Democrat,0,Currently Safe Democrat,,1
+34,2010,CA,15,Democrat,0,Currently Safe Democrat,,1
+35,2010,CA,16,Democrat,0,Currently Safe Democrat,,1
+36,2010,CA,17,Democrat,0,Currently Safe Democrat,,1
+37,2010,CA,18,Democrat,0,Currently Safe Democrat,,1
+42,2010,CA,23,Democrat,0,Currently Safe Democrat,,1
+46,2010,CA,27,Democrat,0,Currently Safe Democrat,,1
+47,2010,CA,28,Democrat,0,Currently Safe Democrat,,1
+48,2010,CA,29,Democrat,0,Currently Safe Democrat,,1
+49,2010,CA,30,Democrat,0,Currently Safe Democrat,,1
+50,2010,CA,31,Democrat,0,Currently Safe Democrat,,1
+51,2010,CA,32,Democrat,0,Currently Safe Democrat,,1
+52,2010,CA,33,Democrat,1,Currently Safe Democrat,,1
+53,2010,CA,34,Democrat,0,Currently Safe Democrat,,1
+54,2010,CA,35,Democrat,0,Currently Safe Democrat,,1
+55,2010,CA,36,Democrat,0,Currently Safe Democrat,,1
+56,2010,CA,37,Democrat,0,Currently Safe Democrat,,1
+57,2010,CA,38,Democrat,0,Currently Safe Democrat,,1
+58,2010,CA,39,Democrat,0,Currently Safe Democrat,,1
+62,2010,CA,43,Democrat,0,Currently Safe Democrat,,1
+70,2010,CA,51,Democrat,0,Currently Safe Democrat,,1
+72,2010,CA,53,Democrat,0,Currently Safe Democrat,,1
+73,2010,CO,1,Democrat,0,Currently Safe Democrat,,1
+74,2010,CO,2,Democrat,0,Currently Safe Democrat,,1
+80,2010,CT,1,Democrat,0,Currently Safe Democrat,,1
+81,2010,CT,2,Democrat,0,Currently Safe Democrat,,1
+82,2010,CT,3,Democrat,0,Currently Safe Democrat,,1
+88,2010,FL,3,Democrat,0,Currently Safe Democrat,,1
+96,2010,FL,11,Democrat,0,Currently Safe Democrat,,1
+102,2010,FL,17,Democrat,1,Currently Safe Democrat,,1
+104,2010,FL,19,Democrat,0,Currently Safe Democrat,,1
+105,2010,FL,20,Democrat,0,Currently Safe Democrat,,1
+108,2010,FL,23,Democrat,0,Currently Safe Democrat,,1
+114,2010,GA,4,Democrat,0,Currently Safe Democrat,,1
+115,2010,GA,5,Democrat,0,Currently Safe Democrat,,1
+122,2010,GA,12,Democrat,0,Currently Safe Democrat,,1
+123,2010,GA,13,Democrat,0,Currently Safe Democrat,,1
+125,2010,HI,2,Democrat,0,Currently Safe Democrat,,1
+128,2010,IL,1,Democrat,0,Currently Safe Democrat,,1
+129,2010,IL,2,Democrat,0,Currently Safe Democrat,,1
+130,2010,IL,3,Democrat,0,Currently Safe Democrat,,1
+131,2010,IL,4,Democrat,0,Currently Safe Democrat,,1
+132,2010,IL,5,Democrat,0,Currently Safe Democrat,,1
+134,2010,IL,7,Democrat,0,Currently Safe Democrat,,1
+135,2010,IL,8,Democrat,0,Currently Safe Democrat,,1
+136,2010,IL,9,Democrat,0,Currently Safe Democrat,,1
+139,2010,IL,12,Democrat,0,Currently Safe Democrat,,1
+147,2010,IN,1,Democrat,0,Currently Safe Democrat,,1
+153,2010,IN,7,Democrat,0,Currently Safe Democrat,,1
+181,2010,MD,2,Democrat,0,Currently Safe Democrat,,1
+182,2010,MD,3,Democrat,0,Currently Safe Democrat,,1
+183,2010,MD,4,Democrat,0,Currently Safe Democrat,,1
+184,2010,MD,5,Democrat,0,Currently Safe Democrat,,1
+186,2010,MD,7,Democrat,0,Currently Safe Democrat,,1
+187,2010,MD,8,Democrat,0,Currently Safe Democrat,,1
+188,2010,MA,1,Democrat,0,Currently Safe Democrat,,1
+189,2010,MA,2,Democrat,0,Currently Safe Democrat,,1
+190,2010,MA,3,Democrat,0,Currently Safe Democrat,,1
+191,2010,MA,4,Democrat,0,Currently Safe Democrat,,1
+192,2010,MA,5,Democrat,0,Currently Safe Democrat,,1
+193,2010,MA,6,Democrat,0,Currently Safe Democrat,,1
+194,2010,MA,7,Democrat,0,Currently Safe Democrat,,1
+195,2010,MA,8,Democrat,0,Currently Safe Democrat,,1
+196,2010,MA,9,Democrat,0,Currently Safe Democrat,,1
+202,2010,MI,5,Democrat,0,Currently Safe Democrat,,1
+209,2010,MI,12,Democrat,0,Currently Safe Democrat,,1
+210,2010,MI,13,Democrat,0,Currently Safe Democrat,,1
+211,2010,MI,14,Democrat,0,Currently Safe Democrat,,1
+212,2010,MI,15,Democrat,0,Currently Safe Democrat,,1
+216,2010,MN,4,Democrat,0,Currently Safe Democrat,,1
+217,2010,MN,5,Democrat,0,Currently Safe Democrat,,1
+219,2010,MN,7,Democrat,0,Currently Safe Democrat,,1
+222,2010,MS,2,Democrat,0,Currently Safe Democrat,,1
+225,2010,MO,1,Democrat,0,Currently Safe Democrat,,1
+229,2010,MO,5,Democrat,0,Currently Safe Democrat,,1
+238,2010,NV,1,Democrat,0,Currently Safe Democrat,,1
+243,2010,NJ,1,Democrat,0,Currently Safe Democrat,,1
+248,2010,NJ,6,Democrat,0,Currently Safe Democrat,,1
+250,2010,NJ,8,Democrat,0,Currently Safe Democrat,,1
+251,2010,NJ,9,Democrat,0,Currently Safe Democrat,,1
+252,2010,NJ,10,Democrat,0,Currently Safe Democrat,,1
+254,2010,NJ,12,Democrat,0,Currently Safe Democrat,,1
+255,2010,NJ,13,Democrat,0,Currently Safe Democrat,,1
+258,2010,NM,3,Democrat,0,Currently Safe Democrat,,1
+260,2010,NY,2,Democrat,0,Currently Safe Democrat,,1
+262,2010,NY,4,Democrat,0,Currently Safe Democrat,,1
+263,2010,NY,5,Democrat,0,Currently Safe Democrat,,1
+264,2010,NY,6,Democrat,0,Currently Safe Democrat,,1
+265,2010,NY,7,Democrat,0,Currently Safe Democrat,,1
+266,2010,NY,8,Democrat,0,Currently Safe Democrat,,1
+267,2010,NY,9,Democrat,0,Currently Safe Democrat,,1
+268,2010,NY,10,Democrat,0,Currently Safe Democrat,,1
+269,2010,NY,11,Democrat,0,Currently Safe Democrat,,1
+270,2010,NY,12,Democrat,0,Currently Safe Democrat,,1
+272,2010,NY,14,Democrat,0,Currently Safe Democrat,,1
+273,2010,NY,15,Democrat,0,Currently Safe Democrat,,1
+274,2010,NY,16,Democrat,0,Currently Safe Democrat,,1
+275,2010,NY,17,Democrat,0,Currently Safe Democrat,,1
+276,2010,NY,18,Democrat,0,Currently Safe Democrat,,1
+279,2010,NY,21,Democrat,0,Currently Safe Democrat,,1
+280,2010,NY,22,Democrat,0,Currently Safe Democrat,,1
+285,2010,NY,27,Democrat,0,Currently Safe Democrat,,1
+286,2010,NY,28,Democrat,0,Currently Safe Democrat,,1
+288,2010,NC,1,Democrat,0,Currently Safe Democrat,,1
+291,2010,NC,4,Democrat,0,Currently Safe Democrat,,1
+299,2010,NC,12,Democrat,0,Currently Safe Democrat,,1
+300,2010,NC,13,Democrat,0,Currently Safe Democrat,,1
+310,2010,OH,9,Democrat,0,Currently Safe Democrat,,1
+311,2010,OH,10,Democrat,0,Currently Safe Democrat,,1
+312,2010,OH,11,Democrat,0,Currently Safe Democrat,,1
+318,2010,OH,17,Democrat,0,Currently Safe Democrat,,1
+321,2010,OK,2,Democrat,0,Currently Safe Democrat,,1
+325,2010,OR,1,Democrat,0,Currently Safe Democrat,,1
+327,2010,OR,3,Democrat,0,Currently Safe Democrat,,1
+328,2010,OR,4,Democrat,0,Currently Safe Democrat,,1
+330,2010,PA,1,Democrat,0,Currently Safe Democrat,,1
+331,2010,PA,2,Democrat,0,Currently Safe Democrat,,1
+342,2010,PA,13,Democrat,0,Currently Safe Democrat,,1
+343,2010,PA,14,Democrat,0,Currently Safe Democrat,,1
+346,2010,PA,17,Democrat,0,Currently Safe Democrat,,1
+350,2010,RI,2,Democrat,0,Currently Safe Democrat,,1
+356,2010,SC,6,Democrat,0,Currently Safe Democrat,,1
+362,2010,TN,5,Democrat,0,Currently Safe Democrat,,1
+366,2010,TN,9,Democrat,0,Currently Safe Democrat,,1
+375,2010,TX,9,Democrat,0,Currently Safe Democrat,,1
+381,2010,TX,15,Democrat,0,Currently Safe Democrat,,1
+382,2010,TX,16,Democrat,0,Currently Safe Democrat,,1
+384,2010,TX,18,Democrat,0,Currently Safe Democrat,,1
+386,2010,TX,20,Democrat,0,Currently Safe Democrat,,1
+391,2010,TX,25,Democrat,0,Currently Safe Democrat,,1
+394,2010,TX,28,Democrat,0,Currently Safe Democrat,,1
+395,2010,TX,29,Democrat,0,Currently Safe Democrat,,1
+396,2010,TX,30,Democrat,0,Currently Safe Democrat,,1
+400,2010,UT,2,Democrat,0,Currently Safe Democrat,,1
+402,2010,VT,0,Democrat,0,Currently Safe Democrat,,1
+405,2010,VA,3,Democrat,0,Currently Safe Democrat,,1
+410,2010,VA,8,Democrat,0,Currently Safe Democrat,,1
+414,2010,WA,1,Democrat,0,Currently Safe Democrat,,1
+419,2010,WA,6,Democrat,0,Currently Safe Democrat,,1
+420,2010,WA,7,Democrat,0,Currently Safe Democrat,,1
+422,2010,WA,9,Democrat,0,Currently Safe Democrat,,1
+425,2010,WV,3,Democrat,0,Currently Safe Democrat,,1
+427,2010,WI,2,Democrat,0,Currently Safe Democrat,,1
+429,2010,WI,4,Democrat,0,Currently Safe Democrat,,1
+441,2012,AL,7,Democrat,0,Currently Safe Democrat,,1
+445,2012,AZ,3,Democrat,0,Currently Safe Democrat,,1
+449,2012,AZ,7,Democrat,0,Currently Safe Democrat,,1
+457,2012,CA,2,Democrat,1,Currently Safe Democrat,,1
+458,2012,CA,3,Democrat,0,Currently Safe Democrat,,1
+460,2012,CA,5,Democrat,0,Currently Safe Democrat,,1
+461,2012,CA,6,Democrat,0,Currently Safe Democrat,,1
+466,2012,CA,11,Democrat,0,Currently Safe Democrat,,1
+467,2012,CA,12,Democrat,0,Currently Safe Democrat,,1
+468,2012,CA,13,Democrat,0,Currently Safe Democrat,,1
+469,2012,CA,14,Democrat,0,Currently Safe Democrat,,1
+470,2012,CA,15,Democrat,0,Currently Safe Democrat,,1
+471,2012,CA,16,Democrat,0,Currently Safe Democrat,,1
+472,2012,CA,17,Democrat,0,Currently Safe Democrat,,1
+473,2012,CA,18,Democrat,0,Currently Safe Democrat,,1
+474,2012,CA,19,Democrat,0,Currently Safe Democrat,,1
+475,2012,CA,20,Democrat,0,Currently Safe Democrat,,1
+482,2012,CA,27,Democrat,0,Currently Safe Democrat,,1
+483,2012,CA,28,Democrat,0,Currently Safe Democrat,,1
+484,2012,CA,29,,1,Currently Safe Democrat,,1
+485,2012,CA,30,Democrat,0,Currently Safe Democrat,,1
+487,2012,CA,32,Democrat,0,Currently Safe Democrat,,1
+488,2012,CA,33,Democrat,0,Currently Safe Democrat,,1
+489,2012,CA,34,Democrat,0,Currently Safe Democrat,,1
+490,2012,CA,35,Democrat,0,Currently Safe Democrat,,1
+492,2012,CA,37,Democrat,0,Currently Safe Democrat,,1
+493,2012,CA,38,Democrat,0,Currently Safe Democrat,,1
+495,2012,CA,40,Democrat,0,Currently Safe Democrat,,1
+498,2012,CA,43,Democrat,0,Currently Safe Democrat,,1
+499,2012,CA,44,Democrat,0,Currently Safe Democrat,,1
+501,2012,CA,46,Democrat,0,Currently Safe Democrat,,1
+506,2012,CA,51,Democrat,1,Currently Safe Democrat,,1
+508,2012,CA,53,Democrat,0,Currently Safe Democrat,,1
+509,2012,CO,1,Democrat,0,Currently Safe Democrat,,1
+510,2012,CO,2,Democrat,0,Currently Safe Democrat,,1
+516,2012,CT,1,Democrat,0,Currently Safe Democrat,,1
+517,2012,CT,2,Democrat,0,Currently Safe Democrat,,1
+518,2012,CT,3,Democrat,0,Currently Safe Democrat,,1
+519,2012,CT,4,Democrat,0,Currently Safe Democrat,,1
+521,2012,DE,0,Democrat,0,Currently Safe Democrat,,1
+526,2012,FL,5,Democrat,0,Currently Safe Democrat,,1
+530,2012,FL,9,,1,Currently Safe Democrat,,1
+535,2012,FL,14,Democrat,0,Currently Safe Democrat,,1
+541,2012,FL,20,Democrat,0,Currently Safe Democrat,,1
+542,2012,FL,21,Democrat,0,Currently Safe Democrat,,1
+544,2012,FL,23,Democrat,0,Currently Safe Democrat,,1
+545,2012,FL,24,Democrat,0,Currently Safe Democrat,,1
+550,2012,GA,2,Democrat,0,Currently Safe Democrat,,1
+552,2012,GA,4,Democrat,0,Currently Safe Democrat,,1
+553,2012,GA,5,Democrat,0,Currently Safe Democrat,,1
+561,2012,GA,13,Democrat,0,Currently Safe Democrat,,1
+563,2012,HI,1,Democrat,0,Currently Safe Democrat,,1
+564,2012,HI,2,Democrat,1,Currently Safe Democrat,,1
+567,2012,IL,1,Democrat,0,Currently Safe Democrat,,1
+568,2012,IL,2,Democrat,0,Currently Safe Democrat,,1
+569,2012,IL,3,Democrat,0,Currently Safe Democrat,,1
+570,2012,IL,4,Democrat,0,Currently Safe Democrat,,1
+571,2012,IL,5,Democrat,0,Currently Safe Democrat,,1
+573,2012,IL,7,Democrat,0,Currently Safe Democrat,,1
+575,2012,IL,9,Democrat,0,Currently Safe Democrat,,1
+585,2012,IN,1,Democrat,0,Currently Safe Democrat,,1
+591,2012,IN,7,Democrat,0,Currently Safe Democrat,,1
+594,2012,IA,1,Democrat,0,Currently Safe Democrat,,1
+604,2012,KY,3,Democrat,0,Currently Safe Democrat,,1
+609,2012,LA,2,Democrat,0,Currently Safe Democrat,,1
+614,2012,ME,1,Democrat,0,Currently Safe Democrat,,1
+615,2012,ME,2,Democrat,0,Currently Safe Democrat,,1
+617,2012,MD,2,Democrat,0,Currently Safe Democrat,,1
+618,2012,MD,3,Democrat,0,Currently Safe Democrat,,1
+619,2012,MD,4,Democrat,0,Currently Safe Democrat,,1
+620,2012,MD,5,Democrat,0,Currently Safe Democrat,,1
+622,2012,MD,7,Democrat,0,Currently Safe Democrat,,1
+623,2012,MD,8,Democrat,0,Currently Safe Democrat,,1
+624,2012,MA,1,Democrat,0,Currently Safe Democrat,,1
+625,2012,MA,2,Democrat,0,Currently Safe Democrat,,1
+626,2012,MA,3,Democrat,0,Currently Safe Democrat,,1
+627,2012,MA,4,Democrat,1,Currently Safe Democrat,,1
+628,2012,MA,5,Democrat,0,Currently Safe Democrat,,1
+630,2012,MA,7,Democrat,0,Currently Safe Democrat,,1
+631,2012,MA,8,Democrat,0,Currently Safe Democrat,,1
+632,2012,MA,9,Democrat,0,Currently Safe Democrat,,1
+637,2012,MI,5,Democrat,1,Currently Safe Democrat,,1
+641,2012,MI,9,Democrat,0,Currently Safe Democrat,,1
+644,2012,MI,12,Democrat,0,Currently Safe Democrat,,1
+645,2012,MI,13,Democrat,0,Currently Safe Democrat,,1
+646,2012,MI,14,Democrat,0,Currently Safe Democrat,,1
+647,2012,MN,1,Democrat,0,Currently Safe Democrat,,1
+650,2012,MN,4,Democrat,0,Currently Safe Democrat,,1
+651,2012,MN,5,Democrat,0,Currently Safe Democrat,,1
+653,2012,MN,7,Democrat,0,Currently Safe Democrat,,1
+656,2012,MS,2,Democrat,0,Currently Safe Democrat,,1
+659,2012,MO,1,Democrat,0,Currently Safe Democrat,,1
+663,2012,MO,5,Democrat,0,Currently Safe Democrat,,1
+671,2012,NV,1,Democrat,1,Currently Safe Democrat,,1
+677,2012,NJ,1,Democrat,0,Currently Safe Democrat,,1
+682,2012,NJ,6,Democrat,0,Currently Safe Democrat,,1
+684,2012,NJ,8,Democrat,0,Currently Safe Democrat,,1
+685,2012,NJ,9,Democrat,0,Currently Safe Democrat,,1
+686,2012,NJ,10,Democrat,1,Currently Safe Democrat,,1
+688,2012,NJ,12,Democrat,0,Currently Safe Democrat,,1
+689,2012,NM,1,Democrat,1,Currently Safe Democrat,,1
+691,2012,NM,3,Democrat,0,Currently Safe Democrat,,1
+694,2012,NY,3,Democrat,0,Currently Safe Democrat,,1
+695,2012,NY,4,Democrat,0,Currently Safe Democrat,,1
+696,2012,NY,5,Democrat,0,Currently Safe Democrat,,1
+697,2012,NY,6,Democrat,1,Currently Safe Democrat,,1
+698,2012,NY,7,Democrat,0,Currently Safe Democrat,,1
+699,2012,NY,8,Democrat,1,Currently Safe Democrat,,1
+700,2012,NY,9,Democrat,0,Currently Safe Democrat,,1
+701,2012,NY,10,Democrat,0,Currently Safe Democrat,,1
+703,2012,NY,12,Democrat,0,Currently Safe Democrat,,1
+704,2012,NY,13,Democrat,0,Currently Safe Democrat,,1
+705,2012,NY,14,Democrat,0,Currently Safe Democrat,,1
+706,2012,NY,15,Democrat,0,Currently Safe Democrat,,1
+707,2012,NY,16,Democrat,0,Currently Safe Democrat,,1
+708,2012,NY,17,Democrat,0,Currently Safe Democrat,,1
+711,2012,NY,20,Democrat,0,Currently Safe Democrat,,1
+717,2012,NY,26,Democrat,0,Currently Safe Democrat,,1
+719,2012,NC,1,Democrat,0,Currently Safe Democrat,,1
+722,2012,NC,4,Democrat,0,Currently Safe Democrat,,1
+730,2012,NC,12,Democrat,0,Currently Safe Democrat,,1
+735,2012,OH,3,,1,Currently Safe Democrat,,1
+741,2012,OH,9,Democrat,0,Currently Safe Democrat,,1
+743,2012,OH,11,Democrat,0,Currently Safe Democrat,,1
+745,2012,OH,13,Democrat,0,Currently Safe Democrat,,1
+754,2012,OR,1,Democrat,0,Currently Safe Democrat,,1
+756,2012,OR,3,Democrat,0,Currently Safe Democrat,,1
+757,2012,OR,4,Democrat,0,Currently Safe Democrat,,1
+758,2012,OR,5,Democrat,0,Currently Safe Democrat,,1
+759,2012,PA,1,Democrat,0,Currently Safe Democrat,,1
+760,2012,PA,2,Democrat,0,Currently Safe Democrat,,1
+771,2012,PA,13,Democrat,0,Currently Safe Democrat,,1
+772,2012,PA,14,Democrat,0,Currently Safe Democrat,,1
+775,2012,PA,17,Democrat,1,Currently Safe Democrat,,1
+778,2012,RI,2,Democrat,0,Currently Safe Democrat,,1
+784,2012,SC,6,Democrat,0,Currently Safe Democrat,,1
+791,2012,TN,5,Democrat,0,Currently Safe Democrat,,1
+795,2012,TN,9,Democrat,0,Currently Safe Democrat,,1
+804,2012,TX,9,Democrat,0,Currently Safe Democrat,,1
+810,2012,TX,15,Democrat,0,Currently Safe Democrat,,1
+811,2012,TX,16,Democrat,1,Currently Safe Democrat,,1
+813,2012,TX,18,Democrat,0,Currently Safe Democrat,,1
+815,2012,TX,20,Democrat,1,Currently Safe Democrat,,1
+823,2012,TX,28,Democrat,0,Currently Safe Democrat,,1
+824,2012,TX,29,Democrat,0,Currently Safe Democrat,,1
+825,2012,TX,30,Democrat,0,Currently Safe Democrat,,1
+828,2012,TX,33,,1,Currently Safe Democrat,,1
+829,2012,TX,34,,1,Currently Safe Democrat,,1
+830,2012,TX,35,Democrat,0,Currently Safe Democrat,,1
+836,2012,VT,0,Democrat,0,Currently Safe Democrat,,1
+839,2012,VA,3,Democrat,0,Currently Safe Democrat,,1
+844,2012,VA,8,Democrat,0,Currently Safe Democrat,,1
+847,2012,VA,11,Democrat,0,Currently Safe Democrat,,1
+849,2012,WA,2,Democrat,0,Currently Safe Democrat,,1
+853,2012,WA,6,Democrat,1,Currently Safe Democrat,,1
+854,2012,WA,7,Democrat,0,Currently Safe Democrat,,1
+856,2012,WA,9,Democrat,0,Currently Safe Democrat,,1
+857,2012,WA,10,,1,Currently Safe Democrat,,1
+860,2012,WV,3,Democrat,0,Currently Safe Democrat,,1
+862,2012,WI,2,Democrat,1,Currently Safe Democrat,,1
+863,2012,WI,3,Democrat,0,Currently Safe Democrat,,1
+864,2012,WI,4,Democrat,0,Currently Safe Democrat,,1
+876,2014,AL,7,Democrat,0,Currently Safe Democrat,,1
+880,2014,AZ,3,Democrat,0,Currently Safe Democrat,,1
+884,2014,AZ,7,Democrat,1,Currently Safe Democrat,,1
+892,2014,CA,2,Democrat,0,Currently Safe Democrat,,1
+893,2014,CA,3,Democrat,0,Currently Safe Democrat,,1
+895,2014,CA,5,Democrat,0,Currently Safe Democrat,,1
+896,2014,CA,6,Democrat,0,Currently Safe Democrat,,1
+899,2014,CA,9,Democrat,0,Currently Safe Democrat,,1
+901,2014,CA,11,Democrat,1,Currently Safe Democrat,,1
+902,2014,CA,12,Democrat,0,Currently Safe Democrat,,1
+903,2014,CA,13,Democrat,0,Currently Safe Democrat,,1
+904,2014,CA,14,Democrat,0,Currently Safe Democrat,,1
+905,2014,CA,15,Democrat,0,Currently Safe Democrat,,1
+906,2014,CA,16,Democrat,0,Currently Safe Democrat,,1
+907,2014,CA,17,Democrat,0,Currently Safe Democrat,,1
+908,2014,CA,18,Democrat,0,Currently Safe Democrat,,1
+909,2014,CA,19,Democrat,0,Currently Safe Democrat,,1
+910,2014,CA,20,Democrat,0,Currently Safe Democrat,,1
+917,2014,CA,27,Democrat,0,Currently Safe Democrat,,1
+918,2014,CA,28,Democrat,0,Currently Safe Democrat,,1
+919,2014,CA,29,Democrat,0,Currently Safe Democrat,,1
+920,2014,CA,30,Democrat,0,Currently Safe Democrat,,1
+922,2014,CA,32,Democrat,0,Currently Safe Democrat,,1
+923,2014,CA,33,Democrat,0,Currently Safe Democrat,,1
+924,2014,CA,34,Democrat,0,Currently Safe Democrat,,1
+925,2014,CA,35,Democrat,1,Currently Safe Democrat,,1
+926,2014,CA,36,Democrat,0,Currently Safe Democrat,,1
+927,2014,CA,37,Democrat,0,Currently Safe Democrat,,1
+928,2014,CA,38,Democrat,0,Currently Safe Democrat,,1
+930,2014,CA,40,Democrat,0,Currently Safe Democrat,,1
+931,2014,CA,41,Democrat,0,Currently Safe Democrat,,1
+933,2014,CA,43,Democrat,0,Currently Safe Democrat,,1
+934,2014,CA,44,Democrat,0,Currently Safe Democrat,,1
+936,2014,CA,46,Democrat,0,Currently Safe Democrat,,1
+937,2014,CA,47,Democrat,0,Currently Safe Democrat,,1
+941,2014,CA,51,Democrat,0,Currently Safe Democrat,,1
+943,2014,CA,53,Democrat,0,Currently Safe Democrat,,1
+944,2014,CO,1,Democrat,0,Currently Safe Democrat,,1
+945,2014,CO,2,Democrat,0,Currently Safe Democrat,,1
+950,2014,CO,7,Democrat,0,Currently Safe Democrat,,1
+951,2014,CT,1,Democrat,0,Currently Safe Democrat,,1
+952,2014,CT,2,Democrat,0,Currently Safe Democrat,,1
+953,2014,CT,3,Democrat,0,Currently Safe Democrat,,1
+954,2014,CT,4,Democrat,0,Currently Safe Democrat,,1
+955,2014,CT,5,Democrat,0,Currently Safe Democrat,,1
+956,2014,DE,0,Democrat,0,Currently Safe Democrat,,1
+961,2014,FL,5,Democrat,0,Currently Safe Democrat,,1
+965,2014,FL,9,Democrat,0,Currently Safe Democrat,,1
+970,2014,FL,14,Democrat,0,Currently Safe Democrat,,1
+974,2014,FL,18,Democrat,0,Currently Safe Democrat,,1
+976,2014,FL,20,Democrat,0,Currently Safe Democrat,,1
+977,2014,FL,21,Democrat,0,Currently Safe Democrat,,1
+978,2014,FL,22,Democrat,0,Currently Safe Democrat,,1
+979,2014,FL,23,Democrat,0,Currently Safe Democrat,,1
+980,2014,FL,24,Democrat,0,Currently Safe Democrat,,1
+985,2014,GA,2,Democrat,0,Currently Safe Democrat,,1
+987,2014,GA,4,Democrat,0,Currently Safe Democrat,,1
+988,2014,GA,5,Democrat,0,Currently Safe Democrat,,1
+996,2014,GA,13,Democrat,1,Currently Safe Democrat,,1
+999,2014,HI,2,Democrat,0,Currently Safe Democrat,,1
+1002,2014,IL,1,Democrat,0,Currently Safe Democrat,,1
+1003,2014,IL,2,Democrat,0,Currently Safe Democrat,,1
+1004,2014,IL,3,Democrat,0,Currently Safe Democrat,,1
+1005,2014,IL,4,Democrat,0,Currently Safe Democrat,,1
+1006,2014,IL,5,Democrat,0,Currently Safe Democrat,,1
+1008,2014,IL,7,Democrat,0,Currently Safe Democrat,,1
+1009,2014,IL,8,Democrat,0,Currently Safe Democrat,,1
+1010,2014,IL,9,Democrat,0,Currently Safe Democrat,,1
+1012,2014,IL,11,Democrat,0,Currently Safe Democrat,,1
+1020,2014,IN,1,Democrat,0,Currently Safe Democrat,,1
+1026,2014,IN,7,Democrat,0,Currently Safe Democrat,,1
+1039,2014,KY,3,Democrat,0,Currently Safe Democrat,,1
+1044,2014,LA,2,Democrat,0,Currently Safe Democrat,,1
+1049,2014,ME,1,Democrat,0,Currently Safe Democrat,,1
+1052,2014,MD,2,Democrat,0,Currently Safe Democrat,,1
+1053,2014,MD,3,Democrat,0,Currently Safe Democrat,,1
+1054,2014,MD,4,Democrat,0,Currently Safe Democrat,,1
+1055,2014,MD,5,Democrat,0,Currently Safe Democrat,,1
+1056,2014,MD,6,Democrat,0,Currently Safe Democrat,,1
+1057,2014,MD,7,Democrat,0,Currently Safe Democrat,,1
+1058,2014,MD,8,Democrat,0,Currently Safe Democrat,,1
+1059,2014,MA,1,Democrat,0,Currently Safe Democrat,,1
+1060,2014,MA,2,Democrat,0,Currently Safe Democrat,,1
+1061,2014,MA,3,Democrat,0,Currently Safe Democrat,,1
+1062,2014,MA,4,Democrat,0,Currently Safe Democrat,,1
+1063,2014,MA,5,Democrat,0,Currently Safe Democrat,,1
+1065,2014,MA,7,Democrat,0,Currently Safe Democrat,,1
+1066,2014,MA,8,Democrat,0,Currently Safe Democrat,,1
+1072,2014,MI,5,Democrat,0,Currently Safe Democrat,,1
+1076,2014,MI,9,Democrat,0,Currently Safe Democrat,,1
+1079,2014,MI,12,Democrat,1,Currently Safe Democrat,,1
+1080,2014,MI,13,Democrat,0,Currently Safe Democrat,,1
+1081,2014,MI,14,Democrat,1,Currently Safe Democrat,,1
+1082,2014,MN,1,Democrat,0,Currently Safe Democrat,,1
+1085,2014,MN,4,Democrat,0,Currently Safe Democrat,,1
+1086,2014,MN,5,Democrat,0,Currently Safe Democrat,,1
+1091,2014,MS,2,Democrat,0,Currently Safe Democrat,,1
+1094,2014,MO,1,Democrat,0,Currently Safe Democrat,,1
+1098,2014,MO,5,Democrat,0,Currently Safe Democrat,,1
+1106,2014,NV,1,Democrat,0,Currently Safe Democrat,,1
+1112,2014,NJ,1,Democrat,1,Currently Safe Democrat,,1
+1117,2014,NJ,6,Democrat,0,Currently Safe Democrat,,1
+1119,2014,NJ,8,Democrat,0,Currently Safe Democrat,,1
+1120,2014,NJ,9,Democrat,0,Currently Safe Democrat,,1
+1121,2014,NJ,10,Democrat,0,Currently Safe Democrat,,1
+1123,2014,NJ,12,Democrat,1,Currently Safe Democrat,,1
+1124,2014,NM,1,Democrat,0,Currently Safe Democrat,,1
+1126,2014,NM,3,Democrat,0,Currently Safe Democrat,,1
+1129,2014,NY,3,Democrat,0,Currently Safe Democrat,,1
+1130,2014,NY,4,Democrat,1,Currently Safe Democrat,,1
+1131,2014,NY,5,Democrat,0,Currently Safe Democrat,,1
+1132,2014,NY,6,Democrat,0,Currently Safe Democrat,,1
+1133,2014,NY,7,Democrat,0,Currently Safe Democrat,,1
+1134,2014,NY,8,Democrat,0,Currently Safe Democrat,,1
+1135,2014,NY,9,Democrat,0,Currently Safe Democrat,,1
+1136,2014,NY,10,Democrat,0,Currently Safe Democrat,,1
+1138,2014,NY,12,Democrat,0,Currently Safe Democrat,,1
+1139,2014,NY,13,Democrat,0,Currently Safe Democrat,,1
+1140,2014,NY,14,Democrat,0,Currently Safe Democrat,,1
+1141,2014,NY,15,Democrat,0,Currently Safe Democrat,,1
+1142,2014,NY,16,Democrat,0,Currently Safe Democrat,,1
+1143,2014,NY,17,Democrat,0,Currently Safe Democrat,,1
+1146,2014,NY,20,Democrat,0,Currently Safe Democrat,,1
+1151,2014,NY,25,Democrat,0,Currently Safe Democrat,,1
+1152,2014,NY,26,Democrat,0,Currently Safe Democrat,,1
+1154,2014,NC,1,Democrat,0,Currently Safe Democrat,,1
+1157,2014,NC,4,Democrat,0,Currently Safe Democrat,,1
+1165,2014,NC,12,Democrat,1,Currently Safe Democrat,,1
+1170,2014,OH,3,Democrat,0,Currently Safe Democrat,,1
+1176,2014,OH,9,Democrat,0,Currently Safe Democrat,,1
+1178,2014,OH,11,Democrat,0,Currently Safe Democrat,,1
+1180,2014,OH,13,Democrat,0,Currently Safe Democrat,,1
+1189,2014,OR,1,Democrat,0,Currently Safe Democrat,,1
+1191,2014,OR,3,Democrat,0,Currently Safe Democrat,,1
+1192,2014,OR,4,Democrat,0,Currently Safe Democrat,,1
+1193,2014,OR,5,Democrat,0,Currently Safe Democrat,,1
+1194,2014,PA,1,Democrat,0,Currently Safe Democrat,,1
+1195,2014,PA,2,Democrat,0,Currently Safe Democrat,,1
+1206,2014,PA,13,Democrat,1,Currently Safe Democrat,,1
+1207,2014,PA,14,Democrat,0,Currently Safe Democrat,,1
+1210,2014,PA,17,Democrat,0,Currently Safe Democrat,,1
+1212,2014,RI,1,Democrat,0,Currently Safe Democrat,,1
+1213,2014,RI,2,Democrat,0,Currently Safe Democrat,,1
+1219,2014,SC,6,Democrat,0,Currently Safe Democrat,,1
+1226,2014,TN,5,Democrat,0,Currently Safe Democrat,,1
+1230,2014,TN,9,Democrat,0,Currently Safe Democrat,,1
+1239,2014,TX,9,Democrat,0,Currently Safe Democrat,,1
+1245,2014,TX,15,Democrat,0,Currently Safe Democrat,,1
+1246,2014,TX,16,Democrat,0,Currently Safe Democrat,,1
+1248,2014,TX,18,Democrat,0,Currently Safe Democrat,,1
+1250,2014,TX,20,Democrat,0,Currently Safe Democrat,,1
+1258,2014,TX,28,Democrat,0,Currently Safe Democrat,,1
+1259,2014,TX,29,Democrat,0,Currently Safe Democrat,,1
+1260,2014,TX,30,Democrat,0,Currently Safe Democrat,,1
+1263,2014,TX,33,Democrat,0,Currently Safe Democrat,,1
+1264,2014,TX,34,Democrat,0,Currently Safe Democrat,,1
+1265,2014,TX,35,Democrat,0,Currently Safe Democrat,,1
+1271,2014,VT,0,Democrat,0,Currently Safe Democrat,,1
+1274,2014,VA,3,Democrat,0,Currently Safe Democrat,,1
+1279,2014,VA,8,Democrat,0,Currently Safe Democrat,,1
+1282,2014,VA,11,Democrat,0,Currently Safe Democrat,,1
+1283,2014,WA,1,Democrat,0,Currently Safe Democrat,,1
+1284,2014,WA,2,Democrat,0,Currently Safe Democrat,,1
+1288,2014,WA,6,Democrat,0,Currently Safe Democrat,,1
+1289,2014,WA,7,Democrat,0,Currently Safe Democrat,,1
+1291,2014,WA,9,Democrat,0,Currently Safe Democrat,,1
+1292,2014,WA,10,Democrat,0,Currently Safe Democrat,,1
+1297,2014,WI,2,Democrat,0,Currently Safe Democrat,,1
+1298,2014,WI,3,Democrat,0,Currently Safe Democrat,,1
+1299,2014,WI,4,Democrat,0,Currently Safe Democrat,,1
+1311,2016,AL,7,Democrat,0,Currently Safe Democrat,,1
+1315,2016,AZ,3,Democrat,0,Currently Safe Democrat,,1
+1319,2016,AZ,7,Democrat,0,Currently Safe Democrat,,1
+1321,2016,AZ,9,Democrat,0,Currently Safe Democrat,,1
+1327,2016,CA,2,Democrat,0,Currently Safe Democrat,,1
+1328,2016,CA,3,Democrat,0,Currently Safe Democrat,,1
+1330,2016,CA,5,Democrat,0,Currently Safe Democrat,,1
+1331,2016,CA,6,Democrat,0,Currently Safe Democrat,,1
+1334,2016,CA,9,Democrat,0,Currently Safe Democrat,,1
+1336,2016,CA,11,Democrat,0,Currently Safe Democrat,,1
+1337,2016,CA,12,Democrat,0,Currently Safe Democrat,,1
+1338,2016,CA,13,Democrat,0,Currently Safe Democrat,,1
+1339,2016,CA,14,Democrat,0,Currently Safe Democrat,,1
+1340,2016,CA,15,Democrat,0,Currently Safe Democrat,,1
+1341,2016,CA,16,Democrat,0,Currently Safe Democrat,,1
+1342,2016,CA,17,Democrat,0,Currently Safe Democrat,,1
+1343,2016,CA,18,Democrat,0,Currently Safe Democrat,,1
+1344,2016,CA,19,Democrat,0,Currently Safe Democrat,,1
+1345,2016,CA,20,Democrat,1,Currently Safe Democrat,,1
+1351,2016,CA,26,Democrat,0,Currently Safe Democrat,,1
+1352,2016,CA,27,Democrat,0,Currently Safe Democrat,,1
+1353,2016,CA,28,Democrat,0,Currently Safe Democrat,,1
+1354,2016,CA,29,Democrat,0,Currently Safe Democrat,,1
+1355,2016,CA,30,Democrat,0,Currently Safe Democrat,,1
+1356,2016,CA,31,Democrat,0,Currently Safe Democrat,,1
+1357,2016,CA,32,Democrat,0,Currently Safe Democrat,,1
+1358,2016,CA,33,Democrat,0,Currently Safe Democrat,,1
+1359,2016,CA,34,Democrat,0,Currently Safe Democrat,,1
+1360,2016,CA,35,Democrat,0,Currently Safe Democrat,,1
+1361,2016,CA,36,Democrat,0,Currently Safe Democrat,,1
+1362,2016,CA,37,Democrat,0,Currently Safe Democrat,,1
+1363,2016,CA,38,Democrat,0,Currently Safe Democrat,,1
+1365,2016,CA,40,Democrat,0,Currently Safe Democrat,,1
+1366,2016,CA,41,Democrat,0,Currently Safe Democrat,,1
+1368,2016,CA,43,Democrat,0,Currently Safe Democrat,,1
+1369,2016,CA,44,Democrat,1,Currently Safe Democrat,,1
+1371,2016,CA,46,Democrat,1,Currently Safe Democrat,,1
+1372,2016,CA,47,Democrat,0,Currently Safe Democrat,,1
+1376,2016,CA,51,Democrat,0,Currently Safe Democrat,,1
+1377,2016,CA,52,Democrat,0,Currently Safe Democrat,,1
+1378,2016,CA,53,Democrat,0,Currently Safe Democrat,,1
+1379,2016,CO,1,Democrat,0,Currently Safe Democrat,,1
+1380,2016,CO,2,Democrat,0,Currently Safe Democrat,,1
+1385,2016,CO,7,Democrat,0,Currently Safe Democrat,,1
+1386,2016,CT,1,Democrat,0,Currently Safe Democrat,,1
+1387,2016,CT,2,Democrat,0,Currently Safe Democrat,,1
+1388,2016,CT,3,Democrat,0,Currently Safe Democrat,,1
+1389,2016,CT,4,Democrat,0,Currently Safe Democrat,,1
+1390,2016,CT,5,Democrat,0,Currently Safe Democrat,,1
+1391,2016,DE,0,Democrat,1,Currently Safe Democrat,,1
+1396,2016,FL,5,Democrat,0,Currently Safe Democrat,,1
+1400,2016,FL,9,Democrat,1,Currently Safe Democrat,,1
+1401,2016,FL,10,Republican,1,Currently Safe Democrat,,1
+1405,2016,FL,14,Democrat,0,Currently Safe Democrat,,1
+1411,2016,FL,20,Democrat,0,Currently Safe Democrat,,1
+1412,2016,FL,21,Democrat,0,Currently Safe Democrat,,1
+1413,2016,FL,22,Democrat,0,Currently Safe Democrat,,1
+1414,2016,FL,23,Democrat,0,Currently Safe Democrat,,1
+1415,2016,FL,24,Democrat,0,Currently Safe Democrat,,1
+1420,2016,GA,2,Democrat,0,Currently Safe Democrat,,1
+1422,2016,GA,4,Democrat,0,Currently Safe Democrat,,1
+1423,2016,GA,5,Democrat,0,Currently Safe Democrat,,1
+1431,2016,GA,13,Democrat,0,Currently Safe Democrat,,1
+1433,2016,HI,1,Democrat,1,Currently Safe Democrat,,1
+1434,2016,HI,2,Democrat,0,Currently Safe Democrat,,1
+1437,2016,IL,1,Democrat,0,Currently Safe Democrat,,1
+1438,2016,IL,2,Democrat,0,Currently Safe Democrat,,1
+1439,2016,IL,3,Democrat,0,Currently Safe Democrat,,1
+1440,2016,IL,4,Democrat,0,Currently Safe Democrat,,1
+1441,2016,IL,5,Democrat,0,Currently Safe Democrat,,1
+1443,2016,IL,7,Democrat,0,Currently Safe Democrat,,1
+1444,2016,IL,8,Democrat,1,Currently Safe Democrat,,1
+1445,2016,IL,9,Democrat,0,Currently Safe Democrat,,1
+1447,2016,IL,11,Democrat,0,Currently Safe Democrat,,1
+1453,2016,IL,17,Democrat,0,Currently Safe Democrat,,1
+1455,2016,IN,1,Democrat,0,Currently Safe Democrat,,1
+1461,2016,IN,7,Democrat,0,Currently Safe Democrat,,1
+1465,2016,IA,2,Democrat,0,Currently Safe Democrat,,1
+1474,2016,KY,3,Democrat,0,Currently Safe Democrat,,1
+1479,2016,LA,2,Democrat,0,Currently Safe Democrat,,1
+1484,2016,ME,1,Democrat,0,Currently Safe Democrat,,1
+1487,2016,MD,2,Democrat,0,Currently Safe Democrat,,1
+1488,2016,MD,3,Democrat,0,Currently Safe Democrat,,1
+1489,2016,MD,4,Democrat,1,Currently Safe Democrat,,1
+1490,2016,MD,5,Democrat,0,Currently Safe Democrat,,1
+1491,2016,MD,6,Democrat,0,Currently Safe Democrat,,1
+1492,2016,MD,7,Democrat,0,Currently Safe Democrat,,1
+1493,2016,MD,8,Democrat,1,Currently Safe Democrat,,1
+1494,2016,MA,1,Democrat,0,Currently Safe Democrat,,1
+1495,2016,MA,2,Democrat,0,Currently Safe Democrat,,1
+1496,2016,MA,3,Democrat,0,Currently Safe Democrat,,1
+1497,2016,MA,4,Democrat,0,Currently Safe Democrat,,1
+1498,2016,MA,5,Democrat,0,Currently Safe Democrat,,1
+1499,2016,MA,6,Democrat,0,Currently Safe Democrat,,1
+1500,2016,MA,7,Democrat,0,Currently Safe Democrat,,1
+1501,2016,MA,8,Democrat,0,Currently Safe Democrat,,1
+1502,2016,MA,9,Democrat,0,Currently Safe Democrat,,1
+1507,2016,MI,5,Democrat,0,Currently Safe Democrat,,1
+1511,2016,MI,9,Democrat,0,Currently Safe Democrat,,1
+1514,2016,MI,12,Democrat,0,Currently Safe Democrat,,1
+1515,2016,MI,13,Democrat,0,Currently Safe Democrat,,1
+1516,2016,MI,14,Democrat,0,Currently Safe Democrat,,1
+1517,2016,MN,1,Democrat,0,Currently Safe Democrat,,1
+1520,2016,MN,4,Democrat,0,Currently Safe Democrat,,1
+1521,2016,MN,5,Democrat,0,Currently Safe Democrat,,1
+1523,2016,MN,7,Democrat,0,Currently Safe Democrat,,1
+1526,2016,MS,2,Democrat,0,Currently Safe Democrat,,1
+1529,2016,MO,1,Democrat,0,Currently Safe Democrat,,1
+1533,2016,MO,5,Democrat,0,Currently Safe Democrat,,1
+1541,2016,NV,1,Democrat,0,Currently Safe Democrat,,1
+1546,2016,NH,2,Democrat,0,Currently Safe Democrat,,1
+1547,2016,NJ,1,Democrat,0,Currently Safe Democrat,,1
+1552,2016,NJ,6,Democrat,0,Currently Safe Democrat,,1
+1554,2016,NJ,8,Democrat,0,Currently Safe Democrat,,1
+1555,2016,NJ,9,Democrat,0,Currently Safe Democrat,,1
+1556,2016,NJ,10,Democrat,0,Currently Safe Democrat,,1
+1558,2016,NJ,12,Democrat,0,Currently Safe Democrat,,1
+1559,2016,NM,1,Democrat,0,Currently Safe Democrat,,1
+1561,2016,NM,3,Democrat,0,Currently Safe Democrat,,1
+1565,2016,NY,4,Democrat,0,Currently Safe Democrat,,1
+1566,2016,NY,5,Democrat,0,Currently Safe Democrat,,1
+1567,2016,NY,6,Democrat,0,Currently Safe Democrat,,1
+1568,2016,NY,7,Democrat,0,Currently Safe Democrat,,1
+1569,2016,NY,8,Democrat,0,Currently Safe Democrat,,1
+1570,2016,NY,9,Democrat,0,Currently Safe Democrat,,1
+1571,2016,NY,10,Democrat,0,Currently Safe Democrat,,1
+1573,2016,NY,12,Democrat,0,Currently Safe Democrat,,1
+1574,2016,NY,13,Democrat,1,Currently Safe Democrat,,1
+1575,2016,NY,14,Democrat,0,Currently Safe Democrat,,1
+1576,2016,NY,15,Democrat,0,Currently Safe Democrat,,1
+1577,2016,NY,16,Democrat,0,Currently Safe Democrat,,1
+1578,2016,NY,17,Democrat,0,Currently Safe Democrat,,1
+1579,2016,NY,18,Democrat,0,Currently Safe Democrat,,1
+1581,2016,NY,20,Democrat,0,Currently Safe Democrat,,1
+1586,2016,NY,25,Democrat,0,Currently Safe Democrat,,1
+1587,2016,NY,26,Democrat,0,Currently Safe Democrat,,1
+1589,2016,NC,1,Democrat,0,Currently Safe Democrat,,1
+1592,2016,NC,4,Democrat,0,Currently Safe Democrat,,1
+1600,2016,NC,12,Democrat,0,Currently Safe Democrat,,1
+1605,2016,OH,3,Democrat,0,Currently Safe Democrat,,1
+1611,2016,OH,9,Democrat,0,Currently Safe Democrat,,1
+1613,2016,OH,11,Democrat,0,Currently Safe Democrat,,1
+1615,2016,OH,13,Democrat,0,Currently Safe Democrat,,1
+1624,2016,OR,1,Democrat,0,Currently Safe Democrat,,1
+1626,2016,OR,3,Democrat,0,Currently Safe Democrat,,1
+1627,2016,OR,4,Democrat,0,Currently Safe Democrat,,1
+1628,2016,OR,5,Democrat,0,Currently Safe Democrat,,1
+1629,2016,PA,1,Democrat,0,Currently Safe Democrat,,1
+1630,2016,PA,2,Democrat,1,Currently Safe Democrat,,1
+1641,2016,PA,13,Democrat,0,Currently Safe Democrat,,1
+1642,2016,PA,14,Democrat,0,Currently Safe Democrat,,1
+1645,2016,PA,17,Democrat,0,Currently Safe Democrat,,1
+1647,2016,RI,1,Democrat,0,Currently Safe Democrat,,1
+1648,2016,RI,2,Democrat,0,Currently Safe Democrat,,1
+1654,2016,SC,6,Democrat,0,Currently Safe Democrat,,1
+1661,2016,TN,5,Democrat,0,Currently Safe Democrat,,1
+1665,2016,TN,9,Democrat,0,Currently Safe Democrat,,1
+1674,2016,TX,9,Democrat,0,Currently Safe Democrat,,1
+1680,2016,TX,15,Democrat,1,Currently Safe Democrat,,1
+1681,2016,TX,16,Democrat,0,Currently Safe Democrat,,1
+1683,2016,TX,18,Democrat,0,Currently Safe Democrat,,1
+1685,2016,TX,20,Democrat,0,Currently Safe Democrat,,1
+1693,2016,TX,28,Democrat,0,Currently Safe Democrat,,1
+1694,2016,TX,29,Democrat,0,Currently Safe Democrat,,1
+1695,2016,TX,30,Democrat,0,Currently Safe Democrat,,1
+1698,2016,TX,33,Democrat,0,Currently Safe Democrat,,1
+1699,2016,TX,34,Democrat,0,Currently Safe Democrat,,1
+1700,2016,TX,35,Democrat,0,Currently Safe Democrat,,1
+1706,2016,VT,0,Democrat,0,Currently Safe Democrat,,1
+1709,2016,VA,3,Democrat,0,Currently Safe Democrat,,1
+1710,2016,VA,4,Republican,1,Currently Safe Democrat,,1
+1714,2016,VA,8,Democrat,0,Currently Safe Democrat,,1
+1717,2016,VA,11,Democrat,0,Currently Safe Democrat,,1
+1718,2016,WA,1,Democrat,0,Currently Safe Democrat,,1
+1719,2016,WA,2,Democrat,0,Currently Safe Democrat,,1
+1723,2016,WA,6,Democrat,0,Currently Safe Democrat,,1
+1724,2016,WA,7,Democrat,1,Currently Safe Democrat,,1
+1726,2016,WA,9,Democrat,0,Currently Safe Democrat,,1
+1727,2016,WA,10,Democrat,0,Currently Safe Democrat,,1
+1732,2016,WI,2,Democrat,0,Currently Safe Democrat,,1
+1733,2016,WI,3,Democrat,0,Currently Safe Democrat,,1
+1734,2016,WI,4,Democrat,0,Currently Safe Democrat,,1
+1746,2018,AL,7,Democrat,0,Currently Safe Democrat,,1
+1750,2018,AZ,3,Democrat,0,Currently Safe Democrat,,1
+1754,2018,AZ,7,Democrat,0,Currently Safe Democrat,,1
+1756,2018,AZ,9,Democrat,1,Currently Safe Democrat,,1
+1762,2018,CA,2,Democrat,0,Currently Safe Democrat,,1
+1763,2018,CA,3,Democrat,0,Currently Safe Democrat,,1
+1765,2018,CA,5,Democrat,0,Currently Safe Democrat,,1
+1766,2018,CA,6,Democrat,0,Currently Safe Democrat,,1
+1767,2018,CA,7,Democrat,0,Currently Safe Democrat,,1
+1769,2018,CA,9,Democrat,0,Currently Safe Democrat,,1
+1771,2018,CA,11,Democrat,0,Currently Safe Democrat,,1
+1772,2018,CA,12,Democrat,0,Currently Safe Democrat,,1
+1773,2018,CA,13,Democrat,0,Currently Safe Democrat,,1
+1774,2018,CA,14,Democrat,0,Currently Safe Democrat,,1
+1775,2018,CA,15,Democrat,0,Currently Safe Democrat,,1
+1776,2018,CA,16,Democrat,0,Currently Safe Democrat,,1
+1777,2018,CA,17,Democrat,0,Currently Safe Democrat,,1
+1778,2018,CA,18,Democrat,0,Currently Safe Democrat,,1
+1779,2018,CA,19,Democrat,0,Currently Safe Democrat,,1
+1780,2018,CA,20,Democrat,0,Currently Safe Democrat,,1
+1784,2018,CA,24,Democrat,0,Currently Safe Democrat,,1
+1786,2018,CA,26,Democrat,0,Currently Safe Democrat,,1
+1787,2018,CA,27,Democrat,0,Currently Safe Democrat,,1
+1788,2018,CA,28,Democrat,0,Currently Safe Democrat,,1
+1789,2018,CA,29,Democrat,0,Currently Safe Democrat,,1
+1790,2018,CA,30,Democrat,0,Currently Safe Democrat,,1
+1791,2018,CA,31,Democrat,0,Currently Safe Democrat,,1
+1792,2018,CA,32,Democrat,0,Currently Safe Democrat,,1
+1793,2018,CA,33,Democrat,0,Currently Safe Democrat,,1
+1794,2018,CA,34,Democrat,0,Currently Safe Democrat,,1
+1795,2018,CA,35,Democrat,0,Currently Safe Democrat,,1
+1796,2018,CA,36,Democrat,0,Currently Safe Democrat,,1
+1797,2018,CA,37,Democrat,0,Currently Safe Democrat,,1
+1798,2018,CA,38,Democrat,0,Currently Safe Democrat,,1
+1800,2018,CA,40,Democrat,0,Currently Safe Democrat,,1
+1801,2018,CA,41,Democrat,0,Currently Safe Democrat,,1
+1803,2018,CA,43,Democrat,0,Currently Safe Democrat,,1
+1804,2018,CA,44,Democrat,0,Currently Safe Democrat,,1
+1806,2018,CA,46,Democrat,0,Currently Safe Democrat,,1
+1807,2018,CA,47,Democrat,0,Currently Safe Democrat,,1
+1811,2018,CA,51,Democrat,0,Currently Safe Democrat,,1
+1812,2018,CA,52,Democrat,0,Currently Safe Democrat,,1
+1813,2018,CA,53,Democrat,0,Currently Safe Democrat,,1
+1814,2018,CO,1,Democrat,0,Currently Safe Democrat,,1
+1815,2018,CO,2,Democrat,1,Currently Safe Democrat,,1
+1820,2018,CO,7,Democrat,0,Currently Safe Democrat,,1
+1821,2018,CT,1,Democrat,0,Currently Safe Democrat,,1
+1822,2018,CT,2,Democrat,0,Currently Safe Democrat,,1
+1823,2018,CT,3,Democrat,0,Currently Safe Democrat,,1
+1824,2018,CT,4,Democrat,0,Currently Safe Democrat,,1
+1825,2018,CT,5,Democrat,1,Currently Safe Democrat,,1
+1826,2018,DE,0,Democrat,0,Currently Safe Democrat,,1
+1831,2018,FL,5,Democrat,0,Currently Safe Democrat,,1
+1833,2018,FL,7,Democrat,0,Currently Safe Democrat,,1
+1835,2018,FL,9,Democrat,0,Currently Safe Democrat,,1
+1836,2018,FL,10,Democrat,0,Currently Safe Democrat,,1
+1839,2018,FL,13,Democrat,0,Currently Safe Democrat,,1
+1840,2018,FL,14,Democrat,0,Currently Safe Democrat,,1
+1846,2018,FL,20,Democrat,0,Currently Safe Democrat,,1
+1847,2018,FL,21,Democrat,0,Currently Safe Democrat,,1
+1848,2018,FL,22,Democrat,0,Currently Safe Democrat,,1
+1849,2018,FL,23,Democrat,0,Currently Safe Democrat,,1
+1850,2018,FL,24,Democrat,0,Currently Safe Democrat,,1
+1855,2018,GA,2,Democrat,0,Currently Safe Democrat,,1
+1857,2018,GA,4,Democrat,0,Currently Safe Democrat,,1
+1858,2018,GA,5,Democrat,0,Currently Safe Democrat,,1
+1866,2018,GA,13,Democrat,0,Currently Safe Democrat,,1
+1868,2018,HI,1,Democrat,1,Currently Safe Democrat,,1
+1869,2018,HI,2,Democrat,0,Currently Safe Democrat,,1
+1872,2018,IL,1,Democrat,0,Currently Safe Democrat,,1
+1873,2018,IL,2,Democrat,0,Currently Safe Democrat,,1
+1874,2018,IL,3,Democrat,0,Currently Safe Democrat,,1
+1875,2018,IL,4,Democrat,1,Currently Safe Democrat,,1
+1876,2018,IL,5,Democrat,0,Currently Safe Democrat,,1
+1878,2018,IL,7,Democrat,0,Currently Safe Democrat,,1
+1879,2018,IL,8,Democrat,0,Currently Safe Democrat,,1
+1880,2018,IL,9,Democrat,0,Currently Safe Democrat,,1
+1881,2018,IL,10,Democrat,0,Currently Safe Democrat,,1
+1882,2018,IL,11,Democrat,0,Currently Safe Democrat,,1
+1888,2018,IL,17,Democrat,0,Currently Safe Democrat,,1
+1890,2018,IN,1,Democrat,0,Currently Safe Democrat,,1
+1896,2018,IN,7,Democrat,0,Currently Safe Democrat,,1
+1900,2018,IA,2,Democrat,0,Currently Safe Democrat,,1
+1909,2018,KY,3,Democrat,0,Currently Safe Democrat,,1
+1914,2018,LA,2,Democrat,0,Currently Safe Democrat,,1
+1919,2018,ME,1,Democrat,0,Currently Safe Democrat,,1
+1922,2018,MD,2,Democrat,0,Currently Safe Democrat,,1
+1923,2018,MD,3,Democrat,0,Currently Safe Democrat,,1
+1924,2018,MD,4,Democrat,0,Currently Safe Democrat,,1
+1925,2018,MD,5,Democrat,0,Currently Safe Democrat,,1
+1926,2018,MD,6,Democrat,1,Currently Safe Democrat,,1
+1927,2018,MD,7,Democrat,0,Currently Safe Democrat,,1
+1928,2018,MD,8,Democrat,0,Currently Safe Democrat,,1
+1929,2018,MA,1,Democrat,0,Currently Safe Democrat,,1
+1930,2018,MA,2,Democrat,0,Currently Safe Democrat,,1
+1931,2018,MA,3,Democrat,1,Currently Safe Democrat,,1
+1932,2018,MA,4,Democrat,0,Currently Safe Democrat,,1
+1933,2018,MA,5,Democrat,0,Currently Safe Democrat,,1
+1934,2018,MA,6,Democrat,0,Currently Safe Democrat,,1
+1935,2018,MA,7,Democrat,1,Currently Safe Democrat,,1
+1936,2018,MA,8,Democrat,0,Currently Safe Democrat,,1
+1937,2018,MA,9,Democrat,0,Currently Safe Democrat,,1
+1942,2018,MI,5,Democrat,0,Currently Safe Democrat,,1
+1946,2018,MI,9,Democrat,1,Currently Safe Democrat,,1
+1949,2018,MI,12,Democrat,0,Currently Safe Democrat,,1
+1950,2018,MI,13,Democrat,1,Currently Safe Democrat,,1
+1951,2018,MI,14,Democrat,0,Currently Safe Democrat,,1
+1955,2018,MN,4,Democrat,0,Currently Safe Democrat,,1
+1956,2018,MN,5,Democrat,1,Currently Safe Democrat,,1
+1958,2018,MN,7,Democrat,0,Currently Safe Democrat,,1
+1961,2018,MS,2,Democrat,0,Currently Safe Democrat,,1
+1964,2018,MO,1,Democrat,0,Currently Safe Democrat,,1
+1968,2018,MO,5,Democrat,0,Currently Safe Democrat,,1
+1976,2018,NV,1,Democrat,0,Currently Safe Democrat,,1
+1981,2018,NH,2,Democrat,0,Currently Safe Democrat,,1
+1982,2018,NJ,1,Democrat,0,Currently Safe Democrat,,1
+1986,2018,NJ,5,Democrat,0,Currently Safe Democrat,,1
+1987,2018,NJ,6,Democrat,0,Currently Safe Democrat,,1
+1989,2018,NJ,8,Democrat,0,Currently Safe Democrat,,1
+1990,2018,NJ,9,Democrat,0,Currently Safe Democrat,,1
+1991,2018,NJ,10,Democrat,0,Currently Safe Democrat,,1
+1993,2018,NJ,12,Democrat,0,Currently Safe Democrat,,1
+1994,2018,NM,1,Democrat,1,Currently Safe Democrat,,1
+1996,2018,NM,3,Democrat,0,Currently Safe Democrat,,1
+1999,2018,NY,3,Democrat,0,Currently Safe Democrat,,1
+2000,2018,NY,4,Democrat,0,Currently Safe Democrat,,1
+2001,2018,NY,5,Democrat,0,Currently Safe Democrat,,1
+2002,2018,NY,6,Democrat,0,Currently Safe Democrat,,1
+2003,2018,NY,7,Democrat,0,Currently Safe Democrat,,1
+2004,2018,NY,8,Democrat,0,Currently Safe Democrat,,1
+2005,2018,NY,9,Democrat,0,Currently Safe Democrat,,1
+2006,2018,NY,10,Democrat,0,Currently Safe Democrat,,1
+2008,2018,NY,12,Democrat,0,Currently Safe Democrat,,1
+2009,2018,NY,13,Democrat,0,Currently Safe Democrat,,1
+2010,2018,NY,14,Democrat,1,Currently Safe Democrat,,1
+2011,2018,NY,15,Democrat,0,Currently Safe Democrat,,1
+2012,2018,NY,16,Democrat,0,Currently Safe Democrat,,1
+2013,2018,NY,17,Democrat,0,Currently Safe Democrat,,1
+2014,2018,NY,18,Democrat,0,Currently Safe Democrat,,1
+2016,2018,NY,20,Democrat,0,Currently Safe Democrat,,1
+2021,2018,NY,25,Democrat,1,Currently Safe Democrat,,1
+2022,2018,NY,26,Democrat,0,Currently Safe Democrat,,1
+2024,2018,NC,1,Democrat,0,Currently Safe Democrat,,1
+2027,2018,NC,4,Democrat,0,Currently Safe Democrat,,1
+2035,2018,NC,12,Democrat,0,Currently Safe Democrat,,1
+2040,2018,OH,3,Democrat,0,Currently Safe Democrat,,1
+2046,2018,OH,9,Democrat,0,Currently Safe Democrat,,1
+2048,2018,OH,11,Democrat,0,Currently Safe Democrat,,1
+2050,2018,OH,13,Democrat,0,Currently Safe Democrat,,1
+2059,2018,OR,1,Democrat,0,Currently Safe Democrat,,1
+2061,2018,OR,3,Democrat,0,Currently Safe Democrat,,1
+2062,2018,OR,4,Democrat,0,Currently Safe Democrat,,1
+2063,2018,OR,5,Democrat,0,Currently Safe Democrat,,1
+2065,2018,PA,2,Democrat,0,Currently Safe Democrat,,1
+2066,2018,PA,3,Democrat,0,Currently Safe Democrat,,1
+2067,2018,PA,4,Democrat,1,Currently Safe Democrat,,1
+2081,2018,PA,18,Democrat,0,Currently Safe Democrat,,1
+2082,2018,RI,1,Democrat,0,Currently Safe Democrat,,1
+2083,2018,RI,2,Democrat,0,Currently Safe Democrat,,1
+2089,2018,SC,6,Democrat,0,Currently Safe Democrat,,1
+2096,2018,TN,5,Democrat,0,Currently Safe Democrat,,1
+2100,2018,TN,9,Democrat,0,Currently Safe Democrat,,1
+2109,2018,TX,9,Democrat,0,Currently Safe Democrat,,1
+2115,2018,TX,15,Democrat,0,Currently Safe Democrat,,1
+2116,2018,TX,16,Democrat,1,Currently Safe Democrat,,1
+2118,2018,TX,18,Democrat,0,Currently Safe Democrat,,1
+2120,2018,TX,20,Democrat,0,Currently Safe Democrat,,1
+2128,2018,TX,28,Democrat,0,Currently Safe Democrat,,1
+2129,2018,TX,29,Democrat,1,Currently Safe Democrat,,1
+2130,2018,TX,30,Democrat,0,Currently Safe Democrat,,1
+2133,2018,TX,33,Democrat,0,Currently Safe Democrat,,1
+2134,2018,TX,34,Democrat,0,Currently Safe Democrat,,1
+2135,2018,TX,35,Democrat,0,Currently Safe Democrat,,1
+2141,2018,VT,0,Democrat,0,Currently Safe Democrat,,1
+2144,2018,VA,3,Democrat,0,Currently Safe Democrat,,1
+2145,2018,VA,4,Democrat,0,Currently Safe Democrat,,1
+2149,2018,VA,8,Democrat,0,Currently Safe Democrat,,1
+2152,2018,VA,11,Democrat,0,Currently Safe Democrat,,1
+2153,2018,WA,1,Democrat,0,Currently Safe Democrat,,1
+2154,2018,WA,2,Democrat,0,Currently Safe Democrat,,1
+2158,2018,WA,6,Democrat,0,Currently Safe Democrat,,1
+2159,2018,WA,7,Democrat,0,Currently Safe Democrat,,1
+2161,2018,WA,9,Democrat,0,Currently Safe Democrat,,1
+2162,2018,WA,10,Democrat,0,Currently Safe Democrat,,1
+2167,2018,WI,2,Democrat,0,Currently Safe Democrat,,1
+2168,2018,WI,3,Democrat,0,Currently Safe Democrat,,1
+2169,2018,WI,4,Democrat,0,Currently Safe Democrat,,1
+2181,2020,AL,7,Democrat,0,Currently Safe Democrat,,1
+2184,2020,AZ,2,Democrat,0,Currently Safe Democrat,,1
+2185,2020,AZ,3,Democrat,0,Currently Safe Democrat,,1
+2189,2020,AZ,7,Democrat,0,Currently Safe Democrat,,1
+2191,2020,AZ,9,Democrat,0,Currently Safe Democrat,,1
+2197,2020,CA,2,Democrat,0,Currently Safe Democrat,,1
+2198,2020,CA,3,Democrat,0,Currently Safe Democrat,,1
+2200,2020,CA,5,Democrat,0,Currently Safe Democrat,,1
+2201,2020,CA,6,Democrat,0,Currently Safe Democrat,,1
+2202,2020,CA,7,Democrat,0,Currently Safe Democrat,,1
+2204,2020,CA,9,Democrat,0,Currently Safe Democrat,,1
+2205,2020,CA,10,Democrat,0,Currently Safe Democrat,,1
+2206,2020,CA,11,Democrat,0,Currently Safe Democrat,,1
+2207,2020,CA,12,Democrat,0,Currently Safe Democrat,,1
+2208,2020,CA,13,Democrat,0,Currently Safe Democrat,,1
+2209,2020,CA,14,Democrat,0,Currently Safe Democrat,,1
+2210,2020,CA,15,Democrat,0,Currently Safe Democrat,,1
+2211,2020,CA,16,Democrat,0,Currently Safe Democrat,,1
+2212,2020,CA,17,Democrat,0,Currently Safe Democrat,,1
+2213,2020,CA,18,Democrat,0,Currently Safe Democrat,,1
+2214,2020,CA,19,Democrat,0,Currently Safe Democrat,,1
+2215,2020,CA,20,Democrat,0,Currently Safe Democrat,,1
+2219,2020,CA,24,Democrat,0,Currently Safe Democrat,,1
+2221,2020,CA,26,Democrat,0,Currently Safe Democrat,,1
+2222,2020,CA,27,Democrat,0,Currently Safe Democrat,,1
+2223,2020,CA,28,Democrat,0,Currently Safe Democrat,,1
+2224,2020,CA,29,Democrat,0,Currently Safe Democrat,,1
+2225,2020,CA,30,Democrat,0,Currently Safe Democrat,,1
+2226,2020,CA,31,Democrat,0,Currently Safe Democrat,,1
+2227,2020,CA,32,Democrat,0,Currently Safe Democrat,,1
+2228,2020,CA,33,Democrat,0,Currently Safe Democrat,,1
+2229,2020,CA,34,Democrat,0,Currently Safe Democrat,,1
+2230,2020,CA,35,Democrat,0,Currently Safe Democrat,,1
+2231,2020,CA,36,Democrat,0,Currently Safe Democrat,,1
+2232,2020,CA,37,Democrat,0,Currently Safe Democrat,,1
+2233,2020,CA,38,Democrat,0,Currently Safe Democrat,,1
+2235,2020,CA,40,Democrat,0,Currently Safe Democrat,,1
+2236,2020,CA,41,Democrat,0,Currently Safe Democrat,,1
+2238,2020,CA,43,Democrat,0,Currently Safe Democrat,,1
+2239,2020,CA,44,Democrat,0,Currently Safe Democrat,,1
+2240,2020,CA,45,Democrat,0,Currently Safe Democrat,,1
+2241,2020,CA,46,Democrat,0,Currently Safe Democrat,,1
+2242,2020,CA,47,Democrat,0,Currently Safe Democrat,,1
+2244,2020,CA,49,Democrat,0,Currently Safe Democrat,,1
+2246,2020,CA,51,Democrat,0,Currently Safe Democrat,,1
+2247,2020,CA,52,Democrat,0,Currently Safe Democrat,,1
+2248,2020,CA,53,Democrat,1,Currently Safe Democrat,,1
+2249,2020,CO,1,Democrat,0,Currently Safe Democrat,,1
+2250,2020,CO,2,Democrat,0,Currently Safe Democrat,,1
+2254,2020,CO,6,Democrat,0,Currently Safe Democrat,,1
+2255,2020,CO,7,Democrat,0,Currently Safe Democrat,,1
+2256,2020,CT,1,Democrat,0,Currently Safe Democrat,,1
+2257,2020,CT,2,Democrat,0,Currently Safe Democrat,,1
+2258,2020,CT,3,Democrat,0,Currently Safe Democrat,,1
+2259,2020,CT,4,Democrat,0,Currently Safe Democrat,,1
+2260,2020,CT,5,Democrat,0,Currently Safe Democrat,,1
+2261,2020,DE,0,Democrat,0,Currently Safe Democrat,,1
+2266,2020,FL,5,Democrat,0,Currently Safe Democrat,,1
+2268,2020,FL,7,Democrat,0,Currently Safe Democrat,,1
+2270,2020,FL,9,Democrat,0,Currently Safe Democrat,,1
+2271,2020,FL,10,Democrat,0,Currently Safe Democrat,,1
+2274,2020,FL,13,Democrat,0,Currently Safe Democrat,,1
+2275,2020,FL,14,Democrat,0,Currently Safe Democrat,,1
+2281,2020,FL,20,Democrat,0,Currently Safe Democrat,,1
+2282,2020,FL,21,Democrat,0,Currently Safe Democrat,,1
+2283,2020,FL,22,Democrat,0,Currently Safe Democrat,,1
+2284,2020,FL,23,Democrat,0,Currently Safe Democrat,,1
+2285,2020,FL,24,Democrat,0,Currently Safe Democrat,,1
+2288,2020,FL,27,Democrat,0,Currently Safe Democrat,,1
+2290,2020,GA,2,Democrat,0,Currently Safe Democrat,,1
+2292,2020,GA,4,Democrat,0,Currently Safe Democrat,,1
+2293,2020,GA,5,Democrat,1,Currently Safe Democrat,,1
+2301,2020,GA,13,Democrat,0,Currently Safe Democrat,,1
+2303,2020,HI,1,Democrat,0,Currently Safe Democrat,,1
+2304,2020,HI,2,Democrat,1,Currently Safe Democrat,,1
+2307,2020,IL,1,Democrat,0,Currently Safe Democrat,,1
+2308,2020,IL,2,Democrat,0,Currently Safe Democrat,,1
+2309,2020,IL,3,Democrat,1,Currently Safe Democrat,,1
+2310,2020,IL,4,Democrat,0,Currently Safe Democrat,,1
+2311,2020,IL,5,Democrat,0,Currently Safe Democrat,,1
+2312,2020,IL,6,Democrat,0,Currently Safe Democrat,,1
+2313,2020,IL,7,Democrat,0,Currently Safe Democrat,,1
+2314,2020,IL,8,Democrat,0,Currently Safe Democrat,,1
+2315,2020,IL,9,Democrat,0,Currently Safe Democrat,,1
+2316,2020,IL,10,Democrat,0,Currently Safe Democrat,,1
+2317,2020,IL,11,Democrat,0,Currently Safe Democrat,,1
+2320,2020,IL,14,Democrat,0,Currently Safe Democrat,,1
+2323,2020,IL,17,Democrat,0,Currently Safe Democrat,,1
+2325,2020,IN,1,Democrat,1,Currently Safe Democrat,,1
+2331,2020,IN,7,Democrat,0,Currently Safe Democrat,,1
+2340,2020,KS,3,Democrat,0,Currently Safe Democrat,,1
+2344,2020,KY,3,Democrat,0,Currently Safe Democrat,,1
+2349,2020,LA,2,Democrat,0,Currently Safe Democrat,,1
+2354,2020,ME,1,Democrat,0,Currently Safe Democrat,,1
+2355,2020,ME,2,Democrat,0,Currently Safe Democrat,,1
+2357,2020,MD,2,Democrat,0,Currently Safe Democrat,,1
+2358,2020,MD,3,Democrat,0,Currently Safe Democrat,,1
+2359,2020,MD,4,Democrat,0,Currently Safe Democrat,,1
+2360,2020,MD,5,Democrat,0,Currently Safe Democrat,,1
+2361,2020,MD,6,Democrat,0,Currently Safe Democrat,,1
+2362,2020,MD,7,Democrat,0,Currently Safe Democrat,,1
+2363,2020,MD,8,Democrat,0,Currently Safe Democrat,,1
+2364,2020,MA,1,Democrat,0,Currently Safe Democrat,,1
+2365,2020,MA,2,Democrat,0,Currently Safe Democrat,,1
+2366,2020,MA,3,Democrat,0,Currently Safe Democrat,,1
+2367,2020,MA,4,Democrat,1,Currently Safe Democrat,,1
+2368,2020,MA,5,Democrat,0,Currently Safe Democrat,,1
+2369,2020,MA,6,Democrat,0,Currently Safe Democrat,,1
+2370,2020,MA,7,Democrat,0,Currently Safe Democrat,,1
+2371,2020,MA,8,Democrat,0,Currently Safe Democrat,,1
+2372,2020,MA,9,Democrat,0,Currently Safe Democrat,,1
+2377,2020,MI,5,Democrat,0,Currently Safe Democrat,,1
+2380,2020,MI,8,Democrat,0,Currently Safe Democrat,,1
+2381,2020,MI,9,Democrat,0,Currently Safe Democrat,,1
+2383,2020,MI,11,Democrat,0,Currently Safe Democrat,,1
+2384,2020,MI,12,Democrat,0,Currently Safe Democrat,,1
+2385,2020,MI,13,Democrat,0,Currently Safe Democrat,,1
+2386,2020,MI,14,Democrat,0,Currently Safe Democrat,,1
+2388,2020,MN,2,Democrat,0,Currently Safe Democrat,,1
+2389,2020,MN,3,Democrat,0,Currently Safe Democrat,,1
+2390,2020,MN,4,Democrat,0,Currently Safe Democrat,,1
+2391,2020,MN,5,Democrat,0,Currently Safe Democrat,,1
+2396,2020,MS,2,Democrat,0,Currently Safe Democrat,,1
+2399,2020,MO,1,Democrat,1,Currently Safe Democrat,,1
+2403,2020,MO,5,Democrat,0,Currently Safe Democrat,,1
+2411,2020,NV,1,Democrat,0,Currently Safe Democrat,,1
+2414,2020,NV,4,Democrat,0,Currently Safe Democrat,,1
+2416,2020,NH,2,Democrat,0,Currently Safe Democrat,,1
+2417,2020,NJ,1,Democrat,0,Currently Safe Democrat,,1
+2419,2020,NJ,3,Democrat,0,Currently Safe Democrat,,1
+2421,2020,NJ,5,Democrat,0,Currently Safe Democrat,,1
+2422,2020,NJ,6,Democrat,0,Currently Safe Democrat,,1
+2424,2020,NJ,8,Democrat,0,Currently Safe Democrat,,1
+2425,2020,NJ,9,Democrat,0,Currently Safe Democrat,,1
+2426,2020,NJ,10,Democrat,0,Currently Safe Democrat,,1
+2427,2020,NJ,11,Democrat,0,Currently Safe Democrat,,1
+2428,2020,NJ,12,Democrat,0,Currently Safe Democrat,,1
+2429,2020,NM,1,Democrat,0,Currently Safe Democrat,,1
+2431,2020,NM,3,Democrat,1,Currently Safe Democrat,,1
+2434,2020,NY,3,Democrat,0,Currently Safe Democrat,,1
+2435,2020,NY,4,Democrat,0,Currently Safe Democrat,,1
+2436,2020,NY,5,Democrat,0,Currently Safe Democrat,,1
+2437,2020,NY,6,Democrat,0,Currently Safe Democrat,,1
+2438,2020,NY,7,Democrat,0,Currently Safe Democrat,,1
+2439,2020,NY,8,Democrat,0,Currently Safe Democrat,,1
+2440,2020,NY,9,Democrat,0,Currently Safe Democrat,,1
+2441,2020,NY,10,Democrat,0,Currently Safe Democrat,,1
+2443,2020,NY,12,Democrat,0,Currently Safe Democrat,,1
+2444,2020,NY,13,Democrat,0,Currently Safe Democrat,,1
+2445,2020,NY,14,Democrat,0,Currently Safe Democrat,,1
+2446,2020,NY,15,Democrat,1,Currently Safe Democrat,,1
+2447,2020,NY,16,Democrat,1,Currently Safe Democrat,,1
+2448,2020,NY,17,Democrat,1,Currently Safe Democrat,,1
+2449,2020,NY,18,Democrat,0,Currently Safe Democrat,,1
+2450,2020,NY,19,Democrat,0,Currently Safe Democrat,,1
+2451,2020,NY,20,Democrat,0,Currently Safe Democrat,,1
+2456,2020,NY,25,Democrat,0,Currently Safe Democrat,,1
+2457,2020,NY,26,Democrat,0,Currently Safe Democrat,,1
+2459,2020,NC,1,Democrat,0,Currently Safe Democrat,,1
+2462,2020,NC,4,Democrat,0,Currently Safe Democrat,,1
+2470,2020,NC,12,Democrat,0,Currently Safe Democrat,,1
+2475,2020,OH,3,Democrat,0,Currently Safe Democrat,,1
+2481,2020,OH,9,Democrat,0,Currently Safe Democrat,,1
+2483,2020,OH,11,Democrat,0,Currently Safe Democrat,,1
+2485,2020,OH,13,Democrat,0,Currently Safe Democrat,,1
+2494,2020,OR,1,Democrat,0,Currently Safe Democrat,,1
+2496,2020,OR,3,Democrat,0,Currently Safe Democrat,,1
+2498,2020,OR,5,Democrat,0,Currently Safe Democrat,,1
+2500,2020,PA,2,Democrat,0,Currently Safe Democrat,,1
+2501,2020,PA,3,Democrat,0,Currently Safe Democrat,,1
+2502,2020,PA,4,Democrat,0,Currently Safe Democrat,,1
+2503,2020,PA,5,Democrat,0,Currently Safe Democrat,,1
+2504,2020,PA,6,Democrat,0,Currently Safe Democrat,,1
+2505,2020,PA,7,Democrat,0,Currently Safe Democrat,,1
+2506,2020,PA,8,Democrat,0,Currently Safe Democrat,,1
+2515,2020,PA,17,Democrat,0,Currently Safe Democrat,,1
+2516,2020,PA,18,Democrat,0,Currently Safe Democrat,,1
+2517,2020,RI,1,Democrat,0,Currently Safe Democrat,,1
+2518,2020,RI,2,Democrat,0,Currently Safe Democrat,,1
+2524,2020,SC,6,Democrat,0,Currently Safe Democrat,,1
+2531,2020,TN,5,Democrat,0,Currently Safe Democrat,,1
+2535,2020,TN,9,Democrat,0,Currently Safe Democrat,,1
+2544,2020,TX,9,Democrat,0,Currently Safe Democrat,,1
+2550,2020,TX,15,Democrat,0,Currently Safe Democrat,,1
+2551,2020,TX,16,Democrat,0,Currently Safe Democrat,,1
+2553,2020,TX,18,Democrat,0,Currently Safe Democrat,,1
+2555,2020,TX,20,Democrat,0,Currently Safe Democrat,,1
+2563,2020,TX,28,Democrat,0,Currently Safe Democrat,,1
+2564,2020,TX,29,Democrat,0,Currently Safe Democrat,,1
+2565,2020,TX,30,Democrat,0,Currently Safe Democrat,,1
+2567,2020,TX,32,Democrat,0,Currently Safe Democrat,,1
+2568,2020,TX,33,Democrat,0,Currently Safe Democrat,,1
+2569,2020,TX,34,Democrat,0,Currently Safe Democrat,,1
+2570,2020,TX,35,Democrat,0,Currently Safe Democrat,,1
+2576,2020,VT,0,Democrat,0,Currently Safe Democrat,,1
+2579,2020,VA,3,Democrat,0,Currently Safe Democrat,,1
+2580,2020,VA,4,Democrat,0,Currently Safe Democrat,,1
+2584,2020,VA,8,Democrat,0,Currently Safe Democrat,,1
+2586,2020,VA,10,Democrat,0,Currently Safe Democrat,,1
+2587,2020,VA,11,Democrat,0,Currently Safe Democrat,,1
+2588,2020,WA,1,Democrat,0,Currently Safe Democrat,,1
+2589,2020,WA,2,Democrat,0,Currently Safe Democrat,,1
+2593,2020,WA,6,Democrat,0,Currently Safe Democrat,,1
+2594,2020,WA,7,Democrat,0,Currently Safe Democrat,,1
+2595,2020,WA,8,Democrat,0,Currently Safe Democrat,,1
+2596,2020,WA,9,Democrat,0,Currently Safe Democrat,,1
+2597,2020,WA,10,Democrat,1,Currently Safe Democrat,,1
+2602,2020,WI,2,Democrat,0,Currently Safe Democrat,,1
+2603,2020,WI,3,Democrat,0,Currently Safe Democrat,,1
+2604,2020,WI,4,Democrat,0,Currently Safe Democrat,,1
+2616,2022,AL,7,Democrat,0,Currently Safe Democrat,,1
+2620,2022,AZ,3,Democrat,0,Currently Safe Democrat,,1
+2624,2022,AZ,7,Democrat,0,Currently Safe Democrat,,1
+2632,2022,CA,2,Democrat,0,Currently Safe Democrat,,1
+2634,2022,CA,4,Democrat,0,Currently Safe Democrat,,1
+2636,2022,CA,6,Democrat,0,Currently Safe Democrat,,1
+2637,2022,CA,7,Democrat,0,Currently Safe Democrat,,1
+2638,2022,CA,8,Democrat,0,Currently Safe Democrat,,1
+2640,2022,CA,10,Democrat,0,Currently Safe Democrat,,1
+2641,2022,CA,11,Democrat,0,Currently Safe Democrat,,1
+2642,2022,CA,12,Democrat,0,Currently Safe Democrat,,1
+2644,2022,CA,14,Democrat,0,Currently Safe Democrat,,1
+2645,2022,CA,15,Democrat,1,Currently Safe Democrat,,1
+2646,2022,CA,16,Democrat,0,Currently Safe Democrat,,1
+2647,2022,CA,17,Democrat,0,Currently Safe Democrat,,1
+2648,2022,CA,18,Democrat,0,Currently Safe Democrat,,1
+2649,2022,CA,19,Democrat,0,Currently Safe Democrat,,1
+2651,2022,CA,21,Democrat,0,Currently Safe Democrat,,1
+2654,2022,CA,24,Democrat,0,Currently Safe Democrat,,1
+2655,2022,CA,25,Democrat,0,Currently Safe Democrat,,1
+2658,2022,CA,28,Democrat,0,Currently Safe Democrat,,1
+2659,2022,CA,29,Democrat,0,Currently Safe Democrat,,1
+2660,2022,CA,30,Democrat,0,Currently Safe Democrat,,1
+2661,2022,CA,31,Democrat,0,Currently Safe Democrat,,1
+2662,2022,CA,32,Democrat,0,Currently Safe Democrat,,1
+2663,2022,CA,33,Democrat,0,Currently Safe Democrat,,1
+2664,2022,CA,34,Democrat,0,Currently Safe Democrat,,1
+2665,2022,CA,35,Democrat,0,Currently Safe Democrat,,1
+2666,2022,CA,36,Democrat,0,Currently Safe Democrat,,1
+2667,2022,CA,37,Democrat,1,Currently Safe Democrat,,1
+2668,2022,CA,38,Democrat,0,Currently Safe Democrat,,1
+2669,2022,CA,39,Democrat,0,Currently Safe Democrat,,1
+2672,2022,CA,42,Democrat,1,Currently Safe Democrat,,1
+2673,2022,CA,43,Democrat,0,Currently Safe Democrat,,1
+2674,2022,CA,44,Democrat,0,Currently Safe Democrat,,1
+2676,2022,CA,46,Democrat,0,Currently Safe Democrat,,1
+2680,2022,CA,50,Democrat,0,Currently Safe Democrat,,1
+2681,2022,CA,51,Democrat,0,Currently Safe Democrat,,1
+2682,2022,CA,52,Democrat,0,Currently Safe Democrat,,1
+2683,2022,CO,1,Democrat,0,Currently Safe Democrat,,1
+2684,2022,CO,2,Democrat,0,Currently Safe Democrat,,1
+2688,2022,CO,6,Democrat,0,Currently Safe Democrat,,1
+2691,2022,CT,1,Democrat,0,Currently Safe Democrat,,1
+2692,2022,CT,2,Democrat,0,Currently Safe Democrat,,1
+2693,2022,CT,3,Democrat,0,Currently Safe Democrat,,1
+2694,2022,CT,4,Democrat,0,Currently Safe Democrat,,1
+2696,2022,DE,0,Democrat,0,Currently Safe Democrat,,1
+2705,2022,FL,9,Democrat,0,Currently Safe Democrat,,1
+2706,2022,FL,10,Democrat,1,Currently Safe Democrat,,1
+2710,2022,FL,14,Democrat,0,Currently Safe Democrat,,1
+2716,2022,FL,20,Democrat,0,Currently Safe Democrat,,1
+2718,2022,FL,22,Democrat,0,Currently Safe Democrat,,1
+2719,2022,FL,23,Democrat,1,Currently Safe Democrat,,1
+2720,2022,FL,24,Democrat,0,Currently Safe Democrat,,1
+2721,2022,FL,25,Democrat,0,Currently Safe Democrat,,1
+2726,2022,GA,2,Democrat,0,Currently Safe Democrat,,1
+2728,2022,GA,4,Democrat,0,Currently Safe Democrat,,1
+2729,2022,GA,5,Democrat,0,Currently Safe Democrat,,1
+2731,2022,GA,7,Democrat,0,Currently Safe Democrat,,1
+2737,2022,GA,13,Democrat,0,Currently Safe Democrat,,1
+2739,2022,HI,1,Democrat,0,Currently Safe Democrat,,1
+2740,2022,HI,2,Democrat,1,Currently Safe Democrat,,1
+2743,2022,IL,1,Democrat,1,Currently Safe Democrat,,1
+2744,2022,IL,2,Democrat,0,Currently Safe Democrat,,1
+2745,2022,IL,3,Democrat,1,Currently Safe Democrat,,1
+2746,2022,IL,4,Democrat,0,Currently Safe Democrat,,1
+2747,2022,IL,5,Democrat,0,Currently Safe Democrat,,1
+2749,2022,IL,7,Democrat,0,Currently Safe Democrat,,1
+2750,2022,IL,8,Democrat,0,Currently Safe Democrat,,1
+2751,2022,IL,9,Democrat,0,Currently Safe Democrat,,1
+2752,2022,IL,10,Democrat,0,Currently Safe Democrat,,1
+2753,2022,IL,11,Democrat,0,Currently Safe Democrat,,1
+2766,2022,IN,7,Democrat,0,Currently Safe Democrat,,1
+2779,2022,KY,3,Democrat,1,Currently Safe Democrat,,1
+2784,2022,LA,2,Democrat,0,Currently Safe Democrat,,1
+2789,2022,ME,1,Democrat,0,Currently Safe Democrat,,1
+2792,2022,MD,2,Democrat,0,Currently Safe Democrat,,1
+2793,2022,MD,3,Democrat,0,Currently Safe Democrat,,1
+2794,2022,MD,4,Democrat,1,Currently Safe Democrat,,1
+2795,2022,MD,5,Democrat,0,Currently Safe Democrat,,1
+2797,2022,MD,7,Democrat,0,Currently Safe Democrat,,1
+2798,2022,MD,8,Democrat,0,Currently Safe Democrat,,1
+2799,2022,MA,1,Democrat,0,Currently Safe Democrat,,1
+2800,2022,MA,2,Democrat,0,Currently Safe Democrat,,1
+2801,2022,MA,3,Democrat,0,Currently Safe Democrat,,1
+2802,2022,MA,4,Democrat,0,Currently Safe Democrat,,1
+2803,2022,MA,5,Democrat,0,Currently Safe Democrat,,1
+2804,2022,MA,6,Democrat,0,Currently Safe Democrat,,1
+2805,2022,MA,7,Democrat,0,Currently Safe Democrat,,1
+2806,2022,MA,8,Democrat,0,Currently Safe Democrat,,1
+2807,2022,MA,9,Democrat,0,Currently Safe Democrat,,1
+2813,2022,MI,6,Democrat,0,Currently Safe Democrat,,1
+2818,2022,MI,11,Democrat,0,Currently Safe Democrat,,1
+2819,2022,MI,12,Democrat,0,Currently Safe Democrat,,1
+2820,2022,MI,13,Democrat,1,Currently Safe Democrat,,1
+2823,2022,MN,3,Democrat,0,Currently Safe Democrat,,1
+2824,2022,MN,4,Democrat,0,Currently Safe Democrat,,1
+2825,2022,MN,5,Democrat,0,Currently Safe Democrat,,1
+2830,2022,MS,2,Democrat,0,Currently Safe Democrat,,1
+2833,2022,MO,1,Democrat,0,Currently Safe Democrat,,1
+2837,2022,MO,5,Democrat,0,Currently Safe Democrat,,1
+2852,2022,NJ,1,Democrat,0,Currently Safe Democrat,,1
+2856,2022,NJ,5,Democrat,0,Currently Safe Democrat,,1
+2857,2022,NJ,6,Democrat,0,Currently Safe Democrat,,1
+2859,2022,NJ,8,Democrat,1,Currently Safe Democrat,,1
+2860,2022,NJ,9,Democrat,0,Currently Safe Democrat,,1
+2861,2022,NJ,10,Democrat,0,Currently Safe Democrat,,1
+2862,2022,NJ,11,Democrat,0,Currently Safe Democrat,,1
+2863,2022,NJ,12,Democrat,0,Currently Safe Democrat,,1
+2864,2022,NM,1,Democrat,0,Currently Safe Democrat,,1
+2866,2022,NM,3,Democrat,0,Currently Safe Democrat,,1
+2871,2022,NY,5,Democrat,0,Currently Safe Democrat,,1
+2872,2022,NY,6,Democrat,0,Currently Safe Democrat,,1
+2873,2022,NY,7,Democrat,0,Currently Safe Democrat,,1
+2874,2022,NY,8,Democrat,0,Currently Safe Democrat,,1
+2875,2022,NY,9,Democrat,0,Currently Safe Democrat,,1
+2876,2022,NY,10,Democrat,1,Currently Safe Democrat,,1
+2878,2022,NY,12,Democrat,0,Currently Safe Democrat,,1
+2879,2022,NY,13,Democrat,0,Currently Safe Democrat,,1
+2880,2022,NY,14,Democrat,0,Currently Safe Democrat,,1
+2881,2022,NY,15,Democrat,0,Currently Safe Democrat,,1
+2882,2022,NY,16,Democrat,0,Currently Safe Democrat,,1
+2886,2022,NY,20,Democrat,0,Currently Safe Democrat,,1
+2892,2022,NY,26,Democrat,0,Currently Safe Democrat,,1
+2894,2022,NC,2,Democrat,0,Currently Safe Democrat,,1
+2896,2022,NC,4,Democrat,1,Currently Safe Democrat,,1
+2898,2022,NC,6,Democrat,0,Currently Safe Democrat,,1
+2904,2022,NC,12,Democrat,0,Currently Safe Democrat,,1
+2906,2022,NC,14,,1,Currently Safe Democrat,,1
+2910,2022,OH,3,Democrat,0,Currently Safe Democrat,,1
+2918,2022,OH,11,Democrat,0,Currently Safe Democrat,,1
+2928,2022,OR,1,Democrat,0,Currently Safe Democrat,,1
+2930,2022,OR,3,Democrat,0,Currently Safe Democrat,,1
+2935,2022,PA,2,Democrat,0,Currently Safe Democrat,,1
+2936,2022,PA,3,Democrat,0,Currently Safe Democrat,,1
+2937,2022,PA,4,Democrat,0,Currently Safe Democrat,,1
+2938,2022,PA,5,Democrat,0,Currently Safe Democrat,,1
+2939,2022,PA,6,Democrat,0,Currently Safe Democrat,,1
+2951,2022,RI,1,Democrat,0,Currently Safe Democrat,,1
+2958,2022,SC,6,Democrat,0,Currently Safe Democrat,,1
+2969,2022,TN,9,Democrat,0,Currently Safe Democrat,,1
+2976,2022,TX,7,Democrat,0,Currently Safe Democrat,,1
+2978,2022,TX,9,Democrat,0,Currently Safe Democrat,,1
+2985,2022,TX,16,Democrat,0,Currently Safe Democrat,,1
+2987,2022,TX,18,Democrat,0,Currently Safe Democrat,,1
+2989,2022,TX,20,Democrat,0,Currently Safe Democrat,,1
+2998,2022,TX,29,Democrat,0,Currently Safe Democrat,,1
+2999,2022,TX,30,Democrat,1,Currently Safe Democrat,,1
+3001,2022,TX,32,Democrat,0,Currently Safe Democrat,,1
+3002,2022,TX,33,Democrat,0,Currently Safe Democrat,,1
+3004,2022,TX,35,,1,Currently Safe Democrat,,1
+3006,2022,TX,37,Democrat,0,Currently Safe Democrat,,1
+3012,2022,VT,0,Democrat,1,Currently Safe Democrat,,1
+3015,2022,VA,3,Democrat,0,Currently Safe Democrat,,1
+3016,2022,VA,4,Democrat,0,Currently Safe Democrat,,1
+3020,2022,VA,8,Democrat,0,Currently Safe Democrat,,1
+3023,2022,VA,11,Democrat,0,Currently Safe Democrat,,1
+3024,2022,WA,1,Democrat,0,Currently Safe Democrat,,1
+3025,2022,WA,2,Democrat,0,Currently Safe Democrat,,1
+3029,2022,WA,6,Democrat,0,Currently Safe Democrat,,1
+3030,2022,WA,7,Democrat,0,Currently Safe Democrat,,1
+3032,2022,WA,9,Democrat,0,Currently Safe Democrat,,1
+3033,2022,WA,10,Democrat,0,Currently Safe Democrat,,1
+3037,2022,WI,2,Democrat,0,Currently Safe Democrat,,1
+3039,2022,WI,4,Democrat,0,Currently Safe Democrat,,1
+0,2010,AL,1,Republican,0,Currently Safe Republican,,7
+2,2010,AL,3,Republican,0,Currently Safe Republican,,7
+3,2010,AL,4,Republican,0,Currently Safe Republican,,7
+4,2010,AL,5,Republican,1,Currently Safe Republican,,7
+5,2010,AL,6,Republican,0,Currently Safe Republican,,7
+7,2010,AK,0,Republican,0,Currently Safe Republican,,7
+9,2010,AZ,2,Republican,0,Currently Safe Republican,,7
+10,2010,AZ,3,Republican,1,Currently Safe Republican,,7
+13,2010,AZ,6,Republican,0,Currently Safe Republican,,7
+18,2010,AR,3,Republican,1,Currently Safe Republican,,7
+21,2010,CA,2,Republican,0,Currently Safe Republican,,7
+23,2010,CA,4,Republican,0,Currently Safe Republican,,7
+38,2010,CA,19,Republican,0,Currently Safe Republican,,7
+40,2010,CA,21,Republican,0,Currently Safe Republican,,7
+41,2010,CA,22,Republican,0,Currently Safe Republican,,7
+43,2010,CA,24,Republican,0,Currently Safe Republican,,7
+44,2010,CA,25,Republican,0,Currently Safe Republican,,7
+45,2010,CA,26,Republican,0,Currently Safe Republican,,7
+59,2010,CA,40,Republican,0,Currently Safe Republican,,7
+60,2010,CA,41,Republican,0,Currently Safe Republican,,7
+61,2010,CA,42,Republican,0,Currently Safe Republican,,7
+63,2010,CA,44,Republican,0,Currently Safe Republican,,7
+64,2010,CA,45,Republican,0,Currently Safe Republican,,7
+65,2010,CA,46,Republican,0,Currently Safe Republican,,7
+67,2010,CA,48,Republican,0,Currently Safe Republican,,7
+68,2010,CA,49,Republican,0,Currently Safe Republican,,7
+69,2010,CA,50,Republican,0,Currently Safe Republican,,7
+71,2010,CA,52,Republican,0,Currently Safe Republican,,7
+77,2010,CO,5,Republican,0,Currently Safe Republican,,7
+78,2010,CO,6,Republican,0,Currently Safe Republican,,7
+86,2010,FL,1,Republican,0,Currently Safe Republican,,7
+89,2010,FL,4,Republican,0,Currently Safe Republican,,7
+90,2010,FL,5,Republican,1,Currently Safe Republican,,7
+91,2010,FL,6,Republican,0,Currently Safe Republican,,7
+92,2010,FL,7,Republican,0,Currently Safe Republican,,7
+94,2010,FL,9,Republican,0,Currently Safe Republican,,7
+95,2010,FL,10,Republican,0,Currently Safe Republican,,7
+98,2010,FL,13,Republican,0,Currently Safe Republican,,7
+99,2010,FL,14,Republican,0,Currently Safe Republican,,7
+100,2010,FL,15,Republican,0,Currently Safe Republican,,7
+101,2010,FL,16,Republican,0,Currently Safe Republican,,7
+103,2010,FL,18,Republican,0,Currently Safe Republican,,7
+106,2010,FL,21,Republican,1,Currently Safe Republican,,7
+111,2010,GA,1,Republican,0,Currently Safe Republican,,7
+113,2010,GA,3,Republican,0,Currently Safe Republican,,7
+116,2010,GA,6,Republican,0,Currently Safe Republican,,7
+117,2010,GA,7,Republican,0,Currently Safe Republican,,7
+119,2010,GA,9,Republican,0,Currently Safe Republican,,7
+120,2010,GA,10,Republican,0,Currently Safe Republican,,7
+121,2010,GA,11,Republican,0,Currently Safe Republican,,7
+127,2010,ID,2,Republican,0,Currently Safe Republican,,7
+133,2010,IL,6,Republican,0,Currently Safe Republican,,7
+140,2010,IL,13,Republican,0,Currently Safe Republican,,7
+142,2010,IL,15,Republican,0,Currently Safe Republican,,7
+143,2010,IL,16,Republican,0,Currently Safe Republican,,7
+145,2010,IL,18,Republican,0,Currently Safe Republican,,7
+146,2010,IL,19,Republican,0,Currently Safe Republican,,7
+149,2010,IN,3,Republican,1,Currently Safe Republican,,7
+150,2010,IN,4,Republican,0,Currently Safe Republican,,7
+151,2010,IN,5,Republican,0,Currently Safe Republican,,7
+152,2010,IN,6,Republican,0,Currently Safe Republican,,7
+159,2010,IA,4,Republican,0,Currently Safe Republican,,7
+160,2010,IA,5,Republican,0,Currently Safe Republican,,7
+161,2010,KS,1,Republican,1,Currently Safe Republican,,7
+162,2010,KS,2,Republican,0,Currently Safe Republican,,7
+164,2010,KS,4,Republican,1,Currently Safe Republican,,7
+165,2010,KY,1,Republican,0,Currently Safe Republican,,7
+166,2010,KY,2,Republican,0,Currently Safe Republican,,7
+168,2010,KY,4,Republican,0,Currently Safe Republican,,7
+169,2010,KY,5,Republican,0,Currently Safe Republican,,7
+171,2010,LA,1,Republican,0,Currently Safe Republican,,7
+174,2010,LA,4,Republican,0,Currently Safe Republican,,7
+175,2010,LA,5,Republican,0,Currently Safe Republican,,7
+176,2010,LA,6,Republican,0,Currently Safe Republican,,7
+177,2010,LA,7,Republican,0,Currently Safe Republican,,7
+185,2010,MD,6,Republican,0,Currently Safe Republican,,7
+199,2010,MI,2,Republican,1,Currently Safe Republican,,7
+200,2010,MI,3,Republican,0,Currently Safe Republican,,7
+201,2010,MI,4,Republican,0,Currently Safe Republican,,7
+203,2010,MI,6,Republican,0,Currently Safe Republican,,7
+205,2010,MI,8,Republican,0,Currently Safe Republican,,7
+207,2010,MI,10,Republican,0,Currently Safe Republican,,7
+208,2010,MI,11,Republican,0,Currently Safe Republican,,7
+214,2010,MN,2,Republican,0,Currently Safe Republican,,7
+215,2010,MN,3,Republican,0,Currently Safe Republican,,7
+218,2010,MN,6,Republican,0,Currently Safe Republican,,7
+223,2010,MS,3,Republican,0,Currently Safe Republican,,7
+226,2010,MO,2,Republican,0,Currently Safe Republican,,7
+230,2010,MO,6,Republican,0,Currently Safe Republican,,7
+231,2010,MO,7,Republican,1,Currently Safe Republican,,7
+232,2010,MO,8,Republican,0,Currently Safe Republican,,7
+233,2010,MO,9,Republican,0,Currently Safe Republican,,7
+234,2010,MT,0,Republican,0,Currently Safe Republican,,7
+235,2010,NE,1,Republican,0,Currently Safe Republican,,7
+236,2010,NE,2,Republican,0,Currently Safe Republican,,7
+237,2010,NE,3,Republican,0,Currently Safe Republican,,7
+239,2010,NV,2,Republican,0,Currently Safe Republican,,7
+244,2010,NJ,2,Republican,0,Currently Safe Republican,,7
+246,2010,NJ,4,Republican,0,Currently Safe Republican,,7
+247,2010,NJ,5,Republican,0,Currently Safe Republican,,7
+249,2010,NJ,7,Republican,0,Currently Safe Republican,,7
+253,2010,NJ,11,Republican,0,Currently Safe Republican,,7
+261,2010,NY,3,Republican,0,Currently Safe Republican,,7
+284,2010,NY,26,Republican,0,Currently Safe Republican,,7
+290,2010,NC,3,Republican,0,Currently Safe Republican,,7
+292,2010,NC,5,Republican,0,Currently Safe Republican,,7
+293,2010,NC,6,Republican,0,Currently Safe Republican,,7
+296,2010,NC,9,Republican,0,Currently Safe Republican,,7
+297,2010,NC,10,Republican,0,Currently Safe Republican,,7
+303,2010,OH,2,Republican,0,Currently Safe Republican,,7
+304,2010,OH,3,Republican,0,Currently Safe Republican,,7
+305,2010,OH,4,Republican,0,Currently Safe Republican,,7
+306,2010,OH,5,Republican,0,Currently Safe Republican,,7
+308,2010,OH,7,Republican,0,Currently Safe Republican,,7
+309,2010,OH,8,Republican,0,Currently Safe Republican,,7
+313,2010,OH,12,Republican,0,Currently Safe Republican,,7
+315,2010,OH,14,Republican,0,Currently Safe Republican,,7
+320,2010,OK,1,Republican,0,Currently Safe Republican,,7
+322,2010,OK,3,Republican,0,Currently Safe Republican,,7
+323,2010,OK,4,Republican,0,Currently Safe Republican,,7
+324,2010,OK,5,Republican,1,Currently Safe Republican,,7
+326,2010,OR,2,Republican,0,Currently Safe Republican,,7
+334,2010,PA,5,Republican,0,Currently Safe Republican,,7
+335,2010,PA,6,Republican,0,Currently Safe Republican,,7
+338,2010,PA,9,Republican,0,Currently Safe Republican,,7
+345,2010,PA,16,Republican,0,Currently Safe Republican,,7
+347,2010,PA,18,Republican,0,Currently Safe Republican,,7
+348,2010,PA,19,Republican,0,Currently Safe Republican,,7
+351,2010,SC,1,Republican,0,Currently Safe Republican,,7
+352,2010,SC,2,Republican,0,Currently Safe Republican,,7
+353,2010,SC,3,Republican,1,Currently Safe Republican,,7
+354,2010,SC,4,Republican,1,Currently Safe Republican,,7
+358,2010,TN,1,Republican,0,Currently Safe Republican,,7
+359,2010,TN,2,Republican,0,Currently Safe Republican,,7
+360,2010,TN,3,Republican,1,Currently Safe Republican,,7
+364,2010,TN,7,Republican,0,Currently Safe Republican,,7
+367,2010,TX,1,Republican,0,Currently Safe Republican,,7
+368,2010,TX,2,Republican,0,Currently Safe Republican,,7
+369,2010,TX,3,Republican,0,Currently Safe Republican,,7
+370,2010,TX,4,Republican,0,Currently Safe Republican,,7
+371,2010,TX,5,Republican,0,Currently Safe Republican,,7
+372,2010,TX,6,Republican,0,Currently Safe Republican,,7
+373,2010,TX,7,Republican,0,Currently Safe Republican,,7
+374,2010,TX,8,Republican,0,Currently Safe Republican,,7
+376,2010,TX,10,Republican,0,Currently Safe Republican,,7
+377,2010,TX,11,Republican,0,Currently Safe Republican,,7
+378,2010,TX,12,Republican,0,Currently Safe Republican,,7
+379,2010,TX,13,Republican,0,Currently Safe Republican,,7
+380,2010,TX,14,Republican,0,Currently Safe Republican,,7
+385,2010,TX,19,Republican,0,Currently Safe Republican,,7
+387,2010,TX,21,Republican,0,Currently Safe Republican,,7
+388,2010,TX,22,Republican,0,Currently Safe Republican,,7
+390,2010,TX,24,Republican,0,Currently Safe Republican,,7
+392,2010,TX,26,Republican,0,Currently Safe Republican,,7
+397,2010,TX,31,Republican,0,Currently Safe Republican,,7
+398,2010,TX,32,Republican,0,Currently Safe Republican,,7
+399,2010,UT,1,Republican,0,Currently Safe Republican,,7
+401,2010,UT,3,Republican,0,Currently Safe Republican,,7
+403,2010,VA,1,Republican,0,Currently Safe Republican,,7
+406,2010,VA,4,Republican,0,Currently Safe Republican,,7
+408,2010,VA,6,Republican,0,Currently Safe Republican,,7
+409,2010,VA,7,Republican,0,Currently Safe Republican,,7
+412,2010,VA,10,Republican,0,Currently Safe Republican,,7
+417,2010,WA,4,Republican,0,Currently Safe Republican,,7
+418,2010,WA,5,Republican,0,Currently Safe Republican,,7
+424,2010,WV,2,Republican,0,Currently Safe Republican,,7
+426,2010,WI,1,Republican,0,Currently Safe Republican,,7
+430,2010,WI,5,Republican,0,Currently Safe Republican,,7
+431,2010,WI,6,Republican,0,Currently Safe Republican,,7
+434,2010,WY,0,Republican,0,Currently Safe Republican,,7
+435,2012,AL,1,Republican,0,Currently Safe Republican,,7
+436,2012,AL,2,Republican,0,Currently Safe Republican,,7
+437,2012,AL,3,Republican,0,Currently Safe Republican,,7
+438,2012,AL,4,Republican,0,Currently Safe Republican,,7
+439,2012,AL,5,Republican,0,Currently Safe Republican,,7
+440,2012,AL,6,Republican,0,Currently Safe Republican,,7
+442,2012,AK,0,Republican,0,Currently Safe Republican,,7
+446,2012,AZ,4,Republican,0,Currently Safe Republican,,7
+447,2012,AZ,5,Republican,1,Currently Safe Republican,,7
+448,2012,AZ,6,Republican,0,Currently Safe Republican,,7
+450,2012,AZ,8,Republican,0,Currently Safe Republican,,7
+452,2012,AR,1,Republican,0,Currently Safe Republican,,7
+453,2012,AR,2,Republican,0,Currently Safe Republican,,7
+454,2012,AR,3,Republican,0,Currently Safe Republican,,7
+455,2012,AR,4,Democrat,1,Currently Safe Republican,,7
+456,2012,CA,1,Republican,1,Currently Safe Republican,,7
+459,2012,CA,4,Republican,0,Currently Safe Republican,,7
+463,2012,CA,8,Republican,1,Currently Safe Republican,,7
+476,2012,CA,21,,1,Currently Safe Republican,,7
+477,2012,CA,22,Republican,0,Currently Safe Republican,,7
+478,2012,CA,23,Republican,0,Currently Safe Republican,,7
+480,2012,CA,25,Republican,0,Currently Safe Republican,,7
+486,2012,CA,31,Republican,0,Currently Safe Republican,,7
+494,2012,CA,39,Republican,0,Currently Safe Republican,,7
+497,2012,CA,42,Republican,0,Currently Safe Republican,,7
+500,2012,CA,45,Republican,0,Currently Safe Republican,,7
+503,2012,CA,48,Republican,0,Currently Safe Republican,,7
+504,2012,CA,49,Republican,0,Currently Safe Republican,,7
+505,2012,CA,50,Republican,0,Currently Safe Republican,,7
+512,2012,CO,4,Republican,0,Currently Safe Republican,,7
+513,2012,CO,5,Republican,0,Currently Safe Republican,,7
+522,2012,FL,1,Republican,0,Currently Safe Republican,,7
+524,2012,FL,3,Republican,1,Currently Safe Republican,,7
+525,2012,FL,4,Republican,0,Currently Safe Republican,,7
+527,2012,FL,6,Republican,1,Currently Safe Republican,,7
+528,2012,FL,7,Republican,0,Currently Safe Republican,,7
+529,2012,FL,8,Republican,0,Currently Safe Republican,,7
+532,2012,FL,11,Republican,0,Currently Safe Republican,,7
+533,2012,FL,12,Republican,0,Currently Safe Republican,,7
+534,2012,FL,13,Republican,0,Currently Safe Republican,,7
+536,2012,FL,15,Republican,0,Currently Safe Republican,,7
+538,2012,FL,17,Republican,0,Currently Safe Republican,,7
+540,2012,FL,19,Republican,1,Currently Safe Republican,,7
+546,2012,FL,25,Republican,0,Currently Safe Republican,,7
+548,2012,FL,27,Republican,0,Currently Safe Republican,,7
+549,2012,GA,1,Republican,0,Currently Safe Republican,,7
+551,2012,GA,3,Republican,0,Currently Safe Republican,,7
+554,2012,GA,6,Republican,0,Currently Safe Republican,,7
+555,2012,GA,7,Republican,0,Currently Safe Republican,,7
+556,2012,GA,8,Republican,0,Currently Safe Republican,,7
+557,2012,GA,9,,1,Currently Safe Republican,,7
+558,2012,GA,10,Republican,0,Currently Safe Republican,,7
+559,2012,GA,11,Republican,0,Currently Safe Republican,,7
+562,2012,GA,14,Republican,0,Currently Safe Republican,,7
+565,2012,ID,1,Republican,0,Currently Safe Republican,,7
+566,2012,ID,2,Republican,0,Currently Safe Republican,,7
+572,2012,IL,6,Republican,0,Currently Safe Republican,,7
+580,2012,IL,14,Republican,0,Currently Safe Republican,,7
+581,2012,IL,15,Republican,0,Currently Safe Republican,,7
+582,2012,IL,16,Republican,0,Currently Safe Republican,,7
+584,2012,IL,18,Republican,0,Currently Safe Republican,,7
+586,2012,IN,2,Democrat,1,Currently Safe Republican,,7
+587,2012,IN,3,Republican,0,Currently Safe Republican,,7
+588,2012,IN,4,Republican,0,Currently Safe Republican,,7
+589,2012,IN,5,Republican,1,Currently Safe Republican,,7
+590,2012,IN,6,Republican,1,Currently Safe Republican,,7
+593,2012,IN,9,Republican,0,Currently Safe Republican,,7
+598,2012,KS,1,Republican,0,Currently Safe Republican,,7
+599,2012,KS,2,Republican,0,Currently Safe Republican,,7
+600,2012,KS,3,Republican,0,Currently Safe Republican,,7
+601,2012,KS,4,Republican,0,Currently Safe Republican,,7
+602,2012,KY,1,Republican,0,Currently Safe Republican,,7
+603,2012,KY,2,Republican,0,Currently Safe Republican,,7
+605,2012,KY,4,Republican,1,Currently Safe Republican,,7
+606,2012,KY,5,Republican,0,Currently Safe Republican,,7
+608,2012,LA,1,Republican,0,Currently Safe Republican,,7
+610,2012,LA,3,Republican,0,Currently Safe Republican,,7
+611,2012,LA,4,Republican,0,Currently Safe Republican,,7
+612,2012,LA,5,Republican,0,Currently Safe Republican,,7
+613,2012,LA,6,Republican,0,Currently Safe Republican,,7
+616,2012,MD,1,Republican,0,Currently Safe Republican,,7
+634,2012,MI,2,Republican,0,Currently Safe Republican,,7
+635,2012,MI,3,Republican,0,Currently Safe Republican,,7
+636,2012,MI,4,Republican,0,Currently Safe Republican,,7
+638,2012,MI,6,Republican,0,Currently Safe Republican,,7
+639,2012,MI,7,Republican,0,Currently Safe Republican,,7
+640,2012,MI,8,Republican,0,Currently Safe Republican,,7
+642,2012,MI,10,Republican,0,Currently Safe Republican,,7
+648,2012,MN,2,Republican,0,Currently Safe Republican,,7
+649,2012,MN,3,Republican,0,Currently Safe Republican,,7
+655,2012,MS,1,Republican,0,Currently Safe Republican,,7
+657,2012,MS,3,Republican,0,Currently Safe Republican,,7
+658,2012,MS,4,Republican,0,Currently Safe Republican,,7
+660,2012,MO,2,Republican,1,Currently Safe Republican,,7
+661,2012,MO,3,Republican,0,Currently Safe Republican,,7
+662,2012,MO,4,Republican,0,Currently Safe Republican,,7
+664,2012,MO,6,Republican,0,Currently Safe Republican,,7
+665,2012,MO,7,Republican,0,Currently Safe Republican,,7
+666,2012,MO,8,Republican,0,Currently Safe Republican,,7
+667,2012,MT,0,Republican,1,Currently Safe Republican,,7
+668,2012,NE,1,Republican,0,Currently Safe Republican,,7
+669,2012,NE,2,Republican,0,Currently Safe Republican,,7
+670,2012,NE,3,Republican,0,Currently Safe Republican,,7
+672,2012,NV,2,Republican,0,Currently Safe Republican,,7
+678,2012,NJ,2,Republican,0,Currently Safe Republican,,7
+680,2012,NJ,4,Republican,0,Currently Safe Republican,,7
+681,2012,NJ,5,Republican,0,Currently Safe Republican,,7
+683,2012,NJ,7,Republican,0,Currently Safe Republican,,7
+687,2012,NJ,11,Republican,0,Currently Safe Republican,,7
+690,2012,NM,2,Republican,0,Currently Safe Republican,,7
+693,2012,NY,2,Republican,0,Currently Safe Republican,,7
+713,2012,NY,22,Republican,0,Currently Safe Republican,,7
+714,2012,NY,23,Republican,0,Currently Safe Republican,,7
+720,2012,NC,2,Republican,0,Currently Safe Republican,,7
+721,2012,NC,3,Republican,0,Currently Safe Republican,,7
+723,2012,NC,5,Republican,0,Currently Safe Republican,,7
+724,2012,NC,6,Republican,0,Currently Safe Republican,,7
+727,2012,NC,9,Republican,1,Currently Safe Republican,,7
+728,2012,NC,10,Republican,0,Currently Safe Republican,,7
+731,2012,NC,13,,1,Currently Safe Republican,,7
+732,2012,ND,0,Republican,1,Currently Safe Republican,,7
+733,2012,OH,1,Republican,0,Currently Safe Republican,,7
+734,2012,OH,2,Republican,1,Currently Safe Republican,,7
+736,2012,OH,4,Republican,0,Currently Safe Republican,,7
+737,2012,OH,5,Republican,0,Currently Safe Republican,,7
+739,2012,OH,7,Republican,0,Currently Safe Republican,,7
+740,2012,OH,8,Republican,0,Currently Safe Republican,,7
+742,2012,OH,10,Republican,0,Currently Safe Republican,,7
+744,2012,OH,12,Republican,0,Currently Safe Republican,,7
+746,2012,OH,14,Republican,1,Currently Safe Republican,,7
+747,2012,OH,15,Republican,0,Currently Safe Republican,,7
+749,2012,OK,1,Republican,1,Currently Safe Republican,,7
+750,2012,OK,2,Democrat,1,Currently Safe Republican,,7
+751,2012,OK,3,Republican,0,Currently Safe Republican,,7
+752,2012,OK,4,Republican,0,Currently Safe Republican,,7
+753,2012,OK,5,Republican,0,Currently Safe Republican,,7
+755,2012,OR,2,Republican,0,Currently Safe Republican,,7
+761,2012,PA,3,Republican,0,Currently Safe Republican,,7
+762,2012,PA,4,Republican,0,Currently Safe Republican,,7
+763,2012,PA,5,Republican,0,Currently Safe Republican,,7
+764,2012,PA,6,Republican,0,Currently Safe Republican,,7
+765,2012,PA,7,Republican,0,Currently Safe Republican,,7
+767,2012,PA,9,Republican,0,Currently Safe Republican,,7
+768,2012,PA,10,Republican,0,Currently Safe Republican,,7
+769,2012,PA,11,Republican,0,Currently Safe Republican,,7
+773,2012,PA,15,Republican,0,Currently Safe Republican,,7
+774,2012,PA,16,Republican,0,Currently Safe Republican,,7
+776,2012,PA,18,Republican,0,Currently Safe Republican,,7
+779,2012,SC,1,Republican,0,Currently Safe Republican,,7
+780,2012,SC,2,Republican,0,Currently Safe Republican,,7
+781,2012,SC,3,Republican,0,Currently Safe Republican,,7
+782,2012,SC,4,Republican,0,Currently Safe Republican,,7
+783,2012,SC,5,Republican,0,Currently Safe Republican,,7
+785,2012,SC,7,,1,Currently Safe Republican,,7
+786,2012,SD,0,Republican,0,Currently Safe Republican,,7
+787,2012,TN,1,Republican,0,Currently Safe Republican,,7
+788,2012,TN,2,Republican,0,Currently Safe Republican,,7
+789,2012,TN,3,Republican,0,Currently Safe Republican,,7
+792,2012,TN,6,Republican,0,Currently Safe Republican,,7
+793,2012,TN,7,Republican,0,Currently Safe Republican,,7
+794,2012,TN,8,Republican,0,Currently Safe Republican,,7
+796,2012,TX,1,Republican,0,Currently Safe Republican,,7
+797,2012,TX,2,Republican,0,Currently Safe Republican,,7
+798,2012,TX,3,Republican,0,Currently Safe Republican,,7
+799,2012,TX,4,Republican,0,Currently Safe Republican,,7
+800,2012,TX,5,Republican,0,Currently Safe Republican,,7
+801,2012,TX,6,Republican,0,Currently Safe Republican,,7
+802,2012,TX,7,Republican,0,Currently Safe Republican,,7
+803,2012,TX,8,Republican,0,Currently Safe Republican,,7
+805,2012,TX,10,Republican,0,Currently Safe Republican,,7
+806,2012,TX,11,Republican,0,Currently Safe Republican,,7
+807,2012,TX,12,Republican,0,Currently Safe Republican,,7
+808,2012,TX,13,Republican,0,Currently Safe Republican,,7
+812,2012,TX,17,Republican,0,Currently Safe Republican,,7
+814,2012,TX,19,Republican,0,Currently Safe Republican,,7
+816,2012,TX,21,Republican,0,Currently Safe Republican,,7
+817,2012,TX,22,Republican,0,Currently Safe Republican,,7
+819,2012,TX,24,Republican,0,Currently Safe Republican,,7
+820,2012,TX,25,,1,Currently Safe Republican,,7
+821,2012,TX,26,Republican,0,Currently Safe Republican,,7
+822,2012,TX,27,Republican,0,Currently Safe Republican,,7
+826,2012,TX,31,Republican,0,Currently Safe Republican,,7
+827,2012,TX,32,Republican,0,Currently Safe Republican,,7
+831,2012,TX,36,,1,Currently Safe Republican,,7
+832,2012,UT,1,Republican,0,Currently Safe Republican,,7
+833,2012,UT,2,,1,Currently Safe Republican,,7
+834,2012,UT,3,Republican,0,Currently Safe Republican,,7
+837,2012,VA,1,Republican,0,Currently Safe Republican,,7
+840,2012,VA,4,Republican,0,Currently Safe Republican,,7
+841,2012,VA,5,Republican,0,Currently Safe Republican,,7
+842,2012,VA,6,Republican,0,Currently Safe Republican,,7
+843,2012,VA,7,Republican,0,Currently Safe Republican,,7
+845,2012,VA,9,Republican,0,Currently Safe Republican,,7
+846,2012,VA,10,Republican,0,Currently Safe Republican,,7
+850,2012,WA,3,Republican,0,Currently Safe Republican,,7
+851,2012,WA,4,Republican,0,Currently Safe Republican,,7
+852,2012,WA,5,Republican,0,Currently Safe Republican,,7
+855,2012,WA,8,Republican,0,Currently Safe Republican,,7
+858,2012,WV,1,Republican,0,Currently Safe Republican,,7
+859,2012,WV,2,Republican,0,Currently Safe Republican,,7
+861,2012,WI,1,Republican,0,Currently Safe Republican,,7
+865,2012,WI,5,Republican,0,Currently Safe Republican,,7
+866,2012,WI,6,Republican,0,Currently Safe Republican,,7
+868,2012,WI,8,Republican,0,Currently Safe Republican,,7
+869,2012,WY,0,Republican,0,Currently Safe Republican,,7
+870,2014,AL,1,Republican,0,Currently Safe Republican,,7
+871,2014,AL,2,Republican,0,Currently Safe Republican,,7
+872,2014,AL,3,Republican,0,Currently Safe Republican,,7
+873,2014,AL,4,Republican,0,Currently Safe Republican,,7
+874,2014,AL,5,Republican,0,Currently Safe Republican,,7
+875,2014,AL,6,Republican,1,Currently Safe Republican,,7
+877,2014,AK,0,Republican,0,Currently Safe Republican,,7
+881,2014,AZ,4,Republican,0,Currently Safe Republican,,7
+882,2014,AZ,5,Republican,0,Currently Safe Republican,,7
+883,2014,AZ,6,Republican,0,Currently Safe Republican,,7
+885,2014,AZ,8,Republican,0,Currently Safe Republican,,7
+887,2014,AR,1,Republican,0,Currently Safe Republican,,7
+889,2014,AR,3,Republican,0,Currently Safe Republican,,7
+891,2014,CA,1,Republican,0,Currently Safe Republican,,7
+894,2014,CA,4,Republican,0,Currently Safe Republican,,7
+898,2014,CA,8,Republican,0,Currently Safe Republican,,7
+900,2014,CA,10,Republican,0,Currently Safe Republican,,7
+912,2014,CA,22,Republican,0,Currently Safe Republican,,7
+913,2014,CA,23,Republican,0,Currently Safe Republican,,7
+915,2014,CA,25,Republican,1,Currently Safe Republican,,7
+929,2014,CA,39,Republican,0,Currently Safe Republican,,7
+932,2014,CA,42,Republican,0,Currently Safe Republican,,7
+935,2014,CA,45,Republican,1,Currently Safe Republican,,7
+938,2014,CA,48,Republican,0,Currently Safe Republican,,7
+939,2014,CA,49,Republican,0,Currently Safe Republican,,7
+940,2014,CA,50,Republican,0,Currently Safe Republican,,7
+946,2014,CO,3,Republican,0,Currently Safe Republican,,7
+947,2014,CO,4,Republican,1,Currently Safe Republican,,7
+948,2014,CO,5,Republican,0,Currently Safe Republican,,7
+957,2014,FL,1,Republican,0,Currently Safe Republican,,7
+959,2014,FL,3,Republican,0,Currently Safe Republican,,7
+960,2014,FL,4,Republican,0,Currently Safe Republican,,7
+962,2014,FL,6,Republican,0,Currently Safe Republican,,7
+963,2014,FL,7,Republican,0,Currently Safe Republican,,7
+964,2014,FL,8,Republican,0,Currently Safe Republican,,7
+966,2014,FL,10,Republican,0,Currently Safe Republican,,7
+967,2014,FL,11,Republican,0,Currently Safe Republican,,7
+968,2014,FL,12,Republican,0,Currently Safe Republican,,7
+969,2014,FL,13,Republican,0,Currently Safe Republican,,7
+971,2014,FL,15,Republican,0,Currently Safe Republican,,7
+972,2014,FL,16,Republican,0,Currently Safe Republican,,7
+973,2014,FL,17,Republican,0,Currently Safe Republican,,7
+975,2014,FL,19,Republican,0,Currently Safe Republican,,7
+981,2014,FL,25,Republican,0,Currently Safe Republican,,7
+983,2014,FL,27,Republican,0,Currently Safe Republican,,7
+984,2014,GA,1,Republican,1,Currently Safe Republican,,7
+986,2014,GA,3,Republican,0,Currently Safe Republican,,7
+989,2014,GA,6,Republican,0,Currently Safe Republican,,7
+990,2014,GA,7,Republican,0,Currently Safe Republican,,7
+991,2014,GA,8,Republican,0,Currently Safe Republican,,7
+992,2014,GA,9,Republican,0,Currently Safe Republican,,7
+993,2014,GA,10,Republican,1,Currently Safe Republican,,7
+994,2014,GA,11,Republican,1,Currently Safe Republican,,7
+997,2014,GA,14,Republican,0,Currently Safe Republican,,7
+1000,2014,ID,1,Republican,0,Currently Safe Republican,,7
+1001,2014,ID,2,Republican,0,Currently Safe Republican,,7
+1007,2014,IL,6,Republican,0,Currently Safe Republican,,7
+1014,2014,IL,13,Republican,0,Currently Safe Republican,,7
+1015,2014,IL,14,Republican,0,Currently Safe Republican,,7
+1016,2014,IL,15,Republican,0,Currently Safe Republican,,7
+1017,2014,IL,16,Republican,0,Currently Safe Republican,,7
+1019,2014,IL,18,Republican,0,Currently Safe Republican,,7
+1021,2014,IN,2,Republican,0,Currently Safe Republican,,7
+1022,2014,IN,3,Republican,0,Currently Safe Republican,,7
+1023,2014,IN,4,Republican,0,Currently Safe Republican,,7
+1024,2014,IN,5,Republican,0,Currently Safe Republican,,7
+1025,2014,IN,6,Republican,0,Currently Safe Republican,,7
+1027,2014,IN,8,Republican,0,Currently Safe Republican,,7
+1028,2014,IN,9,Republican,0,Currently Safe Republican,,7
+1032,2014,IA,4,Republican,0,Currently Safe Republican,,7
+1033,2014,KS,1,Republican,0,Currently Safe Republican,,7
+1034,2014,KS,2,Republican,0,Currently Safe Republican,,7
+1035,2014,KS,3,Republican,0,Currently Safe Republican,,7
+1036,2014,KS,4,Republican,0,Currently Safe Republican,,7
+1037,2014,KY,1,Republican,0,Currently Safe Republican,,7
+1038,2014,KY,2,Republican,0,Currently Safe Republican,,7
+1040,2014,KY,4,Republican,0,Currently Safe Republican,,7
+1041,2014,KY,5,Republican,0,Currently Safe Republican,,7
+1042,2014,KY,6,Republican,0,Currently Safe Republican,,7
+1043,2014,LA,1,Republican,0,Currently Safe Republican,,7
+1045,2014,LA,3,Republican,0,Currently Safe Republican,,7
+1046,2014,LA,4,Republican,0,Currently Safe Republican,,7
+1047,2014,LA,5,Republican,1,Currently Safe Republican,,7
+1048,2014,LA,6,Republican,0,Currently Safe Republican,,7
+1051,2014,MD,1,Republican,0,Currently Safe Republican,,7
+1069,2014,MI,2,Republican,0,Currently Safe Republican,,7
+1070,2014,MI,3,Republican,0,Currently Safe Republican,,7
+1071,2014,MI,4,Republican,1,Currently Safe Republican,,7
+1073,2014,MI,6,Republican,0,Currently Safe Republican,,7
+1074,2014,MI,7,Republican,0,Currently Safe Republican,,7
+1075,2014,MI,8,Republican,1,Currently Safe Republican,,7
+1077,2014,MI,10,Republican,0,Currently Safe Republican,,7
+1078,2014,MI,11,Republican,1,Currently Safe Republican,,7
+1083,2014,MN,2,Republican,0,Currently Safe Republican,,7
+1084,2014,MN,3,Republican,0,Currently Safe Republican,,7
+1087,2014,MN,6,Republican,1,Currently Safe Republican,,7
+1090,2014,MS,1,Republican,0,Currently Safe Republican,,7
+1092,2014,MS,3,Republican,0,Currently Safe Republican,,7
+1093,2014,MS,4,Republican,0,Currently Safe Republican,,7
+1095,2014,MO,2,Republican,0,Currently Safe Republican,,7
+1096,2014,MO,3,Republican,0,Currently Safe Republican,,7
+1097,2014,MO,4,Republican,0,Currently Safe Republican,,7
+1099,2014,MO,6,Republican,0,Currently Safe Republican,,7
+1100,2014,MO,7,Republican,0,Currently Safe Republican,,7
+1101,2014,MO,8,Republican,0,Currently Safe Republican,,7
+1102,2014,MT,0,Republican,1,Currently Safe Republican,,7
+1103,2014,NE,1,Republican,0,Currently Safe Republican,,7
+1105,2014,NE,3,Republican,0,Currently Safe Republican,,7
+1107,2014,NV,2,Republican,0,Currently Safe Republican,,7
+1108,2014,NV,3,Republican,0,Currently Safe Republican,,7
+1113,2014,NJ,2,Republican,0,Currently Safe Republican,,7
+1115,2014,NJ,4,Republican,0,Currently Safe Republican,,7
+1116,2014,NJ,5,Republican,0,Currently Safe Republican,,7
+1118,2014,NJ,7,Republican,0,Currently Safe Republican,,7
+1122,2014,NJ,11,Republican,0,Currently Safe Republican,,7
+1125,2014,NM,2,Republican,0,Currently Safe Republican,,7
+1128,2014,NY,2,Republican,0,Currently Safe Republican,,7
+1145,2014,NY,19,Republican,0,Currently Safe Republican,,7
+1147,2014,NY,21,Democrat,1,Currently Safe Republican,,7
+1148,2014,NY,22,Republican,0,Currently Safe Republican,,7
+1149,2014,NY,23,Republican,0,Currently Safe Republican,,7
+1153,2014,NY,27,Republican,0,Currently Safe Republican,,7
+1155,2014,NC,2,Republican,0,Currently Safe Republican,,7
+1156,2014,NC,3,Republican,0,Currently Safe Republican,,7
+1158,2014,NC,5,Republican,0,Currently Safe Republican,,7
+1159,2014,NC,6,Republican,1,Currently Safe Republican,,7
+1160,2014,NC,7,Democrat,1,Currently Safe Republican,,7
+1161,2014,NC,8,Republican,0,Currently Safe Republican,,7
+1162,2014,NC,9,Republican,0,Currently Safe Republican,,7
+1163,2014,NC,10,Republican,0,Currently Safe Republican,,7
+1164,2014,NC,11,Republican,0,Currently Safe Republican,,7
+1166,2014,NC,13,Republican,0,Currently Safe Republican,,7
+1167,2014,ND,0,Republican,0,Currently Safe Republican,,7
+1168,2014,OH,1,Republican,0,Currently Safe Republican,,7
+1169,2014,OH,2,Republican,0,Currently Safe Republican,,7
+1171,2014,OH,4,Republican,0,Currently Safe Republican,,7
+1172,2014,OH,5,Republican,0,Currently Safe Republican,,7
+1173,2014,OH,6,Republican,0,Currently Safe Republican,,7
+1174,2014,OH,7,Republican,0,Currently Safe Republican,,7
+1175,2014,OH,8,Republican,0,Currently Safe Republican,,7
+1177,2014,OH,10,Republican,0,Currently Safe Republican,,7
+1179,2014,OH,12,Republican,0,Currently Safe Republican,,7
+1181,2014,OH,14,Republican,0,Currently Safe Republican,,7
+1182,2014,OH,15,Republican,0,Currently Safe Republican,,7
+1183,2014,OH,16,Republican,0,Currently Safe Republican,,7
+1184,2014,OK,1,Republican,0,Currently Safe Republican,,7
+1185,2014,OK,2,Republican,0,Currently Safe Republican,,7
+1186,2014,OK,3,Republican,0,Currently Safe Republican,,7
+1187,2014,OK,4,Republican,0,Currently Safe Republican,,7
+1188,2014,OK,5,Republican,1,Currently Safe Republican,,7
+1190,2014,OR,2,Republican,0,Currently Safe Republican,,7
+1196,2014,PA,3,Republican,0,Currently Safe Republican,,7
+1197,2014,PA,4,Republican,0,Currently Safe Republican,,7
+1198,2014,PA,5,Republican,0,Currently Safe Republican,,7
+1200,2014,PA,7,Republican,0,Currently Safe Republican,,7
+1201,2014,PA,8,Republican,0,Currently Safe Republican,,7
+1202,2014,PA,9,Republican,0,Currently Safe Republican,,7
+1203,2014,PA,10,Republican,0,Currently Safe Republican,,7
+1204,2014,PA,11,Republican,0,Currently Safe Republican,,7
+1205,2014,PA,12,Republican,0,Currently Safe Republican,,7
+1208,2014,PA,15,Republican,0,Currently Safe Republican,,7
+1209,2014,PA,16,Republican,0,Currently Safe Republican,,7
+1211,2014,PA,18,Republican,0,Currently Safe Republican,,7
+1214,2014,SC,1,Republican,0,Currently Safe Republican,,7
+1215,2014,SC,2,Republican,0,Currently Safe Republican,,7
+1216,2014,SC,3,Republican,0,Currently Safe Republican,,7
+1217,2014,SC,4,Republican,0,Currently Safe Republican,,7
+1218,2014,SC,5,Republican,0,Currently Safe Republican,,7
+1220,2014,SC,7,Republican,0,Currently Safe Republican,,7
+1221,2014,SD,0,Republican,0,Currently Safe Republican,,7
+1222,2014,TN,1,Republican,0,Currently Safe Republican,,7
+1223,2014,TN,2,Republican,0,Currently Safe Republican,,7
+1224,2014,TN,3,Republican,0,Currently Safe Republican,,7
+1225,2014,TN,4,Republican,0,Currently Safe Republican,,7
+1227,2014,TN,6,Republican,0,Currently Safe Republican,,7
+1228,2014,TN,7,Republican,0,Currently Safe Republican,,7
+1229,2014,TN,8,Republican,0,Currently Safe Republican,,7
+1231,2014,TX,1,Republican,0,Currently Safe Republican,,7
+1232,2014,TX,2,Republican,0,Currently Safe Republican,,7
+1233,2014,TX,3,Republican,0,Currently Safe Republican,,7
+1234,2014,TX,4,Republican,1,Currently Safe Republican,,7
+1235,2014,TX,5,Republican,0,Currently Safe Republican,,7
+1236,2014,TX,6,Republican,0,Currently Safe Republican,,7
+1237,2014,TX,7,Republican,0,Currently Safe Republican,,7
+1238,2014,TX,8,Republican,0,Currently Safe Republican,,7
+1240,2014,TX,10,Republican,0,Currently Safe Republican,,7
+1241,2014,TX,11,Republican,0,Currently Safe Republican,,7
+1242,2014,TX,12,Republican,0,Currently Safe Republican,,7
+1243,2014,TX,13,Republican,0,Currently Safe Republican,,7
+1244,2014,TX,14,Republican,0,Currently Safe Republican,,7
+1247,2014,TX,17,Republican,0,Currently Safe Republican,,7
+1249,2014,TX,19,Republican,0,Currently Safe Republican,,7
+1251,2014,TX,21,Republican,0,Currently Safe Republican,,7
+1252,2014,TX,22,Republican,0,Currently Safe Republican,,7
+1254,2014,TX,24,Republican,0,Currently Safe Republican,,7
+1255,2014,TX,25,Republican,0,Currently Safe Republican,,7
+1256,2014,TX,26,Republican,0,Currently Safe Republican,,7
+1257,2014,TX,27,Republican,0,Currently Safe Republican,,7
+1261,2014,TX,31,Republican,0,Currently Safe Republican,,7
+1262,2014,TX,32,Republican,0,Currently Safe Republican,,7
+1266,2014,TX,36,Republican,1,Currently Safe Republican,,7
+1267,2014,UT,1,Republican,0,Currently Safe Republican,,7
+1268,2014,UT,2,Republican,0,Currently Safe Republican,,7
+1269,2014,UT,3,Republican,0,Currently Safe Republican,,7
+1270,2014,UT,4,Democrat,1,Currently Safe Republican,,7
+1272,2014,VA,1,Republican,0,Currently Safe Republican,,7
+1273,2014,VA,2,Republican,0,Currently Safe Republican,,7
+1275,2014,VA,4,Republican,0,Currently Safe Republican,,7
+1276,2014,VA,5,Republican,0,Currently Safe Republican,,7
+1277,2014,VA,6,Republican,0,Currently Safe Republican,,7
+1278,2014,VA,7,Republican,1,Currently Safe Republican,,7
+1280,2014,VA,9,Republican,0,Currently Safe Republican,,7
+1285,2014,WA,3,Republican,0,Currently Safe Republican,,7
+1286,2014,WA,4,Republican,0,Currently Safe Republican,,7
+1287,2014,WA,5,Republican,0,Currently Safe Republican,,7
+1290,2014,WA,8,Republican,0,Currently Safe Republican,,7
+1293,2014,WV,1,Republican,0,Currently Safe Republican,,7
+1296,2014,WI,1,Republican,0,Currently Safe Republican,,7
+1300,2014,WI,5,Republican,0,Currently Safe Republican,,7
+1301,2014,WI,6,Republican,1,Currently Safe Republican,,7
+1302,2014,WI,7,Republican,0,Currently Safe Republican,,7
+1303,2014,WI,8,Republican,0,Currently Safe Republican,,7
+1304,2014,WY,0,Republican,0,Currently Safe Republican,,7
+1305,2016,AL,1,Republican,0,Currently Safe Republican,,7
+1306,2016,AL,2,Republican,0,Currently Safe Republican,,7
+1307,2016,AL,3,Republican,0,Currently Safe Republican,,7
+1308,2016,AL,4,Republican,0,Currently Safe Republican,,7
+1309,2016,AL,5,Republican,0,Currently Safe Republican,,7
+1310,2016,AL,6,Republican,0,Currently Safe Republican,,7
+1312,2016,AK,0,Republican,0,Currently Safe Republican,,7
+1314,2016,AZ,2,Republican,0,Currently Safe Republican,,7
+1316,2016,AZ,4,Republican,0,Currently Safe Republican,,7
+1317,2016,AZ,5,Republican,1,Currently Safe Republican,,7
+1318,2016,AZ,6,Republican,0,Currently Safe Republican,,7
+1320,2016,AZ,8,Republican,0,Currently Safe Republican,,7
+1322,2016,AR,1,Republican,0,Currently Safe Republican,,7
+1323,2016,AR,2,Republican,0,Currently Safe Republican,,7
+1324,2016,AR,3,Republican,0,Currently Safe Republican,,7
+1325,2016,AR,4,Republican,0,Currently Safe Republican,,7
+1326,2016,CA,1,Republican,0,Currently Safe Republican,,7
+1329,2016,CA,4,Republican,0,Currently Safe Republican,,7
+1333,2016,CA,8,Republican,0,Currently Safe Republican,,7
+1347,2016,CA,22,Republican,0,Currently Safe Republican,,7
+1348,2016,CA,23,Republican,0,Currently Safe Republican,,7
+1364,2016,CA,39,Republican,0,Currently Safe Republican,,7
+1367,2016,CA,42,Republican,0,Currently Safe Republican,,7
+1370,2016,CA,45,Republican,0,Currently Safe Republican,,7
+1373,2016,CA,48,Republican,0,Currently Safe Republican,,7
+1375,2016,CA,50,Republican,0,Currently Safe Republican,,7
+1381,2016,CO,3,Republican,0,Currently Safe Republican,,7
+1382,2016,CO,4,Republican,0,Currently Safe Republican,,7
+1383,2016,CO,5,Republican,0,Currently Safe Republican,,7
+1392,2016,FL,1,Republican,1,Currently Safe Republican,,7
+1393,2016,FL,2,Democrat,1,Currently Safe Republican,,7
+1394,2016,FL,3,Republican,0,Currently Safe Republican,,7
+1395,2016,FL,4,Republican,1,Currently Safe Republican,,7
+1397,2016,FL,6,Republican,0,Currently Safe Republican,,7
+1399,2016,FL,8,Republican,0,Currently Safe Republican,,7
+1402,2016,FL,11,Republican,0,Currently Safe Republican,,7
+1403,2016,FL,12,Republican,0,Currently Safe Republican,,7
+1406,2016,FL,15,Republican,0,Currently Safe Republican,,7
+1407,2016,FL,16,Republican,0,Currently Safe Republican,,7
+1408,2016,FL,17,Republican,0,Currently Safe Republican,,7
+1410,2016,FL,19,Republican,1,Currently Safe Republican,,7
+1416,2016,FL,25,Republican,0,Currently Safe Republican,,7
+1418,2016,FL,27,Republican,0,Currently Safe Republican,,7
+1419,2016,GA,1,Republican,0,Currently Safe Republican,,7
+1421,2016,GA,3,Republican,1,Currently Safe Republican,,7
+1424,2016,GA,6,Republican,0,Currently Safe Republican,,7
+1425,2016,GA,7,Republican,0,Currently Safe Republican,,7
+1426,2016,GA,8,Republican,0,Currently Safe Republican,,7
+1427,2016,GA,9,Republican,0,Currently Safe Republican,,7
+1428,2016,GA,10,Republican,0,Currently Safe Republican,,7
+1429,2016,GA,11,Republican,0,Currently Safe Republican,,7
+1430,2016,GA,12,Republican,0,Currently Safe Republican,,7
+1432,2016,GA,14,Republican,0,Currently Safe Republican,,7
+1435,2016,ID,1,Republican,0,Currently Safe Republican,,7
+1436,2016,ID,2,Republican,0,Currently Safe Republican,,7
+1442,2016,IL,6,Republican,0,Currently Safe Republican,,7
+1448,2016,IL,12,Republican,0,Currently Safe Republican,,7
+1449,2016,IL,13,Republican,0,Currently Safe Republican,,7
+1450,2016,IL,14,Republican,0,Currently Safe Republican,,7
+1451,2016,IL,15,Republican,0,Currently Safe Republican,,7
+1452,2016,IL,16,Republican,0,Currently Safe Republican,,7
+1454,2016,IL,18,Republican,0,Currently Safe Republican,,7
+1456,2016,IN,2,Republican,0,Currently Safe Republican,,7
+1457,2016,IN,3,Republican,1,Currently Safe Republican,,7
+1458,2016,IN,4,Republican,0,Currently Safe Republican,,7
+1459,2016,IN,5,Republican,0,Currently Safe Republican,,7
+1460,2016,IN,6,Republican,0,Currently Safe Republican,,7
+1462,2016,IN,8,Republican,0,Currently Safe Republican,,7
+1467,2016,IA,4,Republican,0,Currently Safe Republican,,7
+1468,2016,KS,1,Republican,0,Currently Safe Republican,,7
+1469,2016,KS,2,Republican,0,Currently Safe Republican,,7
+1471,2016,KS,4,Republican,0,Currently Safe Republican,,7
+1472,2016,KY,1,Republican,1,Currently Safe Republican,,7
+1473,2016,KY,2,Republican,0,Currently Safe Republican,,7
+1475,2016,KY,4,Republican,0,Currently Safe Republican,,7
+1476,2016,KY,5,Republican,0,Currently Safe Republican,,7
+1477,2016,KY,6,Republican,0,Currently Safe Republican,,7
+1478,2016,LA,1,Republican,0,Currently Safe Republican,,7
+1480,2016,LA,3,Republican,1,Currently Safe Republican,,7
+1481,2016,LA,4,Republican,1,Currently Safe Republican,,7
+1482,2016,LA,5,Republican,0,Currently Safe Republican,,7
+1483,2016,LA,6,Republican,0,Currently Safe Republican,,7
+1486,2016,MD,1,Republican,0,Currently Safe Republican,,7
+1504,2016,MI,2,Republican,0,Currently Safe Republican,,7
+1505,2016,MI,3,Republican,0,Currently Safe Republican,,7
+1506,2016,MI,4,Republican,0,Currently Safe Republican,,7
+1508,2016,MI,6,Republican,0,Currently Safe Republican,,7
+1510,2016,MI,8,Republican,0,Currently Safe Republican,,7
+1512,2016,MI,10,Republican,1,Currently Safe Republican,,7
+1513,2016,MI,11,Republican,0,Currently Safe Republican,,7
+1522,2016,MN,6,Republican,0,Currently Safe Republican,,7
+1525,2016,MS,1,Republican,0,Currently Safe Republican,,7
+1527,2016,MS,3,Republican,0,Currently Safe Republican,,7
+1528,2016,MS,4,Republican,0,Currently Safe Republican,,7
+1530,2016,MO,2,Republican,0,Currently Safe Republican,,7
+1531,2016,MO,3,Republican,0,Currently Safe Republican,,7
+1532,2016,MO,4,Republican,0,Currently Safe Republican,,7
+1534,2016,MO,6,Republican,0,Currently Safe Republican,,7
+1535,2016,MO,7,Republican,0,Currently Safe Republican,,7
+1536,2016,MO,8,Republican,0,Currently Safe Republican,,7
+1538,2016,NE,1,Republican,0,Currently Safe Republican,,7
+1540,2016,NE,3,Republican,0,Currently Safe Republican,,7
+1542,2016,NV,2,Republican,0,Currently Safe Republican,,7
+1548,2016,NJ,2,Republican,0,Currently Safe Republican,,7
+1549,2016,NJ,3,Republican,0,Currently Safe Republican,,7
+1550,2016,NJ,4,Republican,0,Currently Safe Republican,,7
+1553,2016,NJ,7,Republican,0,Currently Safe Republican,,7
+1557,2016,NJ,11,Republican,0,Currently Safe Republican,,7
+1560,2016,NM,2,Republican,0,Currently Safe Republican,,7
+1563,2016,NY,2,Republican,0,Currently Safe Republican,,7
+1572,2016,NY,11,Republican,0,Currently Safe Republican,,7
+1582,2016,NY,21,Republican,0,Currently Safe Republican,,7
+1584,2016,NY,23,Republican,0,Currently Safe Republican,,7
+1588,2016,NY,27,Republican,0,Currently Safe Republican,,7
+1590,2016,NC,2,Republican,0,Currently Safe Republican,,7
+1591,2016,NC,3,Republican,0,Currently Safe Republican,,7
+1593,2016,NC,5,Republican,0,Currently Safe Republican,,7
+1594,2016,NC,6,Republican,0,Currently Safe Republican,,7
+1595,2016,NC,7,Republican,0,Currently Safe Republican,,7
+1596,2016,NC,8,Republican,0,Currently Safe Republican,,7
+1597,2016,NC,9,Republican,0,Currently Safe Republican,,7
+1598,2016,NC,10,Republican,0,Currently Safe Republican,,7
+1599,2016,NC,11,Republican,0,Currently Safe Republican,,7
+1601,2016,NC,13,Republican,1,Currently Safe Republican,,7
+1602,2016,ND,0,Republican,0,Currently Safe Republican,,7
+1603,2016,OH,1,Republican,0,Currently Safe Republican,,7
+1604,2016,OH,2,Republican,0,Currently Safe Republican,,7
+1606,2016,OH,4,Republican,0,Currently Safe Republican,,7
+1607,2016,OH,5,Republican,0,Currently Safe Republican,,7
+1608,2016,OH,6,Republican,0,Currently Safe Republican,,7
+1609,2016,OH,7,Republican,0,Currently Safe Republican,,7
+1610,2016,OH,8,Republican,0,Currently Safe Republican,,7
+1612,2016,OH,10,Republican,0,Currently Safe Republican,,7
+1614,2016,OH,12,Republican,0,Currently Safe Republican,,7
+1616,2016,OH,14,Republican,0,Currently Safe Republican,,7
+1617,2016,OH,15,Republican,0,Currently Safe Republican,,7
+1618,2016,OH,16,Republican,0,Currently Safe Republican,,7
+1619,2016,OK,1,Republican,0,Currently Safe Republican,,7
+1620,2016,OK,2,Republican,0,Currently Safe Republican,,7
+1621,2016,OK,3,Republican,0,Currently Safe Republican,,7
+1622,2016,OK,4,Republican,0,Currently Safe Republican,,7
+1623,2016,OK,5,Republican,0,Currently Safe Republican,,7
+1625,2016,OR,2,Republican,0,Currently Safe Republican,,7
+1631,2016,PA,3,Republican,0,Currently Safe Republican,,7
+1632,2016,PA,4,Republican,0,Currently Safe Republican,,7
+1633,2016,PA,5,Republican,0,Currently Safe Republican,,7
+1634,2016,PA,6,Republican,0,Currently Safe Republican,,7
+1635,2016,PA,7,Republican,0,Currently Safe Republican,,7
+1637,2016,PA,9,Republican,0,Currently Safe Republican,,7
+1638,2016,PA,10,Republican,0,Currently Safe Republican,,7
+1639,2016,PA,11,Republican,0,Currently Safe Republican,,7
+1640,2016,PA,12,Republican,0,Currently Safe Republican,,7
+1643,2016,PA,15,Republican,0,Currently Safe Republican,,7
+1644,2016,PA,16,Republican,1,Currently Safe Republican,,7
+1646,2016,PA,18,Republican,0,Currently Safe Republican,,7
+1649,2016,SC,1,Republican,0,Currently Safe Republican,,7
+1650,2016,SC,2,Republican,0,Currently Safe Republican,,7
+1651,2016,SC,3,Republican,0,Currently Safe Republican,,7
+1652,2016,SC,4,Republican,0,Currently Safe Republican,,7
+1653,2016,SC,5,Republican,0,Currently Safe Republican,,7
+1655,2016,SC,7,Republican,0,Currently Safe Republican,,7
+1656,2016,SD,0,Republican,0,Currently Safe Republican,,7
+1657,2016,TN,1,Republican,0,Currently Safe Republican,,7
+1658,2016,TN,2,Republican,0,Currently Safe Republican,,7
+1659,2016,TN,3,Republican,0,Currently Safe Republican,,7
+1660,2016,TN,4,Republican,0,Currently Safe Republican,,7
+1662,2016,TN,6,Republican,0,Currently Safe Republican,,7
+1663,2016,TN,7,Republican,0,Currently Safe Republican,,7
+1664,2016,TN,8,Republican,1,Currently Safe Republican,,7
+1666,2016,TX,1,Republican,0,Currently Safe Republican,,7
+1667,2016,TX,2,Republican,0,Currently Safe Republican,,7
+1668,2016,TX,3,Republican,0,Currently Safe Republican,,7
+1669,2016,TX,4,Republican,0,Currently Safe Republican,,7
+1670,2016,TX,5,Republican,0,Currently Safe Republican,,7
+1671,2016,TX,6,Republican,0,Currently Safe Republican,,7
+1672,2016,TX,7,Republican,0,Currently Safe Republican,,7
+1673,2016,TX,8,Republican,0,Currently Safe Republican,,7
+1675,2016,TX,10,Republican,0,Currently Safe Republican,,7
+1676,2016,TX,11,Republican,0,Currently Safe Republican,,7
+1677,2016,TX,12,Republican,0,Currently Safe Republican,,7
+1678,2016,TX,13,Republican,0,Currently Safe Republican,,7
+1679,2016,TX,14,Republican,0,Currently Safe Republican,,7
+1682,2016,TX,17,Republican,0,Currently Safe Republican,,7
+1684,2016,TX,19,Republican,1,Currently Safe Republican,,7
+1686,2016,TX,21,Republican,0,Currently Safe Republican,,7
+1687,2016,TX,22,Republican,0,Currently Safe Republican,,7
+1689,2016,TX,24,Republican,0,Currently Safe Republican,,7
+1690,2016,TX,25,Republican,0,Currently Safe Republican,,7
+1691,2016,TX,26,Republican,0,Currently Safe Republican,,7
+1692,2016,TX,27,Republican,0,Currently Safe Republican,,7
+1696,2016,TX,31,Republican,0,Currently Safe Republican,,7
+1697,2016,TX,32,Republican,0,Currently Safe Republican,,7
+1701,2016,TX,36,Republican,0,Currently Safe Republican,,7
+1702,2016,UT,1,Republican,0,Currently Safe Republican,,7
+1703,2016,UT,2,Republican,0,Currently Safe Republican,,7
+1704,2016,UT,3,Republican,0,Currently Safe Republican,,7
+1707,2016,VA,1,Republican,0,Currently Safe Republican,,7
+1708,2016,VA,2,Republican,1,Currently Safe Republican,,7
+1712,2016,VA,6,Republican,0,Currently Safe Republican,,7
+1713,2016,VA,7,Republican,0,Currently Safe Republican,,7
+1715,2016,VA,9,Republican,0,Currently Safe Republican,,7
+1720,2016,WA,3,Republican,0,Currently Safe Republican,,7
+1721,2016,WA,4,Republican,0,Currently Safe Republican,,7
+1722,2016,WA,5,Republican,0,Currently Safe Republican,,7
+1725,2016,WA,8,Republican,0,Currently Safe Republican,,7
+1728,2016,WV,1,Republican,0,Currently Safe Republican,,7
+1729,2016,WV,2,Republican,0,Currently Safe Republican,,7
+1730,2016,WV,3,Republican,0,Currently Safe Republican,,7
+1731,2016,WI,1,Republican,0,Currently Safe Republican,,7
+1735,2016,WI,5,Republican,0,Currently Safe Republican,,7
+1736,2016,WI,6,Republican,0,Currently Safe Republican,,7
+1737,2016,WI,7,Republican,0,Currently Safe Republican,,7
+1739,2016,WY,0,Republican,1,Currently Safe Republican,,7
+1740,2018,AL,1,Republican,0,Currently Safe Republican,,7
+1741,2018,AL,2,Republican,0,Currently Safe Republican,,7
+1742,2018,AL,3,Republican,0,Currently Safe Republican,,7
+1743,2018,AL,4,Republican,0,Currently Safe Republican,,7
+1744,2018,AL,5,Republican,0,Currently Safe Republican,,7
+1745,2018,AL,6,Republican,0,Currently Safe Republican,,7
+1751,2018,AZ,4,Republican,0,Currently Safe Republican,,7
+1752,2018,AZ,5,Republican,0,Currently Safe Republican,,7
+1753,2018,AZ,6,Republican,0,Currently Safe Republican,,7
+1757,2018,AR,1,Republican,0,Currently Safe Republican,,7
+1759,2018,AR,3,Republican,0,Currently Safe Republican,,7
+1760,2018,AR,4,Republican,0,Currently Safe Republican,,7
+1761,2018,CA,1,Republican,0,Currently Safe Republican,,7
+1768,2018,CA,8,Republican,0,Currently Safe Republican,,7
+1782,2018,CA,22,Republican,0,Currently Safe Republican,,7
+1783,2018,CA,23,Republican,0,Currently Safe Republican,,7
+1802,2018,CA,42,Republican,0,Currently Safe Republican,,7
+1816,2018,CO,3,Republican,0,Currently Safe Republican,,7
+1817,2018,CO,4,Republican,0,Currently Safe Republican,,7
+1818,2018,CO,5,Republican,0,Currently Safe Republican,,7
+1827,2018,FL,1,Republican,0,Currently Safe Republican,,7
+1828,2018,FL,2,Republican,0,Currently Safe Republican,,7
+1829,2018,FL,3,Republican,0,Currently Safe Republican,,7
+1830,2018,FL,4,Republican,0,Currently Safe Republican,,7
+1834,2018,FL,8,Republican,0,Currently Safe Republican,,7
+1837,2018,FL,11,Republican,0,Currently Safe Republican,,7
+1838,2018,FL,12,Republican,0,Currently Safe Republican,,7
+1843,2018,FL,17,Republican,1,Currently Safe Republican,,7
+1845,2018,FL,19,Republican,0,Currently Safe Republican,,7
+1851,2018,FL,25,Republican,0,Currently Safe Republican,,7
+1854,2018,GA,1,Republican,0,Currently Safe Republican,,7
+1856,2018,GA,3,Republican,0,Currently Safe Republican,,7
+1861,2018,GA,8,Republican,0,Currently Safe Republican,,7
+1862,2018,GA,9,Republican,0,Currently Safe Republican,,7
+1863,2018,GA,10,Republican,0,Currently Safe Republican,,7
+1864,2018,GA,11,Republican,0,Currently Safe Republican,,7
+1865,2018,GA,12,Republican,0,Currently Safe Republican,,7
+1867,2018,GA,14,Republican,0,Currently Safe Republican,,7
+1870,2018,ID,1,Republican,1,Currently Safe Republican,,7
+1871,2018,ID,2,Republican,0,Currently Safe Republican,,7
+1886,2018,IL,15,Republican,0,Currently Safe Republican,,7
+1887,2018,IL,16,Republican,0,Currently Safe Republican,,7
+1889,2018,IL,18,Republican,0,Currently Safe Republican,,7
+1892,2018,IN,3,Republican,0,Currently Safe Republican,,7
+1893,2018,IN,4,Republican,1,Currently Safe Republican,,7
+1894,2018,IN,5,Republican,0,Currently Safe Republican,,7
+1895,2018,IN,6,Republican,1,Currently Safe Republican,,7
+1897,2018,IN,8,Republican,0,Currently Safe Republican,,7
+1898,2018,IN,9,Republican,0,Currently Safe Republican,,7
+1903,2018,KS,1,Republican,0,Currently Safe Republican,,7
+1906,2018,KS,4,Republican,0,Currently Safe Republican,,7
+1907,2018,KY,1,Republican,0,Currently Safe Republican,,7
+1908,2018,KY,2,Republican,0,Currently Safe Republican,,7
+1910,2018,KY,4,Republican,0,Currently Safe Republican,,7
+1911,2018,KY,5,Republican,0,Currently Safe Republican,,7
+1913,2018,LA,1,Republican,0,Currently Safe Republican,,7
+1915,2018,LA,3,Republican,0,Currently Safe Republican,,7
+1916,2018,LA,4,Republican,0,Currently Safe Republican,,7
+1917,2018,LA,5,Republican,0,Currently Safe Republican,,7
+1918,2018,LA,6,Republican,0,Currently Safe Republican,,7
+1921,2018,MD,1,Republican,0,Currently Safe Republican,,7
+1938,2018,MI,1,Republican,0,Currently Safe Republican,,7
+1939,2018,MI,2,Republican,0,Currently Safe Republican,,7
+1940,2018,MI,3,Republican,0,Currently Safe Republican,,7
+1941,2018,MI,4,Republican,0,Currently Safe Republican,,7
+1947,2018,MI,10,Republican,0,Currently Safe Republican,,7
+1957,2018,MN,6,Republican,0,Currently Safe Republican,,7
+1960,2018,MS,1,Republican,0,Currently Safe Republican,,7
+1962,2018,MS,3,Republican,1,Currently Safe Republican,,7
+1963,2018,MS,4,Republican,0,Currently Safe Republican,,7
+1965,2018,MO,2,Republican,0,Currently Safe Republican,,7
+1966,2018,MO,3,Republican,0,Currently Safe Republican,,7
+1967,2018,MO,4,Republican,0,Currently Safe Republican,,7
+1969,2018,MO,6,Republican,0,Currently Safe Republican,,7
+1970,2018,MO,7,Republican,0,Currently Safe Republican,,7
+1971,2018,MO,8,Republican,0,Currently Safe Republican,,7
+1973,2018,NE,1,Republican,0,Currently Safe Republican,,7
+1975,2018,NE,3,Republican,0,Currently Safe Republican,,7
+1977,2018,NV,2,Republican,0,Currently Safe Republican,,7
+1985,2018,NJ,4,Republican,0,Currently Safe Republican,,7
+1997,2018,NY,1,Republican,0,Currently Safe Republican,,7
+1998,2018,NY,2,Republican,0,Currently Safe Republican,,7
+2017,2018,NY,21,Republican,0,Currently Safe Republican,,7
+2019,2018,NY,23,Republican,0,Currently Safe Republican,,7
+2026,2018,NC,3,Republican,0,Currently Safe Republican,,7
+2028,2018,NC,5,Republican,0,Currently Safe Republican,,7
+2029,2018,NC,6,Republican,0,Currently Safe Republican,,7
+2030,2018,NC,7,Republican,0,Currently Safe Republican,,7
+2031,2018,NC,8,Republican,0,Currently Safe Republican,,7
+2033,2018,NC,10,Republican,0,Currently Safe Republican,,7
+2034,2018,NC,11,Republican,0,Currently Safe Republican,,7
+2037,2018,ND,0,Republican,1,Currently Safe Republican,,7
+2039,2018,OH,2,Republican,0,Currently Safe Republican,,7
+2041,2018,OH,4,Republican,0,Currently Safe Republican,,7
+2042,2018,OH,5,Republican,0,Currently Safe Republican,,7
+2043,2018,OH,6,Republican,0,Currently Safe Republican,,7
+2044,2018,OH,7,Republican,0,Currently Safe Republican,,7
+2045,2018,OH,8,Republican,0,Currently Safe Republican,,7
+2047,2018,OH,10,Republican,0,Currently Safe Republican,,7
+2052,2018,OH,15,Republican,0,Currently Safe Republican,,7
+2053,2018,OH,16,Republican,1,Currently Safe Republican,,7
+2054,2018,OK,1,Republican,1,Currently Safe Republican,,7
+2055,2018,OK,2,Republican,0,Currently Safe Republican,,7
+2056,2018,OK,3,Republican,0,Currently Safe Republican,,7
+2057,2018,OK,4,Republican,0,Currently Safe Republican,,7
+2058,2018,OK,5,Republican,0,Currently Safe Republican,,7
+2060,2018,OR,2,Republican,0,Currently Safe Republican,,7
+2072,2018,PA,9,Republican,1,Currently Safe Republican,,7
+2074,2018,PA,11,Republican,0,Currently Safe Republican,,7
+2075,2018,PA,12,Republican,0,Currently Safe Republican,,7
+2076,2018,PA,13,Republican,1,Currently Safe Republican,,7
+2078,2018,PA,15,Republican,0,Currently Safe Republican,,7
+2085,2018,SC,2,Republican,0,Currently Safe Republican,,7
+2086,2018,SC,3,Republican,0,Currently Safe Republican,,7
+2087,2018,SC,4,Republican,1,Currently Safe Republican,,7
+2088,2018,SC,5,Republican,0,Currently Safe Republican,,7
+2090,2018,SC,7,Republican,0,Currently Safe Republican,,7
+2091,2018,SD,0,Republican,1,Currently Safe Republican,,7
+2092,2018,TN,1,Republican,0,Currently Safe Republican,,7
+2093,2018,TN,2,Republican,1,Currently Safe Republican,,7
+2094,2018,TN,3,Republican,0,Currently Safe Republican,,7
+2095,2018,TN,4,Republican,0,Currently Safe Republican,,7
+2097,2018,TN,6,Republican,1,Currently Safe Republican,,7
+2098,2018,TN,7,Republican,1,Currently Safe Republican,,7
+2099,2018,TN,8,Republican,0,Currently Safe Republican,,7
+2101,2018,TX,1,Republican,0,Currently Safe Republican,,7
+2102,2018,TX,2,Republican,1,Currently Safe Republican,,7
+2103,2018,TX,3,Republican,1,Currently Safe Republican,,7
+2104,2018,TX,4,Republican,0,Currently Safe Republican,,7
+2105,2018,TX,5,Republican,1,Currently Safe Republican,,7
+2106,2018,TX,6,Republican,1,Currently Safe Republican,,7
+2108,2018,TX,8,Republican,0,Currently Safe Republican,,7
+2110,2018,TX,10,Republican,0,Currently Safe Republican,,7
+2111,2018,TX,11,Republican,0,Currently Safe Republican,,7
+2112,2018,TX,12,Republican,0,Currently Safe Republican,,7
+2113,2018,TX,13,Republican,0,Currently Safe Republican,,7
+2114,2018,TX,14,Republican,0,Currently Safe Republican,,7
+2117,2018,TX,17,Republican,0,Currently Safe Republican,,7
+2119,2018,TX,19,Republican,0,Currently Safe Republican,,7
+2122,2018,TX,22,Republican,0,Currently Safe Republican,,7
+2124,2018,TX,24,Republican,0,Currently Safe Republican,,7
+2125,2018,TX,25,Republican,0,Currently Safe Republican,,7
+2126,2018,TX,26,Republican,0,Currently Safe Republican,,7
+2127,2018,TX,27,Republican,0,Currently Safe Republican,,7
+2136,2018,TX,36,Republican,0,Currently Safe Republican,,7
+2137,2018,UT,1,Republican,0,Currently Safe Republican,,7
+2138,2018,UT,2,Republican,0,Currently Safe Republican,,7
+2139,2018,UT,3,Republican,0,Currently Safe Republican,,7
+2142,2018,VA,1,Republican,0,Currently Safe Republican,,7
+2147,2018,VA,6,Republican,1,Currently Safe Republican,,7
+2150,2018,VA,9,Republican,0,Currently Safe Republican,,7
+2156,2018,WA,4,Republican,0,Currently Safe Republican,,7
+2163,2018,WV,1,Republican,0,Currently Safe Republican,,7
+2164,2018,WV,2,Republican,0,Currently Safe Republican,,7
+2170,2018,WI,5,Republican,0,Currently Safe Republican,,7
+2171,2018,WI,6,Republican,0,Currently Safe Republican,,7
+2172,2018,WI,7,Republican,0,Currently Safe Republican,,7
+2173,2018,WI,8,Republican,0,Currently Safe Republican,,7
+2174,2018,WY,0,Republican,0,Currently Safe Republican,,7
+2175,2020,AL,1,Republican,1,Currently Safe Republican,,7
+2176,2020,AL,2,Republican,1,Currently Safe Republican,,7
+2177,2020,AL,3,Republican,0,Currently Safe Republican,,7
+2178,2020,AL,4,Republican,0,Currently Safe Republican,,7
+2179,2020,AL,5,Republican,0,Currently Safe Republican,,7
+2180,2020,AL,6,Republican,0,Currently Safe Republican,,7
+2186,2020,AZ,4,Republican,0,Currently Safe Republican,,7
+2187,2020,AZ,5,Republican,0,Currently Safe Republican,,7
+2190,2020,AZ,8,Republican,0,Currently Safe Republican,,7
+2192,2020,AR,1,Republican,0,Currently Safe Republican,,7
+2194,2020,AR,3,Republican,0,Currently Safe Republican,,7
+2195,2020,AR,4,Republican,0,Currently Safe Republican,,7
+2196,2020,CA,1,Republican,0,Currently Safe Republican,,7
+2199,2020,CA,4,Republican,0,Currently Safe Republican,,7
+2203,2020,CA,8,Republican,1,Currently Safe Republican,,7
+2217,2020,CA,22,Republican,0,Currently Safe Republican,,7
+2218,2020,CA,23,Republican,0,Currently Safe Republican,,7
+2237,2020,CA,42,Republican,0,Currently Safe Republican,,7
+2252,2020,CO,4,Republican,0,Currently Safe Republican,,7
+2253,2020,CO,5,Republican,0,Currently Safe Republican,,7
+2262,2020,FL,1,Republican,0,Currently Safe Republican,,7
+2263,2020,FL,2,Republican,0,Currently Safe Republican,,7
+2264,2020,FL,3,Republican,1,Currently Safe Republican,,7
+2265,2020,FL,4,Republican,0,Currently Safe Republican,,7
+2267,2020,FL,6,Republican,0,Currently Safe Republican,,7
+2269,2020,FL,8,Republican,0,Currently Safe Republican,,7
+2272,2020,FL,11,Republican,0,Currently Safe Republican,,7
+2273,2020,FL,12,Republican,0,Currently Safe Republican,,7
+2278,2020,FL,17,Republican,0,Currently Safe Republican,,7
+2280,2020,FL,19,Republican,1,Currently Safe Republican,,7
+2286,2020,FL,25,Republican,0,Currently Safe Republican,,7
+2289,2020,GA,1,Republican,0,Currently Safe Republican,,7
+2291,2020,GA,3,Republican,0,Currently Safe Republican,,7
+2296,2020,GA,8,Republican,0,Currently Safe Republican,,7
+2297,2020,GA,9,Republican,1,Currently Safe Republican,,7
+2298,2020,GA,10,Republican,0,Currently Safe Republican,,7
+2299,2020,GA,11,Republican,0,Currently Safe Republican,,7
+2300,2020,GA,12,Republican,0,Currently Safe Republican,,7
+2302,2020,GA,14,Republican,1,Currently Safe Republican,,7
+2305,2020,ID,1,Republican,0,Currently Safe Republican,,7
+2306,2020,ID,2,Republican,0,Currently Safe Republican,,7
+2318,2020,IL,12,Republican,0,Currently Safe Republican,,7
+2321,2020,IL,15,Republican,1,Currently Safe Republican,,7
+2322,2020,IL,16,Republican,0,Currently Safe Republican,,7
+2324,2020,IL,18,Republican,0,Currently Safe Republican,,7
+2326,2020,IN,2,Republican,0,Currently Safe Republican,,7
+2327,2020,IN,3,Republican,0,Currently Safe Republican,,7
+2328,2020,IN,4,Republican,0,Currently Safe Republican,,7
+2330,2020,IN,6,Republican,0,Currently Safe Republican,,7
+2332,2020,IN,8,Republican,0,Currently Safe Republican,,7
+2333,2020,IN,9,Republican,0,Currently Safe Republican,,7
+2337,2020,IA,4,Republican,1,Currently Safe Republican,,7
+2338,2020,KS,1,Republican,1,Currently Safe Republican,,7
+2339,2020,KS,2,Republican,1,Currently Safe Republican,,7
+2341,2020,KS,4,Republican,0,Currently Safe Republican,,7
+2342,2020,KY,1,Republican,0,Currently Safe Republican,,7
+2343,2020,KY,2,Republican,0,Currently Safe Republican,,7
+2345,2020,KY,4,Republican,0,Currently Safe Republican,,7
+2346,2020,KY,5,Republican,0,Currently Safe Republican,,7
+2347,2020,KY,6,Republican,0,Currently Safe Republican,,7
+2348,2020,LA,1,Republican,0,Currently Safe Republican,,7
+2350,2020,LA,3,Republican,0,Currently Safe Republican,,7
+2351,2020,LA,4,Republican,0,Currently Safe Republican,,7
+2352,2020,LA,5,Republican,1,Currently Safe Republican,,7
+2353,2020,LA,6,Republican,0,Currently Safe Republican,,7
+2356,2020,MD,1,Republican,0,Currently Safe Republican,,7
+2373,2020,MI,1,Republican,0,Currently Safe Republican,,7
+2374,2020,MI,2,Republican,0,Currently Safe Republican,,7
+2376,2020,MI,4,Republican,0,Currently Safe Republican,,7
+2379,2020,MI,7,Republican,0,Currently Safe Republican,,7
+2382,2020,MI,10,Republican,1,Currently Safe Republican,,7
+2392,2020,MN,6,Republican,0,Currently Safe Republican,,7
+2394,2020,MN,8,Republican,0,Currently Safe Republican,,7
+2395,2020,MS,1,Republican,0,Currently Safe Republican,,7
+2397,2020,MS,3,Republican,0,Currently Safe Republican,,7
+2398,2020,MS,4,Republican,0,Currently Safe Republican,,7
+2401,2020,MO,3,Republican,0,Currently Safe Republican,,7
+2402,2020,MO,4,Republican,0,Currently Safe Republican,,7
+2404,2020,MO,6,Republican,0,Currently Safe Republican,,7
+2405,2020,MO,7,Republican,0,Currently Safe Republican,,7
+2406,2020,MO,8,Republican,0,Currently Safe Republican,,7
+2408,2020,NE,1,Republican,0,Currently Safe Republican,,7
+2410,2020,NE,3,Republican,0,Currently Safe Republican,,7
+2412,2020,NV,2,Republican,0,Currently Safe Republican,,7
+2420,2020,NJ,4,Republican,0,Currently Safe Republican,,7
+2452,2020,NY,21,Republican,0,Currently Safe Republican,,7
+2454,2020,NY,23,Republican,0,Currently Safe Republican,,7
+2458,2020,NY,27,Republican,0,Currently Safe Republican,,7
+2461,2020,NC,3,Republican,0,Currently Safe Republican,,7
+2463,2020,NC,5,Republican,0,Currently Safe Republican,,7
+2465,2020,NC,7,Republican,0,Currently Safe Republican,,7
+2467,2020,NC,9,Republican,0,Currently Safe Republican,,7
+2468,2020,NC,10,Republican,0,Currently Safe Republican,,7
+2471,2020,NC,13,Republican,0,Currently Safe Republican,,7
+2472,2020,ND,0,Republican,0,Currently Safe Republican,,7
+2474,2020,OH,2,Republican,0,Currently Safe Republican,,7
+2476,2020,OH,4,Republican,0,Currently Safe Republican,,7
+2477,2020,OH,5,Republican,0,Currently Safe Republican,,7
+2478,2020,OH,6,Republican,0,Currently Safe Republican,,7
+2479,2020,OH,7,Republican,0,Currently Safe Republican,,7
+2480,2020,OH,8,Republican,0,Currently Safe Republican,,7
+2484,2020,OH,12,Republican,0,Currently Safe Republican,,7
+2486,2020,OH,14,Republican,0,Currently Safe Republican,,7
+2487,2020,OH,15,Republican,0,Currently Safe Republican,,7
+2488,2020,OH,16,Republican,0,Currently Safe Republican,,7
+2489,2020,OK,1,Republican,0,Currently Safe Republican,,7
+2490,2020,OK,2,Republican,0,Currently Safe Republican,,7
+2491,2020,OK,3,Republican,0,Currently Safe Republican,,7
+2492,2020,OK,4,Republican,0,Currently Safe Republican,,7
+2495,2020,OR,2,Republican,1,Currently Safe Republican,,7
+2507,2020,PA,9,Republican,0,Currently Safe Republican,,7
+2509,2020,PA,11,Republican,0,Currently Safe Republican,,7
+2510,2020,PA,12,Republican,0,Currently Safe Republican,,7
+2511,2020,PA,13,Republican,0,Currently Safe Republican,,7
+2512,2020,PA,14,Republican,0,Currently Safe Republican,,7
+2513,2020,PA,15,Republican,0,Currently Safe Republican,,7
+2514,2020,PA,16,Republican,0,Currently Safe Republican,,7
+2520,2020,SC,2,Republican,0,Currently Safe Republican,,7
+2521,2020,SC,3,Republican,0,Currently Safe Republican,,7
+2522,2020,SC,4,Republican,0,Currently Safe Republican,,7
+2523,2020,SC,5,Republican,0,Currently Safe Republican,,7
+2525,2020,SC,7,Republican,0,Currently Safe Republican,,7
+2526,2020,SD,0,Republican,0,Currently Safe Republican,,7
+2527,2020,TN,1,Republican,1,Currently Safe Republican,,7
+2528,2020,TN,2,Republican,0,Currently Safe Republican,,7
+2529,2020,TN,3,Republican,0,Currently Safe Republican,,7
+2530,2020,TN,4,Republican,0,Currently Safe Republican,,7
+2532,2020,TN,6,Republican,0,Currently Safe Republican,,7
+2533,2020,TN,7,Republican,0,Currently Safe Republican,,7
+2534,2020,TN,8,Republican,0,Currently Safe Republican,,7
+2536,2020,TX,1,Republican,0,Currently Safe Republican,,7
+2537,2020,TX,2,Republican,0,Currently Safe Republican,,7
+2539,2020,TX,4,Republican,1,Currently Safe Republican,,7
+2540,2020,TX,5,Republican,0,Currently Safe Republican,,7
+2543,2020,TX,8,Republican,0,Currently Safe Republican,,7
+2546,2020,TX,11,Republican,1,Currently Safe Republican,,7
+2547,2020,TX,12,Republican,0,Currently Safe Republican,,7
+2548,2020,TX,13,Republican,1,Currently Safe Republican,,7
+2549,2020,TX,14,Republican,0,Currently Safe Republican,,7
+2552,2020,TX,17,Republican,1,Currently Safe Republican,,7
+2554,2020,TX,19,Republican,0,Currently Safe Republican,,7
+2561,2020,TX,26,Republican,0,Currently Safe Republican,,7
+2562,2020,TX,27,Republican,0,Currently Safe Republican,,7
+2566,2020,TX,31,Republican,0,Currently Safe Republican,,7
+2571,2020,TX,36,Republican,0,Currently Safe Republican,,7
+2572,2020,UT,1,Republican,1,Currently Safe Republican,,7
+2573,2020,UT,2,Republican,0,Currently Safe Republican,,7
+2574,2020,UT,3,Republican,0,Currently Safe Republican,,7
+2577,2020,VA,1,Republican,0,Currently Safe Republican,,7
+2582,2020,VA,6,Republican,0,Currently Safe Republican,,7
+2585,2020,VA,9,Republican,0,Currently Safe Republican,,7
+2591,2020,WA,4,Republican,0,Currently Safe Republican,,7
+2592,2020,WA,5,Republican,0,Currently Safe Republican,,7
+2598,2020,WV,1,Republican,0,Currently Safe Republican,,7
+2599,2020,WV,2,Republican,0,Currently Safe Republican,,7
+2600,2020,WV,3,Republican,0,Currently Safe Republican,,7
+2601,2020,WI,1,Republican,0,Currently Safe Republican,,7
+2605,2020,WI,5,Republican,1,Currently Safe Republican,,7
+2606,2020,WI,6,Republican,0,Currently Safe Republican,,7
+2607,2020,WI,7,Republican,0,Currently Safe Republican,,7
+2608,2020,WI,8,Republican,0,Currently Safe Republican,,7
+2609,2020,WY,0,Republican,0,Currently Safe Republican,,7
+2610,2022,AL,1,Republican,0,Currently Safe Republican,,7
+2611,2022,AL,2,Republican,0,Currently Safe Republican,,7
+2612,2022,AL,3,Republican,0,Currently Safe Republican,,7
+2613,2022,AL,4,Republican,0,Currently Safe Republican,,7
+2614,2022,AL,5,Republican,1,Currently Safe Republican,,7
+2615,2022,AL,6,Republican,0,Currently Safe Republican,,7
+2622,2022,AZ,5,Republican,0,Currently Safe Republican,,7
+2625,2022,AZ,8,Republican,0,Currently Safe Republican,,7
+2626,2022,AZ,9,Republican,0,Currently Safe Republican,,7
+2627,2022,AR,1,Republican,0,Currently Safe Republican,,7
+2628,2022,AR,2,Republican,0,Currently Safe Republican,,7
+2629,2022,AR,3,Republican,0,Currently Safe Republican,,7
+2630,2022,AR,4,Republican,0,Currently Safe Republican,,7
+2631,2022,CA,1,Republican,0,Currently Safe Republican,,7
+2635,2022,CA,5,Republican,0,Currently Safe Republican,,7
+2650,2022,CA,20,Republican,0,Currently Safe Republican,,7
+2653,2022,CA,23,Republican,0,Currently Safe Republican,,7
+2671,2022,CA,41,Republican,0,Currently Safe Republican,,7
+2678,2022,CA,48,Republican,0,Currently Safe Republican,,7
+2685,2022,CO,3,Republican,0,Currently Safe Republican,,7
+2686,2022,CO,4,Republican,0,Currently Safe Republican,,7
+2687,2022,CO,5,Republican,0,Currently Safe Republican,,7
+2697,2022,FL,1,Republican,0,Currently Safe Republican,,7
+2698,2022,FL,2,Republican,0,Currently Safe Republican,,7
+2699,2022,FL,3,Republican,0,Currently Safe Republican,,7
+2700,2022,FL,4,Republican,1,Currently Safe Republican,,7
+2702,2022,FL,6,Republican,0,Currently Safe Republican,,7
+2704,2022,FL,8,Republican,0,Currently Safe Republican,,7
+2707,2022,FL,11,Republican,0,Currently Safe Republican,,7
+2708,2022,FL,12,Republican,0,Currently Safe Republican,,7
+2712,2022,FL,16,Republican,0,Currently Safe Republican,,7
+2713,2022,FL,17,Republican,0,Currently Safe Republican,,7
+2714,2022,FL,18,Republican,0,Currently Safe Republican,,7
+2715,2022,FL,19,Republican,0,Currently Safe Republican,,7
+2717,2022,FL,21,Republican,0,Currently Safe Republican,,7
+2722,2022,FL,26,Republican,0,Currently Safe Republican,,7
+2724,2022,FL,28,Republican,0,Currently Safe Republican,,7
+2725,2022,GA,1,Republican,0,Currently Safe Republican,,7
+2727,2022,GA,3,Republican,0,Currently Safe Republican,,7
+2732,2022,GA,8,Republican,0,Currently Safe Republican,,7
+2733,2022,GA,9,Republican,0,Currently Safe Republican,,7
+2734,2022,GA,10,Republican,1,Currently Safe Republican,,7
+2735,2022,GA,11,Republican,0,Currently Safe Republican,,7
+2736,2022,GA,12,Republican,0,Currently Safe Republican,,7
+2738,2022,GA,14,Republican,0,Currently Safe Republican,,7
+2741,2022,ID,1,Republican,0,Currently Safe Republican,,7
+2742,2022,ID,2,Republican,0,Currently Safe Republican,,7
+2754,2022,IL,12,Republican,0,Currently Safe Republican,,7
+2757,2022,IL,15,Republican,0,Currently Safe Republican,,7
+2758,2022,IL,16,Republican,0,Currently Safe Republican,,7
+2761,2022,IN,2,Republican,1,Currently Safe Republican,,7
+2762,2022,IN,3,Republican,0,Currently Safe Republican,,7
+2763,2022,IN,4,Republican,0,Currently Safe Republican,,7
+2764,2022,IN,5,Republican,0,Currently Safe Republican,,7
+2765,2022,IN,6,Republican,0,Currently Safe Republican,,7
+2767,2022,IN,8,Republican,0,Currently Safe Republican,,7
+2768,2022,IN,9,Republican,0,Currently Safe Republican,,7
+2772,2022,IA,4,Republican,0,Currently Safe Republican,,7
+2773,2022,KS,1,Republican,0,Currently Safe Republican,,7
+2774,2022,KS,2,Republican,0,Currently Safe Republican,,7
+2776,2022,KS,4,Republican,0,Currently Safe Republican,,7
+2777,2022,KY,1,Republican,0,Currently Safe Republican,,7
+2778,2022,KY,2,Republican,0,Currently Safe Republican,,7
+2780,2022,KY,4,Republican,0,Currently Safe Republican,,7
+2781,2022,KY,5,Republican,0,Currently Safe Republican,,7
+2782,2022,KY,6,Republican,0,Currently Safe Republican,,7
+2783,2022,LA,1,Republican,0,Currently Safe Republican,,7
+2785,2022,LA,3,Republican,0,Currently Safe Republican,,7
+2786,2022,LA,4,Republican,0,Currently Safe Republican,,7
+2787,2022,LA,5,Republican,0,Currently Safe Republican,,7
+2788,2022,LA,6,Republican,0,Currently Safe Republican,,7
+2791,2022,MD,1,Republican,0,Currently Safe Republican,,7
+2808,2022,MI,1,Republican,0,Currently Safe Republican,,7
+2809,2022,MI,2,Republican,0,Currently Safe Republican,,7
+2811,2022,MI,4,Republican,0,Currently Safe Republican,,7
+2812,2022,MI,5,Republican,0,Currently Safe Republican,,7
+2816,2022,MI,9,Republican,0,Currently Safe Republican,,7
+2821,2022,MN,1,Republican,1,Currently Safe Republican,,7
+2826,2022,MN,6,Republican,0,Currently Safe Republican,,7
+2827,2022,MN,7,Republican,0,Currently Safe Republican,,7
+2828,2022,MN,8,Republican,0,Currently Safe Republican,,7
+2829,2022,MS,1,Republican,0,Currently Safe Republican,,7
+2831,2022,MS,3,Republican,0,Currently Safe Republican,,7
+2832,2022,MS,4,Republican,1,Currently Safe Republican,,7
+2834,2022,MO,2,Republican,0,Currently Safe Republican,,7
+2835,2022,MO,3,Republican,0,Currently Safe Republican,,7
+2836,2022,MO,4,Republican,1,Currently Safe Republican,,7
+2838,2022,MO,6,Republican,0,Currently Safe Republican,,7
+2839,2022,MO,7,Republican,1,Currently Safe Republican,,7
+2840,2022,MO,8,Republican,0,Currently Safe Republican,,7
+2842,2022,MT,0,Republican,0,Currently Safe Republican,,7
+2843,2022,NE,1,Republican,0,Currently Safe Republican,,7
+2845,2022,NE,3,Republican,0,Currently Safe Republican,,7
+2847,2022,NV,2,Republican,0,Currently Safe Republican,,7
+2853,2022,NJ,2,Republican,0,Currently Safe Republican,,7
+2855,2022,NJ,4,Republican,0,Currently Safe Republican,,7
+2887,2022,NY,21,Republican,0,Currently Safe Republican,,7
+2889,2022,NY,23,Republican,1,Currently Safe Republican,,7
+2890,2022,NY,24,Republican,0,Currently Safe Republican,,7
+2895,2022,NC,3,Republican,0,Currently Safe Republican,,7
+2897,2022,NC,5,Republican,0,Currently Safe Republican,,7
+2899,2022,NC,7,Republican,0,Currently Safe Republican,,7
+2900,2022,NC,8,Republican,0,Currently Safe Republican,,7
+2901,2022,NC,9,Republican,0,Currently Safe Republican,,7
+2902,2022,NC,10,Republican,0,Currently Safe Republican,,7
+2903,2022,NC,11,Republican,0,Currently Safe Republican,,7
+2907,2022,ND,0,Republican,0,Currently Safe Republican,,7
+2909,2022,OH,2,Republican,0,Currently Safe Republican,,7
+2911,2022,OH,4,Republican,0,Currently Safe Republican,,7
+2912,2022,OH,5,Republican,0,Currently Safe Republican,,7
+2913,2022,OH,6,Republican,0,Currently Safe Republican,,7
+2914,2022,OH,7,Republican,1,Currently Safe Republican,,7
+2915,2022,OH,8,Republican,0,Currently Safe Republican,,7
+2917,2022,OH,10,Republican,0,Currently Safe Republican,,7
+2919,2022,OH,12,Republican,0,Currently Safe Republican,,7
+2921,2022,OH,14,Republican,0,Currently Safe Republican,,7
+2922,2022,OH,15,Republican,0,Currently Safe Republican,,7
+2923,2022,OK,1,Republican,0,Currently Safe Republican,,7
+2924,2022,OK,2,Republican,0,Currently Safe Republican,,7
+2925,2022,OK,3,Republican,0,Currently Safe Republican,,7
+2926,2022,OK,4,Republican,0,Currently Safe Republican,,7
+2927,2022,OK,5,Republican,0,Currently Safe Republican,,7
+2929,2022,OR,2,Republican,0,Currently Safe Republican,,7
+2934,2022,PA,1,Republican,0,Currently Safe Republican,,7
+2942,2022,PA,9,Republican,0,Currently Safe Republican,,7
+2943,2022,PA,10,Republican,0,Currently Safe Republican,,7
+2944,2022,PA,11,Republican,0,Currently Safe Republican,,7
+2946,2022,PA,13,Republican,0,Currently Safe Republican,,7
+2947,2022,PA,14,Republican,0,Currently Safe Republican,,7
+2948,2022,PA,15,Republican,0,Currently Safe Republican,,7
+2949,2022,PA,16,Republican,0,Currently Safe Republican,,7
+2953,2022,SC,1,Republican,0,Currently Safe Republican,,7
+2954,2022,SC,2,Republican,0,Currently Safe Republican,,7
+2955,2022,SC,3,Republican,0,Currently Safe Republican,,7
+2956,2022,SC,4,Republican,0,Currently Safe Republican,,7
+2957,2022,SC,5,Republican,0,Currently Safe Republican,,7
+2959,2022,SC,7,Republican,1,Currently Safe Republican,,7
+2960,2022,SD,0,Republican,0,Currently Safe Republican,,7
+2961,2022,TN,1,Republican,0,Currently Safe Republican,,7
+2962,2022,TN,2,Republican,0,Currently Safe Republican,,7
+2963,2022,TN,3,Republican,0,Currently Safe Republican,,7
+2964,2022,TN,4,Republican,0,Currently Safe Republican,,7
+2966,2022,TN,6,Republican,0,Currently Safe Republican,,7
+2967,2022,TN,7,Republican,0,Currently Safe Republican,,7
+2968,2022,TN,8,Republican,0,Currently Safe Republican,,7
+2970,2022,TX,1,Republican,0,Currently Safe Republican,,7
+2971,2022,TX,2,Republican,0,Currently Safe Republican,,7
+2972,2022,TX,3,Republican,0,Currently Safe Republican,,7
+2973,2022,TX,4,Republican,0,Currently Safe Republican,,7
+2974,2022,TX,5,Republican,0,Currently Safe Republican,,7
+2975,2022,TX,6,Republican,0,Currently Safe Republican,,7
+2977,2022,TX,8,Republican,1,Currently Safe Republican,,7
+2979,2022,TX,10,Republican,0,Currently Safe Republican,,7
+2980,2022,TX,11,Republican,0,Currently Safe Republican,,7
+2981,2022,TX,12,Republican,0,Currently Safe Republican,,7
+2982,2022,TX,13,Republican,0,Currently Safe Republican,,7
+2983,2022,TX,14,Republican,0,Currently Safe Republican,,7
+2986,2022,TX,17,Republican,0,Currently Safe Republican,,7
+2988,2022,TX,19,Republican,0,Currently Safe Republican,,7
+2990,2022,TX,21,Republican,0,Currently Safe Republican,,7
+2991,2022,TX,22,Republican,0,Currently Safe Republican,,7
+2992,2022,TX,23,Republican,0,Currently Safe Republican,,7
+2993,2022,TX,24,Republican,0,Currently Safe Republican,,7
+2994,2022,TX,25,Republican,0,Currently Safe Republican,,7
+2995,2022,TX,26,Republican,0,Currently Safe Republican,,7
+2996,2022,TX,27,Republican,0,Currently Safe Republican,,7
+3000,2022,TX,31,Republican,0,Currently Safe Republican,,7
+3005,2022,TX,36,Republican,0,Currently Safe Republican,,7
+3007,2022,TX,38,,1,Currently Safe Republican,,7
+3008,2022,UT,1,Republican,0,Currently Safe Republican,,7
+3009,2022,UT,2,Republican,0,Currently Safe Republican,,7
+3010,2022,UT,3,Republican,0,Currently Safe Republican,,7
+3011,2022,UT,4,Republican,0,Currently Safe Republican,,7
+3013,2022,VA,1,Republican,0,Currently Safe Republican,,7
+3017,2022,VA,5,Republican,0,Currently Safe Republican,,7
+3018,2022,VA,6,Republican,0,Currently Safe Republican,,7
+3021,2022,VA,9,Republican,0,Currently Safe Republican,,7
+3027,2022,WA,4,Republican,0,Currently Safe Republican,,7
+3028,2022,WA,5,Republican,0,Currently Safe Republican,,7
+3034,2022,WV,1,Republican,0,Currently Safe Republican,,7
+3035,2022,WV,2,Republican,0,Currently Safe Republican,,7
+3036,2022,WI,1,Republican,0,Currently Safe Republican,,7
+3040,2022,WI,5,Republican,0,Currently Safe Republican,,7
+3041,2022,WI,6,Republican,0,Currently Safe Republican,,7
+3042,2022,WI,7,Republican,0,Currently Safe Republican,,7
+3043,2022,WI,8,Republican,0,Currently Safe Republican,,7
+3044,2022,WY,0,Republican,0,Currently Safe Republican,,7
+79,2010,CO,7,Democrat,0,Democrat Favored,,2
+83,2010,CT,4,Democrat,0,Democrat Favored,,2
+84,2010,CT,5,Democrat,0,Democrat Favored,,2
+156,2010,IA,1,Democrat,0,Democrat Favored,,2
+157,2010,IA,2,Democrat,0,Democrat Favored,,2
+158,2010,IA,3,Democrat,0,Democrat Favored,,2
+167,2010,KY,3,Democrat,0,Democrat Favored,,2
+172,2010,LA,2,Republican,0,Democrat Favored,,2
+178,2010,ME,1,Democrat,0,Democrat Favored,,2
+179,2010,ME,2,Democrat,0,Democrat Favored,,2
+213,2010,MN,1,Democrat,0,Democrat Favored,,2
+220,2010,MN,8,Democrat,0,Democrat Favored,,2
+227,2010,MO,3,Democrat,0,Democrat Favored,,2
+271,2010,NY,13,Democrat,0,Democrat Favored,,2
+283,2010,NY,25,Democrat,0,Democrat Favored,,2
+298,2010,NC,11,Democrat,0,Democrat Favored,,2
+314,2010,OH,13,Democrat,0,Democrat Favored,,2
+333,2010,PA,4,Democrat,0,Democrat Favored,,2
+393,2010,TX,27,Democrat,0,Democrat Favored,,2
+428,2010,WI,3,Democrat,0,Democrat Favored,,2
+502,2012,CA,47,,1,Democrat Favored,,2
+543,2012,FL,22,,1,Democrat Favored,,2
+574,2012,IL,8,Republican,0,Democrat Favored,,2
+595,2012,IA,2,Democrat,0,Democrat Favored,,2
+621,2012,MD,6,Republican,0,Democrat Favored,,2
+716,2012,NY,25,Democrat,0,Democrat Favored,,2
+886,2014,AZ,9,Democrat,0,Democrat Favored,,2
+914,2014,CA,24,Democrat,0,Democrat Favored,,2
+1018,2014,IL,17,Democrat,0,Democrat Favored,,2
+1067,2014,MA,9,Democrat,0,Democrat Favored,,2
+1109,2014,NV,4,Democrat,0,Democrat Favored,,2
+1349,2016,CA,24,Democrat,1,Democrat Favored,,2
+1983,2018,NJ,2,Republican,1,Democrat Favored,,2
+2068,2018,PA,5,Republican,1,Democrat Favored,,2
+2069,2018,PA,6,Republican,1,Democrat Favored,,2
+2183,2020,AZ,1,Democrat,0,Democrat Favored,,2
+2234,2020,CA,39,Democrat,0,Democrat Favored,,2
+2294,2020,GA,6,Democrat,0,Democrat Favored,,2
+2413,2020,NV,3,Democrat,0,Democrat Favored,,2
+2415,2020,NH,1,Democrat,0,Democrat Favored,,2
+2423,2020,NJ,7,Democrat,0,Democrat Favored,,2
+2460,2020,NC,2,Republican,1,Democrat Favored,,2
+2464,2020,NC,6,Republican,1,Democrat Favored,,2
+2497,2020,OR,4,Democrat,0,Democrat Favored,,2
+2542,2020,TX,7,Democrat,0,Democrat Favored,,2
+2578,2020,VA,2,Democrat,0,Democrat Favored,,2
+2621,2022,AZ,4,Democrat,0,Democrat Favored,,2
+2639,2022,CA,9,Democrat,0,Democrat Favored,,2
+2656,2022,CA,26,Democrat,0,Democrat Favored,,2
+2689,2022,CO,7,Democrat,1,Democrat Favored,,2
+2748,2022,IL,6,Democrat,0,Democrat Favored,,2
+2756,2022,IL,14,Democrat,0,Democrat Favored,,2
+2796,2022,MD,6,Democrat,0,Democrat Favored,,2
+2851,2022,NH,2,Democrat,0,Democrat Favored,,2
+2854,2022,NJ,3,Democrat,0,Democrat Favored,,2
+2891,2022,NY,25,Democrat,0,Democrat Favored,,2
+2893,2022,NC,1,Democrat,1,Democrat Favored,,2
+2945,2022,PA,12,Democrat,1,Democrat Favored,,2
+3022,2022,VA,10,Democrat,0,Democrat Favored,,2
+14,2010,AZ,7,Democrat,0,Lean Democrat,,3
+39,2010,CA,20,Democrat,0,Lean Democrat,,3
+66,2010,CA,47,Democrat,0,Lean Democrat,,3
+85,2010,DE,0,Republican,1,Lean Democrat,,3
+112,2010,GA,2,Democrat,0,Lean Democrat,,3
+148,2010,IN,2,Democrat,0,Lean Democrat,,3
+170,2010,KY,6,Democrat,0,Lean Democrat,,3
+206,2010,MI,9,Democrat,0,Lean Democrat,,3
+295,2010,NC,8,Democrat,0,Lean Democrat,,3
+349,2010,RI,1,Democrat,1,Lean Democrat,,3
+413,2010,VA,11,Democrat,0,Lean Democrat,,3
+415,2010,WA,2,Democrat,0,Lean Democrat,,3
+496,2012,CA,41,,1,Lean Democrat,,3
+515,2012,CO,7,Democrat,0,Lean Democrat,,3
+547,2012,FL,26,Republican,0,Lean Democrat,,3
+848,2012,WA,1,Democrat,1,Lean Democrat,,3
+916,2014,CA,26,Democrat,0,Lean Democrat,,3
+921,2014,CA,31,Republican,1,Lean Democrat,,3
+995,2014,GA,12,Democrat,0,Lean Democrat,,3
+998,2014,HI,1,Democrat,1,Lean Democrat,,3
+1030,2014,IA,2,Democrat,0,Lean Democrat,,3
+1050,2014,ME,2,Democrat,1,Lean Democrat,,3
+1088,2014,MN,7,Democrat,0,Lean Democrat,,3
+1111,2014,NH,2,Democrat,0,Lean Democrat,,3
+1253,2014,TX,23,Democrat,0,Lean Democrat,,3
+1313,2016,AZ,1,Democrat,1,Lean Democrat,,3
+1332,2016,CA,7,Democrat,0,Lean Democrat,,3
+1404,2016,FL,13,Republican,0,Lean Democrat,,3
+1524,2016,MN,8,Democrat,0,Lean Democrat,,3
+1564,2016,NY,3,Democrat,1,Lean Democrat,,3
+1748,2018,AZ,1,Democrat,0,Lean Democrat,,3
+1749,2018,AZ,2,Republican,1,Lean Democrat,,3
+1809,2018,CA,49,Republican,1,Lean Democrat,,3
+1853,2018,FL,27,Republican,1,Lean Democrat,,3
+1899,2018,IA,1,Republican,0,Lean Democrat,,3
+1905,2018,KS,3,Republican,0,Lean Democrat,,3
+1979,2018,NV,4,Democrat,1,Lean Democrat,,3
+1980,2018,NH,1,Democrat,1,Lean Democrat,,3
+1992,2018,NJ,11,Republican,1,Lean Democrat,,3
+2070,2018,PA,7,Republican,1,Lean Democrat,,3
+2071,2018,PA,8,Democrat,0,Lean Democrat,,3
+2080,2018,PA,17,Republican,0,Lean Democrat,,3
+2243,2020,CA,48,Democrat,0,Lean Democrat,,3
+2334,2020,IA,1,Democrat,0,Lean Democrat,,3
+2335,2020,IA,2,Democrat,1,Lean Democrat,,3
+2336,2020,IA,3,Democrat,0,Lean Democrat,,3
+2519,2020,SC,1,Democrat,0,Lean Democrat,,3
+2617,2022,AK,0,Democrat,0,Lean Democrat,,3
+2760,2022,IN,1,Democrat,0,Lean Democrat,,3
+2810,2022,MI,3,Republican,1,Lean Democrat,,3
+2815,2022,MI,8,Democrat,0,Lean Democrat,,3
+2849,2022,NV,4,Democrat,0,Lean Democrat,,3
+2916,2022,OH,9,Democrat,0,Lean Democrat,,3
+2997,2022,TX,28,Democrat,0,Lean Democrat,,3
+8,2010,AZ,1,Democrat,0,Lean Republican,,5
+22,2010,CA,3,Republican,0,Lean Republican,,5
+110,2010,FL,25,Republican,1,Lean Republican,,5
+118,2010,GA,8,Democrat,0,Lean Republican,,5
+180,2010,MD,1,Democrat,0,Lean Republican,,5
+257,2010,NM,2,Democrat,0,Lean Republican,,5
+317,2010,OH,16,Democrat,0,Lean Republican,,5
+355,2010,SC,5,Democrat,0,Lean Republican,,5
+404,2010,VA,2,Democrat,0,Lean Republican,,5
+433,2010,WI,8,Democrat,0,Lean Republican,,5
+531,2012,FL,10,Republican,0,Lean Republican,,5
+629,2012,MA,6,Democrat,0,Lean Republican,,5
+643,2012,MI,11,Republican,1,Lean Republican,,5
+652,2012,MN,6,Republican,0,Lean Republican,,5
+673,2012,NV,3,Republican,0,Lean Republican,,5
+702,2012,NY,11,Republican,0,Lean Republican,,5
+738,2012,OH,6,Republican,0,Lean Republican,,5
+809,2012,TX,14,Republican,1,Lean Republican,,5
+867,2012,WI,7,Republican,0,Lean Republican,,5
+1114,2014,NJ,3,Republican,1,Lean Republican,,5
+1281,2014,VA,10,Republican,1,Lean Republican,,5
+1335,2016,CA,10,Republican,0,Lean Republican,,5
+1470,2016,KS,3,Republican,0,Lean Republican,,5
+1562,2016,NY,1,Republican,0,Lean Republican,,5
+1810,2018,CA,50,Republican,0,Lean Republican,,5
+1832,2018,FL,6,Republican,1,Lean Republican,,5
+1859,2018,GA,6,Republican,0,Lean Republican,,5
+1860,2018,GA,7,Republican,0,Lean Republican,,5
+1884,2018,IL,13,Republican,0,Lean Republican,,5
+1959,2018,MN,8,Democrat,1,Lean Republican,,5
+1974,2018,NE,2,Republican,0,Lean Republican,,5
+2007,2018,NY,11,Republican,0,Lean Republican,,5
+2020,2018,NY,24,Republican,0,Lean Republican,,5
+2023,2018,NY,27,Republican,0,Lean Republican,,5
+2025,2018,NC,2,Republican,0,Lean Republican,,5
+2073,2018,PA,10,Republican,0,Lean Republican,,5
+2123,2018,TX,23,Republican,0,Lean Republican,,5
+2165,2018,WV,3,Republican,1,Lean Republican,,5
+2166,2018,WI,1,Republican,1,Lean Republican,,5
+2276,2020,FL,15,Republican,1,Lean Republican,,5
+2407,2020,MT,0,Republican,1,Lean Republican,,5
+2432,2020,NY,1,Republican,0,Lean Republican,,5
+2469,2020,NC,11,Republican,1,Lean Republican,,5
+2499,2020,PA,1,Republican,0,Lean Republican,,5
+2538,2020,TX,3,Republican,0,Lean Republican,,5
+2545,2020,TX,10,Republican,0,Lean Republican,,5
+2590,2020,WA,3,Republican,0,Lean Republican,,5
+2618,2022,AZ,1,Republican,0,Lean Republican,,5
+2619,2022,AZ,2,Democrat,0,Lean Republican,,5
+2675,2022,CA,45,Republican,0,Lean Republican,,5
+2709,2022,FL,13,Democrat,1,Lean Republican,,5
+2769,2022,IA,1,Republican,0,Lean Republican,,5
+2817,2022,MI,10,Democrat,1,Lean Republican,,5
+2841,2022,MT,0,,1,Lean Republican,,5
+2867,2022,NY,1,Republican,1,Lean Republican,,5
+2868,2022,NY,2,Republican,0,Lean Republican,,5
+2984,2022,TX,15,Democrat,1,Lean Republican,,5
+3026,2022,WA,3,Republican,1,Lean Republican,,5
+3038,2022,WI,3,Democrat,1,Lean Republican,,5
+15,2010,AZ,8,Democrat,0,Pure Toss-up,,4
+30,2010,CA,11,Democrat,0,Pure Toss-up,,4
+107,2010,FL,22,Democrat,0,Pure Toss-up,,4
+124,2010,HI,1,Republican,0,Pure Toss-up,,4
+197,2010,MA,10,Democrat,1,Pure Toss-up,,4
+204,2010,MI,7,Democrat,0,Pure Toss-up,,4
+224,2010,MS,4,Democrat,0,Pure Toss-up,,4
+228,2010,MO,4,Democrat,0,Pure Toss-up,,4
+242,2010,NH,2,Democrat,1,Pure Toss-up,,4
+256,2010,NM,1,Democrat,0,Pure Toss-up,,4
+281,2010,NY,23,Democrat,0,Pure Toss-up,,4
+282,2010,NY,24,Democrat,0,Pure Toss-up,,4
+307,2010,OH,6,Democrat,0,Pure Toss-up,,4
+329,2010,OR,5,Democrat,0,Pure Toss-up,,4
+339,2010,PA,10,Democrat,0,Pure Toss-up,,4
+341,2010,PA,12,Democrat,0,Pure Toss-up,,4
+389,2010,TX,23,Democrat,0,Pure Toss-up,,4
+423,2010,WV,1,Democrat,1,Pure Toss-up,,4
+443,2012,AZ,1,,1,Pure Toss-up,,4
+462,2012,CA,7,Republican,0,Pure Toss-up,,4
+481,2012,CA,26,,1,Pure Toss-up,,4
+507,2012,CA,52,Republican,0,Pure Toss-up,,4
+520,2012,CT,5,Democrat,1,Pure Toss-up,,4
+576,2012,IL,10,Republican,0,Pure Toss-up,,4
+577,2012,IL,11,Republican,0,Pure Toss-up,,4
+578,2012,IL,12,Democrat,1,Pure Toss-up,,4
+579,2012,IL,13,Republican,1,Pure Toss-up,,4
+583,2012,IL,17,Republican,0,Pure Toss-up,,4
+607,2012,KY,6,Democrat,0,Pure Toss-up,,4
+633,2012,MI,1,Republican,0,Pure Toss-up,,4
+654,2012,MN,8,Republican,0,Pure Toss-up,,4
+674,2012,NV,4,,1,Pure Toss-up,,4
+675,2012,NH,1,Republican,0,Pure Toss-up,,4
+676,2012,NH,2,Republican,0,Pure Toss-up,,4
+725,2012,NC,7,Democrat,0,Pure Toss-up,,4
+770,2012,PA,12,Democrat,0,Pure Toss-up,,4
+878,2014,AZ,1,Democrat,0,Pure Toss-up,,4
+879,2014,AZ,2,Democrat,0,Pure Toss-up,,4
+897,2014,CA,7,Democrat,0,Pure Toss-up,,4
+942,2014,CA,52,Democrat,0,Pure Toss-up,,4
+958,2014,FL,2,Republican,0,Pure Toss-up,,4
+1011,2014,IL,10,Democrat,0,Pure Toss-up,,4
+1029,2014,IA,1,Democrat,1,Pure Toss-up,,4
+1031,2014,IA,3,Republican,1,Pure Toss-up,,4
+1089,2014,MN,8,Democrat,0,Pure Toss-up,,4
+1127,2014,NY,1,Democrat,0,Pure Toss-up,,4
+1295,2014,WV,3,Democrat,0,Pure Toss-up,,4
+1409,2016,FL,18,Democrat,1,Pure Toss-up,,4
+1417,2016,FL,26,Republican,0,Pure Toss-up,,4
+1446,2016,IL,10,Republican,0,Pure Toss-up,,4
+1464,2016,IA,1,Republican,0,Pure Toss-up,,4
+1485,2016,ME,2,Republican,0,Pure Toss-up,,4
+1543,2016,NV,3,Republican,1,Pure Toss-up,,4
+1580,2016,NY,19,Republican,1,Pure Toss-up,,4
+1583,2016,NY,22,Republican,1,Pure Toss-up,,4
+1636,2016,PA,8,Republican,1,Pure Toss-up,,4
+1688,2016,TX,23,Republican,0,Pure Toss-up,,4
+1770,2018,CA,10,Republican,0,Pure Toss-up,,4
+1785,2018,CA,25,Republican,0,Pure Toss-up,,4
+1799,2018,CA,39,Republican,1,Pure Toss-up,,4
+1805,2018,CA,45,Republican,0,Pure Toss-up,,4
+1852,2018,FL,26,Republican,0,Pure Toss-up,,4
+1885,2018,IL,14,Republican,0,Pure Toss-up,,4
+1901,2018,IA,3,Republican,0,Pure Toss-up,,4
+1904,2018,KS,2,Republican,1,Pure Toss-up,,4
+1912,2018,KY,6,Republican,0,Pure Toss-up,,4
+1920,2018,ME,2,Republican,0,Pure Toss-up,,4
+1952,2018,MN,1,Democrat,1,Pure Toss-up,,4
+1988,2018,NJ,7,Republican,0,Pure Toss-up,,4
+1995,2018,NM,2,Republican,1,Pure Toss-up,,4
+2032,2018,NC,9,Republican,1,Pure Toss-up,,4
+2049,2018,OH,12,Republican,0,Pure Toss-up,,4
+2064,2018,PA,1,Republican,0,Pure Toss-up,,4
+2132,2018,TX,32,Republican,0,Pure Toss-up,,4
+2140,2018,UT,4,Republican,0,Pure Toss-up,,4
+2148,2018,VA,7,Republican,0,Pure Toss-up,,4
+2160,2018,WA,8,Republican,1,Pure Toss-up,,4
+2188,2020,AZ,6,Republican,0,Pure Toss-up,,4
+2193,2020,AR,2,Republican,0,Pure Toss-up,,4
+2216,2020,CA,21,Democrat,0,Pure Toss-up,,4
+2220,2020,CA,25,Republican,0,Pure Toss-up,,4
+2319,2020,IL,13,Republican,0,Pure Toss-up,,4
+2375,2020,MI,3,Independent,1,Pure Toss-up,,4
+2393,2020,MN,7,Democrat,0,Pure Toss-up,,4
+2430,2020,NM,2,Democrat,0,Pure Toss-up,,4
+2433,2020,NY,2,Republican,1,Pure Toss-up,,4
+2442,2020,NY,11,Democrat,0,Pure Toss-up,,4
+2493,2020,OK,5,Democrat,0,Pure Toss-up,,4
+2508,2020,PA,10,Republican,0,Pure Toss-up,,4
+2556,2020,TX,21,Republican,0,Pure Toss-up,,4
+2557,2020,TX,22,Republican,1,Pure Toss-up,,4
+2581,2020,VA,5,Republican,1,Pure Toss-up,,4
+2643,2022,CA,13,Democrat,1,Pure Toss-up,,4
+2652,2022,CA,22,Republican,0,Pure Toss-up,,4
+2695,2022,CT,5,Democrat,0,Pure Toss-up,,4
+2759,2022,IL,17,Democrat,1,Pure Toss-up,,4
+2822,2022,MN,2,Democrat,0,Pure Toss-up,,4
+2844,2022,NE,2,Republican,0,Pure Toss-up,,4
+2865,2022,NM,2,Republican,0,Pure Toss-up,,4
+2883,2022,NY,17,Democrat,0,Pure Toss-up,,4
+2885,2022,NY,19,Democrat,1,Pure Toss-up,,4
+2888,2022,NY,22,Republican,1,Pure Toss-up,,4
+2905,2022,NC,13,Republican,1,Pure Toss-up,,4
+2908,2022,OH,1,Republican,0,Pure Toss-up,,4
+2920,2022,OH,13,Democrat,1,Pure Toss-up,,4
+2933,2022,OR,6,,1,Pure Toss-up,,4
+2940,2022,PA,7,Democrat,0,Pure Toss-up,,4
+2941,2022,PA,8,Democrat,0,Pure Toss-up,,4
+2950,2022,PA,17,Democrat,1,Pure Toss-up,,4
+2952,2022,RI,2,Democrat,1,Pure Toss-up,,4
+3003,2022,TX,34,Republican,0,Pure Toss-up,,4
+3031,2022,WA,8,Democrat,0,Pure Toss-up,,4
+17,2010,AR,2,Democrat,1,Republican Favored,,6
+76,2010,CO,4,Democrat,0,Republican Favored,,6
+87,2010,FL,2,Democrat,0,Republican Favored,,6
+93,2010,FL,8,Democrat,0,Republican Favored,,6
+109,2010,FL,24,Democrat,0,Republican Favored,,6
+138,2010,IL,11,Democrat,0,Republican Favored,,6
+154,2010,IN,8,Democrat,1,Republican Favored,,6
+163,2010,KS,3,Democrat,1,Republican Favored,,6
+173,2010,LA,3,Democrat,1,Republican Favored,,6
+241,2010,NH,1,Democrat,0,Republican Favored,,6
+287,2010,NY,29,Democrat,1,Republican Favored,,6
+302,2010,OH,1,Democrat,0,Republican Favored,,6
+316,2010,OH,15,Democrat,0,Republican Favored,,6
+332,2010,PA,3,Democrat,0,Republican Favored,,6
+344,2010,PA,15,Republican,0,Republican Favored,,6
+363,2010,TN,6,Democrat,1,Republican Favored,,6
+365,2010,TN,8,Democrat,1,Republican Favored,,6
+383,2010,TX,17,Democrat,0,Republican Favored,,6
+421,2010,WA,8,Republican,0,Republican Favored,,6
+511,2012,CO,3,Republican,0,Republican Favored,,6
+523,2012,FL,2,Republican,0,Republican Favored,,6
+537,2012,FL,16,Republican,0,Republican Favored,,6
+592,2012,IN,8,Republican,0,Republican Favored,,6
+679,2012,NJ,3,Republican,0,Republican Favored,,6
+726,2012,NC,8,Democrat,0,Republican Favored,,6
+729,2012,NC,11,Democrat,1,Republican Favored,,6
+766,2012,PA,8,Republican,0,Republican Favored,,6
+838,2012,VA,2,Republican,0,Republican Favored,,6
+890,2014,AR,4,Republican,1,Republican Favored,,6
+911,2014,CA,21,Republican,0,Republican Favored,,6
+1068,2014,MI,1,Republican,0,Republican Favored,,6
+1199,2014,PA,6,Republican,1,Republican Favored,,6
+1346,2016,CA,21,Republican,0,Republican Favored,,6
+1350,2016,CA,25,Republican,0,Republican Favored,,6
+1463,2016,IN,9,Republican,1,Republican Favored,,6
+1509,2016,MI,7,Republican,0,Republican Favored,,6
+1519,2016,MN,3,Republican,0,Republican Favored,,6
+1537,2016,MT,0,Republican,0,Republican Favored,,6
+1585,2016,NY,24,Republican,0,Republican Favored,,6
+1705,2016,UT,4,Republican,0,Republican Favored,,6
+1711,2016,VA,5,Republican,1,Republican Favored,,6
+1738,2016,WI,8,Republican,1,Republican Favored,,6
+1747,2018,AK,0,Republican,0,Republican Favored,,6
+1755,2018,AZ,8,Republican,0,Republican Favored,,6
+1758,2018,AR,2,Republican,0,Republican Favored,,6
+1764,2018,CA,4,Republican,0,Republican Favored,,6
+1781,2018,CA,21,Republican,0,Republican Favored,,6
+1842,2018,FL,16,Republican,0,Republican Favored,,6
+1844,2018,FL,18,Republican,0,Republican Favored,,6
+1891,2018,IN,2,Republican,0,Republican Favored,,6
+1902,2018,IA,4,Republican,0,Republican Favored,,6
+1943,2018,MI,6,Republican,0,Republican Favored,,6
+1944,2018,MI,7,Republican,0,Republican Favored,,6
+1972,2018,MT,0,Republican,0,Republican Favored,,6
+2051,2018,OH,14,Republican,0,Republican Favored,,6
+2077,2018,PA,14,Democrat,1,Republican Favored,,6
+2079,2018,PA,16,Republican,0,Republican Favored,,6
+2084,2018,SC,1,Republican,1,Republican Favored,,6
+2121,2018,TX,21,Republican,1,Republican Favored,,6
+2131,2018,TX,31,Republican,0,Republican Favored,,6
+2146,2018,VA,5,Republican,1,Republican Favored,,6
+2155,2018,WA,3,Republican,0,Republican Favored,,6
+2157,2018,WA,5,Republican,0,Republican Favored,,6
+2182,2020,AK,0,Republican,0,Republican Favored,,6
+2245,2020,CA,50,Republican,0,Republican Favored,,6
+2277,2020,FL,16,Republican,0,Republican Favored,,6
+2279,2020,FL,18,Republican,0,Republican Favored,,6
+2378,2020,MI,6,Republican,0,Republican Favored,,6
+2482,2020,OH,10,Republican,0,Republican Favored,,6
+2541,2020,TX,6,Republican,0,Republican Favored,,6
+2560,2020,TX,25,Republican,0,Republican Favored,,6
+2633,2022,CA,3,Republican,1,Republican Favored,,6
+2670,2022,CA,40,Republican,0,Republican Favored,,6
+2701,2022,FL,5,Democrat,1,Republican Favored,,6
+2703,2022,FL,7,Democrat,1,Republican Favored,,6
+2711,2022,FL,15,Republican,1,Republican Favored,,6
+2723,2022,FL,27,Republican,0,Republican Favored,,6
+2730,2022,GA,6,Democrat,1,Republican Favored,,6
+2877,2022,NY,11,Republican,0,Republican Favored,,6
+2965,2022,TN,5,Democrat,1,Republican Favored,,6
+126,2010,ID,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+137,2010,IL,10,Republican,1,Toss-up/Tilt Democrat,,3.5
+259,2010,NY,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+289,2010,NC,2,Democrat,0,Toss-up/Tilt Democrat,,3.5
+294,2010,NC,7,Democrat,0,Toss-up/Tilt Democrat,,3.5
+411,2010,VA,9,Democrat,0,Toss-up/Tilt Democrat,,3.5
+444,2012,AZ,2,Democrat,0,Toss-up/Tilt Democrat,,3.5
+451,2012,AZ,9,,1,Toss-up/Tilt Democrat,,3.5
+464,2012,CA,9,Democrat,0,Toss-up/Tilt Democrat,,3.5
+479,2012,CA,24,Democrat,0,Toss-up/Tilt Democrat,,3.5
+560,2012,GA,12,Democrat,0,Toss-up/Tilt Democrat,,3.5
+692,2012,NY,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+712,2012,NY,21,Democrat,0,Toss-up/Tilt Democrat,,3.5
+715,2012,NY,24,Republican,0,Toss-up/Tilt Democrat,,3.5
+777,2012,RI,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+1064,2014,MA,6,Democrat,1,Toss-up/Tilt Democrat,,3.5
+1104,2014,NE,2,Republican,0,Toss-up/Tilt Democrat,,3.5
+1110,2014,NH,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+1144,2014,NY,18,Democrat,0,Toss-up/Tilt Democrat,,3.5
+1150,2014,NY,24,Democrat,0,Toss-up/Tilt Democrat,,3.5
+1398,2016,FL,7,Republican,0,Toss-up/Tilt Democrat,,3.5
+1518,2016,MN,2,Republican,1,Toss-up/Tilt Democrat,,3.5
+1539,2016,NE,2,Democrat,0,Toss-up/Tilt Democrat,,3.5
+1544,2016,NV,4,Republican,0,Toss-up/Tilt Democrat,,3.5
+1545,2016,NH,1,Republican,0,Toss-up/Tilt Democrat,,3.5
+1551,2016,NJ,5,Republican,0,Toss-up/Tilt Democrat,,3.5
+1808,2018,CA,48,Republican,0,Toss-up/Tilt Democrat,,3.5
+1819,2018,CO,6,Republican,0,Toss-up/Tilt Democrat,,3.5
+1877,2018,IL,6,Republican,0,Toss-up/Tilt Democrat,,3.5
+1945,2018,MI,8,Republican,0,Toss-up/Tilt Democrat,,3.5
+1948,2018,MI,11,Republican,1,Toss-up/Tilt Democrat,,3.5
+1953,2018,MN,2,Republican,0,Toss-up/Tilt Democrat,,3.5
+1954,2018,MN,3,Republican,0,Toss-up/Tilt Democrat,,3.5
+1978,2018,NV,3,Democrat,1,Toss-up/Tilt Democrat,,3.5
+1984,2018,NJ,3,Republican,0,Toss-up/Tilt Democrat,,3.5
+2015,2018,NY,19,Republican,0,Toss-up/Tilt Democrat,,3.5
+2018,2018,NY,22,Republican,0,Toss-up/Tilt Democrat,,3.5
+2151,2018,VA,10,Republican,0,Toss-up/Tilt Democrat,,3.5
+2287,2020,FL,26,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2295,2020,GA,7,Republican,1,Toss-up/Tilt Democrat,,3.5
+2329,2020,IN,5,Republican,1,Toss-up/Tilt Democrat,,3.5
+2387,2020,MN,1,Republican,0,Toss-up/Tilt Democrat,,3.5
+2400,2020,MO,2,Republican,0,Toss-up/Tilt Democrat,,3.5
+2409,2020,NE,2,Republican,0,Toss-up/Tilt Democrat,,3.5
+2418,2020,NJ,2,Republican,0,Toss-up/Tilt Democrat,,3.5
+2453,2020,NY,22,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2473,2020,OH,1,Republican,0,Toss-up/Tilt Democrat,,3.5
+2558,2020,TX,23,Republican,1,Toss-up/Tilt Democrat,,3.5
+2559,2020,TX,24,Republican,1,Toss-up/Tilt Democrat,,3.5
+2575,2020,UT,4,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2583,2020,VA,7,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2677,2022,CA,47,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2679,2022,CA,49,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2755,2022,IL,13,Republican,1,Toss-up/Tilt Democrat,,3.5
+2775,2022,KS,3,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2790,2022,ME,2,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2814,2022,MI,7,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2846,2022,NV,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2848,2022,NV,3,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2850,2022,NH,1,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2869,2022,NY,3,Democrat,1,Toss-up/Tilt Democrat,,3.5
+2870,2022,NY,4,Democrat,1,Toss-up/Tilt Democrat,,3.5
+2884,2022,NY,18,Democrat,0,Toss-up/Tilt Democrat,,3.5
+2931,2022,OR,4,Democrat,1,Toss-up/Tilt Democrat,,3.5
+3019,2022,VA,7,Democrat,0,Toss-up/Tilt Democrat,,3.5
+1,2010,AL,2,Democrat,0,Toss-up/Tilt Republican,,4.5
+12,2010,AZ,5,Democrat,0,Toss-up/Tilt Republican,,4.5
+16,2010,AR,1,Democrat,1,Toss-up/Tilt Republican,,4.5
+75,2010,CO,3,Democrat,0,Toss-up/Tilt Republican,,4.5
+97,2010,FL,12,Republican,1,Toss-up/Tilt Republican,,4.5
+141,2010,IL,14,Democrat,0,Toss-up/Tilt Republican,,4.5
+144,2010,IL,17,Democrat,0,Toss-up/Tilt Republican,,4.5
+155,2010,IN,9,Democrat,0,Toss-up/Tilt Republican,,4.5
+198,2010,MI,1,Democrat,1,Toss-up/Tilt Republican,,4.5
+221,2010,MS,1,Democrat,0,Toss-up/Tilt Republican,,4.5
+240,2010,NV,3,Democrat,0,Toss-up/Tilt Republican,,4.5
+245,2010,NJ,3,Democrat,0,Toss-up/Tilt Republican,,4.5
+277,2010,NY,19,Democrat,0,Toss-up/Tilt Republican,,4.5
+278,2010,NY,20,Democrat,0,Toss-up/Tilt Republican,,4.5
+301,2010,ND,0,Democrat,0,Toss-up/Tilt Republican,,4.5
+319,2010,OH,18,Democrat,0,Toss-up/Tilt Republican,,4.5
+336,2010,PA,7,Democrat,1,Toss-up/Tilt Republican,,4.5
+337,2010,PA,8,Democrat,0,Toss-up/Tilt Republican,,4.5
+340,2010,PA,11,Democrat,0,Toss-up/Tilt Republican,,4.5
+357,2010,SD,0,Democrat,0,Toss-up/Tilt Republican,,4.5
+361,2010,TN,4,Democrat,0,Toss-up/Tilt Republican,,4.5
+407,2010,VA,5,Democrat,0,Toss-up/Tilt Republican,,4.5
+416,2010,WA,3,Democrat,1,Toss-up/Tilt Republican,,4.5
+432,2010,WI,7,Democrat,1,Toss-up/Tilt Republican,,4.5
+465,2012,CA,10,Republican,0,Toss-up/Tilt Republican,,4.5
+491,2012,CA,36,Republican,0,Toss-up/Tilt Republican,,4.5
+514,2012,CO,6,Republican,0,Toss-up/Tilt Republican,,4.5
+539,2012,FL,18,Republican,0,Toss-up/Tilt Republican,,4.5
+596,2012,IA,3,Democrat,0,Toss-up/Tilt Republican,,4.5
+597,2012,IA,4,Republican,0,Toss-up/Tilt Republican,,4.5
+709,2012,NY,18,Republican,0,Toss-up/Tilt Republican,,4.5
+710,2012,NY,19,Republican,0,Toss-up/Tilt Republican,,4.5
+718,2012,NY,27,Democrat,0,Toss-up/Tilt Republican,,4.5
+748,2012,OH,16,Republican,0,Toss-up/Tilt Republican,,4.5
+790,2012,TN,4,Republican,0,Toss-up/Tilt Republican,,4.5
+818,2012,TX,23,Republican,0,Toss-up/Tilt Republican,,4.5
+835,2012,UT,4,Democrat,0,Toss-up/Tilt Republican,,4.5
+888,2014,AR,2,Republican,1,Toss-up/Tilt Republican,,4.5
+949,2014,CO,6,Republican,0,Toss-up/Tilt Republican,,4.5
+982,2014,FL,26,Democrat,0,Toss-up/Tilt Republican,,4.5
+1013,2014,IL,12,Democrat,0,Toss-up/Tilt Republican,,4.5
+1137,2014,NY,11,Republican,0,Toss-up/Tilt Republican,,4.5
+1294,2014,WV,2,Republican,1,Toss-up/Tilt Republican,,4.5
+1374,2016,CA,49,Republican,0,Toss-up/Tilt Republican,,4.5
+1384,2016,CO,6,Republican,0,Toss-up/Tilt Republican,,4.5
+1466,2016,IA,3,Republican,0,Toss-up/Tilt Republican,,4.5
+1503,2016,MI,1,Republican,1,Toss-up/Tilt Republican,,4.5
+1716,2016,VA,10,Republican,0,Toss-up/Tilt Republican,,4.5
+1841,2018,FL,15,Republican,1,Toss-up/Tilt Republican,,4.5
+1883,2018,IL,12,Republican,0,Toss-up/Tilt Republican,,4.5
+2036,2018,NC,13,Republican,0,Toss-up/Tilt Republican,,4.5
+2038,2018,OH,1,Republican,0,Toss-up/Tilt Republican,,4.5
+2107,2018,TX,7,Republican,0,Toss-up/Tilt Republican,,4.5
+2143,2018,VA,2,Republican,0,Toss-up/Tilt Republican,,4.5
+2251,2020,CO,3,Republican,1,Toss-up/Tilt Republican,,4.5
+2455,2020,NY,24,Republican,0,Toss-up/Tilt Republican,,4.5
+2466,2020,NC,8,Republican,0,Toss-up/Tilt Republican,,4.5
+2623,2022,AZ,6,Democrat,1,Toss-up/Tilt Republican,,4.5
+2657,2022,CA,27,Republican,0,Toss-up/Tilt Republican,,4.5
+2690,2022,CO,8,,1,Toss-up/Tilt Republican,,4.5
+2770,2022,IA,2,Republican,0,Toss-up/Tilt Republican,,4.5
+2771,2022,IA,3,Democrat,0,Toss-up/Tilt Republican,,4.5
+2858,2022,NJ,7,Democrat,0,Toss-up/Tilt Republican,,4.5
+2932,2022,OR,5,Democrat,1,Toss-up/Tilt Republican,,4.5
+3014,2022,VA,2,Democrat,0,Toss-up/Tilt Republican,,4.5
