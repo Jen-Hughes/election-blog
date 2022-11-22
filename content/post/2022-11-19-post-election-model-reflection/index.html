@@ -1,0 +1,155 @@
+---
+title: "Post Election Model Reflection"
+author: "Jen Hughes"
+date: '2022-11-19'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+categories: []
+tags: []
+slug: []
+---
+
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+
+
+<p>After a long semester of model making and an even longer campaign season, the midterm elections are finally in the rearview. To the surprise of many, no red wave came despite an increasingly dire media narrative and tightening polls in the days leading up to the midterm elections. While final vote tallies are still being counted we have a good enough idea of where the final tally stands. As of November 22nd, Democrats have held the Senate and await a Runoff election in Georgia to determine if they will expand their slim majority.</p>
+<p>In the house, which is our focus area, Democrats have lost their slim majority with a final predicted split of 213 seats for Democrats and 222 seats for Republicans. These minimal losses are very strong showing for the Democrats but how do they compare to my final model?</p>
+<p>As a refresher the final model I used in my prediction was:</p>
+<p>Y = 33.910 -0.554* X1 + 0.604* X2 -2.874* X3</p>
+<p>whereas,</p>
+<p>Y = Democratic party popular vote share of two major parties (%)</p>
+<p>X1 = The percent change in real disposable income between quarters 7 and 8 of a given election year</p>
+<p>X2 = Support for Democrats based on an average of generic ballot polling (%)</p>
+<p>X3 = The average expert rating for a given district in a given year (1-7)</p>
+<p>Data for average expert rating included predictions from Cook Political, Real Clear Politics, Rothenerg, cq politics, and Sabato’s Crystal Ball. Generic ballot polling was based on generic ballot averages from September to election day of a given year. To predict, I plugged in the current data on RDI change over the last quarter, current Democratic generic ballot averages from Real Clear Politics, and average expert rating across all districts. This value was calculated using the expert predictions 2022 scrape provided to the course. This aggregates district ratings for all districts from predictions by Cook, Rothenberg, Sabato’s Crystal Ball and Real Clear Politics.</p>
+<p>Based on the final model, I predicted that Democrats would win 49.5% of the two party vote share and Republicans will win 50.5% of the two party vote share. Due to limited data availability the prediction interval was very large with the prediction falling between 44-55 points for Democrats. Using a bivariate model to convert popular vote share to seat share, I also predicted that Democrats would win 209 House seats and Republicans would win 226. This prediction had a large uncertainty interval with a low of 179 seats and a high of 237 seats.</p>
+<p>I also included a simple model for NH-01 which is the district I’ve been following this semester. The rough model includes average expert rating and incumbency. While the predictive power of this model was quite low, I nevertheless predicted with a great deal of uncertainty that Chris Pappas would narrowly take NH-01, over challenger Karoline Leavitt winning a two party vote share of 50.24%.</p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<table class=" lightable-classic" style="font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+My Model
+</th>
+<th style="text-align:right;">
+<ul>
+<li></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+National 2 Party Vote Share Prediction
+</td>
+<td style="text-align:right;">
+49.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+National Seat Share Prediction
+</td>
+<td style="text-align:right;">
+-209.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Vote Share Error
+</td>
+<td style="text-align:right;">
+-1.18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Seat Share Error
+</td>
+<td style="text-align:right;">
+4.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NH-01 Vote Share Error
+</td>
+<td style="text-align:right;">
+-3.67
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<p><img src="imgs/Polling.png" /></p>
+<pre><code>## 
+  |                                                                            
+  |                                                                      |   0%
+  |                                                                            
+  |                                                                      |   1%
+  |                                                                            
+  |=                                                                     |   1%
+  |                                                                            
+  |=                                                                     |   2%
+  |                                                                            
+  |==                                                                    |   2%
+  |                                                                            
+  |==                                                                    |   3%
+  |                                                                            
+  |===                                                                   |   4%
+  |                                                                            
+  |====                                                                  |   6%
+  |                                                                            
+  |=======                                                               |  10%
+  |                                                                            
+  |==========                                                            |  14%
+  |                                                                            
+  |============                                                          |  18%
+  |                                                                            
+  |===============                                                       |  22%
+  |                                                                            
+  |==================                                                    |  26%
+  |                                                                            
+  |=====================                                                 |  29%
+  |                                                                            
+  |=======================                                               |  33%
+  |                                                                            
+  |==========================                                            |  37%
+  |                                                                            
+  |=============================                                         |  41%
+  |                                                                            
+  |===============================                                       |  45%
+  |                                                                            
+  |==================================                                    |  49%
+  |                                                                            
+  |=====================================                                 |  53%
+  |                                                                            
+  |========================================                              |  57%
+  |                                                                            
+  |==========================================                            |  61%
+  |                                                                            
+  |=============================================                         |  64%
+  |                                                                            
+  |================================================                      |  68%
+  |                                                                            
+  |===================================================                   |  72%
+  |                                                                            
+  |=====================================================                 |  76%
+  |                                                                            
+  |========================================================              |  80%
+  |                                                                            
+  |===========================================================           |  84%
+  |                                                                            
+  |=============================================================         |  87%
+  |                                                                            
+  |================================================================      |  91%
+  |                                                                            
+  |===================================================================   |  95%
+  |                                                                            
+  |===================================================================== |  99%
+  |                                                                            
+  |======================================================================| 100%</code></pre>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>

@@ -1,0 +1,165 @@
+---
+title: "Post Election Model Reflection"
+author: "Jen Hughes"
+date: '2022-11-19'
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+categories: []
+tags: []
+slug: []
+---
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+library(dotenv)
+library(jsonlite)
+library(lubridate)
+library(gridExtra)
+library(tidyverse)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+library(scales)
+library(dplyr)
+```
+
+After a long semester of model making and an even longer campaign season, the midterm elections are finally in the rearview.  To the surprise of many, no red wave came despite an increasingly dire media narrative and tightening polls in the days leading up to the midterm elections.  While final vote tallies are still being counted we have a good enough idea of where the final tally stands.  As of November 22nd, Democrats have held the Senate and await a Runoff election in Georgia to determine if they will expand their slim majority.  
+
+In the house, which is our focus area, Democrats have lost their slim majority with a final predicted split of 213 seats for Democrats and 222 seats for Republicans.  These minimal losses are very strong showing for the Democrats but how do they compare to my final model?
+
+As a refresher the final model I used in my prediction was: 
+
+Y = 33.910 -0.554* X1 + 0.604* X2 -2.874* X3
+
+whereas,
+
+Y = Democratic party popular vote share of two major parties (%)
+
+X1 = The percent change in real disposable income between quarters 7 and 8 of a given election year
+
+X2 = Support for Democrats based on an average of generic ballot polling (%)
+
+X3 = The average expert rating for a given district in a given year (1-7)
+
+Data for average expert rating included predictions from Cook Political, Real Clear Politics, Rothenerg, cq politics, and Sabato’s Crystal Ball. Generic ballot polling was based on generic ballot averages from September to election day of a given year. To predict, I plugged in the current data on RDI change over the last quarter, current Democratic generic ballot averages from Real Clear Politics, and average expert rating across all districts. This value was calculated using the expert predictions 2022 scrape provided to the course. This aggregates district ratings for all districts from predictions by Cook, Rothenberg, Sabato's Crystal Ball and Real Clear Politics.
+
+Based on the final model, I predicted that Democrats would win 49.5% of the two party vote share and Republicans will win 50.5% of the two party vote share. Due to limited data availability the prediction interval was very large with the prediction falling between 44-55 points for Democrats. Using a bivariate model to convert popular vote share to seat share, I also predicted that Democrats would win 209 House seats and Republicans would win 226. This prediction had a large uncertainty interval with a low of 179 seats and a high of 237 seats.
+
+I also included a simple model for NH-01 which is the district I’ve been following this semester. The rough model includes average expert rating and incumbency. While the predictive power of this model was quite low, I nevertheless predicted with a great deal of uncertainty that Chris Pappas would narrowly take NH-01, over challenger Karoline Leavitt winning a two party vote share of 50.24%.
+
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+
+#Seat Share Plot
+seatsdf <- read_csv("outcome_seats.csv") %>% 
+  rename_("party" = "...1")
+
+seatsdf %>%  
+  ggplot(aes(x = "", y = Seats, fill= factor(party, levels=c("R", "D")))) + 
+  geom_col(width = .25, position = position_fill(reverse = FALSE)) + 
+  scale_fill_manual(values = c("red", "blue")) + 
+  labs(y= "Seats", x = "118th Congress", fill = "Party") +
+  coord_flip() +
+  geom_hline(yintercept = (209/435), size = 1.5) +
+       annotate("text", x=(1.25), y= 0.37, label="Predicted Seats", size=4) +
+        annotate("text", x=(1), y= 0.25, label="213", size=6) +
+        annotate("text", x=(1), y= 0.75, label="222", size=6)+
+  ggtitle("Actual 2022 Seat Share ") 
+
+```
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+seatsdf %>%  
+  ggplot(aes(x = "", y = `Popular Vote Share`, fill= factor(party, levels=c("R", "D")))) + 
+  geom_col(width = .25, position = position_fill(reverse = FALSE)) + 
+  scale_fill_manual(values = c("red", "blue")) + 
+  labs(y= "Seats", x = "118th Congress", fill = "Party") +
+  coord_flip() +
+  geom_hline(yintercept = (0.495), size = 1.5) +
+       annotate("text", x=(1.25), y= 0.37, label="Predicted Vote \n Share (49.5%D)", size=4) +
+        annotate("text", x=(1), y= 0.25, label="48.3%", size=6) +
+        annotate("text", x=(1), y= 0.75, label="51.7%", size=6)+
+  ggtitle("Actual 2022 Vote Share ") 
+```
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+library("kableExtra")
+
+findings <- read_csv("results.csv")
+
+kable(findings) %>% 
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+![](imgs/Polling.png)
+
+```{r, warning = FALSE, message = FALSE, echo = FALSE}
+districtres <- read_csv("districtres.csv")
+
+cd116 <- congressional_districts(
+  state = NULL,
+  cb = FALSE,
+  resolution = "500k",
+  year = 2018)
+
+cd116 <- cd116 %>%
+  rename_("state" = "STATEFP")
+  
+state <- read_csv("us-state.csv")
+
+state <- state %>%
+  rename_("state" = "st")
+
+district <- cd116 %>%
+  left_join(state, by = "state")
+  
+district2 <- district %>%
+  select(-c("state")) %>%
+  rename_("state" = "stname", "district" = "CD116FP", "st" = "stusps")
+
+district2$district <- as.numeric(district2$district)
+
+district2 <- district2 %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  ))
+
+#merge data 
+combined <- district2 %>%
+  left_join(districtres, by = c("state", "district"))
+
+#simplifiy for plot
+simpdata <- combined %>%
+  filter(state != "Alaska", state != "Hawaii") %>%
+  #rename("st" = "stusps") %>%
+  mutate(district = case_when(
+    district == 0 ~ 1,
+    TRUE ~ district
+  )) %>%
+  ms_simplify()
+
+simpdata$district <- as.numeric(simpdata$district)
+
+#Plot correct districts
+ggplot() + 
+  geom_sf(data=simpdata,aes(fill=accuracy),
+          inherit.aes=FALSE,alpha=0.9)+
+  theme_void() +
+  theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank()) +
+  labs(title = "Was Average Expert Prediction Correct?")
+```
+
+
