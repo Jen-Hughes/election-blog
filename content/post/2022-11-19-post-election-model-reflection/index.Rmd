@@ -11,7 +11,7 @@ tags: []
 slug: []
 ---
 
-```{r, warning = FALSE, message = FALSE, echo = FALSE}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 library(dotenv)
 library(jsonlite)
 library(lubridate)
@@ -34,6 +34,8 @@ After a long semester of model making and an even longer campaign season, the mi
 
 In the house, which is our focus area, Democrats have lost their slim majority with a final predicted split of 213 seats for Democrats and 222 seats for Republicans.  These minimal losses are very strong showing for the Democrats but how do they compare to my final model?
 
+#Describing the Model
+
 As a refresher the final model I used in my prediction was: 
 
 Y = 33.910 -0.554* X1 + 0.604* X2 -2.874* X3
@@ -54,8 +56,9 @@ Based on the final model, I predicted that Democrats would win 49.5% of the two 
 
 I also included a simple model for NH-01 which is the district I’ve been following this semester. The rough model includes average expert rating and incumbency. While the predictive power of this model was quite low, I nevertheless predicted with a great deal of uncertainty that Chris Pappas would narrowly take NH-01, over challenger Karoline Leavitt winning a two party vote share of 50.24%.
 
+#Assesing My Predictions
 
-```{r, warning = FALSE, message = FALSE, echo = FALSE}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 
 #Seat Share Plot
 seatsdf <- read_csv("outcome_seats.csv") %>% 
@@ -75,7 +78,9 @@ seatsdf %>%
 
 ```
 
-```{r, warning = FALSE, message = FALSE, echo = FALSE}
+My final prediction for Democratic Seat Share was 209 seats for Democrats. The actual outcome was 213 seats for Democrats. This means that my model underestimated the strength of Democrats in the 2022 midterm elections by 4 seats.  This prediction is within the model’s uncertainty interval (180 - 237 seats). However, as explained extensively in my blog post the day before the election, data limitations, particularly dealing with expert predictions, made it difficult/impossible to reduce the uncertainty interval without ditching expert predictions as a predictive variable. 
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 seatsdf %>%  
   ggplot(aes(x = "", y = `Popular Vote Share`, fill= factor(party, levels=c("R", "D")))) + 
   geom_col(width = .25, position = position_fill(reverse = FALSE)) + 
@@ -89,7 +94,11 @@ seatsdf %>%
   ggtitle("Actual 2022 Vote Share ") 
 ```
 
-```{r, warning = FALSE, message = FALSE, echo = FALSE}
+Interestingly, I predicted that Democrats would win 49.5% of the two party vote share. This model overestimated the performance of Democrats in the popular vote during the 2022 midterm elections. The actual Democratic two party vote share was 48.3% so the error of the model was -1.18 percentage points. This is also within the margin of error. However, this is once again to be expected given the large confidence interval (44 - 55) as a result of limited data availability. 
+
+The table below summarizes my predictions and accuracy.
+
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 library("kableExtra")
 
 findings <- read_csv("results.csv")
@@ -98,9 +107,13 @@ kable(findings) %>%
   kable_classic(full_width = F, html_font = "Cambria")
 ```
 
+Given that I only created a national model, I unfortunately cannot analyze my prediction accuracy on a state by state or region basis. However, I have done my best in the next section to put my model’s accuracy into historical context at the national level. 
+
+#Sources of Inaccuracy
+
 ![](imgs/Polling.png)
 
-```{r, warning = FALSE, message = FALSE, echo = FALSE}
+```{r, eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
 districtres <- read_csv("districtres.csv")
 
 cd116 <- congressional_districts(
@@ -162,4 +175,7 @@ ggplot() +
   labs(title = "Was Average Expert Prediction Correct?")
 ```
 
+#How could we test these theories, hypothetically?
+
+#What I would do differently next election...
 
