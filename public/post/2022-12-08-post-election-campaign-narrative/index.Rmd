@@ -1,0 +1,28 @@
+---
+title: Post Election Campaign Narrative
+author: Jen Hughes
+date: '2022-12-08'
+slug: []
+categories: []
+tags: []
+---
+
+```{r,  eval = TRUE, echo = FALSE, warning = FALSE, message= FALSE, Include = FALSE}
+library(dotenv)
+library(jsonlite)
+library(lubridate)
+library(gridExtra)
+library(tidyverse)
+library(blogdown)
+library(stargazer)
+library(readr)
+library(usmap)
+library(rmapshaper)
+library(sf)
+library(janitor)
+library(tigris)
+library(leaflet)
+library(scales)
+library(dplyr)
+```
+
